@@ -1801,6 +1801,26 @@ Files:
  images/outfit/twin?mod?blaster*
  images/outfit/repeater*
  images/outfit/repeater?turret*
+ images/outfit/ic?fusion*
+ images/outfit/ic?fusion?small*
+ images/outfit/small?betavoltaic*
+ images/outfit/medium?betavoltaic*
+ images/outfit/large?betavoltaic*
+ images/outfit/small?successor?thruster*
+ images/outfit/small?successor?steering*
+ images/outfit/small?successor?reverse*
+ images/outfit/medium?successor?thruster*
+ images/outfit/medium?successor?steering*
+ images/outfit/medium?successor?reverse*
+ images/outfit/large?successor?thruster*
+ images/outfit/large?successor?steering*
+ images/outfit/small?successor?shield*
+ images/outfit/medium?successor?shield*
+ images/outfit/large?successor?shield*
+ images/outfit/photon?lance*
+ images/projectile/photon?lance*
+ images/ship/successor?heirloom?med?warship*
+ images/thumbnail/successor?heirloom?med?warship*
 Copyright: Daeridanii (https://github.com/Daeridanii1)
 License: CC-BY-SA-4.0
 Comment: Derived from works by Becca Tommaso and Michael Zahniser (under the same license).
