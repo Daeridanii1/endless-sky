@@ -1,0 +1,39 @@
+government Successor
+	swizzle 5
+	color 0 1 0.853
+
+government "Rim Watcher"
+	color 1 0 0.618
+	"player reputation" -999
+
+shipyard "Successor Heirloom"
+	"Valkkyiara-Khorasaqra"
+
+outfitter "Successor Advanced"
+	"Bimodal Railgun"
+	"Photon Battery"
+	"Photon Lance"
+	"Common Shield Core"
+	"Noble Shield Core"
+	"Regal Shield Core"
+	"Resistance Module"
+	"Successor Burst Laser"
+	"Successor Cooling"
+	`"Nnesa" Inertial Core`
+	`"Ryuit" Inertial Core`
+	`1-"Uurau" Betavoltaic Cell`
+	`4-"Kaska" Betavoltaic Cell`
+	`7-"Ruuv" Betavoltaic Cell`
+	`"Aqra" Inductive Thruster`
+	`"Aqra" Inductive Steering`
+	`"Aqra" Inductive Reverser`
+	`"Chyyra" Inductive Thruster`
+	`"Chyyra" Inductive Steering`
+	`"Chyyra" Inductive Reverser`
+	`"Veusa" Inductive Thruster`
+	`"Veusa" Inductive Steering`
+	`"Veusa" Inductive Reverser`
+	"Cargo Expansion"
+	"Outfits Expansion"
+	"Small Bunk Room"
+	"Bunk Room"

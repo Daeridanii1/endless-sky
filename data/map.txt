@@ -11,6 +11,671 @@
 # You should have received a copy of the GNU General Public License along with
 # this program. If not, see <https://www.gnu.org/licenses/>.
 
+system "Eta Carinae"
+	pos -760.084 -725.856
+	government Uninhabited
+	habitable 2160
+	asteroids "small rock" 1 4.65
+	asteroids "large rock" 1 4.237
+	asteroids "large metal" 1 2.55
+	trade Clothing 351
+	trade Electronics 760
+	trade Equipment 640
+	trade Food 393
+	trade "Heavy Metals" 669
+	trade Industrial 852
+	trade "Luxury Goods" 1449
+	trade Medical 831
+	trade Metal 214
+	trade Plastic 470
+	object
+		sprite star/nova
+	object
+		sprite star/o-supergiant
+	object
+		sprite star/g0
+		distance 5000
+		period 300
+		object "Disguised Wormhole"
+			sprite planet/lava6
+			distance 300
+			period 42
+
+system Myruet-Kvelq
+	pos -1277.007 -1083.857
+	government Successor
+	habitable 1715
+	link Aaura-Kaska
+	asteroids "small rock" 27 4.785
+	asteroids "medium rock" 67 3.924
+	asteroids "large rock" 4 2.233
+	asteroids "large metal" 20 3.222
+	trade Clothing 282
+	trade Electronics 745
+	trade Equipment 491
+	trade Food 505
+	trade "Heavy Metals" 849
+	trade Industrial 635
+	trade "Luxury Goods" 1159
+	trade Medical 480
+	trade Metal 402
+	trade Plastic 272
+	object
+		sprite star/f5
+		period 10
+	object
+		sprite planet/cloud4
+		distance 180.84
+		period 23.489
+	object
+		sprite planet/rock11
+		distance 693.69
+		period 176.472
+	object
+		sprite planet/gas9
+		distance 1481.98
+		period 551.051
+	object
+		sprite planet/gas1
+		distance 3735.87
+		period 2205.54
+	object "Disguised Wormhole"
+		sprite planet/lava6
+		distance 1900
+		period 400
+		object Saska-Aa-Noorr
+			sprite planet/station1
+			distance 300
+			period 30
+			offset 2
+
+system "Ash Prison"
+	pos -1273.051 -1389.741
+	government "Rim Watcher"
+	habitable 320
+	link "Amber Well"
+	asteroids "medium rock" 39 1.005
+	asteroids "large rock" 2 1.11
+	asteroids "small metal" 11 1.17
+	asteroids "medium metal" 207 1.65
+	asteroids "large metal" 22 1.155
+	trade Clothing 282
+	trade Electronics 745
+	trade Equipment 491
+	trade Food 505
+	trade "Heavy Metals" 849
+	trade Industrial 635
+	trade "Luxury Goods" 1159
+	trade Medical 480
+	trade Metal 402
+	trade Plastic 272
+	fleet "Arach Miners" 1
+	object
+		sprite star/m0
+		period 10
+	object
+		sprite planet/cloud0
+		distance 182
+		period 54.903
+	object
+		sprite planet/rock13
+		distance 384
+		period 168.26
+	object
+		sprite planet/desert10
+		distance 614.36
+		period 340.502
+	object
+		sprite planet/gas14
+		distance 1186.32
+		period 913.667
+		object
+			sprite planet/lava0
+			distance 266
+			period 17.668
+		object
+			sprite planet/dust1
+			distance 392
+			period 31.607
+	object
+		sprite planet/gas2
+		distance 3991.81
+		period 5639.49
+		object
+			sprite planet/rhea
+			distance 209
+			period 18.308
+		object
+			sprite planet/dust3
+			distance 322
+			period 35.011
+
+system Aaura-Kaska
+	pos -1341.082 -1126.6
+	government Successor
+	habitable 1313.28
+	link Myruet-Kvelq
+	link Pelaa-Muora
+	link Uuoru-Kella
+	asteroids "medium rock" 11 3.12
+	asteroids "large rock" 6 3.463
+	asteroids "small metal" 17 4.43
+	asteroids "medium metal" 70 4.181
+	asteroids "large metal" 14 3.775
+	trade Clothing 282
+	trade Electronics 745
+	trade Equipment 491
+	trade Food 505
+	trade "Heavy Metals" 849
+	trade Industrial 635
+	trade "Luxury Goods" 1159
+	trade Medical 480
+	trade Metal 402
+	trade Plastic 272
+	object
+		sprite star/g0
+		distance 21.316
+		period 14.51
+	object
+		sprite star/m4
+		distance 98.684
+		period 14.51
+		offset 180
+	object
+		sprite planet/dust6
+		distance 317.774
+		period 62.526
+	object
+		sprite planet/desert9
+		distance 568.214
+		period 149.503
+	object
+		sprite planet/mercury
+		distance 841.254
+		period 269.322
+	object Mosaa-Ooa-Wyrdd
+		sprite planet/forest4
+		distance 1055.89
+		period 378.715
+	object
+		sprite planet/gas7
+		distance 3071.33
+		period 1878.76
+
+system Ofstond-Stir
+	pos -1215.462 -1159.424
+	government Successor
+	habitable 625
+	link Khosa-Kaska
+	link Uuoru-Kella
+	asteroids "small rock" 4 2.215
+	asteroids "medium rock" 32 3.553
+	asteroids "large rock" 29 3.887
+	asteroids "small metal" 10 3.804
+	asteroids "medium metal" 1 5.643
+	asteroids "large metal" 1 2.675
+	trade Clothing 363
+	trade Electronics 641
+	trade Equipment 401
+	trade Food 164
+	trade "Heavy Metals" 1150
+	trade Industrial 640
+	trade "Luxury Goods" 1478
+	trade Medical 778
+	trade Metal 586
+	trade Plastic 369
+	object
+		sprite star/g5
+		period 10
+	object
+		sprite planet/desert8
+		distance 264.25
+		period 68.729
+		object
+			sprite planet/europa
+			distance 116
+			period 16.025
+	object
+		sprite planet/desert3
+		distance 567.41
+		period 216.255
+	object
+		sprite planet/water0
+		distance 819.25
+		period 375.184
+	object
+		sprite planet/gas15
+		distance 1409.5
+		period 846.677
+		object
+			sprite planet/io
+			distance 208
+			period 15.79
+	object
+		sprite planet/jupiter
+		distance 2659.75
+		period 2194.731
+		object
+			sprite planet/dust7
+			distance 283
+			period 14.96
+		object
+			sprite planet/lava0
+			distance 423
+			period 27.338
+		object
+			sprite planet/ice8
+			distance 531
+			period 38.451
+		object
+			sprite planet/ice7
+			distance 727
+			period 61.598
+
+planet "Disguised Wormhole"
+	description ""
+
+system Ryuit-Saqra
+	pos -1439.26 -1040.805
+	government Successor
+	habitable 7000
+	belt 1998 4
+	belt 2145 3
+	link Myiara-Nnesa
+	link Pelaa-Muora
+	asteroids "small rock" 2 3.8
+	asteroids "medium rock" 20 5.603
+	asteroids "large rock" 1 4.444
+	asteroids "small metal" 30 5.023
+	asteroids "medium metal" 31 3.993
+	asteroids "large metal" 82 6.118
+	minables neodymium 2 9.03
+	minables silver 6 6.166
+	minables lead 8 7.544
+	trade Clothing 251
+	trade Electronics 723
+	trade Equipment 526
+	trade Food 598
+	trade "Heavy Metals" 712
+	trade Industrial 643
+	trade "Luxury Goods" 1167
+	trade Medical 468
+	trade Metal 396
+	trade Plastic 286
+	object
+		sprite star/b0
+		period 10
+	object
+		sprite planet/desert9
+		distance 328
+		period 28.4
+	object Moliia-Cosa-Vasa
+		sprite planet/desert1
+		distance 1000.73
+		period 169.451
+		object
+			sprite planet/europa-b
+			distance 192
+			period 125.853
+	object
+		sprite planet/rock7
+		distance 1554
+		period 292.879
+	object
+		sprite planet/gas13-b
+		distance 3448
+		period 967.97
+		object
+			sprite planet/rock17-b
+			distance 307
+			period 331.285
+		object
+			sprite planet/europa
+			distance 413
+			period 397.042
+	object
+		sprite planet/gas9-b
+		distance 4549
+		period 1466.847
+
+system "Amber Well"
+	pos -1279.129 -1479.703
+	government "Rim Watcher"
+	link "Ash Prison"
+	link "Cinder Oubliette"
+
+system "Cold Warden"
+	pos -1246.963 -1302.051
+	government Uninhabited
+	"jump range" 80
+	link Maspa-Mavra
+
+system Uuoru-Kella
+	pos -1271.083 -1177.574
+	government Successor
+	habitable 11350
+	belt 1631 6
+	link Aaura-Kaska
+	link Maspa-Mavra
+	link Ofstond-Stir
+	link Valkkra-Uuoru
+	asteroids "small metal" 14 4.805
+	asteroids "medium metal" 146 4.93
+	asteroids "large metal" 1 6.178
+	minables titanium 4 8.02
+	minables iron 39 9.789
+	trade Clothing 341
+	trade Electronics 678
+	trade Equipment 431
+	trade Food 361
+	trade "Heavy Metals" 1082
+	trade Industrial 674
+	trade "Luxury Goods" 1245
+	trade Medical 673
+	trade Metal 473
+	trade Plastic 284
+	object
+		sprite star/b-giant
+	object Aava-Aasa-Khora
+		sprite planet/cloud2
+		distance 1500
+		period 300
+	object
+		sprite planet/ocean2-b
+		distance 3000
+		period 616.941
+
+system Maspa-Mavra
+	pos -1226.713 -1231.148
+	government Successor
+	link "Cold Warden"
+	link Khosa-Kaska
+	link Uuoru-Kella
+	link Valkkra-Uuoru
+	trade Clothing 305
+	trade Electronics 677
+	trade Equipment 425
+	trade Food 347
+	trade "Heavy Metals" 1108
+	trade Industrial 719
+	trade "Luxury Goods" 1267
+	trade Medical 723
+	trade Metal 478
+	trade Plastic 309
+
+system "Cinder Oubliette"
+	pos -1248.074 -1569.486
+	government "Rim Watcher"
+	link "Amber Well"
+
+system Valkkra-Uuoru
+	pos -1309.565 -1205.981
+	government Successor
+	habitable 3651.37
+	link Maspa-Mavra
+	link Uuoru-Kella
+	trade Clothing 347
+	trade Electronics 664
+	trade Equipment 419
+	trade Food 323
+	trade "Heavy Metals" 1052
+	trade Industrial 640
+	trade "Luxury Goods" 1217
+	trade Medical 691
+	trade Metal 423
+	trade Plastic 248
+	object
+		sprite star/k0
+		distance 155.228
+		period 61.049
+		offset 180
+	object
+		sprite star/a0
+		distance 40.772
+		period 61.049
+	object
+		sprite planet/fog0
+		distance 402
+		period 53.355
+	object
+		sprite planet/neptune-b
+		distance 907
+		period 180.819
+	object
+		sprite planet/gas6-hot
+		distance 1608
+		period 426.836
+		object
+			sprite planet/rock14-b
+			distance 246
+			period 100.976
+	object
+		sprite planet/desert4-b
+		distance 2129
+		period 650.273
+	object
+		sprite planet/gas1
+		distance 2859.251
+		period 1149.358
+		object
+			sprite planet/dust7
+			distance 419.157
+			period 408.756
+		object Khora-Vasa-Reyyaa
+			sprite planet/cloud4
+			distance 603
+			period 460.526
+	object
+		sprite planet/gas12
+		distance 5626
+		period 2793.391
+		object
+			sprite planet/ice0-b
+			distance 286
+			period 182.831
+
+system Pelaa-Muora
+	pos -1341.588 -1083.172
+	government Successor
+	habitable 12981.236
+	belt 1841 4
+	belt 1916 3
+	link Aaura-Kaska
+	link Chyyra-Osolaa
+	link Ryuit-Saqra
+	asteroids "small rock" 9 5.325
+	asteroids "medium rock" 83 4.2
+	asteroids "large rock" 7 6.825
+	asteroids "small metal" 9 6.375
+	asteroids "medium metal" 3 5.25
+	asteroids "large metal" 2 5.775
+	minables neodymium 7 6.338
+	minables copper 12 7.083
+	trade Clothing 282
+	trade Electronics 720
+	trade Equipment 464
+	trade Food 534
+	trade "Heavy Metals" 775
+	trade Industrial 638
+	trade "Luxury Goods" 1119
+	trade Medical 472
+	trade Metal 392
+	trade Plastic 295
+	object
+		sprite star/b3
+		distance 161.974
+		period 88.77
+		offset 180
+	object
+		sprite star/b-giant
+		distance 117.026
+		period 88.77
+	object
+		sprite planet/lava2-b
+		distance 474
+		period 36.23
+	object
+		sprite planet/lava1
+		distance 836
+		period 84.862
+	object Shassa-Wyra-Orrou
+		sprite planet/ocean8-b
+		distance 1154
+		period 137.629
+	object
+		sprite planet/gas13
+		distance 2229
+		period 369.46
+	object
+		sprite planet/gas1-b
+		distance 3367
+		period 685.909
+		object Uo-Oraa-Vayya
+			sprite planet/callisto-b
+			distance 502
+			period 294.356
+	object
+		sprite planet/gas4-b
+		distance 6701
+		period 1925.801
+
+system Myiara-Nnesa
+	pos -1531.38 -1003.662
+	government Successor
+	habitable 3450
+	belt 1179 3
+	link Chyyra-Osolaa
+	link Kella-Uoasa
+	link Maspa-Cavaasa
+	link Ryuit-Saqra
+	asteroids "large metal" 1 3.062
+	trade Clothing 264
+	trade Electronics 715
+	trade Equipment 491
+	trade Food 545
+	trade "Heavy Metals" 710
+	trade Industrial 617
+	trade "Luxury Goods" 1068
+	trade Medical 452
+	trade Metal 397
+	trade Plastic 320
+	object
+		sprite star/m-supergiant
+		period 10
+	object
+		sprite planet/gas6-b
+		distance 1311
+		period 323.262
+	object Yoqqa-Vasa-Vasa
+		sprite planet/gas16-b
+		distance 2153
+		period 680.325
+		object O-Vasa-Oa
+			sprite planet/ice8
+			distance 238
+			period 138.793
+	object
+		sprite planet/browndwarf-t
+		distance 2804
+		period 1011.154
+	object
+		sprite planet/neptune
+		distance 4811
+		period 2272.498
+		object
+			sprite planet/miranda
+			distance 238
+			period 173.691
+	object
+		sprite planet/jupiter
+		distance 9120
+		period 5931.202
+		object
+			sprite planet/desert4-b
+			distance 263
+			period 201.765
+	object
+		sprite planet/browndwarf-y
+		distance 11064
+		period 7925.354
+		object
+			sprite planet/rock7-b
+			distance 293
+			period 237.254
+		object
+			sprite planet/oberon-b
+			distance 398
+			period 489.011
+
+planet Aava-Aasa-Khora
+	landscape land/canyon0
+	description "Aava-Aasa-Khora is the capital world of the Successors."
+	spaceport "This planet has a spaceport."
+	government Successor
+	shipyard "Successor Heirloom"
+	outfitter "Successor Advanced"
+
+planet Saska-Aa-Noorr
+	attributes station
+	landscape land/station0
+	description "This small research station orbits the ancestral homeworld of the Successors."
+
+planet Mosaa-Ooa-Wyrdd
+	description "This is a Successor planet."
+
+planet Uo-Oraa-Vayya
+
+planet Shassa-Wyra-Orrou
+
+planet Yoqqa-Vasa-Vasa
+
+planet O-Vasa-Oa
+
+planet Moliia-Cosa-Vasa
+
+planet Khora-Vasa-Reyyaa
+	description "This is the personal residence of the monarch."
+
+system Chyyra-Osolaa
+	pos -1412.889 -995.912
+	government Successor
+	link Myiara-Nnesa
+	link Pelaa-Muora
+
+system Khosa-Kaska
+	pos -1156.116 -1208.481
+	government Successor
+	link Maspa-Mavra
+	link Ofstond-Stir
+
+system Maspa-Cavaasa
+	pos -1541.657 -851.352
+	government Successor
+	link Myiara-Nnesa
+
+system Kella-Uoasa
+	pos -1470.005 -1083.551
+	government Successor
+	link Myiara-Nnesa
+
+system Ryuia-Novaa
+	pos -593.62 -662.699
+	government Uninhabited
+
+system Uuoru-Sossa
+	pos -748.44 -641.343
+	government Uninhabited
+	link Avasaa-Novaa
+
+system Avasaa-Novaa
+	pos -633.458 -701.847
+	government Uninhabited
+	link Uuoru-Sossa
+
+system Kasi-Vasa-Novaa
+	pos -508.005 -661.731
+	government Uninhabited
+
 galaxy "Milky Way"
 	pos 0 0
 	sprite ui/galaxy

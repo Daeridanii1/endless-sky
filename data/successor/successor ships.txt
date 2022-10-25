@@ -1,0 +1,154 @@
+ship "Valkkyiara-Khorasaqra"
+	sprite "ship/successor heirloom med warship"
+	thumbnail "thumbnail/successor heirloom med warship"
+	"plural" "Valkkyiara-Khorasaqran"
+	attributes
+		licenses
+			"Heirloom"
+		category "Medium Warship"
+		"cost" 0
+		"shields" 2400
+		"hull" 116000
+		"required crew" 22
+		"bunks" 30
+		"mass" 315
+		"drag" 2.4
+		"heat dissipation" .75
+		"fuel capacity" 600
+		"cargo space" 24
+		"outfit space" 520
+		"weapon capacity" 220
+		"engine capacity" 130
+		"spinal mount" 1
+		weapon
+			"blast radius" 100
+			"shield damage" 1000
+			"hull damage" 500
+			"hit force" 1500
+	outfits
+		`"Veusa" Inductive Thruster`
+		`"Veusa" Inductive Steering`
+		`"Veusa" Inductive Reverser`
+		`"Ryuit" Inertial Core`
+		"Regal Shield Core"
+		"Hyperdrive"
+		"Successor Cooling"
+		"Bimodal Railgun" 4
+		"Photon Lance"
+	engine -5 69
+	engine 5 69
+	gun 0 -95 "Photon Lance"
+		under
+	gun -24 -26 "Bimodal Railgun"
+	gun -19 -39 "Bimodal Railgun"
+	gun 19 -39 "Bimodal Railgun"
+	gun 24 -26 "Bimodal Railgun"
+	turret 0 52.5
+	turret 0 65.5
+	"steering engine" -10 -65 
+		zoom .5
+		angle 45
+		right
+	"steering engine" 10 -65 
+		zoom .5
+		angle 315
+		left
+	"steering engine" -30 -5 
+		left
+		angle 180
+		zoom .7
+	"steering engine" 30 -5 
+		right
+		angle 180
+		zoom .7
+	"reverse engine" -30 -5 
+		zoom .7
+	"reverse engine" 30 -5 
+		zoom .7
+	leak "leak" 50 50
+	leak "flame" 30 80
+	explode "tiny explosion" 18
+	explode "small explosion" 36
+	explode "medium explosion" 24
+	explode "large explosion" 8
+	"final explode" "final explosion medium"
+	description "During the collapse of the Predecessors' empire, the high houses stored away as much of their wealth and property as they could manage, including their private fleets of warships, which were ultimately passed down for over a thousand years as priceless family heirlooms. Despite being far more powerful than anything else in Successor space, these vessels almost never leave the ground, since the high houses have no desire to risk these priceless and irreplacable ships that are so deeply intertwined with their family history."
+
+ship "Valkkyiara-Khosade (Unmaintained)"
+	sprite "ship/successor light warship rusted"
+	thumbnail "ship/successor light warship rusted"
+	"plural" "Valkkyiara-Khosaden"
+	"swizzle" 0
+	attributes
+		category "Medium Warship"
+		"cost" 0
+		"shields" 2400
+		"hull" 116000
+		"required crew" 22
+		"bunks" 30
+		"mass" 315
+		"drag" 2.4
+		"heat dissipation" .75
+		"fuel capacity" 600
+		"cargo space" 24
+		"outfit space" 520
+		"weapon capacity" 220
+		"engine capacity" 130
+		weapon
+			"blast radius" 100
+			"shield damage" 1000
+			"hull damage" 500
+			"hit force" 1500
+	outfits
+		"Mining Laser" 3
+		"Heatsink Launcher"
+
+		"RT-I Radiothermal"
+		"LP036a Battery Pack"
+		"D14-RN Shield Generator"
+		"Water Coolant System"
+		"Asteroid Scanner"
+		"Ramscoop"
+
+		"Greyhound Plasma Thruster"
+		"Greyhound Plasma Steering"
+		"Capybara Reverse Thruster"
+		"Scram Drive"
+	engine -5 69
+	engine 5 69
+	gun 0 -95
+		under
+	gun -24 -26
+	gun -19 -39
+	gun 19 -39
+	gun 24 -26
+	turret 0 52.5
+	turret 0 65.5
+	"steering engine" -10 -65 
+		zoom .5
+		angle 45
+		right
+	"steering engine" 10 -65 
+		zoom .5
+		angle 315
+		left
+	"steering engine" -30 -5 
+		left
+		angle 180
+		zoom .7
+	"steering engine" 30 -5 
+		right
+		angle 180
+		zoom .7
+	"reverse engine" -30 -5 
+		zoom .7
+	"reverse engine" 30 -5 
+		zoom .7
+	leak "leak" 50 50
+	leak "flame" 30 80
+	explode "tiny explosion" 18
+	explode "small explosion" 36
+	explode "medium explosion" 24
+	explode "large explosion" 8
+	"final explode" "final explosion medium"
+	description "During the collapse of the Predecessors' empire, the high houses stored away as much of their wealth and property as they could manage, including their private fleets of warships, which were ultimately passed down for over a thousand years as priceless family heirlooms. Despite being far more powerful than anything else in Successor space, these vessels almost never leave the ground, since the high houses have no desire to risk these priceless and irreplacable ships that are so deeply intertwined with their family history."
