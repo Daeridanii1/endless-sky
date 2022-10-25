@@ -9,7 +9,38 @@ government "Rim Watcher"
 shipyard "Successor Heirloom"
 	"Valkkyiara-Khorasaqra"
 
-outfitter "Successor Advanced"
+outfitter "Successor Basics"
+	"Successor Burst Laser"
+	`1-"Uurau" Betavoltaic Cell`
+	`4-"Kaska" Betavoltaic Cell`
+	"Common Shield Core"
+	`"Aqra" Inductive Thruster`
+	`"Aqra" Inductive Steering`
+	"Hyperdrive"
+
+outfitter "Successor Civilian"
+	"Successor Burst Laser"
+	`1-"Uurau" Betavoltaic Cell`
+	`4-"Kaska" Betavoltaic Cell`
+	`7-"Ruuv" Betavoltaic Cell`
+	"Common Shield Core"
+	`"Aqra" Inductive Thruster`
+	`"Aqra" Inductive Steering`
+	`"Aqra" Inductive Reverser`
+	`"Chyyra" Inductive Thruster`
+	`"Chyyra" Inductive Steering`
+	`"Chyyra" Inductive Reverser`
+	"Successor Cooling"
+	"Resistance Module"
+	"Cargo Expansion"
+	"Outfits Expansion"
+	"Small Bunk Room"
+	"Bunk Room"
+	"Hyperdrive"
+	"Fuel Pod"
+	"Ramscoop"
+
+outfitter "Successor All"
 	"Bimodal Railgun"
 	"Photon Battery"
 	"Photon Lance"
@@ -37,3 +68,6 @@ outfitter "Successor Advanced"
 	"Outfits Expansion"
 	"Small Bunk Room"
 	"Bunk Room"
+	"Hyperdrive"
+	"Fuel Pod"
+	"Ramscoop"
