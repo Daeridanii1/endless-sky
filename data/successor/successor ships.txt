@@ -6,9 +6,9 @@ ship "Valkkyiara-Khorasaqra"
 		licenses
 			"Heirloom"
 		category "Medium Warship"
-		"cost" 0
-		"shields" 2400
-		"hull" 116000
+		"cost" 114000000
+		"shields" 5000
+		"hull" 112500
 		"required crew" 22
 		"bunks" 30
 		"mass" 315
@@ -74,76 +74,70 @@ ship "Valkkyiara-Khorasaqra"
 	"final explode" "final explosion medium"
 	description "During the collapse of the Predecessors' empire, the high houses stored away as much of their wealth and property as they could manage, including their private fleets of warships, which were ultimately passed down for over a thousand years as priceless family heirlooms. Despite being far more powerful than anything else in Successor space, these vessels almost never leave the ground, since the high houses have no desire to risk these priceless and irreplacable ships that are so deeply intertwined with their family history."
 
-ship "Valkkyiara-Khosade (Unmaintained)"
-	sprite "ship/successor light warship rusted"
-	thumbnail "ship/successor light warship rusted"
-	"plural" "Valkkyiara-Khosaden"
-	"swizzle" 0
+ship "Successor Harrier"
+	sprite "ship/successor med warship"
+	thumbnail "thumbnail/successor med warship"
 	attributes
+		licenses
+			"High Houses"
 		category "Medium Warship"
-		"cost" 0
-		"shields" 2400
-		"hull" 116000
-		"required crew" 22
-		"bunks" 30
-		"mass" 315
+		"cost" 23000000
+		"shields" 4000
+		"hull" 43000
+		"required crew" 18
+		"bunks" 25
+		"mass" 280
 		"drag" 2.4
 		"heat dissipation" .75
-		"fuel capacity" 600
-		"cargo space" 24
-		"outfit space" 520
-		"weapon capacity" 220
-		"engine capacity" 130
+		"fuel capacity" 400
+		"cargo space" 19
+		"outfit space" 450
+		"weapon capacity" 200
+		"engine capacity" 120
 		weapon
 			"blast radius" 100
 			"shield damage" 1000
 			"hull damage" 500
 			"hit force" 1500
 	outfits
-		"Mining Laser" 3
-		"Heatsink Launcher"
-
-		"RT-I Radiothermal"
-		"LP036a Battery Pack"
-		"D14-RN Shield Generator"
-		"Water Coolant System"
-		"Asteroid Scanner"
-		"Ramscoop"
-
-		"Greyhound Plasma Thruster"
-		"Greyhound Plasma Steering"
-		"Capybara Reverse Thruster"
-		"Scram Drive"
-	engine -5 69
-	engine 5 69
-	gun 0 -95
-		under
-	gun -24 -26
-	gun -19 -39
-	gun 19 -39
-	gun 24 -26
-	turret 0 52.5
-	turret 0 65.5
+		`"Chyyra" Inductive Thruster`
+		`"Chyyra" Inductive Steering`
+		`"Aqra" Inductive Reverser`
+		`"Nnesa" Inertial Core` 2
+		"Noble Shield Core"
+		"Hyperdrive"
+		"Successor Cooling"
+		"Bimodal Railgun" 3
+		"Corrosive Torpedo Launcher" 2
+		"Corrosive Torpedo" 240
+	turret -32 -7
+	turret 32 -7
+	engine 0 40
+	gun -25 -41 "Bimodal Railgun"
+	gun -20 -56 "Corrosive Torpedo Launcher"
+	gun 20 -56 "Corrosive Torpedo Launcher"
+	gun 25 -41 "Bimodal Railgun"
+	gun 0 -95 "Bimodal Railgun"
 	"steering engine" -10 -65 
-		zoom .5
+		zoom .4
 		angle 45
 		right
 	"steering engine" 10 -65 
-		zoom .5
+		zoom .4
 		angle 315
 		left
 	"steering engine" -30 -5 
 		left
 		angle 180
-		zoom .7
+		zoom .6
 	"steering engine" 30 -5 
 		right
 		angle 180
-		zoom .7
+		zoom .6
 	"reverse engine" -30 -5 
-		zoom .7
+		zoom .6
 	"reverse engine" 30 -5 
-		zoom .7
+		zoom .6
 	leak "leak" 50 50
 	leak "flame" 30 80
 	explode "tiny explosion" 18
@@ -151,4 +145,112 @@ ship "Valkkyiara-Khosade (Unmaintained)"
 	explode "medium explosion" 24
 	explode "large explosion" 8
 	"final explode" "final explosion medium"
-	description "During the collapse of the Predecessors' empire, the high houses stored away as much of their wealth and property as they could manage, including their private fleets of warships, which were ultimately passed down for over a thousand years as priceless family heirlooms. Despite being far more powerful than anything else in Successor space, these vessels almost never leave the ground, since the high houses have no desire to risk these priceless and irreplacable ships that are so deeply intertwined with their family history."
+	description "This medium Successor warship makes up the bulk of the fleets of the various high houses. It is compact, fast, and durable for a ship of its size, but has relatively limited internal space, and a short operational range. The captains of these ships are often up-and-coming Successor pilots hoping to prove themselves to one of the high houses by demonstrating their mastery of the vessel; while most, of course, do not, the ship's ubiquity and good performance do make it an excellent starting point for those who do."
+
+ship `"Kvelqde" Shuttle`
+	sprite "ship/successor shuttle"
+	thumbnail "thumbnail/successor shuttle"
+	attributes
+		licenses
+			"Successor"
+		category "Transport"
+		"cost" 450000
+		"shields" 350
+		"hull" 2350
+		"required crew" 1
+		"bunks" 9
+		"mass" 85
+		"drag" 1.9
+		"heat dissipation" 0.9
+		"fuel capacity" 500
+		"cargo space" 25
+		"outfit space" 160
+		"weapon capacity" 55
+		"engine capacity" 45
+		weapon
+			"blast radius" 100
+			"shield damage" 1000
+			"hull damage" 500
+			"hit force" 1500
+	outfits
+		`"Aqra" Inductive Thruster`
+		`"Aqra" Inductive Steering`
+		`"Aqra" Inductive Reverser`
+		`1-"Uurau" Betavoltaic Cell` 2
+		"Successor Pulse Laser"
+		"Common Shield Core"
+		"Hyperdrive"
+		"Burst Anti-Missile Turret"
+
+	engine -10 32
+	engine 10 32
+	turret 0 -4.5 "Burst Anti-Missile Turret"
+	gun 0 -30.5	"Successor Pulse Laser"
+	leak "leak" 50 50
+	leak "flame" 30 80
+	explode "tiny explosion" 18
+	explode "small explosion" 36
+	explode "medium explosion" 24
+	explode "large explosion" 8
+	"final explode" "final explosion medium"
+	description "This tiny shuttle is the smallest vessel operating in Successor space, and the first ship that new Successor pilots are able to get their arms on. Despite their small size, they are capable multipurpose vessels, and are frequently used for transporting passengers and cargo, for short-duration research expeditions, and even as very light combat craft, capable of just barely fitting one fixed and one turreted pulse laser."
+
+ship `Successor Freighter`
+	sprite "ship/successor freighter"
+	thumbnail "thumbnail/successor freighter"
+	attributes
+		licenses
+			"Successor"
+		category "Light Freighter"
+		"cost" 3250000
+		"shields" 1200
+		"hull" 10400
+		"required crew" 6
+		"bunks" 20
+		"mass" 320
+		"drag" 2.6
+		"heat dissipation" 0.8
+		"fuel capacity" 500
+		"cargo space" 120
+		"outfit space" 260
+		"weapon capacity" 125
+		"engine capacity" 130
+		weapon
+			"blast radius" 100
+			"shield damage" 1000
+			"hull damage" 500
+			"hit force" 1500
+	outfits
+		`"Aqra" Inductive Thruster`
+		`"Aqra" Inductive Steering`
+		`"Aqra" Inductive Reverser`
+		`4-"Kaska" Betavoltaic Cell`
+		"Pulse Laser Turret"
+		"Common Shield Core"
+		"Hyperdrive"
+		"Burst Anti-Missile Turret" 2
+
+	turret -39 13
+	turret 0 -8 "Pulse Laser Turret"
+	turret 39 13
+	gun -8 -58
+	gun 8 -58
+	engine -48 52
+	engine -35 60
+	engine 35 60
+	engine 48 52
+	leak "leak" 50 50
+	leak "flame" 30 80
+	explode "tiny explosion" 18
+	explode "small explosion" 36
+	explode "medium explosion" 24
+	explode "large explosion" 8
+	"final explode" "final explosion medium"
+	description "This tiny shuttle is the smallest vessel operating in Successor space, and the first ship that new Successor pilots are able to get their arms on. Despite their small size, they are capable multipurpose vessels, and are frequently used for transporting passengers and cargo, for short-duration research expeditions, and even as very light combat craft, capable of just barely fitting one fixed and one turreted pulse laser."
+
+ship "Successor Freighter" "Successor Freighter Loaded Half"
+	sprite "ship/successor freighter loaded 1"
+	add attributes
+		"mass" 450
+		"cargo space" 450
+

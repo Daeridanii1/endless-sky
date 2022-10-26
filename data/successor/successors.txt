@@ -8,9 +8,13 @@ government "Rim Watcher"
 
 shipyard "Successor Heirloom"
 	"Valkkyiara-Khorasaqra"
+	"Successor Harrier"
+	`"Kvelqde" Shuttle`
+	"Successor Freighter"
+	"Successor Freighter" "Successor Freighter Loaded Half"
 
 outfitter "Successor Basics"
-	"Successor Burst Laser"
+	"Successor Pulse Laser"
 	`1-"Uurau" Betavoltaic Cell`
 	`4-"Kaska" Betavoltaic Cell`
 	"Common Shield Core"
@@ -19,7 +23,8 @@ outfitter "Successor Basics"
 	"Hyperdrive"
 
 outfitter "Successor Civilian"
-	"Successor Burst Laser"
+	"Successor Pulse Laser"
+	"Pulse Laser Turret"
 	`1-"Uurau" Betavoltaic Cell`
 	`4-"Kaska" Betavoltaic Cell`
 	`7-"Ruuv" Betavoltaic Cell`
@@ -39,6 +44,9 @@ outfitter "Successor Civilian"
 	"Hyperdrive"
 	"Fuel Pod"
 	"Ramscoop"
+	"Corrosive Torpedo Launcher"
+	"Corrosive Torpedo"
+	"Burst Anti-Missile Turret"
 
 outfitter "Successor All"
 	"Bimodal Railgun"
@@ -48,7 +56,8 @@ outfitter "Successor All"
 	"Noble Shield Core"
 	"Regal Shield Core"
 	"Resistance Module"
-	"Successor Burst Laser"
+	"Successor Pulse Laser"
+	"Pulse Laser Turret"
 	"Successor Cooling"
 	`"Nnesa" Inertial Core`
 	`"Ryuit" Inertial Core`
@@ -71,3 +80,7 @@ outfitter "Successor All"
 	"Hyperdrive"
 	"Fuel Pod"
 	"Ramscoop"
+	"0 Hyperjump Drive"
+	"Corrosive Torpedo Launcher"
+	"Corrosive Torpedo"
+	"Burst Anti-Missile Turret"

@@ -361,6 +361,8 @@ system Uuoru-Kella
 	trade Medical 673
 	trade Metal 473
 	trade Plastic 284
+	fleet "Light Successor Freight" 200
+	fleet "Medium Successor Freight" 500
 	object
 		sprite star/b-giant
 	object Aava-Aasa-Khora

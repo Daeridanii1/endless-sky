@@ -22,9 +22,8 @@ outfit "Common Shield Core"
 	"mass" 15
 	"outfit space" -15
 	"shield generation" 2.1
-	"shield protection" -0.25
+	"shield protection" -0.33
 	"shield energy" 2.6
-	"depleted shield delay" 60
 	"description" "At their peak, the Predecessors were feared not for their ability to overpower their enemies, but through their skill at outlasting them. Many generations later, this philosophy is still reflected in modern Successor shield cores, which are exceptionally powerful for their size but weaken the shield's resistance to incoming fire, allowing Successor ships to recover quickly from sustained damage."
 
 outfit "Noble Shield Core"
@@ -36,9 +35,8 @@ outfit "Noble Shield Core"
 	"mass" 30
 	"outfit space" -30
 	"shield generation" 4.8
-	"shield protection" -0.25
+	"shield protection" -0.33
 	"shield energy" 7.8
-	"depleted shield delay" 120
 	"description" "By modulating the power allocation to shields at rest, this modern Successor shield core can make them much more responsive, both to regeneration harmonics and incoming damage. A Successor warship equipped with one of these can shrug off the combined damage output of several lesser attackers."
 
 outfit "Regal Shield Core"
@@ -50,9 +48,8 @@ outfit "Regal Shield Core"
 	"mass" 55
 	"outfit space" -55
 	"shield generation" 10.5
-	"shield protection" -0.25
+	"shield protection" -0.33
 	"shield energy" 15.0
-	"depleted shield delay" 180
 	"description" "Many in the high houses disapprove of the design of this shield core, protesting that it is too ugly and utilitarian to be installed on their vessels. Mostly, however, these complaints are just for show, as the fantastic regenerative capabilities of any shield equipped with one of these cores are alluring to even the most aesthetically-minded of Successor families."
 
 outfit `1-"Uurau" Betavoltaic Cell`
@@ -65,7 +62,7 @@ outfit `1-"Uurau" Betavoltaic Cell`
 	"outfit space" -10
 	"energy generation" 0.85
 	"heat generation" .65
-	"energy capacity" 500
+	"energy capacity" 1200
 	description "Unlike most radioisotope generators, this power cell operates by extracting electricity directly from beta particles produced by radioactive decay. While this process yields less energy per unit of material, it also produces very little waste heat."
 
 outfit `4-"Kaska" Betavoltaic Cell``
@@ -78,7 +75,7 @@ outfit `4-"Kaska" Betavoltaic Cell``
 	"outfit space" -35
 	"energy generation" 3.5
 	"heat generation" 2.6
-	"energy capacity" 1100
+	"energy capacity" 3100
 	description "The Successors' betavoltaic generators are products of a time shortly after the collapse of the Predecessors' empire, marked by thriftiness and necessity. They did not appeal to the traditional Successor values of beauty or heritage, but instead to the sad new reality of desperation and loneliness that their first operators found themselves mired in."
 
 outfit `7-"Ruuv" Betavoltaic Cell`
@@ -91,7 +88,7 @@ outfit `7-"Ruuv" Betavoltaic Cell`
 	"outfit space" -75
 	"energy generation" 8.1
 	"heat generation" 5.3
-	"energy capacity" 2500
+	"energy capacity" 8500
 	description "This large modular betavoltaic generator is designed to be resilient and dependable: if one of its component cells fails, it can continue to operate at only a slightly reduced output. The Successors eschew its use on warships because of its low energy density, but it sees substantial use aboard their merchant and archaeological craft."
 
 outfit `"Nnesa" Inertial Core`
@@ -167,7 +164,7 @@ outfit `"Aqra" Inductive Thruster`
 	"thrusting heat" 1.1
 	"afterburner thrust" 17.5
 	"afterburner shields" 4.5
-	"afterburner energy" 4.1
+	"afterburner energy" 3.2
 	"afterburner heat" 5.0
 	"afterburner effect" "ionic afterburner"
 	"flare sprite" "effect/atomic flare/tiny"
@@ -224,7 +221,7 @@ outfit `"Chyyra" Inductive Thruster`
 	"thrusting heat" 2.8
 	"afterburner thrust" 50.0
 	"afterburner shields" 8.0
-	"afterburner energy" 8.2
+	"afterburner energy" 6.8
 	"afterburner heat" 10.0
 	"afterburner effect" "ionic afterburner"
 	"flare sprite" "effect/atomic flare/medium"
@@ -281,7 +278,7 @@ outfit `"Veusa" Inductive Thruster`
 	"thrusting heat" 3.5
 	"afterburner thrust" 146.0
 	"afterburner shields" 18.0
-	"afterburner energy" 12.2
+	"afterburner energy" 9.0
 	"afterburner heat" 25.0
 	"afterburner effect" "ionic afterburner"
 	"flare sprite" "effect/atomic flare/large"

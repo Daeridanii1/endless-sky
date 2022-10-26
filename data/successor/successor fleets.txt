@@ -1,0 +1,42 @@
+fleet "Light Successor Freight"
+    government "Successor"
+    names "civilian"
+    personality timid appeasing
+    variant 60
+        `"Kvelqde" Shuttle`
+    variant 40
+        `"Kvelqde" Shuttle` 2
+    variant 30
+        `"Kvelqde" Shuttle`
+        "Successor Freighter"
+    variant 20
+        `"Kvelqde" Shuttle` 2
+        "Successor Freighter"
+    variant 20
+        "Successor Freighter"
+    variant 20
+        "Successor Freighter Loaded Half"
+    variant 20
+        "Successor Freighter Loaded Half"
+        `"Kvelqde" Shuttle`
+    variant 10
+        "Successor Freighter Loaded Half"
+        `"Kvelqde" Shuttle` 2
+
+fleet "Medium Successor Freight"
+    government "Successor"
+    names "civilian"
+    personality timid appeasing
+    variant 20
+        `"Kvelqde" Shuttle` 4
+        "Successor Freighter"
+        "Successor Freighter Loaded Half"
+    variant 10
+        `"Kvelqde" Shuttle` 2
+        "Successor Freighter" 2
+        "Successor Freighter Loaded Half" 2
+    variant 10
+        `"Kvelqde" Shuttle` 3
+        "Successor Freighter"
+        "Successor Freighter Loaded Half"
+        "Successor Harrier"
