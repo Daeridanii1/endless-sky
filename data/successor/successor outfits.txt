@@ -65,7 +65,20 @@ outfit `1-"Uurau" Betavoltaic Cell`
 	"energy capacity" 1200
 	description "Unlike most radioisotope generators, this power cell operates by extracting electricity directly from beta particles produced by radioactive decay. While this process yields less energy per unit of material, it also produces very little waste heat."
 
-outfit `4-"Kaska" Betavoltaic Cell``
+outfit `OC-"Mavra" Betavoltaic Cell`
+	category "Power"
+	licenses
+		Successor
+	cost 392000
+	thumbnail "outfit/overcharged betavoltaic"
+	"mass" 12
+	"outfit space" -12
+	"energy generation" 2.95
+	"heat generation" 6.8
+	"energy capacity" 500
+	description "This betavoltaic generator has had most of its auxiliary batteries removed, along with the majority of its radiation shielding and safety interlocks: the result is surprisingly energy-dense but produces a lot of heat, and most Successor pilots prefer to keep a bulkhead between themselves and one of these potent little cores at all times."
+
+outfit `4-"Kaska" Betavoltaic Cell`
 	category "Power"
 	licenses
 		Successor

@@ -8,19 +8,19 @@ fleet "Light Successor Freight"
         `"Kvelqde" Shuttle` 2
     variant 30
         `"Kvelqde" Shuttle`
-        "Successor Freighter"
+        `"Myaede" Freighter`
     variant 20
         `"Kvelqde" Shuttle` 2
-        "Successor Freighter"
+        `"Myaede" Freighter`
     variant 20
-        "Successor Freighter"
+        `"Myaede" Freighter`
     variant 20
-        "Successor Freighter Loaded Half"
+        "Successor Freighter 50"
     variant 20
-        "Successor Freighter Loaded Half"
+        "Successor Freighter 50"
         `"Kvelqde" Shuttle`
     variant 10
-        "Successor Freighter Loaded Half"
+        "Successor Freighter 100"
         `"Kvelqde" Shuttle` 2
 
 fleet "Medium Successor Freight"
@@ -29,14 +29,19 @@ fleet "Medium Successor Freight"
     personality timid appeasing
     variant 20
         `"Kvelqde" Shuttle` 4
-        "Successor Freighter"
-        "Successor Freighter Loaded Half"
+        `"Myaede" Freighter`
+        "Successor Freighter 50"
     variant 10
         `"Kvelqde" Shuttle` 2
-        "Successor Freighter" 2
-        "Successor Freighter Loaded Half" 2
+        `"Myaede" Freighter` 2 
+        "Successor Freighter 50"
+        "Successor Freighter 100"
     variant 10
         `"Kvelqde" Shuttle` 3
-        "Successor Freighter"
-        "Successor Freighter Loaded Half"
+        `"Myaede" Freighter`
+        "Successor Freighter 100"
         "Successor Harrier"
+    variant 20
+        `"Kvelqde" Shuttle` 4
+        "Successor Harrier"
+

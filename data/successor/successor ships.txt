@@ -110,34 +110,33 @@ ship "Successor Harrier"
 		"Bimodal Railgun" 3
 		"Corrosive Torpedo Launcher" 2
 		"Corrosive Torpedo" 240
-	turret -32 -7
-	turret 32 -7
-	engine 0 40
-	gun -25 -41 "Bimodal Railgun"
-	gun -20 -56 "Corrosive Torpedo Launcher"
-	gun 20 -56 "Corrosive Torpedo Launcher"
-	gun 25 -41 "Bimodal Railgun"
-	gun 0 -95 "Bimodal Railgun"
-	"steering engine" -10 -65 
-		zoom .4
-		angle 45
+	"steering engine" -32 90
+		zoom .7
 		right
-	"steering engine" 10 -65 
-		zoom .4
-		angle 315
+	engine 0 60
+	"steering engine" 32 90
+		zoom .7
 		left
-	"steering engine" -30 -5 
-		left
+	gun -26 -48 "Bimodal Railgun"
+	gun -21 -63
+	gun 21 -63
+	gun 27 -48 "Bimodal Railgun"
+	gun 0 -97 "Bimodal Railgun"
+	turret -32 -8
+	turret 0 -51
+	turret 32 -8
+	"reverse engine" -32 -32
+		zoom .7
+	"reverse engine" 32 -32
+		zoom .7
+	"steering engine" -32 -32
+		zoom .7
 		angle 180
-		zoom .6
-	"steering engine" 30 -5 
+		left
+	"steering engine" 32 -32
+		zoom .7
+		angle 180
 		right
-		angle 180
-		zoom .6
-	"reverse engine" -30 -5 
-		zoom .6
-	"reverse engine" 30 -5 
-		zoom .6
 	leak "leak" 50 50
 	leak "flame" 30 80
 	explode "tiny explosion" 18
@@ -146,6 +145,73 @@ ship "Successor Harrier"
 	explode "large explosion" 8
 	"final explode" "final explosion medium"
 	description "This medium Successor warship makes up the bulk of the fleets of the various high houses. It is compact, fast, and durable for a ship of its size, but has relatively limited internal space, and a short operational range. The captains of these ships are often up-and-coming Successor pilots hoping to prove themselves to one of the high houses by demonstrating their mastery of the vessel; while most, of course, do not, the ship's ubiquity and good performance do make it an excellent starting point for those who do."
+
+ship `Successor Interceptor`
+	sprite "ship/successor interceptor"
+	thumbnail "thumbnail/successor interceptor"
+	attributes
+		licenses
+			"Successor"
+		category "Interceptor"
+		"cost" 450000
+		"shields" 850
+		"hull" 7550
+		"required crew" 1
+		"bunks" 2
+		"mass" 75
+		"drag" 1.4
+		"heat dissipation" 0.9
+		"fuel capacity" 300
+		"cargo space" 5
+		"outfit space" 220
+		"weapon capacity" 90
+		"engine capacity" 80
+		weapon
+			"blast radius" 100
+			"shield damage" 1000
+			"hull damage" 500
+			"hit force" 1500
+	outfits
+		`"Aqra" Inductive Thruster`
+		`"Aqra" Inductive Steering`
+		`"Aqra" Inductive Reverser`
+		`4-"Kaska" Betavoltaic Cell`
+		"Bimodal Railgun" 3
+		"Common Shield Core"
+		"Hyperdrive"
+
+	gun 0 -38
+	gun -7 -21
+	gun 7 -21
+	turret 0 4
+	engine -7 40
+	engine 7 40
+	"steering engine" 20 30
+		zoom .6
+		left
+	"steering engine" -20 30
+		zoom .6
+		right
+	"reverse engine" -20 -2
+		zoom .6
+	"reverse engine" 20 -2
+		zoom .6
+	"steering engine" -20 -2
+		zoom .6
+		angle 180
+		left
+	"steering engine" 20 -2
+		zoom .6
+		angle 180
+		right
+	leak "leak" 50 50
+	leak "flame" 30 80
+	explode "tiny explosion" 18
+	explode "small explosion" 36
+	explode "medium explosion" 24
+	explode "large explosion" 8
+	"final explode" "final explosion medium"
+	description "The Successors have limited experience in making warships this small, and while their attempt at an interceptor is durable and sports a surprising amount of firepower for a ship of its size, it is also plagued with power and propulsion issues as most of their existing technology was either too large or not powerful enough to yield effective performance. The result is a ship that ambitious pilots call a challenge and prudent pilots call a deathtrap, but continues to see use because of its heavy armament."
 
 ship `"Kvelqde" Shuttle`
 	sprite "ship/successor shuttle"
@@ -195,7 +261,7 @@ ship `"Kvelqde" Shuttle`
 	"final explode" "final explosion medium"
 	description "This tiny shuttle is the smallest vessel operating in Successor space, and the first ship that new Successor pilots are able to get their arms on. Despite their small size, they are capable multipurpose vessels, and are frequently used for transporting passengers and cargo, for short-duration research expeditions, and even as very light combat craft, capable of just barely fitting one fixed and one turreted pulse laser."
 
-ship `Successor Freighter`
+ship `"Myaede" Freighter`
 	sprite "ship/successor freighter"
 	thumbnail "thumbnail/successor freighter"
 	attributes
@@ -211,8 +277,8 @@ ship `Successor Freighter`
 		"drag" 2.6
 		"heat dissipation" 0.8
 		"fuel capacity" 500
-		"cargo space" 120
-		"outfit space" 260
+		"cargo space" 125
+		"outfit space" 275
 		"weapon capacity" 125
 		"engine capacity" 130
 		weapon
@@ -246,11 +312,99 @@ ship `Successor Freighter`
 	explode "medium explosion" 24
 	explode "large explosion" 8
 	"final explode" "final explosion medium"
-	description "This tiny shuttle is the smallest vessel operating in Successor space, and the first ship that new Successor pilots are able to get their arms on. Despite their small size, they are capable multipurpose vessels, and are frequently used for transporting passengers and cargo, for short-duration research expeditions, and even as very light combat craft, capable of just barely fitting one fixed and one turreted pulse laser."
+	description `The "Myaede" is neither elegant nor fast, but it has remained the mainstay of Successor commerce since before the collapse of the old empire over a thousand years ago, boasting a spacious cargo hold, heavy armor, and a flexible enough weapons layout to let it fight back in a pinch. Much like the grand heirlooms of the high houses, a familial "Myaede" is often passed down through the lineage of spacefaring low-born Successors, and many of the pilots flying these first took the helm as children under a grandparent's watchful gaze.`
 
-ship "Successor Freighter" "Successor Freighter Loaded Half"
-	sprite "ship/successor freighter loaded 1"
+ship `"Myaede" Freighter` "Successor Freighter 50"
+	sprite "ship/successor freighter 50"
 	add attributes
-		"mass" 450
-		"cargo space" 450
+		"mass" 500
+		"cargo space" 500
+	gun -3 -108
+	gun 3 -108
+	turret -41 -46
+	turret 0 -66
+	turret 41 -46
+	engine -48 -9
+	engine -34 -1
+	engine 34 -1
+	engine 48 -9
+ship `"Myaede" Freighter` "Successor Freighter 100"
+	sprite "ship/successor freighter 100"
+	add attributes
+		"mass" 900
+		"cargo space" 900
+	gun -3 -161
+	gun 3 -161
+	turret -41 -99
+	turret 0 -119
+	turret 41 -99
+	engine -48 -60
+	engine -34 -52
+	engine 34 -52
+	engine 48 -60
+
+ship `Successor Fighter`
+	sprite "ship/successor fighter"
+	thumbnail "thumbnail/successor fighter"
+	attributes
+		licenses
+			"High Houses"
+		category "Fighter"
+		"cost" 350000
+		"shields" 1100
+		"hull" 6900
+		"required crew" 1
+		"bunks" 1
+		"mass" 70
+		"drag" 1.3
+		"heat dissipation" 0.9
+		"outfit space" 210
+		"weapon capacity" 90
+		"engine capacity" 75
+		weapon
+			"blast radius" 100
+			"shield damage" 1000
+			"hull damage" 500
+			"hit force" 1500
+	outfits
+		`"Aqra" Inductive Thruster` 2
+		`"Aqra" Inductive Steering`
+		`"Aqra" Inductive Reverser`
+		`OC-"Mavra" Betavoltaic Cell` 2
+		`1-"Uurau" Betavoltaic Cell`
+		"Successor Cooling"
+		"Bimodal Railgun" 3
+		"Common Shield Core"
+
+	gun 0 -38
+	gun -7 -21
+	gun 7 -21
+	engine -7 40
+	engine 7 40
+	"steering engine" 20 30
+		zoom .6
+		left
+	"steering engine" -20 30
+		zoom .6
+		right
+	"reverse engine" -20 -2
+		zoom .6
+	"reverse engine" 20 -2
+		zoom .6
+	"steering engine" -20 -2
+		zoom .6
+		angle 180
+		left
+	"steering engine" 20 -2
+		zoom .6
+		angle 180
+		right
+	leak "leak" 50 50
+	leak "flame" 30 80
+	explode "tiny explosion" 18
+	explode "small explosion" 36
+	explode "medium explosion" 24
+	explode "large explosion" 8
+	"final explode" "final explosion medium"
+	description "Unwilling to give up on the design of the [Interceptor], House [House] have slightly altered the ship to function as a carrier-based fightercraft, and have found a surprising degree of success. In the absence of large and heavy components like the hyperdrive, fuel tanks, and turret mount, the [Fighter] becomes a tough and deadly carried combat craft that House [House] uses to protect its short-range interests, and to project power at a distance with in combination with a carrier."
 

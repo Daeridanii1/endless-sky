@@ -1,5 +1,5 @@
 government Successor
-	swizzle 5
+	swizzle 0
 	color 0 1 0.853
 
 government "Rim Watcher"
@@ -10,8 +10,11 @@ shipyard "Successor Heirloom"
 	"Valkkyiara-Khorasaqra"
 	"Successor Harrier"
 	`"Kvelqde" Shuttle`
-	"Successor Freighter"
-	"Successor Freighter" "Successor Freighter Loaded Half"
+	`"Myaede" Freighter`
+	`Successor Interceptor`
+	`Successor Fighter`
+	"Successor Freighter 50"
+	"Successor Freighter 100"
 
 outfitter "Successor Basics"
 	"Successor Pulse Laser"
@@ -64,6 +67,7 @@ outfitter "Successor All"
 	`1-"Uurau" Betavoltaic Cell`
 	`4-"Kaska" Betavoltaic Cell`
 	`7-"Ruuv" Betavoltaic Cell`
+	`OC-"Mavra" Betavoltaic Cell`
 	`"Aqra" Inductive Thruster`
 	`"Aqra" Inductive Steering`
 	`"Aqra" Inductive Reverser`
