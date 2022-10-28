@@ -88,6 +88,43 @@ outfit "Bimodal Switch"
 		"discharge damage" 0.6
 		"hull damage" 4
 
+outfit "Shatter Cannon"
+	category "Guns"
+	cost 1370000
+	thumbnail "outfit/bimodal railgun"
+	licenses
+		"High Houses"
+	"mass" 12
+	"outfit space" -12
+	"weapon capacity" -12
+	"gun ports" -1
+	weapon
+		sound "pulse"
+		"velocity" 0
+		"lifetime" 0
+		"range override" 375
+		"velocity override" 25
+		"burst count" 5
+		"burst reload" 3
+		"reload" 45
+		"firing energy" 15
+		"firing heat" 40
+		"cluster"
+		"submunition" "Shatter Projectile" 3
+	description `Designed as a short-range weapon to complement the Successors' fast-attack craft, the Shatter Cannon fires a quick burst of relatively inaccurate projectiles before enjoying a lengthy reload. While landing all the projectiles in a burst on a single target is improbable, the theoretical damage for doing so is quite enticing.`
+
+outfit "Shatter Projectile"
+	weapon
+		sprite "projectile/ion rain"
+		"hit effect" "ion rain impact"
+		"inaccuracy" 20
+		"velocity" 25
+		"lifetime" 10
+		"random lifetime" 5
+		"slowing damage" 0.5
+		"shield damage" 52
+		"hull damage" 48
+
 outfit "Successor Pulse Laser"
 	category "Guns"
 	cost 69000
@@ -154,7 +191,7 @@ outfit "Corrosive Torpedo Launcher"
 	category "Secondary Weapons"
 	cost 350000
 	licenses
-		"Successor"
+		"High Houses"
 	thumbnail "outfit/corrosive torpedo launcher"
 	"mass" 30
 	"outfit space" -35
@@ -198,12 +235,81 @@ outfit "Corrosive Torpedo"
 	plural "Corrosive Torpedoes"
 	category "Ammunition"
 	licenses
-		"Successor"
+		"High Houses"
 	cost 2700
 	thumbnail "outfit/corrosive torpedo"
 	"mass" .5
 	"corrosive torpedo capacity" -1
 	description "Corrosive Torpedoes are ammunition for the Corrosive Torpedo Launcher. You cannot install Corrosive Torpedoes unless you have also installed a launcher to fire them from."
+
+outfit "Impeder Missile"
+	category "Ammunition"
+	cost 1000
+	thumbnail "outfit/piercer"
+	licenses
+		"Successor"
+	"mass" .3
+	"impeder capacity" -1
+	description "This missile is fired from a Piercer Missile Launcher."
+
+outfit "Impedance Missile Launcher"
+	category "Secondary Weapons"
+	cost 593000
+	thumbnail "outfit/piercer launcher"
+	licenses
+		"Successor"
+	"mass" 18
+	"outfit space" -27
+	"weapon capacity" -27
+	"energy capacity" 50
+	"gun ports" -1
+	"impeder capacity" 240
+	weapon
+		sprite "projectile/piercer"
+			"frame rate" 5
+			"random start frame"
+		sound "piercer"
+		ammo "Impeder Missile"
+		icon "icon/piercer"
+		"fire effect" "piercer fire"
+		"hit effect" "piercer impact"
+		"inaccuracy" 8
+		"turn" 6.5
+		"homing" 4
+		"velocity" 3
+		"lifetime" 60
+		"reload" 40
+		"burst count" 4
+		"burst reload" 3
+		"firing energy" 35
+		"firing heat" 70
+		"shield damage" 35
+		"hull damage" 50
+		"radar tracking" .8
+		"cluster"
+		"submunition" "Active Impeder"
+	description "Successor ships rely heavily on their speed in combat, keeping their opponents at an optimal engagement range and thereby controlling the fight. It is therefore, unsurprising, that one of the weapons developed by the high houses to give them the upper hand in their skirmishes with each other is specifically designed to slow down enemy ships. The Impedance Missile Launcher fires a burst of missiles which briefly orient themselves towards their target before launching towards it, dealing minor damage, but more importantly disrupting their target's engines."
+
+outfit "Active Impeder"
+	weapon
+		sprite "projectile/detainer"
+			"frame rate" 5
+			"random start frame"
+		"live effect" "detainer sparks" 10
+		"hit effect" "piercer hit"
+		"hit effect" "piercer explosion"
+		"die effect" "piercer explosion"
+		"lifetime" 200
+		"acceleration" .85
+		"drag" .03
+		"turn" 1.5
+		"homing" 4
+		"radar tracking" .8
+		"shield damage" 110
+		"hull damage" 125
+		"slowing damage" 8.5
+		"hit force" 60
+		"missile strength" 28
 
 outfit "Burst Anti-Missile Turret"
 	category "Turrets"
@@ -229,3 +335,34 @@ outfit "Burst Anti-Missile Turret"
 		"firing heat" 32
 	description "The Burst Anti-Missile Turret is designed to counter cluster-fired missiles: it can fire very quickly for a short duration before entering a longer cooldown period, during which the ship carrying it is vulnerable. This tradeoff works well for the Successors, who use it to cover their quick attack runs and endure the cooldown during the retreat phase."
 
+outfit "Conductance Turret"
+	category "Turrets"
+	licenses
+		"High Houses"
+	cost 2549000
+	thumbnail "outfit/heliarch repulsor"
+	"mass" 45
+	"outfit space" -45
+	"weapon capacity" -45
+	"required crew" 1
+	"turret mounts" -1
+	"heat generation" 15.0
+	weapon
+		sprite "projectile/repulsor"
+			"frame rate" 3.2
+			"random start frame"
+		"hardpoint sprite" "hardpoint/heliarch repulsor"
+		"hardpoint offset" 9.
+		sound "heliarch repulsor"
+		"hit effect" "repulsor impact"
+		"inaccuracy" 3
+		"turret turn" 3.4
+		"velocity" 560
+		"lifetime" 1
+		"reload" 1
+		"firing energy" 5.9
+		"firing heat" -30.0
+		"heat damage" 20.0
+		"shield damage" 3.6
+		"hull damage" 5.8
+	description "This beam turret allows a Heliarch ship to hold its enemies far enough away that they cannot make use of their short-range weapons."

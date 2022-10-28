@@ -8,13 +8,17 @@ government "Rim Watcher"
 
 shipyard "Successor Heirloom"
 	"Valkkyiara-Khorasaqra"
-	"Successor Harrier"
+	`"Aaulqra" Frigate`
+	`"Seiitej" Escort`
 	`"Kvelqde" Shuttle`
 	`"Myaede" Freighter`
-	`Successor Interceptor`
+	`"Stolsaqra" Interceptor`
 	`Successor Fighter`
 	"Successor Freighter 50"
 	"Successor Freighter 100"
+	`"Khorade" Cruiser`
+	`"Veusade" Raider`
+	`"Valsaqra" Battlecruiser`
 
 outfitter "Successor Basics"
 	"Successor Pulse Laser"
@@ -88,3 +92,8 @@ outfitter "Successor All"
 	"Corrosive Torpedo Launcher"
 	"Corrosive Torpedo"
 	"Burst Anti-Missile Turret"
+	"Impedance Missile Launcher"
+	"Impeder Missile"
+	"Conductance Turret"
+	"Shatter Cannon"
+	"Piloting Reverser"
