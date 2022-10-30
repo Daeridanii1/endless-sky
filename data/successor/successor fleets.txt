@@ -1,47 +1,200 @@
+#	`Kvelqde`
+#	`Stolsaqra`
+#	`Myaede`
+#	`Veusade`
+#	`Seiitej`
+#	`Aaulqra`
+#	`Khorade`
+#	`Valsaqra`
+
 fleet "Light Successor Freight"
     government "Successor"
     names "civilian"
     personality timid appeasing
     variant 60
-        `"Kvelqde" Shuttle`
+        `Kvelqde`
     variant 40
-        `"Kvelqde" Shuttle` 2
+        `Kvelqde` 2
     variant 30
-        `"Kvelqde" Shuttle`
-        `"Myaede" Freighter`
+        `Kvelqde`
+        `Myaede`
     variant 20
-        `"Kvelqde" Shuttle` 2
-        `"Myaede" Freighter`
+        `Kvelqde` 2
+        `Myaede`
     variant 20
-        `"Myaede" Freighter`
-    variant 20
-        "Successor Freighter 50"
+        `Myaede`
     variant 20
         "Successor Freighter 50"
-        `"Kvelqde" Shuttle`
+    variant 20
+        "Successor Freighter 50"
+        `Kvelqde`
     variant 10
         "Successor Freighter 100"
-        `"Kvelqde" Shuttle` 2
+        `Kvelqde` 2
 
 fleet "Medium Successor Freight"
     government "Successor"
     names "civilian"
     personality timid appeasing
     variant 20
-        `"Kvelqde" Shuttle` 4
-        `"Myaede" Freighter`
+        `Kvelqde` 4
+        `Myaede`
         "Successor Freighter 50"
     variant 10
-        `"Kvelqde" Shuttle` 2
-        `"Myaede" Freighter` 2 
+        `Kvelqde` 2
+        `Myaede` 2 
         "Successor Freighter 50"
         "Successor Freighter 100"
     variant 10
-        `"Kvelqde" Shuttle` 3
-        `"Myaede" Freighter`
+        `Kvelqde` 3
+        `Myaede`
         "Successor Freighter 100"
-        "Successor Harrier"
+        "Seiitej"
     variant 20
-        `"Kvelqde" Shuttle` 4
-        "Successor Harrier"
+        `Kvelqde` 4
+        "Seiitej"
+
+fleet "Small Successor Transport"
+    government "Successor"
+    names "civilian"
+    personality timid
+    variant 50
+        "Kvelqde"
+    variant 33
+        "Kvelqde" 2
+    variant 25
+        "Kvelqde" 3
+    variant 50
+        "Successor Transport"
+    variant 33
+        "Successor Transport" 2
+
+fleet "Small Old Houses"
+    personality
+        heroic
+    government "Old Houses"
+    names "civilian"
+    variant 60
+        "Stolsaqra" 4
+    variant 20
+        "Veusade" 3
+    variant 20
+        "Seiitej" 2
+        "Aaulqra"
+    variant 20
+        "Aaulqra" 2
+    variant 40
+        "Veusade"
+    variant 40
+        "Seiitej"
+    variant 40
+        "Aaulqra"
+
+fleet "Large Old Houses"
+    government "Old Houses"
+    names "civilian"
+    personality
+        heroic
+    variant 50
+        "Khorade" 2
+        "Aaulqra" 2
+    variant 20
+        "Aaulqra" 3
+        "Veusade" 2
+        "Seiitej" 2
+    variant 50
+        "Khorade" 3
+    variant 25
+        "Valsaqra"
+    variant 25
+        "Valsaqra" 2
+    variant 25
+        "Valsaqra"
+        "Khorade"
+        "Aaulqra"
+    variant 1
+        "Valkkyiara-Khorasaqra"
+        "Valsaqra" 2
+        "Khorade" 2
+        "Aaulqra" 4
+
+fleet "Old Houses Police"
+    government "Old Houses"
+    names "civilian"
+    personality
+        heroic opportunistic
+    variant 50
+        "Stolsaqra"
+    variant 50
+        "Seiitej"
+    variant 25
+        "Stolsaqra" 2
+    variant 25
+        "Seiitej" 2
+    variant 10
+        "Stolsaqra" 3
+
+fleet "Small New Houses"
+    personality
+        heroic
+    government "New Houses"
+    names "civilian"
+    variant 60
+        "Stolsaqra" 4
+    variant 20
+        "Veusade" 3
+    variant 20
+        "Seiitej" 2
+        "Aaulqra"
+    variant 20
+        "Aaulqra" 2
+    variant 40
+        "Veusade"
+    variant 40
+        "Seiitej"
+    variant 40
+        "Aaulqra"
+
+fleet "Large New Houses"
+    government "New Houses"
+    names "civilian"
+    personality
+        heroic
+    variant 50
+        "Khorade" 2
+        "Aaulqra" 2
+    variant 20
+        "Aaulqra" 3
+        "Veusade" 2
+        "Seiitej" 2
+    variant 50
+        "Khorade" 3
+    variant 25
+        "Valsaqra"
+    variant 25
+        "Valsaqra" 2
+    variant 25
+        "Valsaqra"
+        "Khorade"
+        "Aaulqra"
+    variant 1
+        "Valkkyiara-Khorasaqra"
+        "Valsaqra" 2
+        "Khorade" 2
+        "Aaulqra" 4
+
+fleet "Successor Miners"
+    government "Successor"
+    names "civilian"
+    personality
+        staying appeasing mining harvests frugal
+    variant 50
+        `Kvelqde`
+    variant 20
+        `Myaede`
+    variant 30
+        `Kvelqde` 2
+    variant 10
+        `Myaede`
+        `Kvelqde` 2
 

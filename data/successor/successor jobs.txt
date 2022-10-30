@@ -1,0 +1,112 @@
+phrase "successor tourists out"
+	word
+		`The tourists thank you for bringing them to <planet> and pay you <payment>.`
+
+phrase "successor students out"
+	word
+		`The students thank you for bringing them to <planet> and pay you <payment>.`
+
+mission "Successor: Tourists Out 1"
+	job
+	repeat
+	name "Vacationers to <planet>"
+	description "These <bunks> travelers will pay you <payment> to bring them to <destination> by <date>."
+	deadline
+	passengers 2 5 .5
+	to offer
+		random < 40
+	source
+		government "Successor"
+	destination
+		government "Successor"
+		attributes "tourism" "quiet"
+		distance 5 20
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment 22000 200
+		dialog phrase "successor tourists out"
+
+mission "Successor: Students Out"
+	job
+	repeat
+	name "Students on break to <planet>"
+	description "These <bunks> students are off on break and will pay you <payment> to take them to <destination> by <date>."
+	deadline
+	passengers 2 5 .5
+	to offer
+		random < 40
+	source
+		government "Successor"
+		attributes "education"
+	destination
+		government "Successor"
+		not attributes "education"
+		distance 5 20
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment 22000 200
+		dialog phrase "successor students out"
+
+phrase "successor delivery"
+	word
+		`You drop off the shipment of <commodity> and receive <payment> in payment.`
+
+mission "Successor: Delivery Out 1"
+	job
+	repeat
+	name "Shipment to <planet>"
+	description "A courier is needed for <tons> of supplies from <origin> to <planet>. You will be paid <payment> on delivery."
+	cargo random 5 10 .2
+	to offer
+		random < 50
+	source
+		government "Successor"
+	destination
+		government "Successor"
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment
+		payment 2000 200
+		dialog phrase "successor delivery"
+
+mission "Successor: Rush Delivery Out 1"
+	job
+	repeat
+	name "Rush shipment to <planet>"
+	description "Due to a logistical error, <tons> of supplies were not carried on the last shipment and need to get from <origin> to <planet> by <date>. You will be paid <payment> on delivery."
+	cargo random 5 10 .2
+	deadline
+	to offer
+		random < 50
+	source
+		government "Successor"
+	destination
+		government "Successor"
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment
+		payment 3000 200
+		dialog phrase "successor delivery"
+
+mission "Successor: Researchers Out 1"
+	job
+	repeat
+	name "Researchers to <planet>"
+	description "These <bunks> researchers will pay you <payment> to bring them to <destination> by <date>."
+	deadline
+	passengers 2 5 .5
+	to offer
+		random < 40
+	source
+		government "Successor"
+	destination
+		government "Predecessor"
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment 22000 200
+		dialog phrase "successor tourists out"

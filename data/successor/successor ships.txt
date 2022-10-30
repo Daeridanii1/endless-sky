@@ -1,89 +1,13 @@
-ship "Valkkyiara-Khorasaqra"
-	sprite "ship/successor heirloom med warship"
-	thumbnail "thumbnail/successor heirloom med warship"
-	"plural" "Valkkyiara-Khorasaqran"
-	attributes
-		licenses
-			"Heirloom"
-		category "Medium Warship"
-		"cost" 114000000
-		"shields" 5000
-		"hull" 112500
-		"required crew" 22
-		"bunks" 30
-		"mass" 315
-		"drag" 2.4
-		"heat dissipation" .75
-		"fuel capacity" 600
-		"cargo space" 24
-		"outfit space" 520
-		"weapon capacity" 220
-		"engine capacity" 130
-		"spinal mount" 1
-		weapon
-			"blast radius" 100
-			"shield damage" 1000
-			"hull damage" 500
-			"hit force" 1500
-	outfits
-		`"Veusa" Inductive Thruster`
-		`"Veusa" Inductive Steering`
-		`"Veusa" Inductive Reverser`
-		`"Ryuit" Inertial Core`
-		"Regal Shield Core"
-		"Hyperdrive"
-		"Successor Cooling"
-		"Bimodal Railgun" 4
-		"Photon Lance"
-	engine -5 69
-	engine 5 69
-	gun 0 -95 "Photon Lance"
-		under
-	gun -24 -26 "Bimodal Railgun"
-	gun -19 -39 "Bimodal Railgun"
-	gun 19 -39 "Bimodal Railgun"
-	gun 24 -26 "Bimodal Railgun"
-	turret 0 52.5
-	turret 0 65.5
-	"steering engine" -10 -65 
-		zoom .5
-		angle 45
-		right
-	"steering engine" 10 -65 
-		zoom .5
-		angle 315
-		left
-	"steering engine" -30 -5 
-		left
-		angle 180
-		zoom .7
-	"steering engine" 30 -5 
-		right
-		angle 180
-		zoom .7
-	"reverse engine" -30 -5 
-		zoom .7
-	"reverse engine" 30 -5 
-		zoom .7
-	leak "leak" 50 50
-	leak "flame" 30 80
-	explode "tiny explosion" 18
-	explode "small explosion" 36
-	explode "medium explosion" 24
-	explode "large explosion" 8
-	"final explode" "final explosion medium"
-	description "During the collapse of the Predecessors' empire, the high houses stored away as much of their wealth and property as they could manage, including their private fleets of warships, which were ultimately passed down for over a thousand years as priceless family heirlooms. Despite being far more powerful than anything else in Successor space, these vessels almost never leave the ground, since the high houses have no desire to risk these priceless and irreplacable ships that are so deeply intertwined with their family history."
-
-ship `"Aaulqra" Frigate`
+ship `Aaulqra`
 	sprite "ship/successor med warship"
 	thumbnail "thumbnail/successor med warship"
 	attributes
 		licenses
 			"High Houses"
 		category "Medium Warship"
-		"cost" 23000000
+		"cost" 26000000
 		"shields" 4000
-		"hull" 43000
+		"hull" 41500
 		"required crew" 18
 		"bunks" 25
 		"mass" 280
@@ -110,13 +34,6 @@ ship `"Aaulqra" Frigate`
 		"Bimodal Railgun" 3
 		"Corrosive Torpedo Launcher" 2
 		"Corrosive Torpedo" 240
-	"steering engine" -32 90
-		zoom .7
-		right
-	engine 0 60
-	"steering engine" 32 90
-		zoom .7
-		left
 	gun -26 -48 "Bimodal Railgun"
 	gun -21 -63
 	gun 21 -63
@@ -125,10 +42,17 @@ ship `"Aaulqra" Frigate`
 	turret -32 -8
 	turret 0 -51
 	turret 32 -8
+	engine 0 60
 	"reverse engine" -32 -32
 		zoom .7
 	"reverse engine" 32 -32
 		zoom .7
+	"steering engine" 32 90
+		zoom .7
+		left
+	"steering engine" -32 90
+		zoom .7
+		right
 	"steering engine" -32 -32
 		zoom .7
 		angle 180
@@ -146,16 +70,16 @@ ship `"Aaulqra" Frigate`
 	"final explode" "final explosion medium"
 	description "This medium Successor warship makes up the bulk of the fleets of the various high houses. It is compact, fast, and durable for a ship of its size, but has relatively limited internal space, and a short operational range. The captains of these ships are often up-and-coming Successor pilots hoping to prove themselves to one of the high houses by demonstrating their mastery of the vessel; while most, of course, do not, the ship's ubiquity and good performance do make it an excellent starting point for those who do."
 
-ship `"Seiitej" Escort`
+ship `Seiitej`
 	sprite "ship/successor escort"
 	thumbnail "thumbnail/successor escort"
 	attributes
 		licenses
 			"High Houses"
 		category "Light Warship"
-		"cost" 16500000
+		"cost" 17250000
 		"shields" 6000
-		"hull" 31500
+		"hull" 33000
 		"required crew" 8
 		"bunks" 15
 		"mass" 200
@@ -180,6 +104,7 @@ ship `"Seiitej" Escort`
 		"Hyperdrive"
 		"Successor Cooling"
 		"Bimodal Railgun" 4
+		"Scanning Module"
 	gun -10 -78
 	gun -5 -86
 	gun 5 -86
@@ -196,7 +121,7 @@ ship `"Seiitej" Escort`
 	"final explode" "final explosion medium"
 	description `The "Seiitej" is a light attack craft only recently put into production by the high houses of the Successors. While it carries a relatively light armament (by Successor standards), it is capable of outrunning any other ship in Successor space, making it excellent for hunting down traitors or fugitives. It also sees service as an escort in freighter convoys, and to that end, is capable of carrying a significant amount of cargo in its own right.`
 
-ship `"Veusade" Raider`
+ship `Veusade`
 	sprite "ship/successor raider"
 	thumbnail "thumbnail/successor raider"
 	attributes
@@ -205,7 +130,7 @@ ship `"Veusade" Raider`
 		category "Light Warship"
 		"cost" 16500000
 		"shields" 8000
-		"hull" 29500
+		"hull" 29000
 		"required crew" 5
 		"bunks" 10
 		"mass" 190
@@ -261,7 +186,7 @@ ship `"Veusade" Raider`
 	"final explode" "final explosion medium"
 	description `Blessed with the honor of being named with the Successor word for "fast," the "Veusade" is designed for one thing: to carry eight shatter cannons as close to an enemy ship's hull as possible, something which it unquestionably delivers on, for better or worse. The designers shaved off additional mass by excluding turrets; the presumption is that a pilot in one of these craft should be able to simply outrun incoming missiles rather than going to the trouble of shooting them down.`
 
-ship `"Stolsaqra" Interceptor`
+ship `Stolsaqra`
 	sprite "ship/successor interceptor"
 	thumbnail "thumbnail/successor interceptor"
 	attributes
@@ -270,7 +195,7 @@ ship `"Stolsaqra" Interceptor`
 		category "Interceptor"
 		"cost" 450000
 		"shields" 850
-		"hull" 7550
+		"hull" 7600
 		"required crew" 1
 		"bunks" 2
 		"mass" 75
@@ -294,6 +219,7 @@ ship `"Stolsaqra" Interceptor`
 		"Bimodal Railgun" 3
 		"Common Shield Core"
 		"Hyperdrive"
+		"Scanning Module"
 
 	gun 0 -38
 	gun -7 -21
@@ -328,7 +254,7 @@ ship `"Stolsaqra" Interceptor`
 	"final explode" "final explosion medium"
 	description "The Successors have limited experience in making warships this small, and while their attempt at an interceptor is durable and sports a surprising amount of firepower for a ship of its size, it is also plagued with power and propulsion issues as most of their existing technology was either too large or not powerful enough to yield effective performance. The result is a ship that ambitious pilots call a challenge and prudent pilots call a deathtrap, but continues to see use because of its heavy armament."
 
-ship `"Kvelqde" Shuttle`
+ship `Kvelqde`
 	sprite "ship/successor shuttle"
 	thumbnail "thumbnail/successor shuttle"
 	attributes
@@ -337,7 +263,7 @@ ship `"Kvelqde" Shuttle`
 		category "Transport"
 		"cost" 450000
 		"shields" 350
-		"hull" 2350
+		"hull" 2400
 		"required crew" 1
 		"bunks" 9
 		"mass" 85
@@ -376,7 +302,7 @@ ship `"Kvelqde" Shuttle`
 	"final explode" "final explosion medium"
 	description "This tiny shuttle is the smallest vessel operating in Successor space, and the first ship that new Successor pilots are able to get their arms on. Despite their small size, they are capable multipurpose vessels, and are frequently used for transporting passengers and cargo, for short-duration research expeditions, and even as very light combat craft, capable of just barely fitting one fixed and one turreted pulse laser."
 
-ship `"Myaede" Freighter`
+ship `Myaede`
 	sprite "ship/successor freighter"
 	thumbnail "thumbnail/successor freighter"
 	attributes
@@ -384,8 +310,8 @@ ship `"Myaede" Freighter`
 			"Successor"
 		category "Light Freighter"
 		"cost" 3250000
-		"shields" 1200
-		"hull" 10400
+		"shields" 1500
+		"hull" 13000
 		"required crew" 6
 		"bunks" 20
 		"mass" 320
@@ -429,7 +355,67 @@ ship `"Myaede" Freighter`
 	"final explode" "final explosion medium"
 	description `The "Myaede" is neither elegant nor fast, but it has remained the mainstay of Successor commerce since before the collapse of the old empire over a thousand years ago, boasting a spacious cargo hold, heavy armor, and a flexible enough weapons layout to let it fight back in a pinch. Much like the grand heirlooms of the high houses, a familial "Myaede" is often passed down through the lineage of spacefaring low-born Successors, and many of the pilots flying these first took the helm as children under a grandparent's watchful gaze.`
 
-ship `"Myaede" Freighter` "Successor Freighter 50"
+ship `Successor Transport`
+	sprite "ship/successor transport"
+	thumbnail "thumbnail/successor transport"
+	attributes
+		licenses
+			"Successor"
+		category "Transport"
+		"cost" 4100000
+		"shields" 2000
+		"hull" 9500
+		"required crew" 12
+		"bunks" 64
+		"mass" 250
+		"drag" 1.9
+		"heat dissipation" 0.8
+		"fuel capacity" 700
+		"cargo space" 50
+		"outfit space" 265
+		"weapon capacity" 85
+		"engine capacity" 180
+		weapon
+			"blast radius" 100
+			"shield damage" 1000
+			"hull damage" 500
+			"hit force" 1500
+	outfits
+		`"Chyyra" Inductive Thruster`
+		`"Chyyra" Inductive Steering`
+		`"Chyyra" Inductive Reverser`
+		`4-"Kaska" Betavoltaic Cell`
+		"Common Shield Core"
+		"Hyperdrive"
+		"Burst Anti-Missile Turret" 2
+
+	gun 0 -97
+	turret -4.5 -50
+	turret 4.5 -50
+	engine -25 30
+	engine 25 30
+	"steering engine" -25 -47
+		zoom .6
+		angle 180
+		left
+	"steering engine" 25 -47
+		zoom .6
+		angle 180
+		right
+	"reverse engine" -25 -47
+		zoom .6
+	"reverse engine" 25 -47
+		zoom .6
+	leak "leak" 50 50
+	leak "flame" 30 80
+	explode "tiny explosion" 18
+	explode "small explosion" 36
+	explode "medium explosion" 24
+	explode "large explosion" 8
+	"final explode" "final explosion medium"
+	description `The Successors have a relatively small population and therefore are not in great need of large transport vessels. However, transporting passengers entirely by shuttle can be both dangerous and uncomfortable, so for longer journeys, the Successors use this dedicated transport ship. While unarmed by default, it is fast enough to escape most ships that might mean it harm.`
+
+ship "Myaede" "Successor Freighter 50"
 	sprite "ship/successor freighter 50"
 	add attributes
 		"mass" 500
@@ -443,7 +429,7 @@ ship `"Myaede" Freighter` "Successor Freighter 50"
 	engine -34 -1
 	engine 34 -1
 	engine 48 -9
-ship `"Myaede" Freighter` "Successor Freighter 100"
+ship "Myaede" "Successor Freighter 100"
 	sprite "ship/successor freighter 100"
 	add attributes
 		"mass" 900
@@ -523,23 +509,23 @@ ship `Successor Fighter`
 	"final explode" "final explosion medium"
 	description "Unwilling to give up on the design of the [Interceptor], House [House] have slightly altered the ship to function as a carrier-based fightercraft, and have found a surprising degree of success. In the absence of large and heavy components like the hyperdrive, fuel tanks, and turret mount, the [Fighter] becomes a tough and deadly carried combat craft that House [House] uses to protect its short-range interests, and to project power at a distance with in combination with a carrier."
 
-ship `"Khorade" Cruiser`
+ship `Khorade`
 	sprite "ship/successor heavy warship"
 	thumbnail "thumbnail/successor heavy warship"
 	attributes
 		licenses
 			"High Houses"
 		category "Medium Warship"
-		"cost" 23000000
+		"cost" 45250000
 		"shields" 10000
-		"hull" 64500
+		"hull" 55000
 		"required crew" 58
-		"bunks" 75
+		"bunks" 133
 		"mass" 555
 		"drag" 4.0
 		"heat dissipation" .75
 		"fuel capacity" 600
-		"cargo space" 55
+		"cargo space" 100
 		"outfit space" 570
 		"weapon capacity" 270
 		"engine capacity" 140
@@ -570,6 +556,8 @@ ship `"Khorade" Cruiser`
 	engine -28 133
 	engine 28 133
 	engine 0 107
+	bay "Fighter" 0 42
+		"over"
 	"reverse engine" -50 0
 		zoom .7
 	"reverse engine" 50 0
@@ -589,18 +577,18 @@ ship `"Khorade" Cruiser`
 	explode "medium explosion" 24
 	explode "large explosion" 8
 	"final explode" "final explosion medium"
-	description "While the Successors prefer fast and hard-hitting attack craft to large and slow warships, there are some circumstances in which one of the high houses must make a lasting and well-defended claim to a piece of territory, and the "Khosade" is most often their ship of choice. It is heavily armed and armoured, and still fast enough to chase down interlopers."
+	description `While the Successors prefer fast and hard-hitting attack craft to large and slow warships, there are some circumstances in which one of the high houses must make a lasting and well-defended claim to a piece of territory, and the Khorade is most often their ship of choice. Its large interior space also includes sizable cargo and bunk areas for logistics work, and it has a fighter docking point which it can use to expand its mission profile.`
 
-ship `"Valsaqra" Battlecruiser`
+ship `Valsaqra`
 	sprite "ship/successor destroyer"
 	thumbnail "thumbnail/successor destroyer"
 	attributes
 		licenses
-			"Heirloom"
+			"High Houses"
 		category "Heavy Warship"
-		"cost" 23000000
+		"cost" 76500000
 		"shields" 12000
-		"hull" 112500
+		"hull" 86000
 		"required crew" 65
 		"bunks" 88
 		"mass" 650
@@ -611,6 +599,7 @@ ship `"Valsaqra" Battlecruiser`
 		"outfit space" 765
 		"weapon capacity" 360
 		"engine capacity" 150
+		"spinal mount" 1
 		weapon
 			"blast radius" 100
 			"shield damage" 1000
@@ -623,16 +612,18 @@ ship `"Valsaqra" Battlecruiser`
 		`"Ryuit" Inertial Core`
 		"Regal Shield Core"
 		"Hyperdrive"
-		"Successor Cooling"
+		"Successor Cooling" 2
 		"Bimodal Railgun" 5
-		"Burst Anti-Missile Turret" 4
-	gun -55 -57
+		"Corrosive Torpedo Launcher" 2
+		"Corrosive Torpedo" 240
+		"Burst Anti-Missile Turret" 3
+	gun -55 -57 "Corrosive Torpedo Launcher"
 	gun -35 -104
 	gun -28 -121
 	gun 0 -189
 	gun 28 -121
 	gun 35 -104
-	gun 55 -57
+	gun 55 -57 "Corrosive Torpedo Launcher"
 	turret 0 -129
 	turret 0 -81
 	turret 0 -57
@@ -664,4 +655,4 @@ ship `"Valsaqra" Battlecruiser`
 	explode "medium explosion" 24
 	explode "large explosion" 8
 	"final explode" "final explosion medium"
-	description `As of the few designs from before the collapse that has adapted - even imperfectly - to the new materials and manufacturing capabilities of the Successors' star cluster, the "Valsaqra" offers an imposing look at the past might of the Predecessors' empire. Today they are mostly used for diplomacy and soft power projection, but the "Valsaqra" is more than capable of taking on a fleet by itself, and is therefore understandably restricted to only the most trusted and loyal captains of the high houses."
+	description `As of the few designs from before the collapse that has adapted - even imperfectly - to the new materials and manufacturing capabilities of the Successors' star cluster, the "Valsaqra" offers an imposing look at the past might of the Predecessors' empire. Today they are mostly used for diplomacy and soft power projection, but the "Valsaqra" is more than capable of taking on a fleet by itself, and is therefore understandably restricted to only the most trusted and loyal captains of the high houses.`

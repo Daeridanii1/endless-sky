@@ -177,9 +177,8 @@ outfit `"Aqra" Inductive Thruster`
 	"thrusting heat" 1.1
 	"afterburner thrust" 17.5
 	"afterburner shields" 4.5
-	"afterburner energy" 3.2
 	"afterburner heat" 5.0
-	"afterburner effect" "ionic afterburner"
+	"afterburner effect" "successor afterburner"
 	"flare sprite" "effect/atomic flare/tiny"
 		"frame rate" 14
 	"flare sound" "atomic tiny"
@@ -234,9 +233,8 @@ outfit `"Chyyra" Inductive Thruster`
 	"thrusting heat" 2.8
 	"afterburner thrust" 50.0
 	"afterburner shields" 8.0
-	"afterburner energy" 6.8
 	"afterburner heat" 10.0
-	"afterburner effect" "ionic afterburner"
+	"afterburner effect" "successor afterburner"
 	"flare sprite" "effect/atomic flare/medium"
 		"frame rate" 14
 	"flare sound" "atomic medium"
@@ -291,9 +289,8 @@ outfit `"Veusa" Inductive Thruster`
 	"thrusting heat" 3.5
 	"afterburner thrust" 146.0
 	"afterburner shields" 18.0
-	"afterburner energy" 9.0
 	"afterburner heat" 25.0
-	"afterburner effect" "ionic afterburner"
+	"afterburner effect" "successor afterburner"
 	"flare sprite" "effect/atomic flare/large"
 		"frame rate" 14
 	"flare sound" "atomic large"
@@ -328,8 +325,16 @@ outfit `"Veusa" Inductive Reverser`
 	"reverse thrust" 36.5
 	"reverse thrusting energy" 3.7
 	"reverse thrusting heat" 3.0
-	"reverse flare sprite" "effect/atomic flare/large"
+	"reverse flare sprite" "effect/atomics flare/large"
 		"frame rate" 14
 	"reverse flare sound" "atomic large"
 	description "While the invertebrate Successors are relatively unaffected, human pilots must take care when using a reverse thruster this large to avoid g-force stresses on the body."
 	description "	Because a reverse thruster must be facing forwards, it must be installed in the weapon section of your ship instead of the engine section."
+
+effect "successor afterburner"
+	sprite "effect/ionic afterburner"
+		"frame rate" 14
+		"random start frame"
+		"no repeat"
+	lifetime 6
+	sound "plasma tiny"

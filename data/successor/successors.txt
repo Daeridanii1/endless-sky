@@ -1,99 +1,113 @@
 government Successor
-	swizzle 0
 	color 0 1 0.853
 
-government "Rim Watcher"
-	color 1 0 0.618
-	"player reputation" -999
+government Predecessor
+	color 1 1 1
 
-shipyard "Successor Heirloom"
-	"Valkkyiara-Khorasaqra"
-	`"Aaulqra" Frigate`
-	`"Seiitej" Escort`
-	`"Kvelqde" Shuttle`
-	`"Myaede" Freighter`
-	`"Stolsaqra" Interceptor`
-	`Successor Fighter`
-	"Successor Freighter 50"
-	"Successor Freighter 100"
-	`"Khorade" Cruiser`
-	`"Veusade" Raider`
-	`"Valsaqra" Battlecruiser`
+government "New Houses"
+	swizzle 3
+	color 1 0 0.5
+	"attitude toward"
+		Successor 1
+
+government "New Houses (Partisan)"
+	swizzle 3
+	color 1 0 0.5
+	"attitude toward"
+		"New Houses" 1
+		"Old Houses" -1
+		"Old Houses (Partisan)" -1
+		"Player" -999
+
+government "Old Houses"
+	swizzle 1
+	color 0.375 0.316 0.99
+	"attitude toward"
+		Successor 1
+
+government "Old Houses (Partisan)"
+	swizzle 1
+	color 0.375 0.316 0.99
+	"attitude toward"
+		"Old Houses" 1
+		"New Houses" -1
+		"New Houses (Partisan)" -1
+		"Player" -999
+
+shipyard "Successor Basics"
+	Kvelqde
+	Stolsaqra
+
+shipyard "Successor Civilian"
+	Myaede
+	"Successor Transport"
+
+shipyard "High Houses"
+	Aaulqra
+	Khorade
+	Seiitej
+	"Successor Fighter"
+	Valsaqra
+	Veusade
+
+shipyard Heirloom
+	Valkkyiara-Khorasaqra
 
 outfitter "Successor Basics"
-	"Successor Pulse Laser"
+	`"Aqra" Inductive Reverser`
+	`"Aqra" Inductive Steering`
+	`"Aqra" Inductive Thruster`
 	`1-"Uurau" Betavoltaic Cell`
 	`4-"Kaska" Betavoltaic Cell`
 	"Common Shield Core"
-	`"Aqra" Inductive Thruster`
-	`"Aqra" Inductive Steering`
-	"Hyperdrive"
+	Hyperdrive
+	"Successor Pulse Laser"
 
 outfitter "Successor Civilian"
-	"Successor Pulse Laser"
-	"Pulse Laser Turret"
-	`1-"Uurau" Betavoltaic Cell`
-	`4-"Kaska" Betavoltaic Cell`
-	`7-"Ruuv" Betavoltaic Cell`
-	"Common Shield Core"
-	`"Aqra" Inductive Thruster`
-	`"Aqra" Inductive Steering`
-	`"Aqra" Inductive Reverser`
-	`"Chyyra" Inductive Thruster`
-	`"Chyyra" Inductive Steering`
+	""
+	""
 	`"Chyyra" Inductive Reverser`
-	"Successor Cooling"
-	"Resistance Module"
-	"Cargo Expansion"
-	"Outfits Expansion"
-	"Small Bunk Room"
+	`"Chyyra" Inductive Steering`
+	`"Chyyra" Inductive Thruster`
+	`7-"Ruuv" Betavoltaic Cell`
 	"Bunk Room"
-	"Hyperdrive"
-	"Fuel Pod"
-	"Ramscoop"
-	"Corrosive Torpedo Launcher"
-	"Corrosive Torpedo"
 	"Burst Anti-Missile Turret"
-
-outfitter "Successor All"
-	"Bimodal Railgun"
-	"Photon Battery"
-	"Photon Lance"
-	"Common Shield Core"
-	"Noble Shield Core"
-	"Regal Shield Core"
-	"Resistance Module"
-	"Successor Pulse Laser"
+	"Cargo Expansion"
+	"Fuel Pod"
+	"Outfits Expansion"
 	"Pulse Laser Turret"
+	Ramscoop
+	"Resistance Module"
+	"Small Bunk Room"
 	"Successor Cooling"
+
+outfitter "High Houses"
 	`"Nnesa" Inertial Core`
 	`"Ryuit" Inertial Core`
-	`1-"Uurau" Betavoltaic Cell`
-	`4-"Kaska" Betavoltaic Cell`
-	`7-"Ruuv" Betavoltaic Cell`
-	`OC-"Mavra" Betavoltaic Cell`
-	`"Aqra" Inductive Thruster`
-	`"Aqra" Inductive Steering`
-	`"Aqra" Inductive Reverser`
-	`"Chyyra" Inductive Thruster`
-	`"Chyyra" Inductive Steering`
-	`"Chyyra" Inductive Reverser`
-	`"Veusa" Inductive Thruster`
-	`"Veusa" Inductive Steering`
 	`"Veusa" Inductive Reverser`
-	"Cargo Expansion"
-	"Outfits Expansion"
-	"Small Bunk Room"
-	"Bunk Room"
-	"Hyperdrive"
-	"Fuel Pod"
-	"Ramscoop"
-	"0 Hyperjump Drive"
-	"Corrosive Torpedo Launcher"
-	"Corrosive Torpedo"
-	"Burst Anti-Missile Turret"
-	"Impedance Missile Launcher"
-	"Impeder Missile"
+	`"Veusa" Inductive Steering`
+	`"Veusa" Inductive Thruster`
+	"Bimodal Railgun"
+	"Bimodal Railgun Turret"
 	"Conductance Turret"
+	"Corrosive Torpedo"
+	"Corrosive Torpedo Launcher"
+	"Noble Shield Core"
+	`OC-"Mavra" Betavoltaic Cell`
+	"Regal Shield Core"
+
+outfitter Heirloom
+	""
+	""
+	"Heirloom Hunter-Killer Drones"
+	"Heirloom License"
+	"Heirloom Point Defense"
+	"Heirloom Railgun"
+	"Heirloom Reactor"
+	"Heirloom Shielding"
+	"High Houses License"
+	"Photon Battery"
+	"Photon Lance"
 	"Shatter Cannon"
-	"Piloting Reverser"
+	"Successor License"
+

@@ -1,68 +1,21 @@
-outfit "Photon Lance"
-	category "Secondary Weapons"
-	cost 1370000
-	licenses
-		"Heirloom"
-	thumbnail "outfit/photon lance"
-	"mass" 36
-	"outfit space" -36
-	"weapon capacity" -36
-	"gun ports" -1
-	"photon capacity" 5
-	"spinal mount" -1
-	weapon
-		sprite "projectile/photon lance"
-			"frame rate" 60
-		sound "proton" 10
-		ammo "Photon Battery"
-		icon "icon/dragonflame"
-		"fire effect" "ionball ring" 8
-		"hit effect" "bright hit"
-		"hit effect" "dragonflame debris" 10
-		"hit effect" "dragonflame plasma" 10
-		"inaccuracy" .3
-		"velocity" 1800
-		"lifetime" 1
-		"reload" 200
-		"firing energy" 200
-		"firing ion" 120
-		"firing burn" 120
-		"shield damage" 16000
-		"hull damage" 22000
-		"ion damage" 40
-		"piercing" 0.5
-		"blast radius" 120
-		"phasing" 1
-	description `This weapon is, in its basic principle, no different from the beam lasers produced in human space by Deep Sky. What distinguishes it from those weapons is that this one uses more energy in a single shot than a mid-sized city does in a year, and that the beam it produces is more than sufficient to level that city and the surrounding countryside. Naturally, no ship has the battery capacity necessary to fire one of these from its on-board reserves, so the Successors have resorted to powering them via massive single-use batteries. Unsurprisingly, these weapons are not used carelessly, nor are they distributed among the general populace.`
-
-outfit "Photon Battery"
-	plural "Photon Batteries"
-	category "Ammunition"
-	cost 32000
-	thumbnail "outfit/finisher"
-	"mass" .5
-	"photon capacity" -1
-	description `This single-use battery powers the Photon Lance.`
-
 outfit "Bimodal Railgun"
 	category "Guns"
 	cost 1370000
 	thumbnail "outfit/bimodal railgun"
 	licenses
 		"High Houses"
-	"mass" 20
+	"mass" 22
 	"outfit space" -22
 	"weapon capacity" -22
 	"gun ports" -1
 	weapon
-		sprite "projectile/pulse"
+		sprite "projectile/detainer"
 			"frame rate" 60
 		sound "pulse"
-		"hit effect" "pulse impact" 3
+		"hit effect" "ion rain impact" 3
 		"inaccuracy" 1
 		"velocity" 30
 		"lifetime" 15
-		"random lifetime" 3
 		"range override" 900
 		"burst count" 5
 		"burst reload" 10
@@ -74,7 +27,44 @@ outfit "Bimodal Railgun"
 		"hit force" 30
 		"cluster"
 		"submunition" "Bimodal Switch" 3
-	description `This signature weapon used by the Successors for generations fires a packet of heavy metal ions that punch through hull armor at close range before dispersing at distance into a spray of charged material that heavily damages shielding. This unique behavior supports a combat strategy in which Successor warships will whittle down an enemy's shields from range and then close in for the kill.`
+	description `The Bimodal Railgun was designed, quite simply, as a perfect weapon; and indeed, it is said that by the time the empire of the Predecessors fell, they had seen no need to install any other weapon on their ships for over a thousand years.`
+	description `It fires a condensed packet of heavy metal ions that disperse as they travel: up close the concentrated bolt pierces armor, while at a distance the ionic spray destabilizes shielding. Together, a ship equipped with these can adjust its damage profile just by changing its engagement range, allowing it to be highly effective against any foe.`
+
+outfit "Bimodal Railgun Turret"
+	category "Turrets"
+	cost 2950000
+	thumbnail "outfit/bimodal railgun"
+	licenses
+		"High Houses"
+	"mass" 55
+	"outfit space" -55
+	"weapon capacity" -55
+	"turret mounts" -1
+	weapon
+		"hardpoint sprite" "hardpoint/heliarch repulsor"
+		"hardpoint offset" 9.
+		sprite "projectile/detainer"
+			"frame rate" 60
+		sound "pulse"
+		"hit effect" "ion rain impact" 3
+		"inaccuracy" 1
+		"velocity" 30
+		"lifetime" 15
+		"range override" 900
+		"turret turn" 3.5
+		"burst count" 10
+		"burst reload" 5
+		"reload" 15
+		"firing energy" 40
+		"firing heat" 65
+		"firing force" 25
+		"shield damage" 5
+		"hull damage" 135
+		"hit force" 30
+		"cluster"
+		"submunition" "Bimodal Switch" 3
+	description `The Bimodal Railgun was designed, quite simply, as a perfect weapon; and indeed, it is said that by the time the empire of the Predecessors fell, they had seen no need to install any other weapon on their ships for over a thousand years.`
+	description `It fires a condensed packet of heavy metal ions that disperse as they travel: up close the concentrated bolt pierces armor, while at a distance the ionic spray destabilizes shielding. Together, a ship equipped with these can adjust its damage profile just by changing its engagement range, allowing it to be highly effective against any foe.`
 
 outfit "Bimodal Switch"
 	weapon
@@ -82,8 +72,8 @@ outfit "Bimodal Switch"
 		"hit effect" "blaster impact" 3
 		"inaccuracy" 10
 		"velocity" 30
-		"lifetime" 5
-		"random lifetime" 4
+		"lifetime" 6
+		"random lifetime" 3
 		"shield damage" 31
 		"discharge damage" 0.6
 		"hull damage" 4
@@ -91,7 +81,7 @@ outfit "Bimodal Switch"
 outfit "Shatter Cannon"
 	category "Guns"
 	cost 1370000
-	thumbnail "outfit/bimodal railgun"
+	thumbnail "outfit/shatter cannon"
 	licenses
 		"High Houses"
 	"mass" 12
@@ -111,7 +101,8 @@ outfit "Shatter Cannon"
 		"firing heat" 40
 		"cluster"
 		"submunition" "Shatter Projectile" 3
-	description `Designed as a short-range weapon to complement the Successors' fast-attack craft, the Shatter Cannon fires a quick burst of relatively inaccurate projectiles before enjoying a lengthy reload. While landing all the projectiles in a burst on a single target is improbable, the theoretical damage for doing so is quite enticing.`
+	description `Originating as a close-range modification to the Bimodal Railgun, the Shatter Cannon has ultimately developed as its own entirely unique weapon, firing a short-ranged, highly inaccurate blast of projectiles that deal substantial damage and disrupt the target's engines.`
+	description `While it is ultimately inelegant in comparison to the Bimodal Railgun, and therefore less appreciated, it has found a place on the Successors' fast attack craft both as a tool for slowing down enemy vessels, and a potent weapon in its own right.`
 
 outfit "Shatter Projectile"
 	weapon
@@ -121,7 +112,7 @@ outfit "Shatter Projectile"
 		"velocity" 25
 		"lifetime" 10
 		"random lifetime" 5
-		"slowing damage" 0.5
+		"slowing damage" 0.35
 		"shield damage" 52
 		"hull damage" 48
 
@@ -153,7 +144,7 @@ outfit "Successor Pulse Laser"
 		"hull damage" 15
 		"piercing" 0.1
 		"cluster"
-	description "This shield-penetrating laser is one of the few weapons manufactured independently in Successor space, rather than under the auspices - and restrictions - of the high houses. Unfortunately, and perhaps as a result, it is neither especially powerful nor efficient, though its low cost and space requirements make it a nonetheless relatively appealing weapon choice for those who don't have the fortune of being born into a wealthy family."
+	description "This shield-penetrating laser is one of the few weapons manufactured independently in Successor space, rather than under the auspices—and restrictions—of the high houses. Unfortunately, and perhaps as a result, it is neither especially powerful nor efficient, though its low cost and space requirements make it a nonetheless relatively appealing defensive choice for those without access to the high houses' more potent weaponry."
 
 outfit "Pulse Laser Turret"
 	category "Turrets"
@@ -242,75 +233,6 @@ outfit "Corrosive Torpedo"
 	"corrosive torpedo capacity" -1
 	description "Corrosive Torpedoes are ammunition for the Corrosive Torpedo Launcher. You cannot install Corrosive Torpedoes unless you have also installed a launcher to fire them from."
 
-outfit "Impeder Missile"
-	category "Ammunition"
-	cost 1000
-	thumbnail "outfit/piercer"
-	licenses
-		"Successor"
-	"mass" .3
-	"impeder capacity" -1
-	description "This missile is fired from a Piercer Missile Launcher."
-
-outfit "Impedance Missile Launcher"
-	category "Secondary Weapons"
-	cost 593000
-	thumbnail "outfit/piercer launcher"
-	licenses
-		"Successor"
-	"mass" 18
-	"outfit space" -27
-	"weapon capacity" -27
-	"energy capacity" 50
-	"gun ports" -1
-	"impeder capacity" 240
-	weapon
-		sprite "projectile/piercer"
-			"frame rate" 5
-			"random start frame"
-		sound "piercer"
-		ammo "Impeder Missile"
-		icon "icon/piercer"
-		"fire effect" "piercer fire"
-		"hit effect" "piercer impact"
-		"inaccuracy" 8
-		"turn" 6.5
-		"homing" 4
-		"velocity" 3
-		"lifetime" 60
-		"reload" 40
-		"burst count" 4
-		"burst reload" 3
-		"firing energy" 35
-		"firing heat" 70
-		"shield damage" 35
-		"hull damage" 50
-		"radar tracking" .8
-		"cluster"
-		"submunition" "Active Impeder"
-	description "Successor ships rely heavily on their speed in combat, keeping their opponents at an optimal engagement range and thereby controlling the fight. It is therefore, unsurprising, that one of the weapons developed by the high houses to give them the upper hand in their skirmishes with each other is specifically designed to slow down enemy ships. The Impedance Missile Launcher fires a burst of missiles which briefly orient themselves towards their target before launching towards it, dealing minor damage, but more importantly disrupting their target's engines."
-
-outfit "Active Impeder"
-	weapon
-		sprite "projectile/detainer"
-			"frame rate" 5
-			"random start frame"
-		"live effect" "detainer sparks" 10
-		"hit effect" "piercer hit"
-		"hit effect" "piercer explosion"
-		"die effect" "piercer explosion"
-		"lifetime" 200
-		"acceleration" .85
-		"drag" .03
-		"turn" 1.5
-		"homing" 4
-		"radar tracking" .8
-		"shield damage" 110
-		"hull damage" 125
-		"slowing damage" 8.5
-		"hit force" 60
-		"missile strength" 28
-
 outfit "Burst Anti-Missile Turret"
 	category "Turrets"
 	cost 350000
@@ -325,7 +247,7 @@ outfit "Burst Anti-Missile Turret"
 		"hardpoint sprite" "hardpoint/heavy anti-missile"
 		"hardpoint offset" 5.
 		"hit effect" "large anti-missile"
-		"anti-missile" 15
+		"anti-missile" 20
 		"velocity" 200
 		"lifetime" 1
 		"burst count" 10
@@ -333,17 +255,17 @@ outfit "Burst Anti-Missile Turret"
 		"reload" 18
 		"firing energy" 10
 		"firing heat" 32
-	description "The Burst Anti-Missile Turret is designed to counter cluster-fired missiles: it can fire very quickly for a short duration before entering a longer cooldown period, during which the ship carrying it is vulnerable. This tradeoff works well for the Successors, who use it to cover their quick attack runs and endure the cooldown during the retreat phase."
+	description "The Burst Anti-Missile Turret is intended as an elegant counter to cluster-fired missiles: it can fire very quickly for a short duration before entering a longer cooldown period, during which the ship carrying it is vulnerable. This tradeoff synergizes with the combat cadence of the Successors, who use it to cover their quick attack runs and endure the cooldown during the retreat phase."
 
 outfit "Conductance Turret"
 	category "Turrets"
 	licenses
 		"High Houses"
 	cost 2549000
-	thumbnail "outfit/heliarch repulsor"
-	"mass" 45
-	"outfit space" -45
-	"weapon capacity" -45
+	thumbnail "outfit/heliarch attractor"
+	"mass" 35
+	"outfit space" -35
+	"weapon capacity" -35
 	"required crew" 1
 	"turret mounts" -1
 	"heat generation" 15.0
@@ -360,9 +282,9 @@ outfit "Conductance Turret"
 		"velocity" 560
 		"lifetime" 1
 		"reload" 1
-		"firing energy" 5.9
+		"firing energy" 3.8
 		"firing heat" -30.0
 		"heat damage" 20.0
-		"shield damage" 3.6
-		"hull damage" 5.8
-	description "This beam turret allows a Heliarch ship to hold its enemies far enough away that they cannot make use of their short-range weapons."
+		"shield damage" 2.8
+		"hull damage" 3.5
+	description "In an effort to deal with the heat generated by combat, the Successors have devised this weapon, which conducts it to a target."
