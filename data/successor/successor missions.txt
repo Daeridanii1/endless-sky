@@ -1,56 +1,73 @@
-mission "First Contact: Successors"
+mission "Successors: First Contact"
 	landing
 	name "Go to the Vade-Staja system"
 	description "The aliens in this new area of space have indicated that you should travel to the northernmost inhabited system in their territory."
 	source
 		government "Successor" "Old Houses" "New Houses"
 	destination "Staja-Kella-Oa"
+	clearance
 	on offer
 		conversation
-			`After trudging through several seemingly-dead systems, you've finally found a planet with living inhabitants. The aliens remind you most of octopi: they are substantially taller than you, rising up off of the ground by several long suckered arms. Their skin seems slightly wet and you can see it changing color and texture as several of them watch you.`
-			`   After examining you for some time, one of them, an especially tall and brightly colored individual, approaches you, gently sliding over the ground with an unsettling lack of sound. It says something in a strange sharply flowing language that you do not understand and waits for you to reply.`
+			`After trudging through several seemingly-dead systems, you've finally found a planet with living inhabitants. The aliens remind you most of octopi: they are substantially taller than you, rising up off of the ground by several long suckered arms. Their skin seems slightly wet and you can see it changing color and texture as several of them watch you, clearly perplexed by this strange visitor to their planet.`
+			`   After examining you for some time, one of them, an especially tall and brightly colored individual wearing a uniform of some sort, begins to move towards you; they glide slowly and gently over the ground with an unsettling absence of noise. They say something in a strange sharply flowing language that you do not understand and wait expectantly for you to reply.`
 			choice
 				`Say nothing.`
 					goto end
 				`Introduce yourself.`
-			`   You introduce yourself to the alien, but their expression does not reveal any sort of understanding.`
+			`   You introduce yourself to the alien, but their expression does not change to reveal any sort of understanding.`
 			label end
-			`   The alien grunts in a gesture something like a sigh of disappointment and then turns away and says something to one of the other members of the now-gathering crowd. Their skin flashes a bright blue and then they leave, heading towards one of the parked ships at the spaceport.`
-			`   When they return, they are holding a small round device which they hand to the individual in charge, who then hands it to you. As soon as it touches your skin, it projects a small but detailed star map of the area highlighting a system a few jumps north of here. It would appear that these people, whoever they are, want you to travel there. `
+			`   After a few moments of silence, the alien grunts in a gesture something like a sigh of disappointment and then turns away and says something to another uniformed individual in the now-gathering crowd. Their skin flashes a bright blue and then they leave, gliding towards one of the nearby ships parked at the spaceport.`
+			`   When they return, they are holding a small round device which they hand to the individual in charge, who then offers it to you and burbles an unintelligible phrase with what you might have characterized as an encouraging tone.`
+			`	You take it, and as soon as the device touches your skin, it begins to project a small but detailed star map of the area highlighting a system a few jumps north of here. The alien grunts energetically: it would appear that these people, whoever they are, want you to travel there.`
 				accept
 	on complete
-		"reputation: Successors" += 10
-		set "known to the high houses"
+		"reputation: Successor" += 10
+		set "known to the successors"
+		set "language: successor"
+		log "Factions" "High Houses" `The High Houses rule over Successor space. From what you can tell, they are similar in structure to large extended families of distantly related Successors: while only those of the central familial bloodline occupy noble positions, the vast majority of the members of any given house are low-born Successors who had an ancestor who was a member of the house at some point in their several-thousand-year continuous history. While the high houses do not officially restrict weaponry or warships to the general populace, their technology is significantly more powerful and they only share it with those who support their interests.`
+		log "Factions" "Successors" `The Successors are an alien species occupying a star cluster on the outer rim of the galaxy. They are the heirs of a large interstellar empire which collapsed at some point around a thousand years ago, that they refer to as their Predecessors. This empire extended as far south as Sol. The Successors are highly familial and display a great deal of hereditary pride.`
+		log "People" "Sieasej" `Sieasej is a Predecessor linguistics scholar at the Grand Academy of Staja-Kella-Oa who has spent some time studying human language, and is therefore one of the only Successors who can speak to and understand you without the benefit of a translation device. They are apparently somewhat wary of the High Houses and their political machinations.`
 		conversation
-			`In a similar manner to the last time, you set down your ship at a landing pad at the spaceport on this planet. Different to last time, however, you have been shuttled to a small, out-of-the way area at a great distance from the main spaceport. Several uniformed individuals stand on the landing pad and stand at attention.`
+			`In a similar manner to the last time, you set down your ship at a landing pad at the spaceport on this planet. Different to last time, however, you have been shuttled to a small, out-of-the way area at a great distance from the main complex, where several uniformed individuals are gathered on the landing pad, standing at attention.`
 			`	After waiting for several minutes, a shuttle lands on the pad beside yours and several individuals emerge from it. One of them is moving more quickly than the rest, and the guards allow them to pass and approach you. Their skin changes to a rough brown before they begin to speak.`
 			`	"Greetings, noble visitor. Thou art human, or do mine eyes decieve me?"`
 			choice
-				`	"Yes, I am human".`
+				`	"Yes, I am".`
 					goto next
-				`	"Yes, I am human. How do you recognize humans?"`
-			`	"Many years past, before from the galaxy we were untimely sever'd, our people watched upon thine and did note upon thy appearence and thy potential to one day ply the stars."`
+				`	"Yes. How do you recognize humans?"`
+			`	"Many years past, before from the galaxy we were untimely sever'd, our people watched upon thine and did note upon thy appearence and thy potential to one day ply the stars. Thy species hath advanced much since last we observed you."`
+			`	One of the guards interrupts them, and their skin briefly glows a warm orange. They return their attention to you.`
 			label next
-			`	"Then, in the spirit of amity, I, the High Houses of the Successors, and the Grand Academy of Staja-Kella-Oa, would pray present thee with a gift, so thou might comprehend our language."`
+			`	"If thou art human, then in the spirit of amity, I, the Old High Houses of the Successors, and the Grand Academy of Staja-Kella-Oa, offer to thee a gift, so thou might understand our language."`
 			`	One of the guards presents you with a small ornately carved box which you gently hold before opening to reveal an equally ornately-carved pin. Upon inspecting the carving, you are surprised to see that it depicts a clearly human sailing ship, wrecked upon a shoal.`
 			`	Most of the guards now begin to leave. You begin to suspect that it was the box and its contents they were guarding rather than your ship.`
 			choice
 				`	Quietly accept it.`
 					goto accept
 				`	"What is it?."`
-			`	"T'is a device most ancient and precious, from when the theatre of thy people dids't entertain our noble Predecessors. This one was't made one thousand years ago for a performance of thy Shakespeare's 'The Tempest,' so that the audience might understand the work in its original form."`
+			`	"T'is a device most ancient and precious, from when the theatre of thy people dids't entertain our noble Predecessors. This one was't made more than one thousand years ago for a performance of thy Shakespeare's 'The Tempest,' so that the audience might understand the work in its original form."`
 			label accept
-			`	"When thou dost place this upon thy person, it shall translate thy words to our language, and ours to thine. Thou shalt treat it kindly, though, for it is not something we gift lightly."`
+			`	"When thou dost place this upon thy person, it shall translate thy words to our language, and ours to thine. Thou shalt treat it kindly, though, for it is..." The speaker pauses for a second, clearly looking for the proper word. "... an artistic loan."`
 			choice
 				`	Pin it on your jacket.`
 					goto end	
 				`	"Wait, if this device is what translates, then how do you know my language?"`
 			`	The alien shrinks slightly, and a wave of color runs down their body.`
 			`	"I am a scholar of language at the Academy here. I learned thy language, at least as it was fifteen hundred years ago, by examining the records left by our Predecessors when they looked upon thy people."`
+			choice
+				`	Pin it on your jacket.`
+					goto end
+				`	"If it is so precious, why are you loaning it to me?"`
+			`	You can see the few guards who remain stiffen at this question, and the speaker grows noticeably quieter and more uncomfortable. They eventually reply, haltingly.`
+			`	"Thou art a ... notable and honored visitor. T'is a gesture of ... hospitality and goodwill from the rulers of this space."`
+				goto curious_end
 			label end
-			`	You place the pin on your jacket and you notice it moving: the sailing ship is now gently rocking on the shoal. When the alien speaks again, they sound markedly different, like words carried by the wind. They explain that their race, the Successors, are the heirs to an ancient and long-dead empire, their Predecessors, and that you are the first alien visitor they have had in many years.`
+			`	You place the pin on your jacket and you notice that it begins to move: the sailing ship is now gently rocking on the shoal. When the alien speaks again, they sound markedly different, like their words are being carried by the wind. They explain that their race, the Successors, are the heirs to an ancient and long-dead empire, their Predecessors, and that you are the first alien visitor they have had in many years.`
 			`	While most of their planets will be open to you, several have been restricted by the "High Houses," the ruling families of Successor space, until you have "proven yourself an ally to their interests."`
-			`	Finally, your interpreter gives their name as Sieajaj, and encourages you to spend some time exploring the Successors' worlds, and right before they leave, they suggest you familiarize yourself with the High Houses.`
+			`	Finally, your interpreter offers their name as "Sieasej", and encourages you to spend some time exploring the Successors' worlds, and right before they leave, they suggest you familiarize yourself with the High Houses.`
 			`	"Thou art a person of great interest to them, and it is easy for even the cleverest among us to fall victim to their politics."`
-
-
+			label curious_end
+			`	They say nothing more, so you place the pin on your jacket and you notice that it begins to move: the sailing ship is now gently rocking on the shoal. When the alien speaks again, they sound markedly different, like their words are being carried by the wind. They explain, regaining some of their confidence, that their race, the Successors, are the heirs to an ancient and long-dead empire, their Predecessors, and that you are the first alien visitor they have had in many years.`
+			`	While most of their planets will be open to you, several have been restricted by the "High Houses," the ruling families of Successor space, and the ones who "loaned" you the translation device, until you have "proven yourself an ally to their interests."`
+			`	Finally, your interpreter gives offers their name as "Sieasej", and encourages you to spend some time exploring the Successors' worlds, both to learn more about them, and to assist their people. Right before they leave, they suggest with a similar hue of discomfort as before that you familiarize yourself with the High Houses.`
+			`	"Thou art a person of great interest to them, and it is easy for even the cleverest among us to fall victim to their politics."`

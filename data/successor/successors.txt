@@ -1,33 +1,44 @@
-government Successor
-	color 0 1 0.853
-
 government Predecessor
 	color 1 1 1
+
+government Successor
+	swizzle 1
+	color 0 1 0.853
+	language "successor"
+	"friendly hail" "successor friendly hail"
 
 government "New Houses"
 	swizzle 3
 	color 1 0 0.5
+	language "successor"
+	"friendly hail" "new houses friendly hail"
+	"hostile hail" "old houses hostile hail"
+	"attitude toward"
+		Successor 1
+
+government "Old Houses"
+	swizzle 4
+	color 0.375 0.316 0.99
+	language "successor"
+	"friendly hail" "old houses friendly hail"
+	"hostile hail" "old houses hostile hail"
 	"attitude toward"
 		Successor 1
 
 government "New Houses (Partisan)"
 	swizzle 3
 	color 1 0 0.5
+	language "successor"
 	"attitude toward"
 		"New Houses" 1
 		"Old Houses" -1
 		"Old Houses (Partisan)" -1
 		"Player" -999
 
-government "Old Houses"
-	swizzle 1
-	color 0.375 0.316 0.99
-	"attitude toward"
-		Successor 1
-
 government "Old Houses (Partisan)"
-	swizzle 1
+	swizzle 4
 	color 0.375 0.316 0.99
+	language "successor"
 	"attitude toward"
 		"Old Houses" 1
 		"New Houses" -1
@@ -64,8 +75,6 @@ outfitter "Successor Basics"
 	"Successor Pulse Laser"
 
 outfitter "Successor Civilian"
-	""
-	""
 	`"Chyyra" Inductive Reverser`
 	`"Chyyra" Inductive Steering`
 	`"Chyyra" Inductive Thruster`
@@ -97,8 +106,6 @@ outfitter "High Houses"
 	"Regal Shield Core"
 
 outfitter Heirloom
-	""
-	""
 	"Heirloom Hunter-Killer Drones"
 	"Heirloom License"
 	"Heirloom Point Defense"
@@ -111,3 +118,305 @@ outfitter Heirloom
 	"Shatter Cannon"
 	"Successor License"
 
+phrase "successor start"
+	word
+		"Uuoru-"
+		"Veldt-"
+		"Nnesa-"
+		"Ryuit-"
+		"Uurau-"
+		"Kvelq-"
+		"Uur-"
+		"Naaja-"
+		"Kejn-"
+		"Yejn-"
+		"Vesua-"
+		"Raaqa-"
+		"Staje-"
+		"Aaura-"
+		"Saqra-"
+		"Stiiqa-"
+		"Kasii-"
+		"Oj-"
+		"Ruuv-"
+phrase "successor middle"
+	word
+		"o-"
+		"sol-"
+		"e-"
+		"paag-"
+		"ag"
+		"ag-"
+		"iis-"
+		"i-"
+		"" 8
+phrase "successor end"
+	word
+		"saqrade"
+		"de"
+		"saqra"
+		"taja"
+		"kaati"
+		"ket"
+		"tej"
+		"pua"
+		"kuj"
+		"stid"
+phrase "successor"
+	phrase
+		"successor start"
+	phrase
+		"successor middle"
+	phrase
+		"successor end"
+
+phrase "high houses start"
+	word
+		"Stiidej-"
+		"Khosa-"
+		"Khora-"
+		"Jorv-"
+		"Val-"
+		"Valkkra-"
+		"Ruuv-"
+		"Aaul-"
+		"Myiara-"
+		"Myuret-"
+		"Chyyra-"
+		"Veusa-"
+phrase "high houses end"
+	word
+		"khora"
+		"khosa"
+		"khorade"
+		"khosade"
+		"saqrade"
+		"saqra"
+		"sora"
+		"yaau"
+		"prua"
+		"qau"
+		"pe"
+		"de"
+		"brue"
+		"ha"
+phrase "high houses"
+	phrase
+		"high houses start"
+	phrase 
+		"successor middle"
+	phrase
+		"high houses end"
+
+phrase "old houses"
+	word
+		"House Aqrabe"
+		"House Sioeora"
+		"House Chydiyi"
+		"House Myreuj"
+		"The Old Houses" 2
+
+phrase "new houses"
+	word
+		"House Seineq"
+		"House Kaatrij"
+		"House Haeora"
+		"House Kvasq"
+		"The New Houses" 2
+
+phrase "relations"
+	word
+		"Mine child"
+		"Mine dear friend"
+		"Mine sibling"
+		"Mine old friend"
+		"Mine neighbor"
+
+phrase "successor friendly hail"
+	word
+		"${relations} says that "
+		"I think that "
+		"I doth believe that "
+		"I hath learned that "
+		"Mine experience shows that "
+		""
+	phrase
+		"new houses"
+		"old houses"
+	word
+		" "
+	word
+		"reward kindly their allies"
+		"doth offer the most rewarding work"
+	word
+		"."
+		"!"
+phrase "successor friendly hail"
+	word
+		"Pray tell no one"
+		"Seal thy lips"
+		"Say naught"
+		"Say naught to none"
+		"Pray tell none"
+		"Thou shalt think me a liar"
+		"Thou might'st not be able to concieve it"
+	word
+		", "
+	word
+		"but I believe that"
+		"but a scholar told me that"
+		"but a friend told me that"
+		"but I just read that"
+		"but I overheard that"
+	word 
+		" "
+	phrase
+		"old houses"
+		"new houses"
+	word
+		" "
+	word
+		"were responsible for the collapse"
+		"did bring about the collapse"
+		"plan to raise their taxes"
+		"have no noble blood"
+		"just captured a spy"
+		"are just a front"
+	word
+		"."
+		"!"
+phrase "successor friendly hail"
+	phrase
+		"relations"
+	word
+		" "
+	word
+		"just joined the navy of ${old houses}"
+		"just joined the navy of ${new houses}"
+		"just graduated"
+	word
+		"."
+		"!"
+	word
+		""
+		" I overflow with pride!"
+		" I am so proud of them!"
+		" I have never been more proud!"
+
+phrase "old houses friendly hail"
+	word
+		"We welcome thee to join us in our space" 
+		"Thy presence in our lovely space is welcome"
+		"We note thy visitation and accept"
+		"'Noble friend', thou art by our decree"
+		"'Honored guest,' within our skies thou art"
+		"'Regal sojourner,' thy name shall be with us"
+	word
+		" / "
+	word
+		"So that thou might enjoy our pleasant worlds."
+		"So that thou might enjoy our verdant worlds."
+		"So that thou might make note of our advance."
+		"So that thou might find joy in our success."
+		"So that thou may bear witness to our joy."
+phrase "old houses friendly hail"
+	word
+		"By noble lineage do we exalt us all"
+		"With joyful strength and honest might we fly"
+		"No evil shall impede our noble goal"
+	word
+		" / "
+	word
+		"To build for all a great and lasting peace."
+		"To make for all a true and joyful peace."
+phrase "old houses friendly hail"
+	word
+		"The"
+	word
+		" arm of "
+		" spear of "
+		" sword of "
+		" shield of "
+		" prime of "
+		" best of "
+	phrase
+		"old houses"
+	word
+		" in joy"
+		" with pride"
+		" with joy"
+	word
+		" we are;"
+	word
+		" / "
+	word
+		"A simple truth in which we take our pride."
+		"An honest fact 'tis plain for all to see."
+		"A simple truth in which we take our joy."
+
+phrase "old houses hostile hail"
+	word
+		"Thy deception marks the apex of thy ill,"
+		"Thy cowardice is the basis of thy fame,"
+		"Our foolishness it was, we see, to trust thee;"
+		"A knave and coward thou hast clearly proved thyself;"
+	word
+		" / "
+	word
+		"Our duty shall relieve thee of thy life."
+		"May thou in death find peace thou lacked in life."
+		"May thy death be valorous and quick."
+		"May, in death, thou recognize thy wrongs."
+		"Enlightened now, we are to thy malignity."
+		"May thy knavish and deceptive heart now cease."
+
+phrase "new houses friendly hail"
+	word
+		"We welcome thee to join us in our space" 
+		"Thy presence in our lovely space is welcome"
+		"We note thy visitation and accept"
+		"'Noble friend', thou art by our decree"
+		"'Honored guest,' within our skies thou art"
+		"'Regal sojourner,' thy name shall be with us"
+	word
+		" / "
+	word
+		"So that thou might enjoy our pleasant worlds."
+		"So that thou might enjoy our verdant worlds."
+		"So that thou might make note of our advance."
+		"So that thou might find joy in our success."
+		"So that thou may bear witness to our joy."
+phrase "new houses friendly hail"
+	word
+		"By noble lineage do we exalt us all"
+		"With joyful strength and honest might we fly"
+		"No evil shall impede our noble goal"
+	word
+		" / "
+	word
+		"To build for all a great and lasting peace."
+		"To make for all a true and joyful peace."
+phrase "new houses friendly hail"
+	word
+		"The"
+	word
+		" arm of "
+		" spear of "
+		" sword of "
+		" shield of "
+		" prime of "
+		" best of "
+	phrase
+		"new houses"
+	word
+		" in joy"
+		" with pride"
+		" with joy"
+	word
+		" we are;"
+	word
+		" / "
+	word
+		"A simple truth in which we take our pride."
+		"An honest fact 'tis plain for all to see."
+		"A simple truth in which we take our joy."

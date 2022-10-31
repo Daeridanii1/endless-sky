@@ -33,6 +33,33 @@ news "high houses official"
 			"A pair of agents passes by you. Most of the spaceport crowd gives them a wide berth."
 			`"A pilot, I once was. Learned from an older sibling, I did."`
 
+news "successor student"
+	location
+		government "High Houses" "Successor"
+		attributes education rich
+	name
+		word
+			"Successor student"
+	message
+		word
+			`"Exams, I think, shall never know their end,`
+			`"Hath I forgot my geographic terms?`
+			`"Hath I forgot my chemical reagents?`
+			`"Hyperspace Mechanics is a bore,`
+			`"Predecessors His'try is a drag,`
+			`"Plasma Flow Dynamics is a bore,`
+			`"Particle Kinetics is a bore,`
+		word
+			` / `
+		word
+			`I know not sleep nor food nor meager rest`
+			`I don't know how I even stay awake`
+			`Doth thou know any useful study tricks`
+			`But I know that I'm the best one in my class`
+		word
+			`."`
+			`!"`
+
 news "high houses propaganda"
 	location
 		not attributes quiet
