@@ -15,6 +15,9 @@ government "New Houses"
 	"hostile hail" "old houses hostile hail"
 	"attitude toward"
 		Successor 1
+		"People's Houses (Hostile)" -0.01
+	"penalty for"
+		assist 0
 
 government "Old Houses"
 	swizzle 4
@@ -24,30 +27,53 @@ government "Old Houses"
 	"hostile hail" "old houses hostile hail"
 	"attitude toward"
 		Successor 1
+		"People's Houses (Hostile)" -0.01
+	"penalty for"
+		assist 0
 
 government "New Houses (Partisan)"
 	swizzle 3
 	color 1 0 0.5
+	"player reputation" -999
 	language "successor"
 	"attitude toward"
-		"New Houses" 1
-		"Old Houses" -1
-		"Old Houses (Partisan)" -1
-		"Player" -999
+		"New Houses" 0.01
+		"Old Houses" -0.01
+		"Old Houses (Partisan)" -0.01
 
 government "Old Houses (Partisan)"
 	swizzle 4
 	color 0.375 0.316 0.99
+	"player reputation" -999
 	language "successor"
 	"attitude toward"
-		"Old Houses" 1
-		"New Houses" -1
-		"New Houses (Partisan)" -1
-		"Player" -999
+		"Old Houses" 0.01
+		"New Houses" -0.01
+		"New Houses (Partisan)" -0.01
+
+government "People's Houses"
+	swizzle 6
+	color 0.92 0.29 0.20
+	language "successor"
+	"friendly hail" "successor friendly hail"
+
+government "People's Houses (Hostile)"
+	"display name" "People's Houses"
+	swizzle 6
+	color 0.92 0.29 0.20
+	"player reputation" -999
+	"attitude toward"
+		Author -0.01
+		Successor -0.01
+		"People's Houses" 0.01
+	bribe 0.05
+	fine 0
 
 shipyard "Successor Basics"
 	Kvelqde
 	Stolsaqra
+	"Successor Carrier"
+	"Successor Fighter"
 
 shipyard "Successor Civilian"
 	Myaede
@@ -61,6 +87,9 @@ shipyard "High Houses"
 	Valsaqra
 	Veusade
 
+shipyard "Peoples Houses"
+	"Myaede-Khora"
+
 shipyard Heirloom
 	Valkkyiara-Khorasaqra
 
@@ -73,6 +102,8 @@ outfitter "Successor Basics"
 	"Common Shield Core"
 	Hyperdrive
 	"Successor Pulse Laser"
+	"0 Hypermap"
+	"0 Hyperjump Drive"
 
 outfitter "Successor Civilian"
 	`"Chyyra" Inductive Reverser`
@@ -104,6 +135,10 @@ outfitter "High Houses"
 	"Noble Shield Core"
 	`OC-"Mavra" Betavoltaic Cell`
 	"Regal Shield Core"
+
+outfitter "Peoples Houses"
+	"Overcharged Pulse Laser"
+	"Overcharged Laser Turret"
 
 outfitter Heirloom
 	"Heirloom Hunter-Killer Drones"

@@ -56,7 +56,7 @@ system Myruet-Kvelq
 		distance 3735.87
 		period 2205.54
 	object "Successor Wormhole"
-		sprite planet/wormhole
+		sprite planet/wormhole-red
 		distance 1900
 		period 400
 
@@ -71,7 +71,6 @@ system Kasii-Sola
 	asteroids "small metal" 11 1.17
 	asteroids "medium metal" 207 1.65
 	asteroids "large metal" 22 1.155
-
 	object
 		sprite star/m0
 		period 10
@@ -135,7 +134,7 @@ system Aaura-Kaska
 	trade Medical 480
 	trade Metal 402
 	trade Plastic 272
-	fleet "Small Succesor Freight" 1000
+	fleet "" 1000
 	fleet "Medium Successor Freight" 800
 	fleet "Small Successor Transport" 1500
 	fleet "Small Old Houses" 2000
@@ -259,9 +258,10 @@ system Ofstond-Stir
 
 planet "Successor Wormhole"
 	description ""
+	requires "quantum keystone"
 
 system Ryuit-Saqra
-	pos -1613.927 -1087.916
+	pos -1453.927 -1138.36
 	government Successor
 	habitable 7000
 	belt 1998 4
@@ -445,7 +445,7 @@ system Oublaa-Khora
 	government Predecessor
 	link Mavra-Ijsola
 	object "Successor Wormhole"
-		sprite planet/wormhole
+		sprite planet/wormhole-red
 
 system Valkkra-Uuoru
 	pos -1309.565 -1205.981
@@ -521,7 +521,7 @@ system Pelaa-Muora
 	belt 1916 3
 	link Aaura-Kaska
 	link Chyyra-Osolaa
-	link Kella-Uoasa
+	link Myiara-Nnesa
 	asteroids "small rock" 9 5.325
 	asteroids "medium rock" 83 4.2
 	asteroids "large rock" 7 6.825
@@ -579,13 +579,12 @@ system Pelaa-Muora
 		period 1925.801
 
 system Myiara-Nnesa
-	pos -1531.38 -1003.662
+	pos -1453.38 -1078.662
 	government "New Houses"
 	habitable 3450
 	belt 1179 3
 	link Chyyra-Osolaa
-	link Kella-Uoasa
-	link Luue-Saqru
+	link Pelaa-Muora
 	link Ryuit-Saqra
 	asteroids "large metal" 10 3.062
 	minables iron 8 1.5
@@ -671,10 +670,10 @@ planet Aava-Aasa-Khora
 	bribe 0
 
 planet O-Vasa-Oa
-	attributes urban rich
+	attributes rich urban
 	landscape land/hills4
 	description "This moon is the collective seat of what are known as the New Houses, the noble families who traveled through the wormhole to this region of space during the collapse of the Predecessors' empire. Many within the New Houses object to that moniker, arguing that their family lines are in fact the more extensive and noble and that they should be categorized by that rather than by their time of arrival."
-	description "Despite population surges in recent years, O-Vasa-Oa remains relatively sparsely populated. The tidal forces from the gas giant it orbits create high winds that sweep across the landscape, making settlement challenging in undeveloped areas, and expensive even in those that have the infrastructure to support it."
+	description "Despite population surges in recent years, O-Vasa-Oa remains relatively sparsely populated. The tidal forces from the planet it orbits create high winds that sweep across the landscape, making settlement challenging in undeveloped areas, and expensive even in those that have the infrastructure to support it."
 	spaceport "The spaceport is built right on top of a large shipyard, allowing visitors to look on at the impressive manufacturing apparatus of the New Houses while going about their business. Despite its relatively small size, the spaceport is very busy, with ships constantly launching and landing and a general air of haste among all the Successors you see."
 	government "New Houses"
 	shipyard Heirloom
@@ -688,7 +687,7 @@ planet O-Vasa-Oa
 	bribe 0
 
 planet Staja-Kella-Oa
-	attributes rich education
+	attributes education rich
 	landscape land/fog11
 	description "Staja-Kella-Oa is widely recognized as the location of the best educational institutions in Successor space, most of which are funded by the Old Houses but accept applications from all Successors regardless of birthplace or family history."
 	description "The planet itself is densely forested with a few small cities. Part of the reason that it continues to be a center for education is that it has a rich archaelogical history: this planet was home to a now presumed-extinct sapient species roughly one hundred thousand years ago, and there is a great deal of interest in uncovering the details of their society."
@@ -733,7 +732,7 @@ planet Uo-Oraa-Vayya
 	bribe 0
 
 planet Shassa-Wyra-Orrou
-	attributes mining tourism quiet
+	attributes mining quiet tourism
 	landscape land/lava3
 	description "Despite its favorable location in Successor space, Shassa-Wyra-Orrou is only sparsely inhabited: the hot stars it orbits make its surface temperature a little too warm for most Successors. Even so, there are some small settlements in the polar regions, mostly populated by mining families taking advantage of the rich mineral wealth of both the planet and the surrounding system."
 	spaceport "The spaceport is built on a large rock beach in the northern hemisphere, with a number of large fabric shades covering important areas. A substantial portion of the port is devoted to offloading mined items, and surprisingly, there is also a large and healthily-populated tourist section, which is displaying several particularly attractive stones, no doubt locally mined."
@@ -742,10 +741,16 @@ planet Shassa-Wyra-Orrou
 	bribe 0
 
 planet Yoqqa-Vasa-Vasa
-	landscape land/water0
-	description "This is a Successor planet."
-	spaceport "This planet has a spaceport."
+	attributes manufacturing tourism
+	landscape land/forest5
+	description "Yoqqa-Vasa-Vasa's atmosphere is unusually thick for a planet of its size, and contains a very high concentration of carbon monoxide, which, while harmless to the Successors because of their different biochemistry, is highly toxic to humans. Nonetheless, it supports a rich and biodiverse planetary ecosystem, with large jungles straddling its equatorial regions that give way to strikingly beautiful mountain ranges near the poles. It serves as both one of the most popular tourist locations in Successor space, and as a major shipyard planet for the New Houses."
+	description "Yoqqa-Vasa-Vasa is also the seat of power of House Seineq, one of the New Houses."
+	spaceport "You take care to equip a respirator before exiting your ship."
+	spaceport "The spaceport here is large and busy, situated on a platform suspended on poles above one of the equatorial jungles. Because of the thick atmosphere, much of the transport in and out is by air, and there is a near-constant drone of airplane and airship engines layered over the normal spaceport chatter. Several large tourist groups are moving to and fro, and while some regard you with surprise, most take no notice of you or your ship, already focused on their upcoming tour or expedition."
 	government Successor
+	shipyard "High Houses"
+	shipyard "Successor Basics"
+	shipyard "Successor Civilian"
 	outfitter "Successor Basics"
 	"required reputation" 10
 	bribe 0
@@ -760,11 +765,13 @@ planet Moliia-Cosa-Vasa
 	bribe 0
 
 planet Khora-Vasa-Reyyaa
-	attributes military rich
-	landscape land/water0
-	description "Successor shipyard planet."
+	attributes manufacturing military mining rich
+	landscape land/nasa2
+	description "Much of Successor technology relies on advanced composite materials, from their extremely durable ship hulls to their high-performance railguns. This planet contains rich natural deposits of the raw materials required for the manufacturing of their composites, and consequently, it serves as both a center for the mining of these materials and as the industrial core of Successor space."
+	description "Because Khora-Vasa-Reyyaa falls within the sphere of influence of the Old Houses, many in the New Houses are very concerned about the power imbalance this creates, and several treaties are in place ensuring fair and open exports from the planet."
 	description "Khora-Vasa-Reyyaa is also home to the familial seat of House Chydiyi, one of the Old Houses."
-	spaceport "This planet has a spaceport."
+	spaceport "The spaceport here is perhaps the most militarized of any you have visited in Successor space. Large industrial buildings rise up around the landing pads, casting them into deep shadow, and several small Successor warships stand ready on fast-launch pads, ready to enter orbit at a moment's notice. You pass through a security checkpoint on your way into the spaceport proper, and while the security officers have clearly been briefed to expect alien visitors, they still regard you with some degree of scrutiny."
+	spaceport "The trading posts, outfitters, and shipyard inside are all quite impressive, and the Successors you meet are all very curt and professional, including the merchant captains."
 	government Successor
 	shipyard "High Houses"
 	shipyard "Successor Basics"
@@ -787,12 +794,27 @@ planet Kasi-Osolaa-Sossa
 	"required reputation" 15
 	bribe 0
 
+planet Kasii-Tuur-Saqru
+	attributes crime station
+	landscape land/station42
+	description "When the New Houses immigrated to this area of space after the collapse of their Predecessors' empire, many existing space stations were rapidly converted from industrial or scientific purposes to temporary habitation. While most of these were converted back as the New Houses settled the south of Successor space, this station was not."
+	description `Despite extensive efforts by the New Houses, it remains overcrowded, poorly-maintained, and a haven for crime, with many of its inhabitants either unable to leave because of lack of funding, or unwilling to leave because of ties to family or to the so-called "People's Houses," semi-familial groups lauded by the residents as effective democratic governments but denigrated by the High Houses as little more than gangs of populist thugs.`
+	spaceport "This planet has a spaceport."
+	shipyard "Successor Basics"
+	shipyard "Peoples Houses"
+	outfitter "Peoples Houses"
+	outfitter "Successor Basics"
+	outfitter "Successor Civilian"
+	"required reputation" 10
+	bribe 0
+
 system Chyyra-Osolaa
-	pos -1412.889 -995.912
+	pos -1432.148 -1002.727
 	government Successor
 	link Luue-Saqru
 	link Myiara-Nnesa
 	link Pelaa-Muora
+	link Raaqa-Ryuit
 	trade Clothing 248
 	trade Electronics 699
 	trade Equipment 523
@@ -821,7 +843,7 @@ system Khosa-Kaska
 	trade Plastic 348
 
 system Maspa-Cavaasa
-	pos -1637.657 -832.019
+	pos -1635.324 -828.352
 	government Successor
 	link Osolaa-Uuoru
 	asteroids "large metal" 12 1.5
@@ -865,12 +887,17 @@ system Maspa-Cavaasa
 			period 173.691
 
 system Kella-Uoasa
-	pos -1468.82 -1076.144
+	pos -1530.487 -1139.477
 	government Successor
 	habitable 22300
-	link Myiara-Nnesa
-	link Pelaa-Muora
+	link Maspa-Raaqa
 	link Raaqa-Ryuit
+	asteroids "large metal" 58 4.5
+	asteroids "small rock" 32 3.317
+	asteroids "medium rock" 18 3.445
+	asteroids "large rock" 12 3.156
+	minables iron 14 4.5
+	minables silver 1 8
 	trade Clothing 290
 	trade Electronics 767
 	trade Equipment 464
@@ -881,6 +908,10 @@ system Kella-Uoasa
 	trade Medical 644
 	trade Metal 469
 	trade Plastic 267
+	fleet "People's Houses" 800
+	fleet "Light Successor Freight" 1500
+	fleet "People's Houses Raiders" 3000
+	fleet "Small New Houses" 15000
 	object
 		sprite star/o-giant
 	object
@@ -891,7 +922,7 @@ system Kella-Uoasa
 		distance 5000
 		period 5000
 		object Kasii-Tuur-Saqru
-			sprite planet/station0
+			sprite planet/station17
 			distance 180
 			period 64
 		object
@@ -32899,10 +32930,11 @@ system Tuur-Kella
 	trade Plastic 258
 
 system Raaqa-Ryuit
-	pos -1500.361 -1142.486
+	pos -1531.027 -1005.005
 	government Successor
+	link Chyyra-Osolaa
 	link Kella-Uoasa
-	link Maspa-Raaqa
+	link Luue-Saqru
 	asteroids "small rock" 14 4
 	asteroids "small metal" 8 12
 	trade Clothing 337
@@ -32934,8 +32966,8 @@ system Luue-Saqru
 	pos -1464.111 -941.046
 	government Successor
 	link Chyyra-Osolaa
-	link Myiara-Nnesa
 	link Osolaa-Uuoru
+	link Raaqa-Ryuit
 	trade Clothing 291
 	trade Electronics 674
 	trade Equipment 553
@@ -32948,9 +32980,9 @@ system Luue-Saqru
 	trade Plastic 324
 
 system Maspa-Raaqa
-	pos -1514.023 -1205.505
+	pos -1514.69 -1201.949
 	government Uninhabited
-	link Raaqa-Ryuit
+	link Kella-Uoasa
 
 system Khasola-Ryuit
 	pos -969.856 -662.764
@@ -32983,7 +33015,7 @@ planet Raaqa-Puan-Uuoru
 	"required reputation" 15
 
 system Osolaa-Uuoru
-	pos -1537.968 -850.935
+	pos -1540.635 -849.379
 	government Successor
 	link Luue-Saqru
 	link Maspa-Cavaasa
@@ -33004,14 +33036,4 @@ planet Kella-Uuoru-Sossa
 	description "This was once the homeworld of the Predecessors. Its surface has been scoured by radiation from the nearby Eta Carinae, and the once-great cities of the fallen empire now lie in ruin."
 	spaceport "The spaceport stands proudly even after thousands of years of disuse."
 	government Predecessor
-
-planet Kasii-Tuur-Saqru
-	attributes station
-	landscape land/station1
-	description "This is a successor station."
-	spaceport "This planet has a spaceport."
-	shipyard "Successor Basics"
-	outfitter "Successor Basics"
-	"required reputation" 10
-	bribe 0
 

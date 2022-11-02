@@ -64,10 +64,149 @@ mission "Successors: First Contact"
 			label end
 			`	You place the pin on your jacket and you notice that it begins to move: the sailing ship is now gently rocking on the shoal. When the alien speaks again, they sound markedly different, like their words are being carried by the wind. They explain that their race, the Successors, are the heirs to an ancient and long-dead empire, their Predecessors, and that you are the first alien visitor they have had in many years.`
 			`	While most of their planets will be open to you, several have been restricted by the "High Houses," the ruling families of Successor space, until you have "proven yourself an ally to their interests."`
-			`	Finally, your interpreter offers their name as "Sieasej", and encourages you to spend some time exploring the Successors' worlds, and right before they leave, they suggest you familiarize yourself with the High Houses.`
+			`	Finally, your interpreter gives their name as "Sieasej", and encourages you to spend some time exploring the Successors' worlds, and right before they leave, they suggest you familiarize yourself with the High Houses.`
 			`	"Thou art a person of great interest to them, and it is easy for even the cleverest among us to fall victim to their politics."`
 			label curious_end
 			`	They say nothing more, so you place the pin on your jacket and you notice that it begins to move: the sailing ship is now gently rocking on the shoal. When the alien speaks again, they sound markedly different, like their words are being carried by the wind. They explain, regaining some of their confidence, that their race, the Successors, are the heirs to an ancient and long-dead empire, their Predecessors, and that you are the first alien visitor they have had in many years.`
 			`	While most of their planets will be open to you, several have been restricted by the "High Houses," the ruling families of Successor space, and the ones who "loaned" you the translation device, until you have "proven yourself an ally to their interests."`
-			`	Finally, your interpreter gives offers their name as "Sieasej", and encourages you to spend some time exploring the Successors' worlds, both to learn more about them, and to assist their people. Right before they leave, they suggest with a similar hue of discomfort as before that you familiarize yourself with the High Houses.`
+			`	Finally, your interpreter gives their name as "Sieasej", and encourages you to spend some time exploring the Successors' worlds, both to learn more about them, and to assist their people. Right before they leave, they suggest with a similar hue of discomfort as before that you familiarize yourself with the High Houses.`
 			`	"Thou art a person of great interest to them, and it is easy for even the cleverest among us to fall victim to their politics."`
+
+mission "Successors: People's Houses, First Contact"
+	landing
+	source "Kasii-Tuur-Saqru"
+	to offer
+		has "known to the successors"
+	on offer
+		conversation
+			`Compared to most of the spaceports you have been to in Successor space, this one is dingy, crowded, and uncomfortable. Most of the Successors you see look equally dirty and unhappy, and the majority of the few ships you've noticed landing are painted in a different, darker shade of red.`
+			`	Would you like to ask someone here about this place?`
+			choice
+				`	(Yes.)`
+				`	(No.)`
+					defer
+			`	You approach one of the crew members disembarking from one of the red-painted ships, who, as you draw closer, you see bears several large burns and scars.`
+			`	"Excuse me, I was wondering if you could tell me about this place. It seems different to the rest of Successor space I've been through."`
+			`	The Successor looks over at the spaceport for a moment before grunting quietly and deciding to reply. Their voice is lower and darker than that of most Successors you have heard, and their skin changes color and texture rapidly, almost with every word.`
+			`	"Thou art the alien vis'tor brought by the Old Houses, art thou not? Their 'noble guest' whom they parade around with such delight?"`
+			choice
+				`	(Next.)`
+			`	You reply to the affirmative, despite the accusation of being "paraded around," and the Successor grunts again; with approval or disgust you cannot tell. They lean against one of the cargo containers on the spaceport floor and continue,`
+			`	"So then thou art an another indolent fool, no doubt decieved by their fine promises, of wealth and power so long as you toe the line? Well, look around and see the value of their noble word! The Houses care but naught for you or I or all of them." The Successor gestures to the crowd in a broad sweeping motion.`
+			choice
+				`	"Who are they?"`
+					goto who
+				`	"I don't think of myself as a fool."`
+			`	"Then thou art doubly so, because thy time within this space is new and short and so the thoughts contained within thy brain are like those of a child, still blind to the world. But keep thy friends if they appear so kind; and take the time to recollect what I have said when in thy back their dagger nests."`
+			`	With that, the Successor leaves, rising from the cargo containers and heading silently towards the spaceport.`
+				decline
+
+			label who
+			`	"They are the outcasts of the Houses New, who, like the rest, were forced here when the old empire crumbled into ash. But while the rest of the New Houses had ample wealth to move  and grow into their new domains, not all of us were able to escape this intermediary place they shoved us while we waited. A thousand years and still they paint us with their scorn and demonize our yearning to be free."`
+			choice
+				`	"Free?"`
+					goto free
+				`	"Thank you. I have no more questions."`
+			`	"Thou would be wise, if thou possesses that rare art, to keep and guard thy back agaist thy new and treacherous 'friends.'`
+			`	Or don't. Another buried fool makes little difference."`
+			`	With that, the Successor leaves, rising from the cargo containers and heading silently towards the spaceport.`
+				decline
+			label free
+			`	"Free, or freer than Old and New permit. The People's Houses stand not for the rich and those of noble blood, but for the true and honest heirs of that which was."`
+			`	The Successor looks over to the spaceport, before returning their attention to you for the last time.`
+			`	"Thou would be wise, if thou possesses that rare art, to keep and guard thy back agaist thy new and treacherous 'friends.'`
+			`	Or don't. Another buried fool makes little difference."`
+			`	With that, the Successor leaves, rising from the cargo containers and heading silently towards the spaceport.`
+				decline
+
+mission "Successors: Predecessor Research 1"
+	landing
+	name "Assist Predecessor Research"
+	description "Transport these <bunks> scholars researching the Predecessors to <stopovers> and back home to <destination> by <date>."
+	passengers 7
+	deadline 30
+	to offer
+		has "known to the successors"
+		random < 40
+	source "Staja-Kella-Oa"
+	stopover "Kella-Uuoru-Sossa"
+	on offer
+		require "Quantum Keystone"
+		conversation
+			`As you land on the spaceport pad, you see a familiar face approaching; it is Sieasej, the Successor scholar who translated for you during your first contact with the Successors. They are moving towards you with a small group of similarly-dressed individuals, who you assume are also scholars of some sort.`
+			`	"Captain! I delight to see thy return; I came here with haste as soon as I saw that thou was to arrive!"`
+			`	You greet Sieasej, and they explain that the scholars with them are researchers of the Predecessors belonging to House Sioeora seeking transport through the wormhole.`
+			`	"The supply of the precious stones that navigate the wormhole is woefully limited," one of the researchers continues. "Were we to petition the Academy to loan us one, we might be forced to wait for years, a pace that's far too slow for our research.`
+			`	If thou were to transport us to the ancestral homeworld, even for a short time, it would advance our research greatly."`
+			choice
+				`	"Sure, I would be happy to."`
+					goto accept
+				`	"Can I come back another time?"`
+					defer
+				`	"Sorry, but you'll have to find someone else to take you."`
+					decline
+			label accept
+			`	"Our deepest thanks!" Several of the members of the research team smile conspiratorially, clearly excited to be skipping the queue. Sieasej also offers their thanks and makes clear that they'll "keep an eye out for any more interesting opportunities."`
+				accept
+	on stopover
+		conversation
+			`	While relatively calm and subdued during the journey here, the researchers bolt out of the airlock almost the instant your ship's landing gear touch ground, arms loaded down with an innumerable array of booklets, catalogs, and strange devices that they waste no time in thrusting into the air or towards the rocks and soil.`
+			`	By the time night falls on the planet, they reluctantly return to your ship, dusty, tired, but abuzz with excitement at their discoveries.`
+			`	As you are making preparations to leave, you realize this would be a good moment to learn about the Predecessors from the experts, especially considering you're liable to be listening to them talk about their new data all the way back.`
+			choice
+				`	(Ask them about the Predecessors.)`
+					goto ask
+				`	(Don't ask them.)`
+					launch
+			label ask
+			`	You approach the group of researchers, still twittering with excitement over the day's work. "I was wondering if you could tell me a little bit about the Predecessors," you say.`
+			`	"Of course!" the head researcher replies, "What dost thou wish to know?"`
+			choice
+				`	"Who were the Predecessors?"`
+					goto who
+				`	"Actually, I didn't have any questions after all."`
+					launch
+			label who
+			`	"Our Predecessors were our ancestors. Until fifteen hundred years ago, they ruled this space and much more as part of a vast empire. Most of them died out during the collapse of the empire, but a small few made their way through the unstable wormhole to the star cluster where we, their Successors, now make our home."`
+			choice
+				`	"What caused the collapse?"`
+					goto collapse
+				`	"How large was their empire?"`
+					goto empire
+				`	"What was their technology like?"`
+					goto tech
+				`	"I have no more questions."`
+					launch
+			label collapse
+			`	The researcher sighs. "We do not know; or rather, the full extent of the truth yet remains hidden. The star Eta Carinae experienced an 'eruption' that irradiated many of their inner territories. But the reason behind this eruption is not known; perhaps twas naught but a cruel trick of nature, or perhaps twas some sinister strike upon our race by an unseen foe. The empire at the time of its collapse had awakened the destructive envy of many."`
+			choice
+				`	"How large was their empire?"`
+					goto empire
+				`	"What was their technology like?"`
+					goto tech
+				`	"I have no more questions."`
+					launch
+			label empire
+			`	"The translation device thou wears upon thy clothes is testament to its scale; at its peak, our scholars had even laid eyes and ears upon Earth. These dead systems that remain where once the core of their empire stood are naught but a fraction of what once was there. Others have been ... hidden. We do not know how or why, only that the starcharts of our ancestors do not mirror those we carry today."`
+			choice
+				`	"What caused the collapse?"`
+					goto collapse
+				`	"What was their technology like?"`
+					goto tech
+				`	"I have no more questions."`
+					launch
+			label tech
+			`	"Glorious and beautiful; as much art as science or engineering. Our Predecessors employed exotic materials - the sort that one cannot find unless one knows exactly what to look for. We have descriptions, enough to make rudimentary copies and guesses at the processes our Predecessors used, but copies and guesses our attempts remain. We have even failed to replicate the heirlooms guarded by the High Houses - the materials they use are somehow different from how materials in this galaxy should be."`
+			choice
+				`	"What caused the collapse?"`
+					goto collapse
+				`	"How large was their empire?"`
+					goto empire
+				`	"I have no more questions."`
+					launch
+	on complete
+		"successor jobs" += 2
+		payment 250000
+		conversation
+			`	As expected, the scholars remained highly conversational on the way back, remarking on unusual radiation measurements and fawning over several small metal fragments collected by one particularly lucky scholar.`
+			`	They almost forget to give you your payment when you return them to <destination>, but the head researcher places a chip for <payment> into your hands and thanks you before departing into the spaceport.`

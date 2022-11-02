@@ -153,14 +153,14 @@ outfit "Resistance Module"
 outfit "Successor Cooling"
 	category "Systems"
 	cost 94000
-	thumbnail "outfit/wanderer heat sink"
+	thumbnail "outfit/successor cooling"
 	licenses
 		"Successor"
 	"mass" 8
 	"outfit space" -8
-	"active cooling" 12.5
+	"active cooling" 13.5
 	"cooling energy" 1.1
-	"heat capacity" 12
+	"heat capacity" 40
 	description "Successor technology tends not to produce a great amount of heat, so their active cooling systems are small and only ramp up at high temperatures. To benefit this, each cooling unit slightly expands the heat capacity of the ship it is mounted on, allowing the ship to stay cool for longer."
 
 outfit `"Aqra" Inductive Thruster`

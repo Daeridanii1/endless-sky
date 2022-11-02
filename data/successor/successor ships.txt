@@ -254,6 +254,17 @@ ship `Stolsaqra`
 	"final explode" "final explosion medium"
 	description "The Successors have limited experience in making warships this small, and while their attempt at an interceptor is durable and sports a surprising amount of firepower for a ship of its size, it is also plagued with power and propulsion issues as most of their existing technology was either too large or not powerful enough to yield effective performance. The result is a ship that ambitious pilots call a challenge and prudent pilots call a deathtrap, but continues to see use because of its heavy armament."
 
+ship `Stolsaqra` `Stolsaqra (OC Laser)`
+	outfits
+		`"Aqra" Inductive Thruster`
+		`"Aqra" Inductive Steering`
+		`"Aqra" Inductive Reverser`
+		`4-"Kaska" Betavoltaic Cell`
+		"Overcharged Pulse Laser" 3
+		"Common Shield Core"
+		"Hyperdrive"
+		"Pulse Laser Turret"
+
 ship `Kvelqde`
 	sprite "ship/successor shuttle"
 	thumbnail "thumbnail/successor shuttle"
@@ -301,6 +312,17 @@ ship `Kvelqde`
 	explode "large explosion" 8
 	"final explode" "final explosion medium"
 	description "This tiny shuttle is the smallest vessel operating in Successor space, and the first ship that new Successor pilots are able to get their arms on. Despite their small size, they are capable multipurpose vessels, and are frequently used for transporting passengers and cargo, for short-duration research expeditions, and even as very light combat craft, capable of just barely fitting one fixed and one turreted pulse laser."
+
+ship `Kvelqde` `Kvelqde (Violent)`
+	outfits
+		`"Aqra" Inductive Thruster`
+		`"Aqra" Inductive Steering`
+		`"Aqra" Inductive Reverser`
+		`1-"Uurau" Betavoltaic Cell` 2
+		"Overcharged Pulse Laser"
+		"Common Shield Core"
+		"Hyperdrive"
+		"Overcharged Laser Turret"
 
 ship `Myaede`
 	sprite "ship/successor freighter"
@@ -444,12 +466,66 @@ ship "Myaede" "Successor Freighter 100"
 	engine 34 -52
 	engine 48 -60
 
+ship `Myaede-Khora`
+	sprite "ship/successor mod freighter"
+	thumbnail "thumbnail/successor mod freighter"
+	attributes
+		category "Light Warship"
+		"cost" 3250000
+		"shields" 2500
+		"hull" 18500
+		"required crew" 7
+		"bunks" 10
+		"mass" 305
+		"drag" 2.5
+		"heat dissipation" 0.8
+		"fuel capacity" 500
+		"cargo space" 120
+		"outfit space" 280
+		"weapon capacity" 155
+		"engine capacity" 150
+		weapon
+			"blast radius" 100
+			"shield damage" 1000
+			"hull damage" 500
+			"hit force" 1500
+	outfits
+		`"Chyyra" Inductive Thruster`
+		`"Chyyra" Inductive Steering`
+		`7-"Ruuv" Betavoltaic Cell`
+		`1-"Uurau" Betavoltaic Cell`
+		"Successor Cooling"
+		"Common Shield Core"
+		"Hyperdrive"
+		"Overcharged Laser Turret" 2
+		"Overcharged Pulse Laser" 5
+		"Outfits Expansion" 4
+
+	turret -39 13
+	turret 39 13
+	gun -4 -55
+	gun 4 -55
+	gun 0 -46
+	gun -8 -22
+	gun 8 -22
+	engine -48 52
+	engine -35 60
+	engine 35 60
+	engine 48 52
+	leak "leak" 50 50
+	leak "flame" 30 80
+	explode "tiny explosion" 18
+	explode "small explosion" 36
+	explode "medium explosion" 24
+	explode "large explosion" 8
+	"final explode" "final explosion medium"
+	description `While the High Houses do not sell their purpose-built warships to those who don't support their interests, the ubiquity and free space of the "Myaede" freighter has made it a relatively decent light weapons platform. The High Houses, of course, have better ships for this purpose, but independent agents and unoffical groups like the People's Houses do not.`
+	description `This particular "Myaede" is stripped-down to reduce mass, and most of its cargo space has been refitted to fit extra weapons and larger engines.`
+
 ship `Successor Fighter`
 	sprite "ship/successor fighter"
 	thumbnail "thumbnail/successor fighter"
 	attributes
-		licenses
-			"High Houses"
 		category "Fighter"
 		"cost" 350000
 		"shields" 1100
@@ -599,7 +675,6 @@ ship `Valsaqra`
 		"outfit space" 765
 		"weapon capacity" 360
 		"engine capacity" 150
-		"spinal mount" 1
 		weapon
 			"blast radius" 100
 			"shield damage" 1000
@@ -648,6 +723,105 @@ ship `Valsaqra`
 		right
 		angle 180
 		zoom .7
+	leak "leak" 50 50
+	leak "flame" 30 80
+	explode "tiny explosion" 18
+	explode "small explosion" 36
+	explode "medium explosion" 24
+	explode "large explosion" 8
+	"final explode" "final explosion medium"
+	description `As of the few designs from before the collapse that has adapted - even imperfectly - to the new materials and manufacturing capabilities of the Successors' star cluster, the "Valsaqra" offers an imposing look at the past might of the Predecessors' empire. Today they are mostly used for diplomacy and soft power projection, but the "Valsaqra" is more than capable of taking on a fleet by itself, and is therefore understandably restricted to only the most trusted and loyal captains of the high houses.`
+
+ship `Successor Carrier`
+	sprite "ship/successor carrier"
+	thumbnail "thumbnail/successor carrier"
+	attributes
+		category "Heavy Warship"
+		"cost" 76500000
+		"shields" 8000
+		"hull" 95500
+		"required crew" 164
+		"bunks" 295
+		"mass" 1080
+		"drag" 4.5
+		"heat dissipation" .75
+		"fuel capacity" 700
+		"cargo space" 80
+		"outfit space" 620
+		"weapon capacity" 320
+		"engine capacity" 130
+		weapon
+			"blast radius" 100
+			"shield damage" 1000
+			"hull damage" 500
+			"hit force" 1500
+	outfits
+		`"Veusa" Inductive Thruster`
+		`"Veusa" Inductive Steering`
+		`"Aqra" Inductive Steering`
+		`"Veusa" Inductive Reverser`
+		`"Ryuit" Inertial Core`
+		"Regal Shield Core"
+		"Hyperdrive"
+		"Successor Cooling" 2
+		"Corrosive Torpedo Launcher" 2
+		"Corrosive Torpedo" 240
+		"Burst Anti-Missile Turret" 4
+	gun -9 -17
+	gun 9 -17
+	turret -35 42
+	turret 35 42
+	turret -102 -57
+	turret 102 -57
+	engine -103 133
+		zoom .8
+	engine -64 152
+		zoom .8
+	engine 0 190
+	engine 64 152
+		zoom .8
+	engine 103 133
+		zoom .8
+	"reverse engine" -103 -116
+		zoom .8
+		"over"
+	"reverse engine" 103 -116
+		zoom .8
+		"over"
+	"steering engine" -103 -116
+		angle 180
+		left
+		zoom .8
+		"over"
+	"steering engine" 103 -116
+		angle 180
+		right
+		zoom .8
+		"over"
+	bay "Fighter" -88 -80
+		"under"
+		"angle" 45
+	bay "Fighter" -77 -56
+		"under"
+		"angle" 45
+	bay "Fighter" -66 -32
+		"under"
+		"angle" 45
+	bay "Fighter" -53 -6
+		"under"
+		"angle" 45
+	bay "Fighter" 88 -80
+		"under"
+		"angle" -45
+	bay "Fighter" 77 -56
+		"under"
+		"angle" -45
+	bay "Fighter" 66 -32
+		"under"
+		"angle" -45
+	bay "Fighter" 53 -6
+		"under"
+		"angle" -45
 	leak "leak" 50 50
 	leak "flame" 30 80
 	explode "tiny explosion" 18
