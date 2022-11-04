@@ -2,7 +2,7 @@ government Predecessor
 	color 1 1 1
 
 government Successor
-	swizzle 1
+	swizzle 26
 	color 0 1 0.853
 	language "successor"
 	"friendly hail" "successor friendly hail"
@@ -20,7 +20,7 @@ government "New Houses"
 		assist 0
 
 government "Old Houses"
-	swizzle 4
+	swizzle 5
 	color 0.375 0.316 0.99
 	language "successor"
 	"friendly hail" "old houses friendly hail"
@@ -42,7 +42,7 @@ government "New Houses (Partisan)"
 		"Old Houses (Partisan)" -0.01
 
 government "Old Houses (Partisan)"
-	swizzle 4
+	swizzle 5
 	color 0.375 0.316 0.99
 	"player reputation" -999
 	language "successor"
@@ -129,6 +129,7 @@ outfitter "High Houses"
 	`"Veusa" Inductive Thruster`
 	"Bimodal Railgun"
 	"Bimodal Railgun Turret"
+	`Shatter Cannon`
 	"Conductance Turret"
 	"Corrosive Torpedo"
 	"Corrosive Torpedo Launcher"

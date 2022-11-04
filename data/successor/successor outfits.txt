@@ -179,9 +179,9 @@ outfit `"Aqra" Inductive Thruster`
 	"afterburner shields" 4.5
 	"afterburner heat" 5.0
 	"afterburner effect" "successor afterburner"
-	"flare sprite" "effect/atomic flare/tiny"
+	"flare sprite" "effect/ion flare/tiny"
 		"frame rate" 14
-	"flare sound" "atomic tiny"
+	"flare sound" "ion tiny"
 	description "Successor thrusters are bimodal: most of the time, they are run in an energy-efficient low-power state, but when the time comes to flee or fight, they can be switched to a somewhat less efficient but very powerful high-thrust mode that draws power from the ship's shields."
 
 outfit `"Aqra" Inductive Steering`
@@ -196,9 +196,9 @@ outfit `"Aqra" Inductive Steering`
 	"turn" 505
 	"turning energy" 1.1
 	"turning heat" 0.8
-	"steering flare sprite" "effect/atomic flare/tiny"
+	"steering flare sprite" "effect/ion flare/tiny"
 		"frame rate" 14
-	"steering flare sound" "atomic tiny"
+	"steering flare sound" "ion tiny"
 	description "Since their steering thrusters lack the mode switch emblematic of their linear propulsion, the Successors have invested their efforts into making these thrusters both powerful for their size and relatively efficient."
 
 outfit `"Aqra" Inductive Reverser`
@@ -213,9 +213,9 @@ outfit `"Aqra" Inductive Reverser`
 	"reverse thrust" 13.2
 	"reverse thrusting energy" 0.9
 	"reverse thrusting heat" 0.7
-	"reverse flare sprite" "effect/atomic flare/tiny"
+	"reverse flare sprite" "effect/ion flare/tiny"
 		"frame rate" 14
-	"reverse flare sound" "atomic tiny"
+	"reverse flare sound" "ion tiny"
 	description "The inductive thruster technology used by the Successors is most similar to the ion thrusters used in human space, but the more powerful magnetic fields utilized by these thrusters lets them generate substantially more thrust than any human ion thruster."
 	description "	Because a reverse thruster must be facing forwards, it must be installed in the weapon section of your ship instead of the engine section."
 
@@ -235,9 +235,9 @@ outfit `"Chyyra" Inductive Thruster`
 	"afterburner shields" 8.0
 	"afterburner heat" 10.0
 	"afterburner effect" "successor afterburner"
-	"flare sprite" "effect/atomic flare/medium"
+	"flare sprite" "effect/ion flare/medium"
 		"frame rate" 14
-	"flare sound" "atomic medium"
+	"flare sound" "ion medium"
 	description "This larger set of inductive thrusters is impressively efficient under low power, and produces an equally impressive amount of thrust in its high-power mode. With these, even large and apparently lumbering Successor ships can suddenly become substantially more agile when under threat."
 
 outfit `"Chyyra" Inductive Steering`
@@ -252,9 +252,9 @@ outfit `"Chyyra" Inductive Steering`
 	"turn" 1105
 	"turning energy" 2.3
 	"turning heat" 1.7
-	"steering flare sprite" "effect/atomic flare/medium"
+	"steering flare sprite" "effect/ion flare/medium"
 		"frame rate" 14
-	"steering flare sound" "atomic medium"
+	"steering flare sound" "ion medium"
 	description "The Predecessors employed hit-and-run tactics to wear down enemy ships, and so fast rotational speed was never something they prioritized. Even all these years later, the Successors seem to be equally biased, perhaps even more so as their present technology fails to live up to their lofty historical precedents."
 
 outfit `"Chyyra" Inductive Reverser`
@@ -269,9 +269,9 @@ outfit `"Chyyra" Inductive Reverser`
 	"reverse thrust" 26.0
 	"reverse thrusting energy" 2.1
 	"reverse thrusting heat" 1.6
-	"reverse flare sprite" "effect/atomic flare/medium"
+	"reverse flare sprite" "effect/ion flare/medium"
 		"frame rate" 14
-	"reverse flare sound" "atomic medium"
+	"reverse flare sound" "ion medium"
 	description "This large reverse thruster sees use in both commerce and warfare, speeding up trade routes for the former and enhancing agility for the latter."
 	description "	Because a reverse thruster must be facing forwards, it must be installed in the weapon section of your ship instead of the engine section."
 
@@ -291,9 +291,9 @@ outfit `"Veusa" Inductive Thruster`
 	"afterburner shields" 18.0
 	"afterburner heat" 25.0
 	"afterburner effect" "successor afterburner"
-	"flare sprite" "effect/atomic flare/large"
+	"flare sprite" "effect/ion flare/large"
 		"frame rate" 14
-	"flare sound" "atomic large"
+	"flare sound" "ion large"
 	description `While this thruster is, on the surface, hard to distinguish from the much less expensive "Chyyra", it becomes easy to see the difference once it switches to its high-power mode, which produces over double the thrust of the lesser engine. This extra performance comes at a cost, however, as the "Veusa" is somewhat less efficient, especially under high power.`
 
 outfit `"Veusa" Inductive Steering`
@@ -308,9 +308,9 @@ outfit `"Veusa" Inductive Steering`
 	"turn" 1512
 	"turning energy" 3.8
 	"turning heat" 3.1
-	"steering flare sprite" "effect/atomic flare/large"
+	"steering flare sprite" "effect/ion flare/large"
 		"frame rate" 14
-	"steering flare sound" "atomic large"
+	"steering flare sound" "ion large"
 	description `The similarity in design between the "Chyyra" and the "Veusa" is not coincidental: they are both variations on an ancient and venerable Predecessor design. Unfortunately, modern Successor engineers have been unable to replicate both the efficiency and power of the original in a single unit, and so have separated out the high-performance "Veusa" for the high houses, and the high-efficiency "Chyyra" for civilians.`
 
 outfit `"Veusa" Inductive Reverser`
@@ -325,9 +325,9 @@ outfit `"Veusa" Inductive Reverser`
 	"reverse thrust" 36.5
 	"reverse thrusting energy" 3.7
 	"reverse thrusting heat" 3.0
-	"reverse flare sprite" "effect/atomics flare/large"
+	"reverse flare sprite" "effect/ion flare/large"
 		"frame rate" 14
-	"reverse flare sound" "atomic large"
+	"reverse flare sound" "ion large"
 	description "While the invertebrate Successors are relatively unaffected, human pilots must take care when using a reverse thruster this large to avoid g-force stresses on the body."
 	description "	Because a reverse thruster must be facing forwards, it must be installed in the weapon section of your ship instead of the engine section."
 

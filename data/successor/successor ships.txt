@@ -42,7 +42,10 @@ ship `Aaulqra`
 	turret -32 -8
 	turret 0 -51
 	turret 32 -8
-	engine 0 60
+	engine 32 90
+		zoom .7
+	engine -32 90
+		zoom .7
 	"reverse engine" -32 -32
 		zoom .7
 	"reverse engine" 32 -32
@@ -110,8 +113,20 @@ ship `Seiitej`
 	gun 5 -86
 	gun 10 -78
 	turret 0 -63
-	engine -15 70
-	engine 15 70
+	engine -25 44
+	engine 25 44
+	"reverse engine" -25 -35
+		zoom .7
+	"steering engine" -25 -35
+		left
+		angle 180
+		zoom .7
+	"reverse engine" 25 -35
+		zoom .7
+	"steering engine" 25 -35
+		right
+		angle 180
+		zoom .7
 	leak "leak" 50 50
 	leak "flame" 30 80
 	explode "tiny explosion" 18
