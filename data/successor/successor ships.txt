@@ -640,26 +640,25 @@ ship `Khorade`
 	gun 38 -45
 	gun 43 -28
 	gun 0 -140
-	turret 0 -87
-	turret 0 -73
-	turret -50 37
-	turret 50 37
-	engine -28 133
-	engine 28 133
-	engine 0 107
-	bay "Fighter" 0 42
-		"over"
-	"reverse engine" -50 0
+	turret -18 -12
+	turret 18 -12
+	turret -50 30
+	turret 50 30
+	engine -33 125
+	engine 33 125
+	"reverse engine" -28 -48
 		zoom .7
-	"reverse engine" 50 0
+		angle -22
+	"reverse engine" 28 -48
 		zoom .7
-	"steering engine" -50 0
+		angle 22
+	"steering engine" -28 -48
 		left
-		angle 180
+		angle 168
 		zoom .7
-	"steering engine" 50 0
+	"steering engine" 28 -48
 		right
-		angle 180
+		angle 202
 		zoom .7
 	leak "leak" 50 50
 	leak "flame" 30 80
