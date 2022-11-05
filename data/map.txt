@@ -43,7 +43,7 @@ system Myruet-Kvelq
 		sprite planet/cloud4
 		distance 180.84
 		period 23.489
-	object
+	object Uuoru-Veldt-Stir
 		sprite planet/rock11
 		distance 693.69
 		period 176.472
@@ -215,7 +215,7 @@ system Ofstond-Stir
 			distance 116
 			period 16.025
 	object Raaqa-Kvelq-Ryuit
-		sprite planet/desert3
+		sprite planet/forest2-b
 		distance 1000.41
 		period 400.255
 		object Saska-Aa-Noorr
@@ -225,7 +225,7 @@ system Ofstond-Stir
 			offset 2
 	object
 		sprite planet/gas15
-		distance 1409.5
+		distance 2305.5
 		period 846.677
 		object
 			sprite planet/io
@@ -233,7 +233,7 @@ system Ofstond-Stir
 			period 15.79
 	object
 		sprite planet/jupiter
-		distance 2659.75
+		distance 4488.75
 		period 2194.731
 		object
 			sprite planet/dust7
@@ -334,6 +334,17 @@ system Maspa-Mavra
 	pos -1246.963 -1302.051
 	government Uninhabited
 	link Vade-Staja
+	asteroids "small metal" 1 1
+	asteroids "large metal" 1 1
+	minables "gold" 1 1
+	fleet "Small Old Houses" 5000
+	fleet "Successor Miners" 10000
+	object
+		sprite star/g0-old
+	object Khosa-Kella-Oa
+		sprite planet/rock0-b
+		distance 1000
+		period 1000
 
 system Uuoru-Kella
 	pos -1271.083 -1177.574
@@ -360,20 +371,36 @@ system Uuoru-Kella
 	trade Plastic 284
 	fleet "Light Successor Freight" 500
 	fleet "Medium Successor Freight" 1000
-	fleet "Small Old Houses" 500
+	fleet "Small Old Houses" 1000
 	fleet "Large Old Houses" 2000
 	fleet "Old Houses Police" 1000
-	fleet "Successor Miners" 1000
 	object
 		sprite star/b-giant
 	object Aava-Aasa-Khora
 		sprite planet/cloud2
-		distance 1500
-		period 300
+		distance 2500
+		period 400
+		object
+			sprite planet/rock7
+			distance 300
+			period 500
 	object
 		sprite planet/ocean2-b
-		distance 3000
-		period 616.941
+		distance 3940
+		period 700
+	object
+		sprite planet/gas2-b
+		distance 6000
+		period 1000
+		object
+			sprite planet/ice8-b
+			distance 500
+			period 500
+		object
+			sprite planet/io-b
+			distance 750
+			period 700
+			offset 32
 
 system Vade-Staja
 	pos -1226.713 -1231.148
@@ -477,14 +504,10 @@ system Valkkra-Uuoru
 		sprite star/a0
 		distance 40.772
 		period 61.049
-	object
-		sprite planet/fog0
-		distance 402
+	object Naph-Naap-Kella
+		sprite planet/cloud0
+		distance 902
 		period 53.355
-	object
-		sprite planet/neptune-b
-		distance 907
-		period 180.819
 	object
 		sprite planet/gas6-hot
 		distance 1608
@@ -499,7 +522,7 @@ system Valkkra-Uuoru
 		period 650.273
 	object
 		sprite planet/gas1
-		distance 2859.251
+		distance 3859.251
 		period 1149.358
 		object
 			sprite planet/dust7
@@ -547,7 +570,7 @@ system Pelaa-Muora
 	trade Medical 472
 	trade Metal 392
 	trade Plastic 295
-	fleet "Small Successor Freight" 1200
+	fleet "" 1200
 	fleet "Successor Miners" 600
 	fleet "Small New Houses" 1400
 	object
@@ -740,7 +763,6 @@ planet Mosaa-Ooa-Wyrdd
 	landscape land/mountain14-sfiera
 	description "Mosaa-Oaa-Wyrdd's location in the only hyperspace link between the northern and southern parts of Successor territory has made it a hub for interstellar trade and the center of Successor commerce."
 	description "Unique among all Successor planets, its primary employer is not one of the high houses but an independent corporation responsible for manufacturing, among other things, the Pulse Laser. The high houses are understandably somewhat perturbed by this autonomy, but have allowed independent commerce to continue here in exchange for levying modest taxes on transactions that do not go through their official channels."
-	description "Mosaa-Oaa-Wyrdd is also the ancestral home of House Aqrabe, one of the Old Houses."
 	spaceport "The spaceport is large and busy, situated at the foot of a mountain, and seems more haphazard than most Successor spaceports you've seen. Small shops and tents sit abreast advertisements for the latest generation of Pulse Laser and statues of important figures in the high houses, many of which seem weather-worn and unmaintained."
 	spaceport "At the edges of the port, there is a large ongoing construction project to expand it; you can count dozens of half-completed hangars each large enough for several freighters."
 	government Successor
@@ -906,6 +928,10 @@ system Khosa-Kaska
 	government Successor
 	link Ofstond-Stir
 	link Vade-Staja
+	asteroids "small metal" 8 1.5
+	asteroids "small rock" 9 1.8
+	asteroids "large metal" 1 1.2
+	minables lead 3 2.2
 	trade Clothing 333
 	trade Electronics 672
 	trade Equipment 428
@@ -916,6 +942,19 @@ system Khosa-Kaska
 	trade Medical 576
 	trade Metal 532
 	trade Plastic 348
+	fleet "Large Old Houses" 2500
+	fleet "Successor Miners" 1500
+	fleet "Medium Successor Freight" 2000
+	object
+		sprite star/nova-small
+	object
+		sprite planet/lava3
+		distance 1500
+		period 1500
+	object
+		sprite planet/lava0
+		distance 3210
+		period 3000
 
 system Maspa-Cavaasa
 	pos -1635.324 -828.352
@@ -965,8 +1004,8 @@ system Kella-Uoasa
 	pos -1530.487 -1139.477
 	government Successor
 	habitable 22300
+	link Luue-Saqru
 	link Maspa-Raaqa
-	link Raaqa-Ryuit
 	asteroids "large metal" 58 4.5
 	asteroids "small rock" 32 3.317
 	asteroids "medium rock" 18 3.445
@@ -1008,10 +1047,6 @@ system Kella-Uoasa
 			sprite planet/cloud5
 			distance 400
 			period 38
-
-system Ryuia-Novaa
-	pos -540.509 -741.588
-	government Uninhabited
 
 system Uuoru-Sossa
 	pos -829.329 -589.787
@@ -32977,6 +33012,12 @@ system Stiidej-Nnesa
 	government Successor
 	link Aaura-Kaska
 	link Ofstond-Stir
+	asteroids "small rock" 32 16
+	asteroids "large rock" 28 17
+	asteroids "small metal" 44 18
+	asteroids "large metal" 18 20
+	minables "lead" 15 18
+	minables "neodymium" 12 21
 	trade Clothing 350
 	trade Electronics 665
 	trade Equipment 408
@@ -32987,12 +33028,37 @@ system Stiidej-Nnesa
 	trade Medical 588
 	trade Metal 513
 	trade Plastic 334
+	fleet "Small Old Houses" 1200
+	fleet "Large Old Houses" 2400
+	fleet "Successor Miners" 1000
+	fleet "Medium Successor Freight" 1000
+	object
+		sprite star/o-giant
+	object
+		sprite planet/rock10
+		distance 2440
+		period 2500
+	object
+		sprite planet/gas1
+		distance 4500
+		period 4500
+		object
+			sprite planet/callisto
+			distance 450
+			period 450
+		object Mavra-Sol-Kvel
+			sprite planet/forest6
+			distance 890
+			period 900
 
 system Tuur-Kella
 	pos -1388.991 -1184.894
 	government Successor
 	link Aaura-Kaska
 	link Valkkra-Uuoru
+	asteroids "small metal" 85 8
+	asteroids "large metal" 64 7
+	minables "tungsten" 16 9
 	trade Clothing 286
 	trade Electronics 716
 	trade Equipment 458
@@ -33003,13 +33069,37 @@ system Tuur-Kella
 	trade Medical 588
 	trade Metal 369
 	trade Plastic 258
+	fleet "Small Old Houses" 800
+	fleet "Large Old Houses" 1200
+	object
+		sprite star/b-giant
+	object
+		sprite planet/gas0-hot
+		distance 1200
+		period 1000
+	object
+		sprite planet/gas1-b
+		distance 3800
+		period 3000
+		object Tuur-Aasa-Kaska
+			sprite planet/rock1-b
+			distance 550
+			period 500
+		object
+			sprite planet/io-b
+			distance 300
+			period 300
+	object
+		sprite planet/ice8
+		distance 7500
+		period 10000
 
 system Raaqa-Ryuit
-	pos -1531.027 -1005.005
+	pos -1463.471 -941.449
 	government Successor
 	link Chyyra-Osolaa
-	link Kella-Uoasa
 	link Luue-Saqru
+	link Osolaa-Uuoru
 	asteroids "small rock" 14 4
 	asteroids "small metal" 8 12
 	trade Clothing 337
@@ -33042,11 +33132,18 @@ system Raaqa-Ryuit
 		period 64
 
 system Luue-Saqru
-	pos -1464.111 -941.046
+	pos -1530.333 -1003.268
 	government Successor
+	habitable 0
 	link Chyyra-Osolaa
-	link Osolaa-Uuoru
+	link Kella-Uoasa
 	link Raaqa-Ryuit
+	asteroids "small rock" 32 6
+	asteroids "large rock" 16 2
+	asteroids "small metal" 24 4
+	asteroids "large metal" 32 3
+	minables "silicon" 8 6
+	minables "aluminum" 12 3.5
 	trade Clothing 291
 	trade Electronics 674
 	trade Equipment 553
@@ -33057,6 +33154,27 @@ system Luue-Saqru
 	trade Medical 439
 	trade Metal 368
 	trade Plastic 324
+	fleet "People's Houses" 1400
+	fleet "People's Houses Raiders" 5000
+	fleet "Small New Houses" 3000
+	object
+		sprite planet/browndwarf-l
+	object
+		sprite planet/dust4
+		distance 1250
+		period 1200
+	object
+		sprite planet/dust0-b
+		distance 1880
+		period 1800
+	object Chyyra-Raaqa-Tuur
+		sprite planet/ice6
+		distance 3220
+		period 3000
+		object Vade-Osolaa-Kaska
+			sprite planet/station6c
+			distance 450
+			period 32
 
 system Maspa-Raaqa
 	pos -1514.69 -1201.949
@@ -33085,7 +33203,7 @@ system Maspa-Raaqa
 			distance 300
 			period 300
 		object Myiara-Sola-Tej
-			sprite planet/station1
+			sprite planet/station4bd
 			distance 510
 			period 510
 
@@ -33144,7 +33262,7 @@ system Vasa-Oorua
 	asteroids "small metal" 31 5.5
 	asteroids "large rock" 16 2
 	asteroids "large metal" 18 7.5
-	minables "copper" 12 6.5
+	minables copper 12 6.5
 	object
 		sprite star/g0
 	object
@@ -33159,8 +33277,10 @@ system Vasa-Oorua
 system Osolaa-Uuoru
 	pos -1540.635 -849.379
 	government Successor
-	link Luue-Saqru
 	link Maspa-Cavaasa
+	link Raaqa-Ryuit
+	asteroids "small rock" 8 7
+	asteroids "large rock" 7 8
 	trade Clothing 284
 	trade Electronics 723
 	trade Equipment 569
@@ -33171,6 +33291,20 @@ system Osolaa-Uuoru
 	trade Medical 443
 	trade Metal 386
 	trade Plastic 331
+	object
+		sprite star/o0
+	object
+		sprite planet/ocean0
+		distance 3000
+		period 3000
+		object
+			sprite planet/callisto-b
+			distance 150
+			period 150
+	object
+		sprite planet/dust0
+		distance 4500
+		period 4500
 
 planet Kella-Uuoru-Sossa
 	attributes uninhabited
@@ -33197,3 +33331,53 @@ planet Osolaa-Val-Mavra
 	landscape land/dmottl1
 	description "It is hard to tell if the persistent frost here is a natural phenomenon or a result of the destruction from the collapse of the Predecessors' empire. It blankets the dense shrubbery and abandoned cities with equal depth and absence of concern."
 	government Predecessor
+
+planet Chyyra-Raaqa-Tuur
+	attributes uninhabited
+	landscape land/snow7
+	description "During the arrival of the New Houses, this planet was briefly considered as a location for permanent habitation. However, the brown dwarf it orbits produces very little heat and makes the planet uncomfortably cold, even for the cold-tolerant Successors. Furthermore, its lack of substantial natural resources exempted it from use as an industrial or mining planet, and it continues to remain uninhabited."
+	government Uninhabited
+
+planet Vade-Osolaa-Kaska
+	attributes station uninhabited
+	landscape land/loc3
+	description "Although briefly used as a small-scale shipyard several hundred years ago, this station was eventually abandoned by the Successors because of its inconvenient location and altogether poor construction. There are occasional rumors about criminals using it as a bolt-hole or a place to hide contraband, but few Successors have the desire to go and check."
+	spaceport "The spaceport here is empty, though there are a few noticeable trails in the dust, suggesting that it may not be entirely unused."
+	government Uninhabited
+
+planet Tuur-Aasa-Kaska
+	landscape land/nasa7
+	description "As it was only very recently settled by the Successors, this large and rocky moon supports only a small population, most of whom are military personnel for the Old Houses and who live underground to avoid the powerful electrical storms on the surface. Though an undeniably hostile and uncomfortable place, the location of its star system has made it an ideal staging point for the fleets of the Old Houses to keep an eye on trade in nearby systems, and the persistent electrical storms on the surface serve to mask the energy signatures of their vessels."
+	spaceport "As a civilian, you are directed to a smaller port off to the side of one of the larger military ones. As soon as your ship touches down, the landing pad is lowered into an underground hangar and sealed off from the violent atmosphere. While this is an effective protection against the storms, you can't help but notice how it also means that you are trapped here until traffic control decides to release you."
+	government Successor
+	outfitter "High Houses"
+	shipyard "High Houses"
+	"required reputation" 10
+
+planet Khosa-Kella-Oa
+	landscape land/mars1
+	description "Devoid of atmosphere, this small and rocky world sits at the northern end of Successor space, orbiting a dim star. Because of the Successors' location on the rim of the galaxy, this may very well be the last planet for millions of light years, the furthest child of the Milky Way."
+
+planet Naph-Naap-Kella
+	attributes uninhabited
+	landscape land/lava1
+	description "This planet is deep in the throes of its early history, with a thick sulfurous atmosphere concealing an unstable and volcanically active surface. Despite that, the Successors have discovered very simple life forms here, possibly the very first life that has developed on this planet. Consequently, it is of some interest to Successor biologists, or at least the ones willing to brave the toxic and destructive conditions on the surface."
+	government "Uninhabited"
+
+planet Uuoru-Veldt-Stir
+	attributes uninhabited
+	landscape land/hills0
+	description "The landscape here is marked by gently rolling hills and the occasional pond. Your sensors remark that the atmosphere outside, while oxygen-rich, is too thin to safely breathe, and while you see a preponderance of hardy plant life, there are no animals to be seen."
+	government "Uninhabited"
+
+planet Mavra-Sol-Kvel
+	landscape land/fields14
+	attributes rich
+	description "Shielded by the persistent asteroid impacts of this system by its parent gas giant, Mavra-Sol-Kvel enjoys a temperate climate and spectacular vistas. The low gravity here is greatly appreciated by the Successors, and consequently the moon supports a sizable population despite its small size, most of whom live in several cities along the equator."
+	description "It is also the seat of power for House Aqrabe, one of the Old Houses. Despite this categorization, House Aqrabe has remained neutral in most of the Successors' conflicts over the millenia, and continues to present itself as an unbiased and politically uncommitted member of the High Houses which, combined with the central position of this star system, has led House Aqrabe to form strong connections with the New Houses as well as the Old."
+	spaceport "The spaceport is large but efficient, and plastered in bright and friendly colors, much like the landscape surrounding it. Most of the buildings are organic in shape, arcing and bubbling from place to place like seafoam, and despite the fanciful design, they also appear to be servicing a large volume of travellers, merchants, and military personnel, with color-coded lines leading to different areas."
+	outfitter "Successor Basics"
+	outfitter "Successor Civilian"
+	shipyard "Successor Basics"
+	shipyard "Successor Civilian"
+	"required reputation" 10
