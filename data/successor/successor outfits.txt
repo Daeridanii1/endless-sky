@@ -13,11 +13,25 @@ outfit "Heirloom License"
 	thumbnail "outfit/remnant capital license"
 	"description" "To obtain one of these, you would have to become an honorary scion of one of the High Houses, and that's for future content."
 
+outfit `"Veldt" Shield Core`
+	category "Systems"
+	licenses
+		"Successor"
+	cost 1200000
+	thumbnail "outfit/small successor shield"
+	"mass" 7
+	"outfit space" -7
+	"shield generation" 0.95
+	"shield protection" -0.33
+	"shield energy" 1.2
+	"cooling" 1.1
+	"description" "This tiny shield core produces generates an impressive amount of shields for something this small. Because the Successors designed it for use in their fighters, it is also has the additional capability of venting a small amount of heat through the shield matrix it generates, allowing it to cool the ship it is installed on by a small amount."
+
 outfit "Common Shield Core"
 	category "Systems"
 	licenses
 		"Successor"
-	cost 2000000
+	cost 865000
 	thumbnail "outfit/small successor shield"
 	"mass" 15
 	"outfit space" -15
@@ -71,11 +85,11 @@ outfit `OC-"Mavra" Betavoltaic Cell`
 		Successor
 	cost 392000
 	thumbnail "outfit/overcharged betavoltaic"
-	"mass" 12
-	"outfit space" -12
-	"energy generation" 2.95
-	"heat generation" 6.8
-	"energy capacity" 500
+	"mass" 17
+	"outfit space" -17
+	"energy generation" 2.25
+	"heat generation" 3.8
+	"energy capacity" 2222
 	description "This betavoltaic generator has had most of its auxiliary batteries removed, along with the majority of its radiation shielding and safety interlocks: the result is surprisingly energy-dense but produces a lot of heat, and most Successor pilots prefer to keep a bulkhead between themselves and one of these potent little cores at all times."
 
 outfit `4-"Kaska" Betavoltaic Cell`
@@ -163,6 +177,33 @@ outfit "Successor Cooling"
 	"heat capacity" 40
 	description "Successor technology tends not to produce a great amount of heat, so their active cooling systems are small and only ramp up at high temperatures. To benefit this, each cooling unit slightly expands the heat capacity of the ship it is mounted on, allowing the ship to stay cool for longer."
 
+outfit `"Niis" Inductive Engines`
+	category "Engines"
+	"cost" 255000
+	thumbnail "outfit/successor engines tiny"
+	licenses
+		"Successor"
+	"mass" 32
+	"outfit space" -32
+	"engine capacity" -32
+	"thrust" 12.1
+	"thrusting energy" 1.2
+	"thrusting heat" 0.8
+	"afterburner thrust" 12.5
+	"afterburner shields" 3.0
+	"afterburner heat" 3.0
+	"afterburner effect" "successor afterburner"
+	"flare sprite" "effect/ion flare/tiny"
+		"frame rate" 14
+	"flare sound" "ion tiny"
+	"turn" 300
+	"turning energy" 0.45
+	"turning heat" 0.4
+	"steering flare sprite" "effect/ion flare/tiny"
+		"frame rate" 14
+	"steering flare sound" "ion tiny"
+	description "This tiny set of inductive engines is just enough to push around a Successor fighter. They retain the dual-mode capabilities of the larger models, albeit at a frankly diminuitive scale."
+
 outfit `"Aqra" Inductive Thruster`
 	category "Engines"
 	"cost" 150000
@@ -179,9 +220,9 @@ outfit `"Aqra" Inductive Thruster`
 	"afterburner shields" 4.5
 	"afterburner heat" 5.0
 	"afterburner effect" "successor afterburner"
-	"flare sprite" "effect/ion flare/tiny"
+	"flare sprite" "effect/ion flare/small"
 		"frame rate" 14
-	"flare sound" "ion tiny"
+	"flare sound" "ion small"
 	description "Successor thrusters are bimodal: most of the time, they are run in an energy-efficient low-power state, but when the time comes to flee or fight, they can be switched to a somewhat less efficient but very powerful high-thrust mode that draws power from the ship's shields."
 
 outfit `"Aqra" Inductive Steering`
@@ -196,9 +237,9 @@ outfit `"Aqra" Inductive Steering`
 	"turn" 505
 	"turning energy" 1.1
 	"turning heat" 0.8
-	"steering flare sprite" "effect/ion flare/tiny"
+	"steering flare sprite" "effect/ion flare/small"
 		"frame rate" 14
-	"steering flare sound" "ion tiny"
+	"steering flare sound" "ion small"
 	description "Since their steering thrusters lack the mode switch emblematic of their linear propulsion, the Successors have invested their efforts into making these thrusters both powerful for their size and relatively efficient."
 
 outfit `"Aqra" Inductive Reverser`
@@ -213,9 +254,9 @@ outfit `"Aqra" Inductive Reverser`
 	"reverse thrust" 13.2
 	"reverse thrusting energy" 0.9
 	"reverse thrusting heat" 0.7
-	"reverse flare sprite" "effect/ion flare/tiny"
+	"reverse flare sprite" "effect/ion flare/small"
 		"frame rate" 14
-	"reverse flare sound" "ion tiny"
+	"reverse flare sound" "ion small"
 	description "The inductive thruster technology used by the Successors is most similar to the ion thrusters used in human space, but the more powerful magnetic fields utilized by these thrusters lets them generate substantially more thrust than any human ion thruster."
 	description "	Because a reverse thruster must be facing forwards, it must be installed in the weapon section of your ship instead of the engine section."
 

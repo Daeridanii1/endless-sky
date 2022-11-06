@@ -537,35 +537,31 @@ ship `Myaede-Khora`
 	description `While the High Houses do not sell their purpose-built warships to those who don't support their interests, the ubiquity and free space of the "Myaede" freighter has made it a relatively decent light weapons platform. The High Houses, of course, have better ships for this purpose, but independent agents and unoffical groups like the People's Houses do not.`
 	description `This particular "Myaede" is stripped-down to reduce mass, and most of its cargo space has been refitted to fit extra weapons and larger engines.`
 
-ship `Successor Fighter`
+ship `Naapojde`
 	sprite "ship/successor fighter"
 	thumbnail "thumbnail/successor fighter"
 	attributes
 		category "Fighter"
 		"cost" 350000
 		"shields" 1100
-		"hull" 6900
+		"hull" 5800
 		"required crew" 1
 		"bunks" 1
-		"mass" 70
+		"mass" 32
 		"drag" 1.3
 		"heat dissipation" 0.9
-		"outfit space" 210
-		"weapon capacity" 90
-		"engine capacity" 75
+		"outfit space" 100
+		"weapon capacity" 48
+		"engine capacity" 50
 		weapon
 			"blast radius" 100
 			"shield damage" 1000
 			"hull damage" 500
 			"hit force" 1500
 	outfits
-		`"Aqra" Inductive Thruster` 2
-		`"Aqra" Inductive Steering`
-		`"Aqra" Inductive Reverser`
-		`OC-"Mavra" Betavoltaic Cell` 2
-		`1-"Uurau" Betavoltaic Cell`
-		"Successor Cooling"
-		"Bimodal Railgun" 3
+		`"Niis" Inductive Engines`
+		`OC-"Mavra" Betavoltaic Cell`
+		"Shatter Cannon" 3
 		"Common Shield Core"
 
 	gun 0 -38
@@ -598,9 +594,23 @@ ship `Successor Fighter`
 	explode "medium explosion" 24
 	explode "large explosion" 8
 	"final explode" "final explosion medium"
-	description "Unwilling to give up on the design of the [Interceptor], House [House] have slightly altered the ship to function as a carrier-based fightercraft, and have found a surprising degree of success. In the absence of large and heavy components like the hyperdrive, fuel tanks, and turret mount, the [Fighter] becomes a tough and deadly carried combat craft that House [House] uses to protect its short-range interests, and to project power at a distance with in combination with a carrier."
+	description `Unwilling to give up on the design of the Stolsaqra, House Seineq have slightly altered the ship to function as a carrier-based fightercraft, and have found a surprising degree of success. In the absence of large and heavy components like the hyperdrive, fuel tanks, and turret mount, the "Naapojde" becomes a tough and deadly carried combat craft that the New Houses use to protect their short-range interests, and to project power at a distance with in combination with a carrier.`
 
-ship `Khorade`
+ship `Naapojde` `Successor Bomber`
+	outfits
+		`"Niis" Inductive Engines`
+		`OC-"Mavra" Betavoltaic Cell`
+		"Corrosive Torpedo Launcher"
+		"Corrosive Torpedo" 120
+		"Common Shield Core"
+ship `Naapojde` `Successor Ace`
+	outfits
+		`"Niis" Inductive Engines`
+		`OC-"Mavra" Betavoltaic Cell`
+		"Bimodal Railgun" 2
+		`"Veldt" Shield Core`
+
+ship `Kaskhorade`
 	sprite "ship/successor heavy warship"
 	thumbnail "thumbnail/successor heavy warship"
 	attributes
@@ -646,7 +656,7 @@ ship `Khorade`
 	turret 50 30
 	engine -33 125
 	engine 33 125
-	"reverse engine" -28 -48
+	"reverse engine" -78 -48
 		zoom .7
 		angle -22
 	"reverse engine" 28 -48
@@ -667,7 +677,7 @@ ship `Khorade`
 	explode "medium explosion" 24
 	explode "large explosion" 8
 	"final explode" "final explosion medium"
-	description `While the Successors prefer fast and hard-hitting attack craft to large and slow warships, there are some circumstances in which one of the high houses must make a lasting and well-defended claim to a piece of territory, and the Khorade is most often their ship of choice. Its large interior space also includes sizable cargo and bunk areas for logistics work, and it has a fighter docking point which it can use to expand its mission profile.`
+	description `Serving as the strong multipurpose backbone of the fleets of the High Houses, the "Kaskhorade" trades some of the maneuverability of its smaller siblings for greater defenses and non-combat capabilities; in addition to being a capable warship, it also holds sizable free cargo and bunk space for use in a wide variety of missions.These are frequently used to transport high-ranking members of the High Houses, as they are well-defended while retaining the capacity for luxurious travel.`
 
 ship `Valsaqra`
 	sprite "ship/successor destroyer"
@@ -702,20 +712,22 @@ ship `Valsaqra`
 		"Regal Shield Core"
 		"Hyperdrive"
 		"Successor Cooling" 2
-		"Bimodal Railgun" 5
+		"Bimodal Railgun" 6
 		"Corrosive Torpedo Launcher" 2
 		"Corrosive Torpedo" 240
-		"Burst Anti-Missile Turret" 3
-	gun -55 -57 "Corrosive Torpedo Launcher"
-	gun -35 -104
-	gun -28 -121
-	gun 0 -189
-	gun 28 -121
-	gun 35 -104
-	gun 55 -57 "Corrosive Torpedo Launcher"
-	turret 0 -129
-	turret 0 -81
-	turret 0 -57
+		"Burst Anti-Missile Turret" 4
+	gun -27 -121
+	gun -34 -104
+	gun -50 -65
+	gun -56 -57 "Corrosive Torpedo Launcher"
+	gun 27 -121
+	gun 34 -104
+	gun 50 -65
+	gun 56 -57 "Corrosive Torpedo Launcher"
+	turret -93 40
+	turret 93 40
+	turret 0 -92
+	turret 0 -130
 	engine -75 129
 		zoom .8
 	engine -57 150
@@ -724,16 +736,15 @@ ship `Valsaqra`
 		zoom .8
 	engine 75 129
 		zoom .8
-	engine 0 92
-	"reverse engine" -75 19
+	"reverse engine" -78 -7
 		zoom .7
-	"reverse engine" 75 19
+	"reverse engine" 78 -7
 		zoom .7
-	"steering engine" -75 19
+	"steering engine" -78 -7
 		left
 		angle 180
 		zoom .7
-	"steering engine" 75 19
+	"steering engine" 78 -7
 		right
 		angle 180
 		zoom .7
@@ -744,23 +755,25 @@ ship `Valsaqra`
 	explode "medium explosion" 24
 	explode "large explosion" 8
 	"final explode" "final explosion medium"
-	description `As of the few designs from before the collapse that has adapted - even imperfectly - to the new materials and manufacturing capabilities of the Successors' star cluster, the "Valsaqra" offers an imposing look at the past might of the Predecessors' empire. Today they are mostly used for diplomacy and soft power projection, but the "Valsaqra" is more than capable of taking on a fleet by itself, and is therefore understandably restricted to only the most trusted and loyal captains of the high houses.`
+	description `As the largest production warship put out by the shipyards of the High Houses for hundreds of years, the imposing "Valsaqra" is the Successors' ship of choice when they need to send a strong message, be that through violence or merely the threat thereof. The "Valsaqra" bristles with weapon hardpoints and is unnervingly quick for a ship of its size; it would dance around any human battleship easily. Naturally, the High Houses do not offer command of these vessels to any but their most trusted captains.`
 
-ship `Successor Carrier`
+ship `Joruuvaqra`
 	sprite "ship/successor carrier"
 	thumbnail "thumbnail/successor carrier"
 	attributes
+		licenses
+			"High Houses"
 		category "Heavy Warship"
 		"cost" 76500000
 		"shields" 8000
 		"hull" 95500
 		"required crew" 164
-		"bunks" 295
-		"mass" 1080
+		"bunks" 325
+		"mass" 1280
 		"drag" 4.5
 		"heat dissipation" .75
 		"fuel capacity" 700
-		"cargo space" 80
+		"cargo space" 120
 		"outfit space" 620
 		"weapon capacity" 320
 		"engine capacity" 130
@@ -778,63 +791,60 @@ ship `Successor Carrier`
 		"Regal Shield Core"
 		"Hyperdrive"
 		"Successor Cooling" 2
-		"Corrosive Torpedo Launcher" 2
-		"Corrosive Torpedo" 240
-		"Burst Anti-Missile Turret" 4
-	gun -9 -17
-	gun 9 -17
-	turret -35 42
-	turret 35 42
-	turret -102 -57
-	turret 102 -57
+		"Burst Anti-Missile Turret" 2
+		"Bimodal Railgun Turret" 3
+	gun -16 -54
+	gun 16 -54
+	turret -104 -68 "Burst Anti-Missile Turret"
+	turret -42 110
+	turret 104 -68 "Burst Anti-Missile Turret"
+	turret 42 110
+	turret 0 0
 	engine -103 133
 		zoom .8
 	engine -64 152
 		zoom .8
-	engine 0 190
 	engine 64 152
 		zoom .8
 	engine 103 133
 		zoom .8
-	"reverse engine" -103 -116
+	"reverse engine" -103 -126
 		zoom .8
 		"over"
-	"reverse engine" 103 -116
+	"reverse engine" 103 -126
 		zoom .8
 		"over"
-	"steering engine" -103 -116
+	"steering engine" -103 -126
 		angle 180
 		left
 		zoom .8
 		"over"
-	"steering engine" 103 -116
+	"steering engine" 103 -126
 		angle 180
 		right
 		zoom .8
 		"over"
-	bay "Fighter" -88 -80
+	bay "Fighter" -88 -78
+		"under"
+		"angle" 65
+	bay "Fighter" 88 -78
+		"under"
+		"angle" -65
+	bay "Fighter" -78 -44
+		"under"
+		"angle" 55
+	bay "Fighter" 78 -44
+		"under"
+		"angle" -55
+	bay "Fighter" -55 -15
 		"under"
 		"angle" 45
-	bay "Fighter" -77 -56
-		"under"
-		"angle" 45
-	bay "Fighter" -66 -32
-		"under"
-		"angle" 45
-	bay "Fighter" -53 -6
-		"under"
-		"angle" 45
-	bay "Fighter" 88 -80
+	bay "Fighter" 55 -15
 		"under"
 		"angle" -45
-	bay "Fighter" 77 -56
-		"under"
-		"angle" -45
-	bay "Fighter" 66 -32
-		"under"
-		"angle" -45
-	bay "Fighter" 53 -6
-		"under"
+	bay "Fighter" -55 -15
+		"angle" 45
+	bay "Fighter" 55 -15
 		"angle" -45
 	leak "leak" 50 50
 	leak "flame" 30 80
@@ -843,4 +853,4 @@ ship `Successor Carrier`
 	explode "medium explosion" 24
 	explode "large explosion" 8
 	"final explode" "final explosion medium"
-	description `As of the few designs from before the collapse that has adapted - even imperfectly - to the new materials and manufacturing capabilities of the Successors' star cluster, the "Valsaqra" offers an imposing look at the past might of the Predecessors' empire. Today they are mostly used for diplomacy and soft power projection, but the "Valsaqra" is more than capable of taking on a fleet by itself, and is therefore understandably restricted to only the most trusted and loyal captains of the high houses.`
+	description `The New Houses do not have the sheer manufacturing volume of the Old Houses, and so they try to maintain their military relevance by making use of unique designs. The "Joruuvaqra" is a massive fighter carrier, capable of unleasing a small fleet of heavily-armed fightercraft to aid it in combat. More than just a starship, it serves more like a mobile space station, capable of carrying a substantial amount of cargo and reserve crew in addition to its base loadout.`

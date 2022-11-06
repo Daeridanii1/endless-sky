@@ -72,8 +72,6 @@ government "People's Houses (Hostile)"
 shipyard "Successor Basics"
 	Kvelqde
 	Stolsaqra
-	"Successor Carrier"
-	"Successor Fighter"
 
 shipyard "Successor Civilian"
 	Myaede
@@ -81,11 +79,14 @@ shipyard "Successor Civilian"
 
 shipyard "High Houses"
 	Aaulqra
-	Khorade
+	Kaskhorade
 	Seiitej
-	"Successor Fighter"
 	Valsaqra
 	Veusade
+
+shipyard "Successor Carrier"
+	Naapojde
+	Joruuvaqra
 
 shipyard "Peoples Houses"
 	"Myaede-Khora"
@@ -109,6 +110,8 @@ outfitter "Successor Civilian"
 	`"Chyyra" Inductive Reverser`
 	`"Chyyra" Inductive Steering`
 	`"Chyyra" Inductive Thruster`
+	`"Niis" Inductive Engines`
+	`"Veldt" Shield Core`
 	`7-"Ruuv" Betavoltaic Cell`
 	"Bunk Room"
 	"Burst Anti-Missile Turret"
@@ -249,7 +252,7 @@ phrase "old houses"
 		"House Aqrabe"
 		"House Sioeora"
 		"House Chydiyi"
-		"House Myreuj"
+		"House Myurej"
 		"The Old Houses" 2
 
 phrase "new houses"
