@@ -100,7 +100,7 @@ outfitter "Successor Basics"
 	`"Aqra" Inductive Thruster`
 	`1-"Uurau" Betavoltaic Cell`
 	`4-"Kaska" Betavoltaic Cell`
-	"Common Shield Core"
+	`"Ej" Shield Core`
 	Hyperdrive
 	"Successor Pulse Laser"
 	"0 Hypermap"
@@ -136,9 +136,9 @@ outfitter "High Houses"
 	"Conductance Turret"
 	"Corrosive Torpedo"
 	"Corrosive Torpedo Launcher"
-	"Noble Shield Core"
+	`"Jaase" Shield Core`
 	`OC-"Mavra" Betavoltaic Cell`
-	"Regal Shield Core"
+	`"Jorv" Shield Core`
 
 outfitter "Peoples Houses"
 	"Overcharged Pulse Laser"

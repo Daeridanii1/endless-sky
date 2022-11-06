@@ -28,7 +28,7 @@ ship `Aaulqra`
 		`"Chyyra" Inductive Steering`
 		`"Aqra" Inductive Reverser`
 		`"Nnesa" Inertial Core` 2
-		"Noble Shield Core"
+		`"Jaase" Shield Core`
 		"Hyperdrive"
 		"Successor Cooling"
 		"Bimodal Railgun" 3
@@ -103,7 +103,7 @@ ship `Seiitej`
 		`"Chyyra" Inductive Steering`
 		`"Aqra" Inductive Reverser`
 		`"Nnesa" Inertial Core` 2
-		"Common Shield Core"
+		`"Ej" Shield Core`
 		"Hyperdrive"
 		"Successor Cooling"
 		"Bimodal Railgun" 4
@@ -165,7 +165,7 @@ ship `Veusade`
 		`"Veusa" Inductive Thruster`
 		`"Chyyra" Inductive Steering`
 		`"Nnesa" Inertial Core` 2
-		"Noble Shield Core"
+		`"Jaase" Shield Core`
 		"Hyperdrive"
 		"Successor Cooling"
 		"Shatter Cannon" 8
@@ -232,7 +232,7 @@ ship `Stolsaqra`
 		`"Aqra" Inductive Reverser`
 		`4-"Kaska" Betavoltaic Cell`
 		"Bimodal Railgun" 3
-		"Common Shield Core"
+		`"Ej" Shield Core`
 		"Hyperdrive"
 		"Scanning Module"
 
@@ -276,7 +276,7 @@ ship `Stolsaqra` `Stolsaqra (OC Laser)`
 		`"Aqra" Inductive Reverser`
 		`4-"Kaska" Betavoltaic Cell`
 		"Overcharged Pulse Laser" 3
-		"Common Shield Core"
+		`"Ej" Shield Core`
 		"Hyperdrive"
 		"Pulse Laser Turret"
 
@@ -311,7 +311,7 @@ ship `Kvelqde`
 		`"Aqra" Inductive Reverser`
 		`1-"Uurau" Betavoltaic Cell` 2
 		"Successor Pulse Laser"
-		"Common Shield Core"
+		`"Ej" Shield Core`
 		"Hyperdrive"
 		"Burst Anti-Missile Turret"
 
@@ -335,7 +335,7 @@ ship `Kvelqde` `Kvelqde (Violent)`
 		`"Aqra" Inductive Reverser`
 		`1-"Uurau" Betavoltaic Cell` 2
 		"Overcharged Pulse Laser"
-		"Common Shield Core"
+		`"Ej" Shield Core`
 		"Hyperdrive"
 		"Overcharged Laser Turret"
 
@@ -370,7 +370,7 @@ ship `Myaede`
 		`"Aqra" Inductive Reverser`
 		`4-"Kaska" Betavoltaic Cell`
 		"Pulse Laser Turret"
-		"Common Shield Core"
+		`"Ej" Shield Core`
 		"Hyperdrive"
 		"Burst Anti-Missile Turret" 2
 
@@ -422,7 +422,7 @@ ship `Successor Transport`
 		`"Chyyra" Inductive Steering`
 		`"Chyyra" Inductive Reverser`
 		`4-"Kaska" Betavoltaic Cell`
-		"Common Shield Core"
+		`"Ej" Shield Core`
 		"Hyperdrive"
 		"Burst Anti-Missile Turret" 2
 
@@ -510,7 +510,7 @@ ship `Myaede-Khora`
 		`7-"Ruuv" Betavoltaic Cell`
 		`1-"Uurau" Betavoltaic Cell`
 		"Successor Cooling"
-		"Common Shield Core"
+		`"Ej" Shield Core`
 		"Hyperdrive"
 		"Overcharged Laser Turret" 2
 		"Overcharged Pulse Laser" 5
@@ -562,7 +562,7 @@ ship `Naapojde`
 		`"Niis" Inductive Engines`
 		`OC-"Mavra" Betavoltaic Cell`
 		"Shatter Cannon" 3
-		"Common Shield Core"
+		`"Ej" Shield Core`
 
 	gun 0 -38
 	gun -7 -21
@@ -602,7 +602,7 @@ ship `Naapojde` `Successor Bomber`
 		`OC-"Mavra" Betavoltaic Cell`
 		"Corrosive Torpedo Launcher"
 		"Corrosive Torpedo" 120
-		"Common Shield Core"
+		`"Ej" Shield Core`
 ship `Naapojde` `Successor Ace`
 	outfits
 		`"Niis" Inductive Engines`
@@ -640,7 +640,7 @@ ship `Kaskhorade`
 		`"Veusa" Inductive Steering`
 		`"Veusa" Inductive Reverser`
 		`"Ryuit" Inertial Core`
-		"Regal Shield Core"
+		`"Jorv" Shield Core`
 		"Hyperdrive"
 		"Successor Cooling"
 		"Bimodal Railgun" 5
@@ -709,7 +709,7 @@ ship `Valsaqra`
 		`"Veusa" Inductive Steering`
 		`"Veusa" Inductive Reverser`
 		`"Ryuit" Inertial Core`
-		"Regal Shield Core"
+		`"Jorv" Shield Core`
 		"Hyperdrive"
 		"Successor Cooling" 2
 		"Bimodal Railgun" 6
@@ -788,7 +788,7 @@ ship `Joruuvaqra`
 		`"Aqra" Inductive Steering`
 		`"Veusa" Inductive Reverser`
 		`"Ryuit" Inertial Core`
-		"Regal Shield Core"
+		`"Jorv" Shield Core`
 		"Hyperdrive"
 		"Successor Cooling" 2
 		"Burst Anti-Missile Turret" 2

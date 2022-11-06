@@ -18,7 +18,7 @@ outfit `"Veldt" Shield Core`
 	licenses
 		"Successor"
 	cost 1200000
-	thumbnail "outfit/small successor shield"
+	thumbnail "outfit/tiny successor shield"
 	"mass" 7
 	"outfit space" -7
 	"shield generation" 0.95
@@ -27,7 +27,7 @@ outfit `"Veldt" Shield Core`
 	"cooling" 1.1
 	"description" "This tiny shield core produces generates an impressive amount of shields for something this small. Because the Successors designed it for use in their fighters, it is also has the additional capability of venting a small amount of heat through the shield matrix it generates, allowing it to cool the ship it is installed on by a small amount."
 
-outfit "Common Shield Core"
+outfit `"Ej" Shield Core`
 	category "Systems"
 	licenses
 		"Successor"
@@ -40,7 +40,7 @@ outfit "Common Shield Core"
 	"shield energy" 2.6
 	"description" "At their peak, the Predecessors were feared not for their ability to overpower their enemies, but through their skill at outlasting them. Many generations later, this philosophy is still reflected in modern Successor shield cores, which are exceptionally powerful for their size but weaken the shield's resistance to incoming fire, allowing Successor ships to recover quickly from sustained damage."
 
-outfit "Noble Shield Core"
+outfit `"Jaase" Shield Core`
 	category "Systems"
 	licenses
 		"High Houses"
@@ -53,7 +53,7 @@ outfit "Noble Shield Core"
 	"shield energy" 7.8
 	"description" "By modulating the power allocation to shields at rest, this modern Successor shield core can make them much more responsive, both to regeneration harmonics and incoming damage. A Successor warship equipped with one of these can shrug off the combined damage output of several lesser attackers."
 
-outfit "Regal Shield Core"
+outfit `"Jorv" Shield Core`
 	category "Systems"
 	cost 19000000
 	thumbnail "outfit/large successor shield"
@@ -129,8 +129,8 @@ outfit `"Nnesa" Inertial Core`
 	"energy generation" 8.25
 	"heat generation" 9.5
 	"energy capacity" 2200
-	"shield energy multiplier" -0.15
-	"hull energy multiplier" -0.15
+	"shield energy multiplier" -0.18
+	"hull energy multiplier" -0.18
 	description "The Successors use inertial fusion for their most powerful ships, and while these reactors are somewhat less energy-dense than other alternatives, they are very efficient and come with a modest amount of integrated energy storage. Additionally, they are designed to channel power more efficiently to a ship's defensive systems, manifested as a reduction in the power draw of the associated outfits."
 
 outfit `"Ryuit" Inertial Core`
@@ -144,9 +144,9 @@ outfit `"Ryuit" Inertial Core`
 	"energy generation" 22.5
 	"heat generation" 25
 	"energy capacity" 10000
-	"shield energy multiplier" -0.25
-	"hull energy multiplier" -0.25
-	description "Like most Successor technology, these reactors are based on similar ones secreted away by the high houses during the collapse of the Predecessor empire. Even after all these generations, the designs remain elegant and powerful, and instill in the beholder a deep-set curiosity of what the originals would have been like -or indeed, whether or not a few of those originals still exist, kept in prime condition for when they are needed once again."
+	"shield energy multiplier" -0.36
+	"hull energy multiplier" -0.36
+	description "Like most Successor technology, these reactors are based on similar ones secreted away by the high houses during the collapse of the Predecessor empire. Even after all these generations, the designs remain elegant and powerful, and instill in the beholder a deep-set curiosity of what the originals would have been like—or indeed, whether or not a few of those originals still exist, kept in prime condition for when they are needed once again."
 
 outfit "Resistance Module"
 	category "Systems"
@@ -172,10 +172,10 @@ outfit "Successor Cooling"
 		"Successor"
 	"mass" 8
 	"outfit space" -8
-	"active cooling" 13.5
+	"cooling" 4.5
+	"active cooling" 10.5
 	"cooling energy" 1.1
-	"heat capacity" 40
-	description "Successor technology tends not to produce a great amount of heat, so their active cooling systems are small and only ramp up at high temperatures. To benefit this, each cooling unit slightly expands the heat capacity of the ship it is mounted on, allowing the ship to stay cool for longer."
+	description "Like much of their technology, Successor cooling is bimodal, running a constant low-flow coolant loop that can be increased in both volume and heat rejection when the situation demands it."
 
 outfit `"Niis" Inductive Engines`
 	category "Engines"
