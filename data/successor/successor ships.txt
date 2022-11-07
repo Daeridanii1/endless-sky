@@ -177,18 +177,23 @@ ship `Veusade`
 	gun 12 -70
 	gun 25 -48
 	gun 30 -40
-	engine 0 30
-	engine -46 60
-	engine 46 60
-	"reverse engine" -47 -20
+	engine -47 73
+		zoom .6
+	engine 47 73
+		zoom .6
+	engine -24 73
+		zoom .8
+	engine 24 73
+		zoom .8
+	"reverse engine" -47 -1
 		zoom .7
-	"steering engine" -47 -20
+	"steering engine" -47 -1
 		left
 		angle 180
 		zoom .7
-	"reverse engine" 47 -20
+	"reverse engine" 47 -1
 		zoom .7
-	"steering engine" 47 -20
+	"steering engine" 47 -1
 		right
 		angle 180
 		zoom .7
@@ -242,21 +247,21 @@ ship `Stolsaqra`
 	turret 0 4
 	engine -7 40
 	engine 7 40
-	"steering engine" 20 30
+	"steering engine" 18 26
 		zoom .6
 		left
-	"steering engine" -20 30
+	"steering engine" -18 26
 		zoom .6
 		right
-	"reverse engine" -20 -2
+	"reverse engine" -18 5
 		zoom .6
-	"reverse engine" 20 -2
+	"reverse engine" 18 5
 		zoom .6
-	"steering engine" -20 -2
+	"steering engine" -18 5
 		zoom .6
 		angle 180
 		left
-	"steering engine" 20 -2
+	"steering engine" 18 5
 		zoom .6
 		angle 180
 		right
@@ -374,15 +379,31 @@ ship `Myaede`
 		"Hyperdrive"
 		"Burst Anti-Missile Turret" 2
 
-	turret -39 13
+	turret -34 -7
 	turret 0 -8 "Pulse Laser Turret"
-	turret 39 13
+	turret 34 -7
 	gun -8 -58
 	gun 8 -58
-	engine -48 52
-	engine -35 60
-	engine 35 60
-	engine 48 52
+	engine -42 55
+	engine -55 45
+	engine 55 45
+	engine 42 55
+	"steering engine" -55 -7
+		zoom .6
+		angle 180
+		left
+		over
+	"steering engine" 55 -7
+		zoom .6
+		angle 180
+		right
+		over
+	"reverse engine" -55 -7
+		zoom .6
+		over
+	"reverse engine" 55 -7
+		zoom .6
+		over
 	leak "leak" 50 50
 	leak "flame" 30 80
 	explode "tiny explosion" 18
@@ -569,24 +590,8 @@ ship `Naapojde`
 	gun 7 -21
 	engine -7 40
 	engine 7 40
-	"steering engine" 20 30
-		zoom .6
-		left
-	"steering engine" -20 30
-		zoom .6
-		right
-	"reverse engine" -20 -2
-		zoom .6
-	"reverse engine" 20 -2
-		zoom .6
-	"steering engine" -20 -2
-		zoom .6
-		angle 180
-		left
-	"steering engine" 20 -2
-		zoom .6
-		angle 180
-		right
+	engine -15 33
+	engine 15 33
 	leak "leak" 50 50
 	leak "flame" 30 80
 	explode "tiny explosion" 18
