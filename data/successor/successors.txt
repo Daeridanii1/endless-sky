@@ -2,7 +2,7 @@ government Predecessor
 	color 1 1 1
 
 government Successor
-	swizzle 26
+	swizzle 0
 	color 0 1 0.853
 	language "successor"
 	"friendly hail" "successor friendly hail"
@@ -12,7 +12,7 @@ government "New Houses"
 	color 1 0 0.5
 	language "successor"
 	"friendly hail" "new houses friendly hail"
-	"hostile hail" "old houses hostile hail"
+	"hostile hail" "high houses hostile hail"
 	"attitude toward"
 		Successor 1
 		"People's Houses (Hostile)" -0.01
@@ -20,11 +20,11 @@ government "New Houses"
 		assist 0
 
 government "Old Houses"
-	swizzle 5
+	swizzle 4
 	color 0.375 0.316 0.99
 	language "successor"
 	"friendly hail" "old houses friendly hail"
-	"hostile hail" "old houses hostile hail"
+	"hostile hail" "high houses hostile hail"
 	"attitude toward"
 		Successor 1
 		"People's Houses (Hostile)" -0.01
@@ -42,7 +42,7 @@ government "New Houses (Partisan)"
 		"Old Houses (Partisan)" -0.01
 
 government "Old Houses (Partisan)"
-	swizzle 5
+	swizzle 4
 	color 0.375 0.316 0.99
 	"player reputation" -999
 	language "successor"
@@ -56,6 +56,7 @@ government "People's Houses"
 	color 0.92 0.29 0.20
 	language "successor"
 	"friendly hail" "successor friendly hail"
+	"hostile hail" "people's houses hostile hail"
 
 government "People's Houses (Hostile)"
 	"display name" "People's Houses"
@@ -66,6 +67,8 @@ government "People's Houses (Hostile)"
 		Author -0.01
 		Successor -0.01
 		"People's Houses" 0.01
+	"friendly hail" "successor friendly hail"
+	"hostile hail" "people's houses hostile hail"
 	bribe 0.05
 	fine 0
 
@@ -75,7 +78,11 @@ shipyard "Successor Basics"
 
 shipyard "Successor Civilian"
 	Myaede
-	"Successor Transport"
+	Ejniisde
+	Ojde
+	"Ojde 0"
+	"Ojde 1"
+	"Ojde 2"
 
 shipyard "High Houses"
 	Aaulqra
@@ -90,11 +97,13 @@ shipyard "Successor Carrier"
 
 shipyard "Peoples Houses"
 	"Myaede-Khora"
+	"Ojde-Khora"
 
 shipyard Heirloom
 	Valkkyiara-Khorasaqra
 
 outfitter "Successor Basics"
+	"Sniper Railgun"
 	`"Aqra" Inductive Reverser`
 	`"Aqra" Inductive Steering`
 	`"Aqra" Inductive Thruster`
@@ -139,6 +148,12 @@ outfitter "High Houses"
 	`"Jaase" Shield Core`
 	`OC-"Mavra" Betavoltaic Cell`
 	`"Jorv" Shield Core`
+	"Multimodal Armor: Heavy"
+	"Multimodal Armor: Stealth"
+	"Multimodal Armor: Regen"
+	"Multimodal Armor: Resilient"
+	`"Viir" Repair Cortex`
+	`"Vyraa" Repair Cortex`
 
 outfitter "Peoples Houses"
 	"Overcharged Pulse Laser"
@@ -265,82 +280,80 @@ phrase "new houses"
 
 phrase "relations"
 	word
-		"Mine child"
-		"Mine dear friend"
-		"Mine sibling"
-		"Mine old friend"
-		"Mine neighbor"
+		"child"
+		"parent"
+		"sibling"
+		"neighbor"
+		"lover"
+		"doctor"
+		"teacher"
+
+phrase "occupation"
+	word
+		"sculptor"
+		"trader"
+		"painter"
+		"singer"
+		"actor"
+		"dancer"
+		"doctor"
+		"scholar"
+		"captain"
+		"ranger"
 
 phrase "successor friendly hail"
 	word
-		"${relations} says that "
-		"I think that "
-		"I doth believe that "
-		"I hath learned that "
-		"Mine experience shows that "
-		""
-	phrase
-		"new houses"
-		"old houses"
+		"Art thou the 'noble visitor' of whom the Houses speak?"
+		"Art thou the 'honored guest' the Houses do parade?"
+		"Art thou the fiendish creature that hails from distant lands?"
+		"Art thou the strange-ish traveler that hails from distant stars?"
 	word
-		" "
+		" / "
 	word
-		"reward kindly their allies"
-		"doth offer the most rewarding work"
-	word
-		"."
-		"!"
+		"I note thy presence and yet remain thee distant."
+		"If corrupted be thy soul, then prithee keep thy distance."
+		"If thou art friend to me, so I shall be to thee."
+		"What is thy goal within these stars? To wander in delight?"
+		"To whom and what thou does thou lend thy own strength?"
+		"What is thy goal within these stars? To observe or interfere?"
+		"What is thy goal within these stars? Be a trader or a traitor?"
 phrase "successor friendly hail"
 	word
-		"Pray tell no one"
-		"Seal thy lips"
-		"Say naught"
-		"Say naught to none"
-		"Pray tell none"
-		"Thou shalt think me a liar"
-		"Thou might'st not be able to concieve it"
-	word
-		", "
-	word
-		"but I believe that"
-		"but a scholar told me that"
-		"but a friend told me that"
-		"but I just read that"
-		"but I overheard that"
-	word 
-		" "
-	phrase
-		"old houses"
-		"new houses"
-	word
-		" "
-	word
-		"were responsible for the collapse"
-		"did bring about the collapse"
-		"plan to raise their taxes"
-		"have no noble blood"
-		"just captured a spy"
-		"are just a front"
-	word
-		"."
-		"!"
-phrase "successor friendly hail"
+		"My "
 	phrase
 		"relations"
 	word
-		" "
+		" always told me: be a "
+		" has just earned the title: "
+	phrase
+		"occupation"
 	word
-		"just joined the navy of ${old houses}"
-		"just joined the navy of ${new houses}"
-		"just graduated"
+		" / "
 	word
-		"."
-		"!"
+		"With these long days, I wish that they were me."
+		"A noble job, and yet not one for me."
+		"It's not my place to give critique, and yet..."
+		"I hope that I will see them soon again."
+		"Hast thou met them? Do they carry any news?"
+phrase "successor friendly hail"
 	word
-		""
-		" I overflow with pride!"
-		" I am so proud of them!"
-		" I have never been more proud!"
+		"I hope that thou will keep this thought between us:"
+		"A friend of mine had told me once in secret:"
+		"I have heard from good reputed, honest lips that"
+		"The High Houses try to hide it, but I know that"
+	word
+		" / "
+	word
+		"It's the Drak who caused the end of the old empire."
+		"It's the Quarg who caused the end of the old empire."
+		"It's the Hai who caused the end of the old empire."
+		"It's the Korath caused the end of the old empire."
+		"The High Houses by themselves destroyed the empire."
+		"The best trade routes are ones not prone to scanning." 5
+		"The best trade routes are those that make thy money." 5
+		"The best trade routes are hidden from thy sensors." 2
+		"There are nightmares in the void the Houses fear."
+		"The empty systems here are prone to strangeness." 
 
 phrase "old houses friendly hail"
 	word
@@ -393,12 +406,13 @@ phrase "old houses friendly hail"
 		"An honest fact 'tis plain for all to see."
 		"A simple truth in which we take our joy."
 
-phrase "old houses hostile hail"
+phrase "high houses hostile hail"
 	word
 		"Thy deception marks the apex of thy ill,"
 		"Thy cowardice is the basis of thy fame,"
 		"Our foolishness it was, we see, to trust thee;"
 		"A knave and coward thou hast clearly proved thyself;"
+		"Cowards die many times before their deaths,"
 	word
 		" / "
 	word
@@ -408,6 +422,7 @@ phrase "old houses hostile hail"
 		"May, in death, thou recognize thy wrongs."
 		"Enlightened now, we are to thy malignity."
 		"May thy knavish and deceptive heart now cease."
+		"The valiant never taste of death but once."
 
 phrase "new houses friendly hail"
 	word
@@ -459,3 +474,21 @@ phrase "new houses friendly hail"
 		"A simple truth in which we take our pride."
 		"An honest fact 'tis plain for all to see."
 		"A simple truth in which we take our joy."
+
+phrase "people's houses hostile hail"
+	word
+		"Art thou a knave in title same as action!?"
+		"Thou art nothing but a foolish slave to power!"
+		"Art thou blind and deaf to suff'ring or just evil?"
+		"If thou wouldst drop thy cargo, we'll be going."
+		"No harm shall come to those who drop their cargo."
+		"Thou art knavish in thy friendships and thy action."
+	word
+		" / "
+	word
+		"Thy blood shall grace the inside of thy starship."
+		"Resistance shall be met with execution."
+		"I hope thy pain is great and everlasting."
+		"Allow me to unburden thee of mortality."
+		"Prepare to shuffle off thy mortal coil."
+		"The sudden hand of Death close up thy eye."

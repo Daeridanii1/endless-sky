@@ -66,6 +66,30 @@ outfit `"Jorv" Shield Core`
 	"shield energy" 15.0
 	"description" "Many in the high houses disapprove of the design of this shield core, protesting that it is too ugly and utilitarian to be installed on their vessels. Mostly, however, these complaints are just for show, as the fantastic regenerative capabilities of any shield equipped with one of these cores are alluring to even the most aesthetically-minded of Successor families."
 
+outfit `"Viir" Repair Cortex`
+	category "Systems"
+	licenses
+		"High Houses"
+	cost 8000000
+	thumbnail "outfit/medium successor shield"
+	"mass" 14
+	"outfit space" -14
+	"hull repair rate" 0.55
+	"hull energy" 3.1
+	"description" "Successor ships rely on heavy armor rather than shields as their primary defensive layer. Consequently, they have developed powerful hull repair systems, though the high power consumption may prove too much for an insufficiently-equipped vessel."
+
+outfit `"Vyraa" Repair Cortex`
+	category "Systems"
+	cost 19000000
+	thumbnail "outfit/large successor shield"
+	licenses
+		"High Houses"
+	"mass" 30
+	"outfit space" -30
+	"hull repair rate" 1.3
+	"hull energy" 7.4
+	"description" "The function of this large armor repair cortex appears similar to that of an organic nervous system, electrically innervating areas on the surface of the ships hull to stimulate the targeted release of biomechanical repair microbots."
+
 outfit `1-"Uurau" Betavoltaic Cell`
 	category "Power"
 	licenses
@@ -147,22 +171,6 @@ outfit `"Ryuit" Inertial Core`
 	"shield energy multiplier" -0.36
 	"hull energy multiplier" -0.36
 	description "Like most Successor technology, these reactors are based on similar ones secreted away by the high houses during the collapse of the Predecessor empire. Even after all these generations, the designs remain elegant and powerful, and instill in the beholder a deep-set curiosity of what the originals would have been like—or indeed, whether or not a few of those originals still exist, kept in prime condition for when they are needed once again."
-
-outfit "Resistance Module"
-	category "Systems"
-	cost 3500000
-	thumbnail "outfit/small shield module"
-	licenses
-		"Successor"
-	"mass" 12
-	"outfit space" -12
-	"energy consumption" 1.5
-	"disruption resistance" 0.2
-	"ion resistance" 0.2
-	"slowing resistance" 0.2
-	"discharge resistance" 0.2
-	"corrosion resistance" 0.2
-	description "The empire of the Predecessors endured a great many diverse and unexpected things--that is, until it didn't. Nonetheless, preparedness pays, and the Successors use modules like this one to make sure they are prepared for a wide variety of threats and adverse conditions."
 
 outfit "Successor Cooling"
 	category "Systems"
@@ -379,3 +387,45 @@ effect "successor afterburner"
 		"no repeat"
 	lifetime 6
 	sound "plasma tiny"
+
+outfit "Multimodal Armor: Heavy"
+	category "Systems"
+	thumbnail "outfit/interference plating"
+	"hull protection" .33
+	"multimodal armor" -1
+	"unplunderable"
+	description "The metamaterial armor of Successor warships can be altered in an appropriately equipped spaceport to change its attributes."
+	description "This configuration strengthens the bonds between the atoms making up the armor, increasing its resistance to direct damage."
+
+outfit "Multimodal Armor: Stealth"
+	category "Systems"
+	thumbnail "outfit/interference plating"
+	"cloak" 0.01
+	"cloaking energy" 16.0
+	"radar jamming" 12.0
+	"multimodal armor" -1
+	"unplunderable"
+	description "The metamaterial armor of Successor warships can be altered in an appropriately equipped spaceport to change its attributes."
+	description "This configuration allows the armor to constantly deflects radar locks and to bend light around it when innervated."
+
+outfit "Multimodal Armor: Regen"
+	category "Systems"
+	thumbnail "outfit/interference plating"
+	"hull repair multiplier" .40
+	"multimodal armor" -1
+	"unplunderable"
+	description "The metamaterial armor of Successor warships can be altered in an appropriately equipped spaceport to change its attributes."
+	description "This configuration increases the plasticity of the armor, increasing the effectiveness of in-combat repair efforts."
+
+outfit "Multimodal Armor: Resilient"
+	category "Systems"
+	thumbnail "outfit/interference plating"
+	"slowing protection" 0.6
+	"ion protection" 0.6
+	"corrosion protection" 0.6
+	"leak protection" 0.6
+	"burn protection" 0.6
+	"multimodal armor" -1
+	"unplunderable"
+	description "The metamaterial armor of Successor warships can be altered in an appropriately equipped spaceport to change its attributes."
+	description "This configuration increases the armor's resilience against certain special types of damage."

@@ -225,6 +225,7 @@ outfit "Overcharged Laser Turret"
 	weapon
 		sprite "projectile/moonbeam"
 			"random start frame"
+		"hardpoint sprite" "hardpoint/laser turret"
 		sound "laser"
 		"fire effect" "moonbeam fleck" 3
 		"hit effect" "electron impact"
