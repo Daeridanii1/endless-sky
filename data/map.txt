@@ -14921,7 +14921,7 @@ system Kasii-Cavaasa
 system Kasii-Sola
 	pos -803.996 -94.019
 	government Predecessor
-	attributes successor
+	attributes predecessor
 	habitable 320
 	link Avasaa-Novaa
 	link Vasa-Oorua
@@ -15192,7 +15192,8 @@ system Kella-Uoasa
 
 system Khasola-Ryuit
 	pos -932.875 -162.412
-	government Uninhabited
+	government Predecessor
+	attributes predecessor
 
 system Khosa-Kaska
 	pos -1156.116 -1208.481
@@ -20232,7 +20233,7 @@ system Ossipago
 			period 17.294
 
 system Oublaa-Khora
-	pos -1001.555 31.755
+	pos -1006.444 -131.356
 	government Predecessor
 	attributes predecessor
 	link Kkrav-Luue
@@ -20581,7 +20582,7 @@ system Peacock
 
 system Pelaa-Muora
 	pos -1341.588 -1083.172
-	government "Successor"
+	government Successor
 	attributes successor
 	habitable 12981.236
 	belt 1841 4
@@ -32080,17 +32081,17 @@ planet Raaqa-Puan-Uuoru
 	description "Its home planet is small, rainy, and mostly covered by ocean. Widely regarded as one of the most beautiful planets in Successor space, settlement here is tightly regulated by House Kaatrij."
 	spaceport "Upon setting down, the landing pad releases a billowing sheet of clear water-repellant material that covers your ship, presumably as some sort of protection against the rain. The spaceport itself is low and small and decorated with strips of the same material that gently ruffle in the wind, almost like the sails of an ancient ocean-going ship."
 	spaceport "The few Successors you see appear attentive to but not surprised by your presence, clearly already well-informed about the arrival of the new alien traveler."
+	shipyard Heirloom
 	shipyard "High Houses"
-	shipyard "Heirloom"
 	shipyard "Peoples Houses"
 	shipyard "Successor Basics"
 	shipyard "Successor Carrier"
 	shipyard "Successor Civilian"
+	outfitter Heirloom
 	outfitter "High Houses"
+	outfitter "Peoples Houses"
 	outfitter "Successor Basics"
 	outfitter "Successor Civilian"
-	outfitter "Heirloom"
-	outfitter "Peoples Houses"
 	"required reputation" 10
 	bribe 0
 
@@ -33501,5 +33502,4 @@ planet Zug
 	tribute 1200
 		threshold 3000
 		fleet "Large Militia" 18
-
 

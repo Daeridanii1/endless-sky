@@ -526,6 +526,7 @@ ship `Aaulqra`
 		"Corrosive Torpedo Launcher" 2
 		"Corrosive Torpedo" 240
 		"Burst Anti-Missile Turret"
+		"Multimodal Armor: Heavy"
 	gun -26 -48 "Bimodal Railgun"
 	gun -21 -63
 	gun 21 -63
@@ -603,6 +604,7 @@ ship `Seiitej`
 		"Bimodal Railgun" 4
 		"Burst Anti-Missile Turret"
 		"Scanning Module"
+		"Multimodal Armor: Heavy"
 	gun -10 -78
 	gun -5 -86
 	gun 5 -86
@@ -665,6 +667,7 @@ ship `Veusade`
 		"Hyperdrive"
 		"Successor Cooling"
 		"Shatter Cannon" 8
+		"Multimodal Armor: Heavy"
 	gun -30 -40
 	gun -25 -48
 	gun -12 -70
@@ -738,6 +741,7 @@ ship `Kaskhorade`
 		"Successor Cooling"
 		"Bimodal Railgun" 5
 		"Burst Anti-Missile Turret" 4
+		"Multimodal Armor: Heavy"
 	gun -43 -28
 	gun -38 -45
 	gun 38 -45
@@ -810,6 +814,7 @@ ship `Valsaqra`
 		"Corrosive Torpedo Launcher" 2
 		"Corrosive Torpedo" 240
 		"Burst Anti-Missile Turret" 4
+		"Multimodal Armor: Heavy"
 	gun -27 -121
 	gun -34 -104
 	gun -50 -65
@@ -888,6 +893,7 @@ ship `Joruuvaqra`
 		"Successor Cooling" 2
 		"Burst Anti-Missile Turret" 2
 		"Bimodal Railgun Turret" 3
+		"Multimodal Armor: Heavy"
 	gun -16 -54
 	gun 16 -54
 	turret -104 -68 "Burst Anti-Missile Turret"

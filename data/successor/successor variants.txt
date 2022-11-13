@@ -31,7 +31,7 @@ ship `Stolsaqra` `Stolsaqra (OC Laser)`
 		"Overcharged Pulse Laser" 3
 		`"Ej" Shield Core`
 		"Hyperdrive"
-		"Overchargeds Laser Turret"
+		"Overcharged Laser Turret"
 
 ship `Stolsaqra` `Stolsaqra (Short-Range)`
 	outfits
