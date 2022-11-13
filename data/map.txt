@@ -81,10 +81,10 @@ system "1 Axis"
 	asteroids "large rock" 1 3.156
 	asteroids "small metal" 1 3.381
 	asteroids "medium metal" 149 4.347
-	asteroids "large metal" 11 3.961
-	minables lead 11 6.872
-	minables silicon 35 6.687
-	minables tungsten 2 5.453
+	asteroids "large metal" 11 3.9606
+	minables lead 11 3.87213
+	minables silicon 35 3.68659
+	minables tungsten 2 4.45307
 	trade Clothing 251
 	trade Electronics 831
 	trade Equipment 469
@@ -160,9 +160,9 @@ system "10 Pole"
 	asteroids "medium rock" 42 8.445
 	asteroids "large rock" 2 8.12
 	asteroids "medium metal" 9 11.368
-	asteroids "large metal" 2 4.71
-	minables neodymium 9 17.504
-	minables silicon 17 18.242
+	asteroids "large metal" 2 4.7096
+	minables neodymium 9 6.5036
+	minables silicon 17 4.2422
 	trade Clothing 335
 	trade Electronics 832
 	trade Equipment 444
@@ -325,8 +325,8 @@ system "11 Spring Below"
 	asteroids "small metal" 21 1.96
 	asteroids "medium metal" 41 3.696
 	asteroids "large metal" 13 2.128
-	minables silicon 5 6.89
-	minables tungsten 32 6.672
+	minables silicon 5 3.88994
+	minables tungsten 32 4.67204
 	trade Clothing 291
 	trade Electronics 710
 	trade Equipment 493
@@ -631,14 +631,14 @@ system "14 Winter Below"
 	link "4 Axis"
 	link "8 Winter Below"
 	link "Ki War Ek"
-	asteroids "small rock" 27 6.091
-	asteroids "medium rock" 2 2.765
-	asteroids "large rock" 21 5.875
-	asteroids "small metal" 5 3.974
-	asteroids "medium metal" 3 5.573
-	asteroids "large metal" 3 2.29
-	minables neodymium 6 6.79
-	minables titanium 9 8.616
+	asteroids "small rock" 27 6.0912
+	asteroids "medium rock" 2 2.7648
+	asteroids "large rock" 21 5.8752
+	asteroids "small metal" 5 3.9744
+	asteroids "medium metal" 3 5.5728
+	asteroids "large metal" 3 2.2896
+	minables neodymium 6 4.79025
+	minables titanium 9 5.6162
 	trade Clothing 310
 	trade Electronics 787
 	trade Equipment 658
@@ -865,8 +865,8 @@ system "3 Pole"
 	asteroids "small metal" 100 3.142
 	asteroids "medium metal" 16 1.786
 	asteroids "large metal" 19 4.466
-	minables lead 2 5.809
-	minables silicon 42 5.083
+	minables lead 2 4.80948
+	minables silicon 42 4.08343
 	trade Clothing 240
 	trade Electronics 847
 	trade Equipment 426
@@ -926,8 +926,8 @@ system "3 Spring Rising"
 	asteroids "small metal" 4 5.592
 	asteroids "medium metal" 12 5.079
 	asteroids "large metal" 29 3.591
-	minables aluminum 26 7.841
-	minables silicon 2 11.905
+	minables aluminum 26 3.84109
+	minables silicon 2 4.9047
 	trade Clothing 218
 	trade Electronics 820
 	trade Equipment 377
@@ -1005,8 +1005,8 @@ system "4 Axis"
 	asteroids "small metal" 8 7.668
 	asteroids "medium metal" 22 7.452
 	asteroids "large metal" 20 6.804
-	minables aluminum 17 9.399
-	minables iron 3 6.863
+	minables aluminum 17 4.39886
+	minables iron 3 3.86334
 	trade Clothing 309
 	trade Electronics 724
 	trade Equipment 578
@@ -1065,13 +1065,13 @@ system "4 Spring Rising"
 	link "1 Axis"
 	link "11 Spring Below"
 	link "3 Spring Rising"
-	asteroids "small rock" 9 10.881
-	asteroids "large rock" 8 10.069
-	asteroids "small metal" 3 11.449
-	asteroids "medium metal" 42 6.171
-	asteroids "large metal" 3 8.77
-	minables iron 16 14.919
-	minables silver 6 11.578
+	asteroids "small rock" 9 10.8808
+	asteroids "large rock" 8 10.0688
+	asteroids "small metal" 3 11.4492
+	asteroids "medium metal" 42 6.1712
+	asteroids "large metal" 3 8.7696
+	minables iron 16 4.9192
+	minables silver 6 5.5775
 	trade Clothing 238
 	trade Electronics 785
 	trade Equipment 395
@@ -1137,9 +1137,9 @@ system "4 Summer Rising"
 	asteroids "medium rock" 4 8.85
 	asteroids "large rock" 1 8.611
 	asteroids "small metal" 1 7.475
-	asteroids "medium metal" 19 8.85
-	asteroids "large metal" 1 5.621
-	minables silicon 3 12.653
+	asteroids "medium metal" 19 8.8504
+	asteroids "large metal" 1 5.6212
+	minables silicon 3 4.6527
 	trade Clothing 221
 	trade Electronics 851
 	trade Equipment 363
@@ -1281,9 +1281,9 @@ system "5 Axis"
 	asteroids "large rock" 2 7.544
 	asteroids "small metal" 34 6.831
 	asteroids "medium metal" 38 8.91
-	asteroids "large metal" 31 7.009
-	minables copper 36 7.563
-	minables iron 23 12.868
+	asteroids "large metal" 31 7.0092
+	minables copper 36 5.56345
+	minables iron 23 4.8681
 	trade Clothing 332
 	trade Electronics 678
 	trade Equipment 605
@@ -1353,15 +1353,15 @@ system "5 Spring Below"
 	belt 1104
 	link "11 Spring Below"
 	link "4 Axis"
-	asteroids "small rock" 77 6.037
-	asteroids "medium rock" 13 8.915
-	asteroids "large rock" 137 3.721
-	asteroids "small metal" 21 6.037
-	asteroids "medium metal" 5 3.721
-	asteroids "large metal" 3 10.319
-	minables copper 23 6.903
-	minables silicon 25 6.114
-	minables titanium 26 9.462
+	asteroids "small rock" 77 6.0372
+	asteroids "medium rock" 13 8.9154
+	asteroids "large rock" 137 3.7206
+	asteroids "small metal" 21 6.0372
+	asteroids "medium metal" 5 3.7206
+	asteroids "large metal" 3 10.3194
+	minables copper 23 6.90259
+	minables silicon 25 5.11432
+	minables titanium 26 6.46178
 	trade Clothing 342
 	trade Electronics 718
 	trade Equipment 561
@@ -1433,12 +1433,12 @@ system "5 Summer Above"
 	asteroids "small rock" 5 4.861
 	asteroids "medium rock" 17 3.92
 	asteroids "large rock" 1 2.352
-	asteroids "small metal" 13 3.998
-	asteroids "medium metal" 1 3.175
-	asteroids "large metal" 6 5.802
-	minables copper 3 5.636
-	minables iron 4 4.749
-	minables silver 8 7.762
+	asteroids "small metal" 13 3.9984
+	asteroids "medium metal" 1 3.1752
+	asteroids "large metal" 6 5.8016
+	minables copper 3 4.63642
+	minables iron 4 4.74904
+	minables silver 8 5.76172
 	trade Clothing 270
 	trade Electronics 823
 	trade Equipment 432
@@ -4291,12 +4291,12 @@ system "Ancient Hope"
 	haze _menu/haze-67
 	link "Far Horizon"
 	link "Sol Saryd"
-	asteroids "small rock" 14 8.137
-	asteroids "medium rock" 11 5.269
-	asteroids "large rock" 6 4.936
-	asteroids "large metal" 3 8.538
-	minables aluminum 6 11.354
-	minables uranium 1 6.831
+	asteroids "small rock" 14 8.1374
+	asteroids "medium rock" 11 5.2693
+	asteroids "large rock" 6 4.9358
+	asteroids "large metal" 3 8.5376
+	minables aluminum 6 4.3536
+	minables uranium 1 6.83108
 	trade Clothing 314
 	trade Electronics 699
 	trade Equipment 388
@@ -4422,12 +4422,12 @@ system Answer
 	link "Bright Void"
 	asteroids "medium rock" 2 6.279
 	asteroids "large rock" 3 6.578
-	asteroids "small metal" 16 6.817
-	asteroids "medium metal" 32 6.817
-	asteroids "large metal" 24 8.551
-	minables copper 7 13.583
-	minables neodymium 6 9.231
-	minables tungsten 18 7.443
+	asteroids "small metal" 16 6.8172
+	asteroids "medium metal" 32 6.8172
+	asteroids "large metal" 24 8.5514
+	minables copper 7 3.583
+	minables neodymium 6 5.23127
+	minables tungsten 18 5.44324
 	trade Clothing 221
 	trade Electronics 703
 	trade Equipment 385
@@ -4759,6 +4759,7 @@ system Arculus
 	fleet "Remnant Transport" 2200
 	fleet "Remnant Home Guard" 2000
 	fleet "Korath Ember Waste Raid" 40000
+	fleet "Korath Rescue" 90000
 	hazard "Ember Waste Base Heat" 100
 	hazard "Ember Waste Base Storm" 25000
 	object
@@ -5328,8 +5329,8 @@ system Beginning
 	asteroids "large rock" 47 4.805
 	asteroids "small metal" 2 5.078
 	asteroids "medium metal" 7 7.098
-	asteroids "large metal" 19 5.023
-	minables lead 1 7.496
+	asteroids "large metal" 19 5.0232
+	minables lead 1 7.49564
 	trade Clothing 310
 	trade Electronics 631
 	trade Equipment 448
@@ -5514,9 +5515,9 @@ system Belug
 	asteroids "large rock" 4 5.783
 	asteroids "small metal" 12 8.165
 	asteroids "medium metal" 108 8.505
-	asteroids "large metal" 1 4.309
-	minables aluminum 34 11.402
-	minables titanium 1 14.033
+	asteroids "large metal" 1 4.3092
+	minables aluminum 34 11.4021
+	minables titanium 1 14.0326
 	minables uranium 4 14.72
 	trade Clothing 349
 	trade Electronics 737
@@ -5807,9 +5808,9 @@ system Bloptab
 	asteroids "small metal" 55 4.23
 	asteroids "medium metal" 21 3.18
 	asteroids "large metal" 4 3.87
-	minables silicon 14 7.352
-	minables titanium 10 6.777
-	minables tungsten 8 4.201
+	minables silicon 14 7.35211
+	minables titanium 10 6.77673
+	minables tungsten 8 4.20103
 	trade Clothing 339
 	trade Electronics 718
 	trade Equipment 663
@@ -5874,7 +5875,7 @@ system Blubipad
 	asteroids "large rock" 5 5
 	asteroids "medium metal" 7 6.35
 	asteroids "large metal" 9 6.1
-	minables silver 7 9.807
+	minables silver 7 9.80748
 	trade Clothing 351
 	trade Electronics 668
 	trade Equipment 653
@@ -5937,9 +5938,9 @@ system Blugtad
 	asteroids "small metal" 11 6.075
 	asteroids "medium metal" 17 11.664
 	asteroids "large metal" 1 7.776
-	minables lead 6 8.607
-	minables platinum 2 12.982
-	minables silver 2 11.876
+	minables lead 6 8.60749
+	minables platinum 2 12.9822
+	minables silver 2 11.8763
 	trade Clothing 339
 	trade Electronics 759
 	trade Equipment 653
@@ -6194,6 +6195,7 @@ system "Bote Asu"
 		period 616.804
 		object Everhope
 			sprite planet/stationh-ancient2
+				scale 0.5
 			distance 380
 			period 31.648
 	object
@@ -6402,6 +6404,7 @@ system Caeculus
 	trade Metal 272
 	trade Plastic 289
 	fleet "Korath Ember Waste Raid" 20000
+	fleet "Korath Rescue" 60000
 	fleet "Small Remnant" 30000
 	fleet "Large Remnant" 30000
 	fleet Embershades 12000
@@ -7411,6 +7414,7 @@ system Coluber
 	trade Metal 475
 	trade Plastic 362
 	fleet "Korath Ember Waste Raid" 10000
+	fleet "Korath Rescue" 30000
 	hazard "Ember Waste Base Heat" 100
 	hazard "Ember Waste Base Storm" 9000
 	object
@@ -7461,9 +7465,9 @@ system Companion
 	asteroids "large rock" 6 8.845
 	asteroids "small metal" 6 9.715
 	asteroids "medium metal" 30 3.915
-	asteroids "large metal" 2 4.133
-	minables aluminum 2 8.367
-	minables silicon 7 10.921
+	asteroids "large metal" 2 4.1325
+	minables aluminum 2 8.36691
+	minables silicon 7 10.9209
 	trade Clothing 292
 	trade Electronics 813
 	trade Equipment 442
@@ -7685,6 +7689,7 @@ system "Da Ent"
 		period 705.482
 		object Violetwake
 			sprite planet/stationh-ancient0
+				scale 0.5
 			distance 240
 			period 17.5
 	object
@@ -7693,6 +7698,7 @@ system "Da Ent"
 		period 1332.8
 		object Darkrest
 			sprite planet/stationh-ancient1
+				scale 0.5
 			distance 240
 			period 17.5
 	object
@@ -7762,6 +7768,7 @@ system "Da Lest"
 		period 581.731
 		object Eldergrasp
 			sprite planet/stationh-ancient0
+				scale 0.5
 			distance 240
 			period 17.5
 	object
@@ -7920,9 +7927,9 @@ system "Dark Hills"
 	asteroids "large rock" 10 4.954
 	asteroids "small metal" 7 2.842
 	asteroids "medium metal" 8 1.92
-	asteroids "large metal" 12 4.147
-	minables gold 2 5.397
-	minables iron 4 6.823
+	asteroids "large metal" 12 4.1472
+	minables gold 2 5.3967
+	minables iron 4 6.82272
 	trade Clothing 299
 	trade Electronics 672
 	trade Equipment 385
@@ -8126,7 +8133,7 @@ system Delia
 		period 5611.94
 
 system "Deep Space 7C"
-	pos -1502 105
+	pos -774 -450
 	government Uninhabited
 	habitable 1297
 	belt 2309
@@ -8181,7 +8188,7 @@ system "Deep Space 7C"
 		period 2904.81
 
 system "Deep Space 7F"
-	pos -1542 83
+	pos -814 -472
 	government Uninhabited
 	habitable 864
 	belt 1319
@@ -8232,7 +8239,7 @@ system "Deep Space 7F"
 			period 47.481
 
 system "Deep Space 5J"
-	pos -1618 23
+	pos -890 -532
 	government Uninhabited
 	habitable 906
 	belt 1869
@@ -8294,7 +8301,7 @@ system "Deep Space 5J"
 			period 57.739
 
 system "Deep Space 5N"
-	pos -1623 -29
+	pos -895 -584
 	government Uninhabited
 	habitable 490
 	belt 1236
@@ -8345,7 +8352,7 @@ system "Deep Space 5N"
 		period 1683.1
 
 system "Deep Space 5T"
-	pos -1591 -60
+	pos -863 -615
 	government Uninhabited
 	habitable 397
 	belt 1302
@@ -8398,7 +8405,7 @@ system "Deep Space 5T"
 			period 32.594
 
 system "Deep Space 1Q"
-	pos -1648 -113
+	pos -920 -668
 	government Uninhabited
 	habitable 1009
 	belt 2577
@@ -8469,7 +8476,7 @@ system "Deep Space 1Q"
 			period 32.052
 
 system "Deep Space 1X"
-	pos -1663 -140
+	pos -935 -695
 	government Uninhabited
 	habitable 100
 	belt 1751
@@ -8495,7 +8502,7 @@ system "Deep Space 1X"
 		offset 180
 
 system "Deep Space 19M1"
-	pos -1623 -190
+	pos -895 -745
 	government Uninhabited
 	habitable 697
 	belt 2115
@@ -8570,7 +8577,7 @@ system "Deep Space 19M1"
 			period 27.875
 
 system "Deep Space 19M2"
-	pos -1688 -222
+	pos -960 -777
 	government Uninhabited
 	habitable 851
 	belt 1977
@@ -8626,7 +8633,7 @@ system "Deep Space 19M2"
 			period 68.317
 
 system "Deep Space 19M5"
-	pos -1861 -273
+	pos -1133 -828
 	government Uninhabited
 	habitable 851
 	belt 1977
@@ -8683,7 +8690,7 @@ system "Deep Space 19M5"
 			period 68.317
 
 system "Deep Space 19K12"
-	pos -1841 -187
+	pos -1113 -747
 	government Uninhabited
 	habitable 851
 	belt 1977
@@ -9028,7 +9035,8 @@ system Denebola
 		distance 2927.23
 		period 2677.01
 
-system Devil-Hide
+
+system "Devil-Hide"
 	pos -1775 -220
 	government "Pirate (Devil-Run Gang)"
 	habitable 999
@@ -9567,6 +9575,7 @@ system "Due Yoot"
 		period 887.598
 		object Greenview
 			sprite planet/stationh-ancient1
+				scale 0.5
 			distance 240
 			period 17.5
 	object
@@ -9730,11 +9739,11 @@ system Eblumab
 	asteroids "small rock" 10 7.836
 	asteroids "medium rock" 39 4.176
 	asteroids "large rock" 2 8.294
-	asteroids "small metal" 20 3.775
-	asteroids "medium metal" 2 4.061
-	asteroids "large metal" 33 4.519
-	minables copper 8 6.103
-	minables iron 6 6.391
+	asteroids "small metal" 20 3.7752
+	asteroids "medium metal" 2 4.0612
+	asteroids "large metal" 33 4.5188
+	minables copper 8 6.10344
+	minables iron 6 6.39134
 	minables lead 17 7.069
 	trade Clothing 339
 	trade Electronics 750
@@ -9816,6 +9825,7 @@ system Edusa
 	fleet "Small Remnant" 2400
 	fleet "Remnant Transport" 2400
 	fleet "Korath Ember Waste Raid" 40000
+	fleet "Korath Rescue" 90000
 	hazard "Ember Waste Base Heat" 100
 	hazard "Ember Waste Base Storm" 9000
 	object
@@ -10956,6 +10966,7 @@ system "Fah Soom"
 		period 569.72
 		object Firefall
 			sprite planet/stationh-ancient1
+				scale 0.5
 			distance 240
 			period 17.5
 	object
@@ -11246,6 +11257,7 @@ system Farinus
 	fleet "Small Remnant" 10000
 	fleet "Remnant Transport" 10000
 	fleet "Korath Ember Waste Raid" 40000
+	fleet "Korath Rescue" 60000
 	hazard "Ember Waste Base Heat" 100
 	hazard "Ember Waste Base Storm" 9000
 	object
@@ -11484,12 +11496,12 @@ system "Fell Omen"
 	belt 1240
 	link "Last Word"
 	asteroids "small rock" 30 6.3
-	asteroids "medium rock" 91 4.183
-	asteroids "large rock" 34 5.342
-	asteroids "medium metal" 5 6.602
-	asteroids "large metal" 1 4.334
-	minables silicon 71 8.142
-	minables tungsten 32 8.53
+	asteroids "medium rock" 91 4.1832
+	asteroids "large rock" 34 5.3424
+	asteroids "medium metal" 5 6.6024
+	asteroids "large metal" 1 4.3344
+	minables silicon 71 8.14237
+	minables tungsten 32 8.52992
 	trade Clothing 270
 	trade Electronics 692
 	trade Equipment 670
@@ -11867,11 +11879,11 @@ system Flugbu
 	asteroids "small rock" 92 4.085
 	asteroids "medium rock" 4 2.981
 	asteroids "large rock" 7 4.416
-	asteroids "medium metal" 2 7.507
-	asteroids "large metal" 4 2.926
-	minables silicon 3 7.907
-	minables tungsten 16 7.616
-	minables uranium 21 5.192
+	asteroids "medium metal" 2 7.5072
+	asteroids "large metal" 4 2.9256
+	minables silicon 3 7.90651
+	minables tungsten 16 7.61572
+	minables uranium 21 5.19184
 	trade Clothing 298
 	trade Electronics 704
 	trade Equipment 433
@@ -12652,14 +12664,14 @@ system Glubatub
 	link Miblulub
 	link "Sol Arach"
 	link Tebuteb
-	asteroids "small rock" 17 7.604
-	asteroids "medium rock" 27 5.4
-	asteroids "large rock" 30 5.014
-	asteroids "small metal" 5 3.471
-	asteroids "medium metal" 43 5.73
-	asteroids "large metal" 12 6.116
-	minables aluminum 9 8.602
-	minables lead 14 9.734
+	asteroids "small rock" 17 7.6038
+	asteroids "medium rock" 27 5.3998
+	asteroids "large rock" 30 5.0141
+	asteroids "small metal" 5 3.4713
+	asteroids "medium metal" 43 5.7304
+	asteroids "large metal" 12 6.1161
+	minables aluminum 9 8.60233
+	minables lead 14 9.73445
 	trade Clothing 367
 	trade Electronics 726
 	trade Equipment 597
@@ -13404,6 +13416,7 @@ system "Heia Due"
 		period 184.727
 		object Sandsnap
 			sprite planet/stationh-ancient1
+				scale 0.5
 			distance 240
 			period 17.5
 	object Allhome
@@ -13801,10 +13814,10 @@ system Homeward
 	asteroids "large rock" 33 6.252
 	asteroids "small metal" 3 6.125
 	asteroids "medium metal" 7 3.19
-	asteroids "large metal" 28 4.402
-	minables platinum 3 9.98
-	minables silicon 6 5.931
-	minables uranium 4 7.185
+	asteroids "large metal" 28 4.4022
+	minables platinum 3 9.98007
+	minables silicon 6 5.93079
+	minables uranium 4 7.18515
 	trade Clothing 294
 	trade Electronics 680
 	trade Equipment 585
@@ -13920,10 +13933,10 @@ system Hunter
 	asteroids "medium rock" 2 3.745
 	asteroids "large rock" 7 4.822
 	asteroids "small metal" 3 6.669
-	asteroids "medium metal" 1 4.925
-	asteroids "large metal" 10 7.079
-	minables silicon 10 7.115
-	minables tungsten 6 8.19
+	asteroids "medium metal" 1 4.9248
+	asteroids "large metal" 10 7.0794
+	minables silicon 10 7.11503
+	minables tungsten 6 8.18967
 	trade Clothing 276
 	trade Electronics 736
 	trade Equipment 396
@@ -14140,6 +14153,7 @@ system "Imo Dep"
 		period 380.303
 		object Bluerun
 			sprite planet/stationh-ancient0
+				scale 0.5
 			distance 240
 			period 17.5
 	object Stonebreak
@@ -14272,6 +14286,7 @@ system "Io Lowe"
 		period 760.291
 		object Greymoon
 			sprite planet/stationh-ancient2
+				scale 0.5
 			distance 380
 			period 31.648
 	object
@@ -14360,6 +14375,7 @@ system "Io Mann"
 			period 14.877
 		object Thornlight
 			sprite planet/stationh-ancient0
+				scale 0.5
 			distance 422
 			period 28.5
 	object
@@ -15749,9 +15765,10 @@ system "Kor En'lakfar"
 	trade Medical 840
 	trade Metal 236
 	trade Plastic 488
-	fleet "Korath Raid" 1200
+	fleet "Korath Raid" 1250
 	fleet "Korath Home" 720
 	fleet "Korath Large Raid" 15000
+	fleet "Korath Surveillance" 32000
 	fleet "Korath Defense" 1775
 	fleet "Korath Civilian Miners" 6000
 	fleet "Korath Civilian Large" 955
@@ -15817,11 +15834,12 @@ system "Kor Fel'tar"
 	trade Medical 841
 	trade Metal 256
 	trade Plastic 478
-	fleet "Korath Raid" 2000
+	fleet "Korath Raid" 2050
 	fleet "Korath Home" 1200
 	fleet "Korath Defense" 2400
 	fleet "Korath Civilian Miners" 5000
 	fleet "Korath Civilian Large" 1600
+	fleet "Korath Surveillance" 24000
 	fleet "Korsmanath A'awojs" 900
 	object
 		sprite star/k3
@@ -15888,9 +15906,10 @@ system "Kor Men"
 	trade Metal 240
 	trade Plastic 497
 	fleet "Korath Home" 800
-	fleet "Korath Raid" 2000
+	fleet "Korath Raid" 2040
 	fleet "Korath Defense" 2900
 	fleet "Korath Large Raid" 21000
+	fleet "Korath Surveillance" 46000
 	fleet "Korath Civilian Large" 1500
 	fleet "Korath Civilian Miners" 8000
 	fleet "Korsmanath A'awojs" 2808
@@ -15956,8 +15975,9 @@ system "Kor Nor'peli"
 	trade Plastic 423
 	fleet "Korath Defense" 1700
 	fleet "Korath Large Raid" 16000
-	fleet "Korath Ember Waste Raid" 1300
+	fleet "Korath Ember Waste Raid" 1350
 	fleet "Korath Ember Waste Large Raid" 20000
+	fleet "Korath Surveillance" 48000
 	fleet "Korath Civilian Large" 2000
 	fleet "Korath Home" 900
 	fleet "Korsmanath A'awojs" 1100
@@ -16031,7 +16051,8 @@ system "Kor Tar'bei"
 	fleet "Korath Home" 1000
 	fleet "Korath Civilian Large" 1000
 	fleet "Korath Defense" 2600
-	fleet "Korath Ember Waste Raid" 3000
+	fleet "Korath Ember Waste Raid" 3050
+	fleet "Korath Surveillance" 50000
 	fleet "Korath Ember Waste Large Raid" 30000
 	fleet "Korsmanath A'awojs" 900
 	object
@@ -16084,10 +16105,11 @@ system "Kor Zena'i"
 	trade Medical 785
 	trade Metal 478
 	trade Plastic 381
-	fleet "Korath Raid" 1800
+	fleet "Korath Raid" 1850
 	fleet "Korath Home" 1170
 	fleet "Korath Defense" 1660
 	fleet "Korath Large Raid" 16000
+	fleet "Korath Surveillance" 31000
 	fleet "Korath Civilian Large" 845
 	fleet "Korsmanath A'awojs" 2500
 	object
@@ -16613,6 +16635,7 @@ system Levana
 	trade Metal 407
 	trade Plastic 222
 	fleet "Korath Ember Waste Raid" 10000
+	fleet "Korath Rescue" 30000
 	hazard "Ember Waste Base Heat" 100
 	hazard "Ember Waste Base Storm" 9000
 	object
@@ -16914,6 +16937,7 @@ system "Lom Tahr"
 		period 1146.17
 		object Iritoroost
 			sprite planet/stationh-ancient1
+				scale 0.5
 			distance 240
 			period 17.5
 
@@ -16926,12 +16950,12 @@ system "Lone Cloud"
 	belt 1730
 	link "Four Pillars"
 	asteroids "medium rock" 119 4.732
-	asteroids "large rock" 30 7.134
-	asteroids "small metal" 4 9.246
-	asteroids "medium metal" 95 10.119
-	asteroids "large metal" 9 8.59
-	minables aluminum 11 7.84
-	minables silicon 27 14.022
+	asteroids "large rock" 30 7.1344
+	asteroids "small metal" 4 9.2456
+	asteroids "medium metal" 95 10.1192
+	asteroids "large metal" 9 8.5904
+	minables aluminum 11 7.83953
+	minables silicon 27 14.0224
 	trade Clothing 185
 	trade Electronics 821
 	trade Equipment 513
@@ -17001,6 +17025,7 @@ system Lucina
 	trade Metal 524
 	trade Plastic 410
 	fleet "Korath Ember Waste Raid" 20000
+	fleet "Korath Rescue" 60000
 	hazard "Ember Waste Base Heat" 100
 	hazard "Ember Waste Base Storm" 9000
 	object
@@ -20407,6 +20432,7 @@ system Parca
 	trade Metal 531
 	trade Plastic 445
 	fleet "Korath Ember Waste Raid" 10000
+	fleet "Korath Rescue" 30000
 	hazard "Ember Waste Base Heat" 100
 	hazard "Ember Waste Base Storm" 9000
 	object
@@ -20760,6 +20786,7 @@ system Peragenor
 	fleet "Small Remnant" 7000
 	fleet "Remnant Transport" 7000
 	fleet "Korath Ember Waste Raid" 40000
+	fleet "Korath Rescue" 90000
 	fleet Embershades 8000
 	hazard "Ember Waste Base Heat" 100
 	hazard "Ember Waste Base Storm" 9000
@@ -20876,6 +20903,7 @@ system Perfica
 	fleet "Small Remnant" 7500
 	fleet "Remnant Transport" 7500
 	fleet "Korath Ember Waste Raid" 30000
+	fleet "Korath Rescue" 45000
 	hazard "Ember Waste Base Heat" 100
 	hazard "Ember Waste Base Storm" 9000
 	object
@@ -22555,6 +22583,7 @@ system "Rati Cal"
 		period 1994.11
 		object Limejog
 			sprite planet/stationh-ancient1
+				scale 0.5
 			distance 240
 			period 17.5
 
@@ -23979,6 +24008,7 @@ system Segesta
 	fleet "Small Remnant" 40000
 	fleet "Large Remnant" 40000
 	fleet "Korath Ember Waste Raid" 40000
+	fleet "Korath Rescue" 90000
 	fleet Embershades 15000
 	hazard "Ember Waste Base Heat" 100
 	hazard "Ember Waste Base Storm" 9000
@@ -24636,12 +24666,12 @@ system "Silver Bell"
 	link "Silver String"
 	asteroids "small rock" 2 6.95
 	asteroids "medium rock" 5 2.43
-	asteroids "large rock" 13 6.707
-	asteroids "small metal" 2 2.624
-	asteroids "medium metal" 7 4.325
-	asteroids "large metal" 8 7.241
-	minables lead 2 10.473
-	minables tungsten 3 8.067
+	asteroids "large rock" 13 6.7068
+	asteroids "small metal" 2 2.6244
+	asteroids "medium metal" 7 4.3254
+	asteroids "large metal" 8 7.2414
+	minables lead 2 10.4732
+	minables tungsten 3 8.0673
 	trade Clothing 228
 	trade Electronics 689
 	trade Equipment 485
@@ -25201,15 +25231,15 @@ system "Sol Arach"
 	link Meblumem
 	link Miblulub
 	link Plort
-	asteroids "small rock" 5 4.586
-	asteroids "medium rock" 9 4.687
-	asteroids "large rock" 4 6.854
-	asteroids "small metal" 16 6.149
-	asteroids "medium metal" 12 6.502
-	asteroids "large metal" 81 2.873
-	minables iron 6 4.616
-	minables silicon 25 7.591
-	minables titanium 3 5.675
+	asteroids "small rock" 5 4.5864
+	asteroids "medium rock" 9 4.6872
+	asteroids "large rock" 4 6.8544
+	asteroids "small metal" 16 6.1488
+	asteroids "medium metal" 12 6.5016
+	asteroids "large metal" 81 2.8728
+	minables iron 6 4.61643
+	minables silicon 25 7.59101
+	minables titanium 3 5.6753
 	trade Clothing 361
 	trade Electronics 756
 	trade Equipment 621
@@ -25278,11 +25308,11 @@ system "Sol Kimek"
 	asteroids "medium rock" 1 5.154
 	asteroids "large rock" 8 7.638
 	asteroids "small metal" 24 6.831
-	asteroids "medium metal" 1 8.321
-	asteroids "large metal" 4 7.39
-	minables iron 2 7.606
-	minables lead 2 13.234
-	minables silicon 7 10.865
+	asteroids "medium metal" 1 8.3214
+	asteroids "large metal" 4 7.3899
+	minables iron 2 7.60621
+	minables lead 2 13.2343
+	minables silicon 7 10.8648
 	trade Clothing 238
 	trade Electronics 812
 	trade Equipment 493
@@ -25741,11 +25771,11 @@ system "Steep Roof"
 	asteroids "small rock" 30 5.492
 	asteroids "medium rock" 65 6.707
 	asteroids "large rock" 1 6.561
-	asteroids "small metal" 8 5.2
-	asteroids "medium metal" 10 2.77
-	asteroids "large metal" 6 3.256
-	minables copper 22 6.797
-	minables silver 18 9.385
+	asteroids "small metal" 8 5.2002
+	asteroids "medium metal" 10 2.7702
+	asteroids "large metal" 6 3.2562
+	minables copper 22 6.79651
+	minables silver 18 9.38539
 	trade Clothing 244
 	trade Electronics 814
 	trade Equipment 388
@@ -25829,6 +25859,7 @@ system Stercutus
 	trade Metal 299
 	trade Plastic 294
 	fleet "Korath Ember Waste Raid" 20000
+	fleet "Korath Rescue" 60000
 	fleet "Small Remnant" 20000
 	fleet "Large Remnant" 20000
 	fleet "Remnant Transport" 40000
@@ -26936,6 +26967,7 @@ system "Ula Mon"
 		period 584.389
 		object Goldcrawl
 			sprite planet/stationh-ancient0
+				scale 0.5
 			distance 240
 			period 17.5
 	object
@@ -26944,6 +26976,7 @@ system "Ula Mon"
 		period 1185.03
 		object Ironfirth
 			sprite planet/stationh-ancient1
+				scale 0.5
 			distance 240
 			period 17.5
 	object
@@ -27339,6 +27372,7 @@ system "Uwa Fahn"
 		period 694.638
 		object Swiftsong
 			sprite planet/stationh-ancient0
+				scale 0.5
 			distance 240
 			period 17.5
 	object
@@ -27861,6 +27895,7 @@ system "Wah Oh"
 		period 41.831
 		object Ochrescoop
 			sprite planet/stationh-ancient2
+				scale 0.5
 			distance 240
 			period 35.74
 	object
@@ -28413,6 +28448,7 @@ system "Ya Hai"
 			period 26.13
 		object Mahoganybox
 			sprite planet/stationh-ancient1
+				scale 0.5
 			distance 440
 			period 47.5
 	object
@@ -28806,6 +28842,7 @@ system "Zuba Zub"
 		period 1583.58
 		object Redwatch
 			sprite planet/stationh-ancient0
+				scale 0.5
 			distance 240
 			period 17.5
 	object
