@@ -71,7 +71,7 @@ outfit `"Viir" Repair Cortex`
 	licenses
 		"High Houses"
 	cost 8000000
-	thumbnail "outfit/medium successor shield"
+	thumbnail "outfit/small successor repair"
 	"mass" 14
 	"outfit space" -14
 	"hull repair rate" 0.55
@@ -81,7 +81,7 @@ outfit `"Viir" Repair Cortex`
 outfit `"Vyraa" Repair Cortex`
 	category "Systems"
 	cost 19000000
-	thumbnail "outfit/large successor shield"
+	thumbnail "outfit/large successor repair"
 	licenses
 		"High Houses"
 	"mass" 30
