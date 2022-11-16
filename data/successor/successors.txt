@@ -136,6 +136,7 @@ outfitter "Successor Civilian"
 outfitter "High Houses"
 	`"Nnesa" Inertial Core`
 	`"Ryuit" Inertial Core`
+	`"Uuravej" Inertial Core`
 	`"Veusa" Inductive Reverser`
 	`"Veusa" Inductive Steering`
 	`"Veusa" Inductive Thruster`
