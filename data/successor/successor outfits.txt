@@ -13,7 +13,7 @@ outfit "Heirloom License"
 	thumbnail "outfit/remnant capital license"
 	"description" "To obtain one of these, you would have to become an honorary scion of one of the High Houses, and that's for future content."
 
-outfit `"Veldt" Shield Core`
+outfit `"Byiaa" Shield Cortex`
 	category "Systems"
 	licenses
 		"Successor"
@@ -25,9 +25,9 @@ outfit `"Veldt" Shield Core`
 	"shield protection" -0.33
 	"shield energy" 1.2
 	"cooling" 1.1
-	"description" "This tiny shield core produces generates an impressive amount of shields for something this small. Because the Successors designed it for use in their fighters, it is also has the additional capability of venting a small amount of heat through the shield matrix it generates, allowing it to cool the ship it is installed on by a small amount."
+	"description" "Despite its diminuitive scale, this tiny Successor shield cortex repairs shielding at an impressive rate, though like all Successor shields, the shielding it generates is more susceptible to damage than usual. Since this unit was designed for use on small craft where space is at a premium, it comes with integrated heat sinks that allow it to cool the ship it is installed on by a small amount."
 
-outfit `"Ej" Shield Core`
+outfit `"Ej" Shield Cortex`
 	category "Systems"
 	licenses
 		"Successor"
@@ -38,9 +38,9 @@ outfit `"Ej" Shield Core`
 	"shield generation" 2.1
 	"shield protection" -0.33
 	"shield energy" 2.6
-	"description" "At their peak, the Predecessors were feared not for their ability to overpower their enemies, but through their skill at outlasting them. Many generations later, this philosophy is still reflected in modern Successor shield cores, which are exceptionally powerful for their size but weaken the shield's resistance to incoming fire, allowing Successor ships to recover quickly from sustained damage."
+	"description" "At their peak, the Predecessors were feared not by how they could overpower their enemies, but in how effectively they could outlast them. Many generations later, this philosophy is still reflected in modern Successor shield cortices, which are exceptionally powerful for their size but weaken the shield's resistance to incoming fire, allowing Successor ships to recover quickly from sustained damage, even if they are slightly more vulnerable to it."
 
-outfit `"Jaase" Shield Core`
+outfit `"Jaase" Shield Cortex`
 	category "Systems"
 	licenses
 		"High Houses"
@@ -51,9 +51,9 @@ outfit `"Jaase" Shield Core`
 	"shield generation" 4.8
 	"shield protection" -0.33
 	"shield energy" 7.8
-	"description" "By modulating the power allocation to shields at rest, this modern Successor shield core can make them much more responsive, both to regeneration harmonics and incoming damage. A Successor warship equipped with one of these can shrug off the combined damage output of several lesser attackers."
+	"description" "Successor shield cortices continously modulate their power output, slightly destabilizing the shields the generate and making them much more responsive to both regeneration harmonics and incoming damage. This medium-sized unit is powerful enough to shrug off the combined damage output of several lesser attackers, and consequently is reserved by the High Houses for use in their private navies."
 
-outfit `"Jorv" Shield Core`
+outfit `"Jorv" Shield Cortex`
 	category "Systems"
 	cost 19000000
 	thumbnail "outfit/large successor shield"
@@ -64,9 +64,9 @@ outfit `"Jorv" Shield Core`
 	"shield generation" 10.5
 	"shield protection" -0.33
 	"shield energy" 15.0
-	"description" "Many in the high houses disapprove of the design of this shield core, protesting that it is too ugly and utilitarian to be installed on their vessels. Mostly, however, these complaints are just for show, as the fantastic regenerative capabilities of any shield equipped with one of these cores are alluring to even the most aesthetically-minded of Successor families."
+	"description" "Bristling with regeneration nodes, this large Successor shield cortex requires a power budget greater than most human warships in their entirety. Many in the High Houses disapprove of its design, suggesting that such a powerful piece of technology deserves a more artful form, but there has ultimately been little desire to invest the time and money for a redesign for purely aesthetic reasons."
 
-outfit `"Viir" Repair Cortex`
+outfit `"Viir" Repair Module`
 	category "Systems"
 	licenses
 		"High Houses"
@@ -76,9 +76,9 @@ outfit `"Viir" Repair Cortex`
 	"outfit space" -14
 	"hull repair rate" 0.55
 	"hull energy" 3.1
-	"description" "Successor ships rely on heavy armor rather than shields as their primary defensive layer. Consequently, they have developed powerful hull repair systems, though the high power consumption may prove too much for an insufficiently-equipped vessel."
+	"description" "The Successors are masters of materials science, and since the days of the Predecessors, their ships have relied on heavy armor rather than shields as their primary defensive layer. During these current peaceful times, there has been little need for in-flight armor repair systems, but the High Houses still install these on their warships both as a precaution and as a justification for the cost of producing them."
 
-outfit `"Vyraa" Repair Cortex`
+outfit `"Vyraa" Repair Module`
 	category "Systems"
 	cost 19000000
 	thumbnail "outfit/large successor repair"
@@ -88,7 +88,7 @@ outfit `"Vyraa" Repair Cortex`
 	"outfit space" -30
 	"hull repair rate" 1.3
 	"hull energy" 7.4
-	"description" "The function of this large armor repair cortex appears similar to that of an organic nervous system, electrically innervating areas on the surface of the ships hull to stimulate the targeted release of biomechanical repair microbots."
+	"description" "Much of the stunning power consumption of this large armor repair module comes from the powerful computers it contains, which constantly monitor the ship's hull for damage or wear before rapidly routing thousands of biomechanical repair microbots to the damaged areas as efficiently as possible. When they have completed repairs, the microbots travel back to the module along a sort of artificial vasculature, where their batteries are recharged and their own structures checked for damage before being dispatched again."
 
 outfit `1-"Uurau" Betavoltaic Cell`
 	category "Power"
@@ -114,7 +114,7 @@ outfit `OC-"Mavra" Betavoltaic Cell`
 	"energy generation" 2.25
 	"heat generation" 3.8
 	"energy capacity" 2222
-	description "This betavoltaic generator has had most of its auxiliary batteries removed, along with the majority of its radiation shielding and safety interlocks: the result is surprisingly energy-dense but produces a lot of heat, and most Successor pilots prefer to keep a bulkhead between themselves and one of these potent little cores at all times."
+	description "In an effort to produce a high-density power source smaller than their inertial fusion reactors, the Successors have created this overcharged betavoltaic cell, which contains some particularly unstable isotopes and lacks much of the radiation shielding of the standard models. While it has technically passed safety inspection, most Successor pilots understandably prefer to keep a bulkhead between themselves and one of these potent little cores at all times."
 
 outfit `4-"Kaska" Betavoltaic Cell`
 	category "Power"

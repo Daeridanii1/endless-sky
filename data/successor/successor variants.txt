@@ -4,7 +4,7 @@ ship `Aaulqra` `Aaulqra (Rails)`
 		`"Veusa" Inductive Steering`
 		`"Aqra" Inductive Reverser`
 		`"Nnesa" Inertial Core` 2
-		`"Jaase" Shield Core`
+		`"Jaase" Shield Cortex`
 		"Hyperdrive"
 		"Successor Cooling"
 		"Bimodal Railgun" 5
@@ -16,7 +16,7 @@ ship `Aaulqra` `Aaulqra (Support)`
 		`"Veusa" Inductive Steering`
 		`"Aqra" Inductive Reverser`
 		`"Nnesa" Inertial Core` 2
-		`"Jaase" Shield Core`
+		`"Jaase" Shield Cortex`
 		"Hyperdrive"
 		"Successor Cooling" 2
 		"Shatter Cannon" 3
@@ -29,7 +29,7 @@ ship `Stolsaqra` `Stolsaqra (OC Laser)`
 		`"Aqra" Inductive Reverser`
 		`4-"Kaska" Betavoltaic Cell`
 		"Overcharged Pulse Laser" 3
-		`"Ej" Shield Core`
+		`"Ej" Shield Cortex`
 		"Hyperdrive"
 		"Overcharged Laser Turret"
 
@@ -40,7 +40,7 @@ ship `Stolsaqra` `Stolsaqra (Short-Range)`
 		`"Aqra" Inductive Reverser`
 		`OC-"Mavra" Betavoltaic Cell` 2
 		"Shatter Cannon" 3
-		`"Ej" Shield Core`
+		`"Ej" Shield Cortex`
 		"Hyperdrive"
 		"Burst Anti-Missile Turret"
 
@@ -51,7 +51,7 @@ ship `Kvelqde` `Kvelqde (Violent)`
 		`"Aqra" Inductive Reverser`
 		`1-"Uurau" Betavoltaic Cell` 2
 		"Overcharged Pulse Laser"
-		`"Ej" Shield Core`
+		`"Ej" Shield Cortex`
 		"Hyperdrive"
 		"Overcharged Laser Turret"
 
@@ -77,20 +77,20 @@ ship `Naapojde` `Successor Bomber`
 		`OC-"Mavra" Betavoltaic Cell`
 		"Corrosive Torpedo Launcher"
 		"Corrosive Torpedo" 120
-		`"Ej" Shield Core`
+		`"Ej" Shield Cortex`
 ship `Naapojde` `Successor Ace`
 	outfits
 		`"Niis" Inductive Engines`
 		`OC-"Mavra" Betavoltaic Cell`
 		"Bimodal Railgun" 2
-		`"Veldt" Shield Core`
+		`"Byiaa" Shield Cortex`
 
 ship `Kaskhorade` `Kaskhorade (Rails)`
 	outfits
 		`"Veusa" Inductive Thruster`
 		`"Veusa" Inductive Steering`
 		`"Ryuit" Inertial Core`
-		`"Jorv" Shield Core`
+		`"Jorv" Shield Cortex`
 		"Hyperdrive"
 		"Successor Cooling"
 		"Bimodal Railgun" 2
@@ -102,7 +102,7 @@ ship `Kaskhorade` `Kaskhorade (Bomber)`
 		`"Veusa" Inductive Thruster`
 		`"Veusa" Inductive Steering`
 		`"Ryuit" Inertial Core`
-		`"Jorv" Shield Core`
+		`"Jorv" Shield Cortex`
 		"Hyperdrive"
 		"Successor Cooling"
 		"Corrosive Torpedo Launcher" 5
@@ -117,7 +117,7 @@ ship `Valsaqra` `Valsaqra (Rails)`
 		`"Veusa" Inductive Reverser`
 		`"Ryuit" Inertial Core`
 		`"Nnesa" Inertial Core`
-		`"Jorv" Shield Core`
+		`"Jorv" Shield Cortex`
 		`1-"Uurau" Betavoltaic Cell` 2
 		"Hyperdrive"
 		"Successor Cooling" 2

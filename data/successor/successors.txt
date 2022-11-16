@@ -109,7 +109,7 @@ outfitter "Successor Basics"
 	`"Aqra" Inductive Thruster`
 	`1-"Uurau" Betavoltaic Cell`
 	`4-"Kaska" Betavoltaic Cell`
-	`"Ej" Shield Core`
+	`"Ej" Shield Cortex`
 	Hyperdrive
 	"Successor Pulse Laser"
 	"0 Hypermap"
@@ -120,7 +120,7 @@ outfitter "Successor Civilian"
 	`"Chyyra" Inductive Steering`
 	`"Chyyra" Inductive Thruster`
 	`"Niis" Inductive Engines`
-	`"Veldt" Shield Core`
+	`"Byiaa" Shield Cortex`
 	`7-"Ruuv" Betavoltaic Cell`
 	"Bunk Room"
 	"Burst Anti-Missile Turret"
@@ -145,15 +145,15 @@ outfitter "High Houses"
 	"Conductance Turret"
 	"Corrosive Torpedo"
 	"Corrosive Torpedo Launcher"
-	`"Jaase" Shield Core`
+	`"Jaase" Shield Cortex`
 	`OC-"Mavra" Betavoltaic Cell`
-	`"Jorv" Shield Core`
+	`"Jorv" Shield Cortex`
 	"Multimodal Armor: Heavy"
 	"Multimodal Armor: Stealth"
 	"Multimodal Armor: Regen"
 	"Multimodal Armor: Resilient"
-	`"Viir" Repair Cortex`
-	`"Vyraa" Repair Cortex`
+	`"Viir" Repair Module`
+	`"Vyraa" Repair Module`
 
 outfitter "Peoples Houses"
 	"Overcharged Pulse Laser"
