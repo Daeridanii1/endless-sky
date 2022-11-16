@@ -24,8 +24,8 @@ outfit "Bimodal Railgun"
 		"burst count" 5
 		"burst reload" 10
 		"reload" 30
-		"firing energy" 40
-		"firing heat" 65
+		"firing energy" 65
+		"firing heat" 120
 		"shield damage" 5
 		"hull damage" 135
 		"hit force" 30
@@ -63,8 +63,8 @@ outfit "Bimodal Railgun Turret"
 		"burst count" 10
 		"burst reload" 5
 		"reload" 15
-		"firing energy" 40
-		"firing heat" 65
+		"firing energy" 65
+		"firing heat" 120
 		"firing force" 25
 		"shield damage" 5
 		"hull damage" 135
@@ -105,8 +105,8 @@ outfit "Shatter Cannon"
 		"burst count" 5
 		"burst reload" 3
 		"reload" 45
-		"firing energy" 15
-		"firing heat" 40
+		"firing energy" 30
+		"firing heat" 55
 		"cluster"
 		"submunition" "Shatter Projectile" 3
 	description `Originating as a close-range modification to the Bimodal Railgun, the Shatter Cannon has ultimately developed as its own entirely unique weapon, firing a short-ranged, highly inaccurate blast of projectiles that deal substantial damage and disrupt the target's engines.`

@@ -108,7 +108,7 @@ outfitter "Successor Basics"
 	`"Aqra" Inductive Steering`
 	`"Aqra" Inductive Thruster`
 	`1-"Uurau" Betavoltaic Cell`
-	`4-"Kaska" Betavoltaic Cell`
+	`3-"Kaska" Betavoltaic Cell`
 	`"Ej" Shield Cortex`
 	Hyperdrive
 	"Successor Pulse Laser"
@@ -121,14 +121,13 @@ outfitter "Successor Civilian"
 	`"Chyyra" Inductive Thruster`
 	`"Niis" Inductive Engines`
 	`"Byiaa" Shield Cortex`
-	`7-"Ruuv" Betavoltaic Cell`
+	`6-"Ruuv" Betavoltaic Cell`
 	"Bunk Room"
+	"Successor Fuel Sail"
 	"Burst Anti-Missile Turret"
 	"Cargo Expansion"
-	"Fuel Pod"
 	"Outfits Expansion"
 	"Pulse Laser Turret"
-	Ramscoop
 	"Resistance Module"
 	"Small Bunk Room"
 	"Successor Cooling"

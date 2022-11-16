@@ -75,7 +75,7 @@ ship `Myaede`
 		`"Aqra" Inductive Thruster`
 		`"Aqra" Inductive Steering`
 		`"Aqra" Inductive Reverser`
-		`4-"Kaska" Betavoltaic Cell`
+		`3-"Kaska" Betavoltaic Cell`
 		"Pulse Laser Turret"
 		`"Ej" Shield Cortex`
 		"Hyperdrive"
@@ -144,7 +144,7 @@ ship `Ejniisde`
 		`"Chyyra" Inductive Thruster`
 		`"Chyyra" Inductive Steering`
 		`"Chyyra" Inductive Reverser`
-		`4-"Kaska" Betavoltaic Cell`
+		`3-"Kaska" Betavoltaic Cell`
 		`"Ej" Shield Cortex`
 		"Hyperdrive"
 		"Burst Anti-Missile Turret" 2
@@ -204,7 +204,7 @@ ship `Ojde`
 		`"Aqra" Inductive Thruster`
 		`"Chyyra" Inductive Steering`
 		`"Aqra" Inductive Reverser`
-		`7-"Ruuv" Betavoltaic Cell`
+		`6-"Ruuv" Betavoltaic Cell`
 		"Pulse Laser Turret" 2
 		`"Ej" Shield Cortex`
 		"Hyperdrive"
@@ -269,7 +269,7 @@ ship `Myaede-Khora`
 	outfits
 		`"Chyyra" Inductive Thruster`
 		`"Chyyra" Inductive Steering`
-		`7-"Ruuv" Betavoltaic Cell`
+		`6-"Ruuv" Betavoltaic Cell`
 		`1-"Uurau" Betavoltaic Cell`
 		"Successor Cooling"
 		`"Ej" Shield Cortex`
@@ -404,7 +404,7 @@ ship `Stolsaqra`
 		`"Aqra" Inductive Thruster`
 		`"Aqra" Inductive Steering`
 		`"Aqra" Inductive Reverser`
-		`4-"Kaska" Betavoltaic Cell`
+		`3-"Kaska" Betavoltaic Cell`
 		"Bimodal Railgun" 3
 		`"Ej" Shield Cortex`
 		"Hyperdrive"

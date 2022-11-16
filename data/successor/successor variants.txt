@@ -27,7 +27,7 @@ ship `Stolsaqra` `Stolsaqra (OC Laser)`
 		`"Aqra" Inductive Thruster`
 		`"Aqra" Inductive Steering`
 		`"Aqra" Inductive Reverser`
-		`4-"Kaska" Betavoltaic Cell`
+		`3-"Kaska" Betavoltaic Cell`
 		"Overcharged Pulse Laser" 3
 		`"Ej" Shield Cortex`
 		"Hyperdrive"

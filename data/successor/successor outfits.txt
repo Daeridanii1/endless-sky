@@ -38,7 +38,7 @@ outfit `"Ej" Shield Cortex`
 	"shield generation" 2.1
 	"shield protection" -0.33
 	"shield energy" 2.6
-	"description" "At their peak, the Predecessors were feared not by how they could overpower their enemies, but in how effectively they could outlast them. Many generations later, this philosophy is still reflected in modern Successor shield cortices, which are exceptionally powerful for their size but weaken the shield's resistance to incoming fire, allowing Successor ships to recover quickly from sustained damage, even if they are slightly more vulnerable to it."
+	"description" "At their peak, the Predecessors were feared not by how quickly they could overpower their enemies, but in how effectively they could outlast them. Many generations later, this philosophy is still reflected in modern Successor shield cortices, which are exceptionally powerful for their size but weaken the shield's resistance to incoming fire, allowing Successor ships to recover quickly from sustained damage, even if they are slightly more vulnerable to it."
 
 outfit `"Jaase" Shield Cortex`
 	category "Systems"
@@ -51,7 +51,7 @@ outfit `"Jaase" Shield Cortex`
 	"shield generation" 4.8
 	"shield protection" -0.33
 	"shield energy" 7.8
-	"description" "Successor shield cortices continously modulate their power output, slightly destabilizing the shields the generate and making them much more responsive to both regeneration harmonics and incoming damage. This medium-sized unit is powerful enough to shrug off the combined damage output of several lesser attackers, and consequently is reserved by the High Houses for use in their private navies."
+	"description" "Successor shield cortices continously modulate their power output, slightly destabilizing the shields theys generate and making them much more responsive to both regeneration harmonics and incoming damage. This medium-sized unit is powerful enough to shrug off the combined damage output of several lesser attackers, and consequently is reserved by the High Houses for use in their private navies."
 
 outfit `"Jorv" Shield Cortex`
 	category "Systems"
@@ -116,7 +116,7 @@ outfit `OC-"Mavra" Betavoltaic Cell`
 	"energy capacity" 2222
 	description "In an effort to produce a high-density power source smaller than their inertial fusion reactors, the Successors have created this overcharged betavoltaic cell, which contains some particularly unstable isotopes and lacks much of the radiation shielding of the standard models. While it has technically passed safety inspection, most Successor pilots understandably prefer to keep a bulkhead between themselves and one of these potent little cores at all times."
 
-outfit `4-"Kaska" Betavoltaic Cell`
+outfit `3-"Kaska" Betavoltaic Cell`
 	category "Power"
 	licenses
 		Successor
@@ -129,7 +129,7 @@ outfit `4-"Kaska" Betavoltaic Cell`
 	"energy capacity" 3100
 	description "The Successors' betavoltaic generators are products of a time shortly after the collapse of the Predecessors' empire, marked by thriftiness and necessity. They did not appeal to the traditional Successor values of beauty or heritage, but instead to the sad new reality of desperation and loneliness that their first operators found themselves mired in."
 
-outfit `7-"Ruuv" Betavoltaic Cell`
+outfit `6-"Ruuv" Betavoltaic Cell`
 	category "Power"
 	licenses
 		Successor
@@ -153,8 +153,8 @@ outfit `"Nnesa" Inertial Core`
 	"energy generation" 8.25
 	"heat generation" 9.5
 	"energy capacity" 2200
-	"shield energy multiplier" -0.12
-	"hull energy multiplier" -0.12
+	"shield energy multiplier" -0.24
+	"hull energy multiplier" -0.24
 	description "The Successors use inertial fusion for their most powerful ships, and while these reactors are somewhat less energy-dense than other alternatives, they are very efficient and come with a modest amount of integrated energy storage. Additionally, they are designed to channel power more efficiently to a ship's defensive systems, manifested as a reduction in the power draw of the associated outfits."
 
 outfit `"Ryuit" Inertial Core`
@@ -168,8 +168,8 @@ outfit `"Ryuit" Inertial Core`
 	"energy generation" 16.0
 	"heat generation" 12.0
 	"energy capacity" 6500
-	"shield energy multiplier" -0.24
-	"hull energy multiplier" -0.24
+	"shield energy multiplier" -0.36
+	"hull energy multiplier" -0.36
 	description "Like most Successor technology, these reactors are based on similar ones secreted away by the high houses during the collapse of the Predecessor empire. Even after all these generations, the designs remain elegant and powerful, and instill in the beholder a deep-set curiosity of what the originals would have been like—or indeed, whether or not a few of those originals still exist, kept in prime condition for when they are needed once again."
 
 outfit `"Uuravej" Inertial Core`
@@ -183,9 +183,9 @@ outfit `"Uuravej" Inertial Core`
 	"energy generation" 24.5
 	"heat generation" 26
 	"energy capacity" 12000
-	"shield energy multiplier" -0.36
-	"hull energy multiplier" -0.36
-	description `The largest and most powerful of the Successors' inertial confinement fusion cores, this monstrous but surprisingly efficient reactor far outstrips any comparable human technology. Legions of batteries power a constant laser barrage against the fusion fuel, creating a small star that, only instants later, explodes, its first and last breath channeled transformed to electricity and injected into a ship's power system.`
+	"shield energy multiplier" -0.48
+	"hull energy multiplier" -0.48
+	description `The largest and most powerful of the Successors' inertial confinement fusion cores, this monstrous but surprisingly efficient reactor far outstrips any comparable human technology. Legions of batteries power a constant laser barrage against the fusion fuel, creating a small star that, only instants later, explodes, its first and last breath transformed to electricity and injected into a ship's power system.`
 
 outfit "Successor Cooling"
 	category "Systems"
@@ -199,6 +199,19 @@ outfit "Successor Cooling"
 	"active cooling" 10.5
 	"cooling energy" 1.1
 	description "Like much of their technology, Successor cooling is bimodal, running a constant low-flow coolant loop that can be increased in both volume and heat rejection when the situation demands it."
+
+outfit "Successor Fuel Sail"
+	category "Systems"
+	cost 94000
+	thumbnail "outfit/fuel sail"
+	licenses
+		"Successor"
+	"mass" 8
+	"outfit space" -8
+	"ramscoop" 1.5
+	"fuel capacity" 100
+	"solar heat" 6.0
+	description "The Successors maintain a strong connection to their maritime tradition, exemplified in this strangely rustic fuel collector. Rather than the comparatively brutish action of a traditional ramscoop, this sail gently collects hydrogen from stellar coronae and condenses it into integrated fuel storage. Pilots should note, however, that the large surface area of the deployed sail also absorbs a lot of heat."
 
 outfit `"Niis" Inductive Engines`
 	category "Engines"
