@@ -112,8 +112,6 @@ outfitter "Successor Basics"
 	`"Ej" Shield Cortex`
 	Hyperdrive
 	"Successor Pulse Laser"
-	"0 Hypermap"
-	"0 Hyperjump Drive"
 
 outfitter "Successor Civilian"
 	`"Chyyra" Inductive Reverser`
@@ -154,6 +152,8 @@ outfitter "High Houses"
 	"Multimodal Armor: Resilient"
 	`"Viir" Repair Module`
 	`"Vyraa" Repair Module`
+	"0 Hypermap"
+	"0 Hyperjump Drive"
 
 outfitter "Peoples Houses"
 	"Overcharged Pulse Laser"

@@ -71,7 +71,7 @@ outfit "Bimodal Railgun Turret"
 		"hit force" 30
 		"cluster"
 		"submunition" "Bimodal Switch" 3
-	description `Although the Bimodal Railgun was originally designed as a fixed-mount-only weapon, the appeal of a turreted version is undeniable. This turret mounts two Bimodal Railguns side by side, rigged to fire double the amount of shots per burst, tearing through both shields and armor.`
+	description `Successor warships have traditionally relied on fixed weaponry to deal with their foes, but the High Houses do produce a turreted version of the Bimodal Railgun so that their larger and slower vessels can maintain combat effectiveness against manuverable targets. It mounts two railguns side by side, rigged to fire double the amount of shots per burst to keep them in sync with the fixed hardpoints.`
 
 outfit "Bimodal Switch"
 	weapon
@@ -109,8 +109,8 @@ outfit "Shatter Cannon"
 		"firing heat" 55
 		"cluster"
 		"submunition" "Shatter Projectile" 3
-	description `Originating as a close-range modification to the Bimodal Railgun, the Shatter Cannon has ultimately developed as its own entirely unique weapon, firing a short-ranged, highly inaccurate blast of projectiles that deal substantial damage and disrupt the target's engines.`
-	description `While it is ultimately inelegant in comparison to the Bimodal Railgun, and therefore less appreciated, it has found a place on the Successors' fast attack craft both as a tool for slowing down enemy vessels, and a potent weapon in its own right.`
+	description `The Successors have a historical affinity for projectile weaponry which persists to the modern day with the Shatter Cannon. It fires a short-ranged, highly inaccurate blast of projectiles that not only deal substantial damage but also temporarily disrupt the target's engines.`
+	description `While it is ultimately inelegant in comparison to the Bimodal Railgun, and therefore less appreciated, the Shatter Cannon has found a place on the Successors' fast attack craft both as a tool for slowing down enemy vessels, and a potent weapon in its own right.`
 
 outfit "Shatter Projectile"
 	weapon
@@ -152,7 +152,7 @@ outfit "Successor Pulse Laser"
 		"hull damage" 15
 		"piercing" 0.1
 		"cluster"
-	description "This shield-penetrating laser is one of the few weapons manufactured independently in Successor space, rather than under the auspices—and restrictions—of the high houses. Unfortunately, and perhaps as a result, it is neither especially powerful nor efficient, though its low cost and space requirements make it a nonetheless relatively appealing defensive choice for those without access to the high houses' more potent weaponry."
+	description "This shield-penetrating laser is one of the few weapons manufactured independently in Successor space, rather than under the auspices—and restrictions—of the High Houses. Unfortunately, and perhaps as a result, it is neither especially powerful nor efficient, though its low cost and space requirements make it a nonetheless relatively appealing defensive choice for those without access to the High Houses' more potent weaponry."
 
 outfit "Pulse Laser Turret"
 	category "Turrets"
@@ -184,7 +184,7 @@ outfit "Pulse Laser Turret"
 		"hull damage" 15
 		"piercing" 0.1
 		"cluster"
-	description "The invention of the Pulse Laser was a wake-up call for the more astute in the high houses, as it was the first time in hundreds of years that weapons were being manufactured by groups other than themselves. Most Successors see the turreted version as a continuation of this democratization of violence, while the more paranoid claim that the high houses have infiltrated production and intentionally sabotaged the design."
+	description "The invention of the Pulse Laser was a wake-up call for the more astute in the High Houses, as it was the first time in hundreds of years that weapons were being manufactured by groups other than themselves. Most Successors see the turreted version as a continuation of this democratization of violence, while the more paranoid claim that the High Houses have infiltrated production and intentionally sabotaged the design."
 
 outfit "Overcharged Pulse Laser"
 	category "Guns"
@@ -242,8 +242,7 @@ outfit "Overcharged Laser Turret"
 		"hull damage" 18.5
 		"piercing" 0.1
 		"cluster"
-	description `Hand-crafted by the more colorful members of the People's Houses, this bespoke overcharged Pulse Laser turret is tuned to fire even faster than the fixed version, producing a truly prodigious amount of heat for a weapon of its size.`
-
+	description `Hand-crafted by the more colorful members of the People's Houses, this bespoke overcharged Pulse Laser turret is tuned to fire even faster than the fixed version, producing a truly prodigious amount of heat for a weapon of its size. Despite its crude design, it is nonetheless a fearsome weapon, especially considering that it retains the ability to punch through shielding.`
 
 outfit "Corrosive Torpedo Launcher"
 	category "Secondary Weapons"
@@ -287,7 +286,7 @@ outfit "Corrosive Torpedo Launcher"
 		"corrosion damage" 4.8
 		"hit force" 150
 		"missile strength" 40
-	description "Rather than a conventional explosive payload, Corrosive Torpedoes carry a highly volatile gel that reacts violently with the metal that makes up a ship's hull. They are very powerful against unshielded targets, but their lack of direct damage makes them ineffectual while a target's shields are active. In order to ensure that the missiles reach their target, they are fired in bursts of three."
+	description "Rather than a conventional explosive payload, Corrosive Torpedoes carry a highly volatile gel that reacts violently with the metal that makes up a ship's hull. They are very powerful against unshielded targets, but their lack of direct damage makes them ineffective while a target's shields are active. In order to ensure that the torpedoes reach their target, they are fired in bursts of three."
 
 outfit "Corrosive Torpedo"
 	plural "Corrosive Torpedoes"
@@ -354,5 +353,4 @@ outfit "Conductance Turret"
 		"heat damage" 45.0
 		"shield damage" 4.1
 		"hull damage" 1.2
-		"firing disruption" 0.6
-	description "In an effort to deal with the heat generated by combat, the Successors have devised this weapon, which conducts it to a target."
+	description "The engineers in the employ of the High Houses have developed this turret as a clever way of dealing with the heat produced by a ship's systems while in combat, conducting it along the particle beam generated by the weapon into a target. While it generates a substantial amount of resting heat, this weapons is capable of rapidly overheating an unprepared enemy ship, and the High Houses often use it as a policing tool to force a target's reactor to shut down."
