@@ -109,8 +109,8 @@ phrase "successor locations"
 		"kvel"
 		"ketaa"
 	word
-		"n"
 		"" 2
+		"n"
 
 phrase "successor locations"
 	word
@@ -176,8 +176,8 @@ phrase "successor verb bases"
 phrase "successor verb tenses"
 	word
 		"e"
-		"u"
 		"i"
+		"u"
 
 phrase "successor intermediates"
 	word
@@ -343,13 +343,13 @@ phrase "high houses"
 phrase "relations"
 	word
 		"child"
+		"dearest"
+		"doctor"
+		"lover"
+		"neighbor"
 		"parent"
 		"sibling"
-		"neighbor"
-		"lover"
-		"doctor"
 		"teacher"
-		"dearest"
 
 phrase "occupation"
 	word
