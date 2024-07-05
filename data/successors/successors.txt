@@ -369,21 +369,21 @@ phrase "occupation"
 
 trade
 	commodity "Successor High Value"
-		`"Red Gold" armlets`
-		`"Red Gold" piercings`
-		"living metal sculptures"
-		"polychromatic canvases"
-		"transparent ceramic goblets"
-		"metallic-wood furniture"
+		"fossils"
 		"insulative silver chains"
-		"metallic-wood flooring"
-		"liquid gemstone jewellery"
 		"Kijra-pet skeletons"
+		"lightweight prosthetics"
+		"liquid gemstone jewellery"
+		"living metal sculptures"
+		"metallic-wood flooring"
+		"metallic-wood furniture"
+		"molten gold amulets"
 		"ossified flowers"
 		"phantasmic glass amulets"
-		"molten gold amulets"
-		"lightweight prosthetics"
-		"fossils"
+		"polychromatic canvases"
+		`"Red Gold" armlets`
+		`"Red Gold" piercings`
+		"transparent ceramic goblets"
 		"unfilled reliquaries"
 
 phrase "2-syllable commodities"
