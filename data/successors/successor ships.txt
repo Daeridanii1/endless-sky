@@ -1018,9 +1018,6 @@ ship "Vujlet"
 		"hull repair rate" 0.875
 		"hull energy" 1.27
 		"hull heat" 1.27
-		"cloak" .05
-		"cloaking fuel" .09
-		"cloaking energy" .75
 		weapon
 			"blast radius" 100
 			"shield damage" 1000
@@ -1086,8 +1083,4 @@ ship "Vujlet"
 
 
 ship "Vujlet" "Vujlet (Naive)"
-	add attributes
-		"cloak" -.05
-		"cloaking fuel" -.09
-		"cloaking energy" -.75
 	description `The compact "Vujlet" is a mass-produced High Houses warship flexible enough to serve in a variety of light-duty roles. Large enough to operate as a self-sufficient unit, these vessels serve as a useful bridge between short-ranged, relatively vulnerable interceptors, and larger, more resource-intensive warships that can be much more expensive to build and operate.`
