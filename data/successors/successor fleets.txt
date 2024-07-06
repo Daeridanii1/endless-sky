@@ -186,7 +186,6 @@ fleet "Large Old Houses"
 	names "high houses"
 	personality
 		heroic
-		confusion 10
 	variant 10
 		"Kaskhorade" 2
 		"Aaulqra" 2
@@ -202,7 +201,6 @@ fleet "Old Houses Surveillance"
 	names "high houses"
 	personality
 		heroic opportunistic
-		confusion 15
 	variant 10
 		"Stolsaqra (Military)"
 	variant 5
@@ -213,7 +211,6 @@ fleet "Old Houses Surveillance"
 fleet "Small New Houses"
 	personality
 		heroic
-		confusion 15
 	government "New Houses"
 	names "high houses"
 	variant 10
@@ -244,7 +241,6 @@ fleet "Large New Houses"
 	names "high houses"
 	personality
 		heroic
-		confusion 10
 	variant 10
 		"Aaulqra"
 	variant 6
@@ -279,7 +275,6 @@ fleet "New Houses Surveillance"
 	names "high houses"
 	personality
 		heroic opportunistic
-		confusion 15
 	variant 5
 		"Stolsaqra (Military)"
 	variant 2
@@ -294,7 +289,6 @@ fleet "Kaatrij Home"
 	names "high houses"
 	personality
 		heroic opportunistic
-		confusion 15
 	variant 10
 		"Stolsaqra (Military)" 2
 	variant 4
@@ -313,7 +307,6 @@ fleet "Aqrabe Home"
 	names "high houses"
 	personality
 		heroic
-		confusion 15
 	variant 10
 		"Aaulqra"
 	variant 10
@@ -330,7 +323,6 @@ fleet "Seineq Home"
 	names "high houses"
 	personality
 		heroic
-		confusion 15
 	variant 10
 		"Ejniisde"
 		"Stolsaqra (Military)" 2
@@ -348,7 +340,6 @@ fleet "Chydiyi Home"
 	names "high houses"
 	personality
 		heroic
-		confusion 15
 	variant 10
 		"Aaulqra"
 		"Stolsaqra (Military)" 2
@@ -372,7 +363,6 @@ fleet "Myurej Home"
 	names "high houses"
 	personality
 		heroic
-		confusion 15
 	variant 10
 		"Seiitej"
 		"Stolsaqra (Military)" 2
@@ -391,7 +381,6 @@ fleet "Sioeora Home"
 	names "high houses"
 	personality
 		heroic
-		confusion 15
 	variant 10
 		"Stolsaqra (Military)" 2
 	variant 6
