@@ -715,6 +715,7 @@ government "House Aqrabe"
 		"People's Houses (Hostile)" -0.01
 	"penalty for"
 		assist 0
+	raid "People's Houses Raid"
 
 government "House Chydiyi"
 	swizzle 5
@@ -732,6 +733,7 @@ government "House Chydiyi"
 		"People's Houses (Hostile)" -0.01
 	"penalty for"
 		assist 0
+	raid "People's Houses Raid"
 
 government "House Kaatrij"
 	swizzle 3
@@ -749,6 +751,7 @@ government "House Kaatrij"
 		"People's Houses (Hostile)" -0.01
 	"penalty for"
 		assist 0
+	raid "People's Houses Raid"
 
 government "House Myurej"
 	swizzle 5
@@ -766,6 +769,7 @@ government "House Myurej"
 		"People's Houses (Hostile)" -0.01
 	"penalty for"
 		assist 0
+	raid "People's Houses Raid"
 
 government "House Seineq"
 	swizzle 3
@@ -783,6 +787,7 @@ government "House Seineq"
 		"People's Houses (Hostile)" -0.01
 	"penalty for"
 		assist 0
+	raid "People's Houses Raid"
 
 government "House Sioeora"
 	swizzle 5
@@ -800,6 +805,7 @@ government "House Sioeora"
 		"People's Houses (Hostile)" -0.01
 	"penalty for"
 		assist 0
+	raid "People's Houses Raid"
 
 color "governments: Independent" .78 .36 .36
 
@@ -1150,6 +1156,7 @@ government "New Houses"
 		"People's Houses (Hostile)" -0.01
 	"penalty for"
 		assist 0
+	raid "People's Houses Raid"
 
 color "governments: Old Houses" 0.375 0.316 1
 
@@ -1169,6 +1176,7 @@ government "Old Houses"
 		"People's Houses (Hostile)" -0.01
 	"penalty for"
 		assist 0
+	raid "People's Houses Raid"
 
 government "Parrot"
 	swizzle 2
