@@ -725,7 +725,7 @@ mission "Successor: Old Houses Rush Delivery"
 	cargo random 5 10 .2
 	deadline
 	to offer
-		has "known the the successors"
+		has "known to the successors"
 		random < 10
 	source
 		attributes "successor"
@@ -750,7 +750,7 @@ mission "Successor: New Houses Rush Delivery"
 	cargo random 5 10 .2
 	deadline
 	to offer
-		has "known the the successors"
+		has "known to the successors"
 		random < 10
 	source
 		attributes "successor"
