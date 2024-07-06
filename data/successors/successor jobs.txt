@@ -567,7 +567,7 @@ mission "Successor: Seismic Stabilizers"
 	job
 	repeat
 	name "Seismic stabilizers to <planet>"
-	description "After an minor earthquake on <planet>, <tons> of seismic stabilizers have been requested for delivery by <date>. You will be paid <payment>."
+	description "After a minor earthquake on <planet>, <tons> of seismic stabilizers have been requested for delivery by <date>. You will be paid <payment>."
 	cargo "Seismic Stabilizers" 30 80 .2
 	deadline
 	deadline 2
