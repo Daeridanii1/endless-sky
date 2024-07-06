@@ -13,31 +13,6 @@
 
 
 
-ship "Aaulqra" "Aaulqra (Sniper)"
-	outfits
-		`"Ojet" Bimodal Coilgun` 4
-		`"Sjeja" Kinetic Lance`
-		"High-Velocity Spike" 20
-
-		`"Uoret" Fusion Core`
-		`3-"Kaska" Betavoltaic Cell`
-		`"Jaase" Shield Cortex`
-		"Successor Cooling"
-
-		`"Chyyra" Inductive Thruster`
-		`"Chyyra" Inductive Steering`
-		`"Veusa" Inductive Reverser`
-		"Hyperdrive"
-	gun
-	gun `"Sjeja" Kinetic Lance`
-	gun `"Ojet" Bimodal Coilgun`
-	gun `"Ojet" Bimodal Coilgun`
-	gun `"Ojet" Bimodal Coilgun`
-	gun `"Ojet" Bimodal Coilgun`
-	turret
-	turret
-
-
 ship "Aaulqra" "Aaulqra (Brawler)"
 	outfits
 		`"Ojet" Bimodal Coilgun` 2
@@ -61,6 +36,31 @@ ship "Aaulqra" "Aaulqra (Brawler)"
 	gun `"Ojet" Bimodal Coilgun`
 	turret "Bimodal Coilgun Turret"
 	turret "Bimodal Coilgun Turret"
+
+
+ship "Aaulqra" "Aaulqra (Sniper)"
+	outfits
+		`"Ojet" Bimodal Coilgun` 4
+		`"Sjeja" Kinetic Lance`
+		"High-Velocity Spike" 20
+
+		`"Uoret" Fusion Core`
+		`3-"Kaska" Betavoltaic Cell`
+		`"Jaase" Shield Cortex`
+		"Successor Cooling"
+
+		`"Chyyra" Inductive Thruster`
+		`"Chyyra" Inductive Steering`
+		`"Veusa" Inductive Reverser`
+		"Hyperdrive"
+	gun
+	gun `"Sjeja" Kinetic Lance`
+	gun `"Ojet" Bimodal Coilgun`
+	gun `"Ojet" Bimodal Coilgun`
+	gun `"Ojet" Bimodal Coilgun`
+	gun `"Ojet" Bimodal Coilgun`
+	turret
+	turret
 
 
 
@@ -112,22 +112,6 @@ ship "Kaskhorade" "Kaskhorade (Sniper)"
 
 
 
-ship "Kvelqde" "Kvelqde (Violent)"
-	outfits
-		"Overcharged Pulse Laser"
-		"Overcharged Laser Turret"
-
-		`1-"Uurau" Betavoltaic Cell` 2
-		`"Ej" Shield Cortex`
-
-		`"Aqra" Inductive Thruster`
-		`"Aqra" Inductive Steering`
-		`"Aqra" Inductive Reverser`
-		"Hyperdrive"
-	gun "Overcharged Pulse Laser"
-	turret "Overcharged Laser Turret"
-
-
 ship "Kvelqde" "Kvelqde (Mining)"
 	outfits
 		"Pulse Laser Turret"
@@ -142,6 +126,22 @@ ship "Kvelqde" "Kvelqde (Mining)"
 		"Hyperdrive"
 	gun
 	turret "Pulse Laser Turret"
+
+
+ship "Kvelqde" "Kvelqde (Violent)"
+	outfits
+		"Overcharged Pulse Laser"
+		"Overcharged Laser Turret"
+
+		`1-"Uurau" Betavoltaic Cell` 2
+		`"Ej" Shield Cortex`
+
+		`"Aqra" Inductive Thruster`
+		`"Aqra" Inductive Steering`
+		`"Aqra" Inductive Reverser`
+		"Hyperdrive"
+	gun "Overcharged Pulse Laser"
+	turret "Overcharged Laser Turret"
 
 
 
@@ -163,25 +163,6 @@ ship "Kvelqde-Khora" "Kvelqde-Khora (Mining)"
 	gun "Successor Pulse Laser"
 	turret
 
-
-
-ship "Myaede" "Myaede (Violent)"
-	outfits
-		"Overcharged Pulse Laser" 2
-		"Overcharged Laser Turret" 2
-
-		`6-"Ruuv" Betavoltaic Cell`
-		"Auxiliary Power Reserve"
-		`"Ej" Shield Cortex`
-		"Successor Cooling"
-
-		`"Chyyra" Inductive Thruster`
-		`"Chyyra" Inductive Steering`
-		"Hyperdrive"
-	gun "Overcharged Pulse Laser"
-	gun "Overcharged Pulse Laser"
-	turret "Overcharged Laser Turret"
-	turret "Overcharged Laser Turret"
 
 
 ship "Myaede" "Myaede (Mining)"
@@ -220,6 +201,25 @@ ship "Myaede" "Myaede (Mining, Defensive)"
 	gun "Successor Pulse Laser"
 	turret "Pulse Laser Turret"
 	turret "Pulse Laser Turret"
+
+
+ship "Myaede" "Myaede (Violent)"
+	outfits
+		"Overcharged Pulse Laser" 2
+		"Overcharged Laser Turret" 2
+
+		`6-"Ruuv" Betavoltaic Cell`
+		"Auxiliary Power Reserve"
+		`"Ej" Shield Cortex`
+		"Successor Cooling"
+
+		`"Chyyra" Inductive Thruster`
+		`"Chyyra" Inductive Steering`
+		"Hyperdrive"
+	gun "Overcharged Pulse Laser"
+	gun "Overcharged Pulse Laser"
+	turret "Overcharged Laser Turret"
+	turret "Overcharged Laser Turret"
 
 
 
@@ -339,6 +339,25 @@ ship "Veusade" "Veusade (Surveillance)"
 
 
 
+ship "Vujlet" "Vujlet (Aggressive)"
+	outfits
+		`"Ojet" Bimodal Coilgun` 4
+
+		`"Nnesa" Fusion Core`
+		"Auxiliary Power Reserve" 3
+		`"Ej" Shield Cortex`
+		"Successor Cooling"
+		"Multimodal Armor: Heavy"
+
+		`"Chyyra" Inductive Thruster`
+		`"Chyyra" Inductive Steering`
+		"Hyperdrive"
+	gun `"Ojet" Bimodal Coilgun`
+	gun `"Ojet" Bimodal Coilgun`
+	gun `"Ojet" Bimodal Coilgun`
+	gun `"Ojet" Bimodal Coilgun`
+
+
 ship "Vujlet" "Vujlet (Surveillance)"
 	outfits
 		`"Ojet" Bimodal Coilgun` 2
@@ -358,22 +377,3 @@ ship "Vujlet" "Vujlet (Surveillance)"
 	gun `"Ojet" Bimodal Coilgun`
 	gun
 	gun
-
-
-ship "Vujlet" "Vujlet (Aggressive)"
-	outfits
-		`"Ojet" Bimodal Coilgun` 4
-
-		`"Nnesa" Fusion Core`
-		"Auxiliary Power Reserve" 3
-		`"Ej" Shield Cortex`
-		"Successor Cooling"
-		"Multimodal Armor: Heavy"
-
-		`"Chyyra" Inductive Thruster`
-		`"Chyyra" Inductive Steering`
-		"Hyperdrive"
-	gun `"Ojet" Bimodal Coilgun`
-	gun `"Ojet" Bimodal Coilgun`
-	gun `"Ojet" Bimodal Coilgun`
-	gun `"Ojet" Bimodal Coilgun`
