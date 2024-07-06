@@ -715,7 +715,7 @@ government "House Aqrabe"
 	"hostile hail" "high houses hostile hail"
 	"hostile disabled hail" "high houses hostile disabled hail"
 	language "Successor"
-	raid "People's Houses Raid"
+	raid "People's Houses Raiders"
 
 government "House Chydiyi"
 	swizzle 5
