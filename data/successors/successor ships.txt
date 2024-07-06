@@ -402,6 +402,9 @@ ship "Kvelqde-Khora"
 		`"Aqra" Inductive Reverser`
 		"Hyperdrive"
 
+	gun -4 -30
+	gun 4 -30
+	turret 0 0
 	engine -8 28
 	engine 8 28
 	"steering engine" 9 -20.5
@@ -430,9 +433,6 @@ ship "Kvelqde-Khora"
 	"reverse engine" -12.5 -5
 		zoom .5
 		over
-	turret 0 0
-	gun -4 -30
-	gun 4 -30
 	leak "leak" 50 50
 	leak "flame" 30 80
 	explode "tiny explosion" 18
