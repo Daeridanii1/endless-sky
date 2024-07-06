@@ -44,18 +44,18 @@ ship "Aaulqra"
 			"hull damage" 500
 			"hit force" 1500
 	outfits
+		`"Ojet" Bimodal Coilgun` 6
+		`"Nnesa" Fusion Core`
+		`"Uoret" Fusion Core`
+		"Primary Power Reserve"
+		`"Jorv" Shield Cortex`
+		"Successor Cooling" 2
+		"Multimodal Armor: Heavy"
+		"Kinetic Rail Rifle" 7
 		`"Chyyra" Inductive Thruster`
 		`"Veusa" Inductive Steering`
 		`"Chyyra" Inductive Reverser`
-		`"Uoret" Fusion Core`
-		`"Nnesa" Fusion Core`
-		"Primary Power Reserve"
-		`"Jorv" Shield Cortex`
 		"Hyperdrive"
-		"Successor Cooling" 2
-		`"Ojet" Bimodal Coilgun` 6
-		"Multimodal Armor: Heavy"
-		"Kinetic Rail Rifle" 7
 
 	gun 0 -116 `"Ojet" Bimodal Coilgun`
 	gun 0 -109 `"Ojet" Bimodal Coilgun`
@@ -129,13 +129,13 @@ ship "Ejniisde"
 			"hull damage" 500
 			"hit force" 1500
 	outfits
+		`6-"Ruuv" Betavoltaic Cell`
+		`"Ej" Shield Cortex`
+		"Successor Cooling"
+		"Successor Fuel Sail"
 		`"Veusa" Inductive Thruster`
 		`"Chyyra" Inductive Steering`
 		`"Chyyra" Inductive Reverser`
-		`6-"Ruuv" Betavoltaic Cell`
-		`"Ej" Shield Cortex`
-		"Successor Fuel Sail"
-		"Successor Cooling"
 		"Hyperdrive"
 
 	gun 0 -106
@@ -209,20 +209,20 @@ ship "Kaskhorade"
 			"hull damage" 500
 			"hit force" 1500
 	outfits
-		`"Veusa" Inductive Thruster`
-		`"Veusa" Inductive Steering`
-		`"Veusa" Inductive Reverser`
+		`"Ojet" Bimodal Coilgun` 2
+		`"Sjeja" Kinetic Lance` 2
+		"High-Velocity Spike" 40
+		"Bimodal Coilgun Turret"
 		`"Uoret" Fusion Core`
 		"Auxiliary Power Reserve"
 		`"Jaase" Shield Cortex`
-		"Hyperdrive"
 		"Successor Cooling"
-		`"Sjeja" Kinetic Lance` 2
-		"High-Velocity Spike" 40
-		`"Ojet" Bimodal Coilgun` 2
-		"Bimodal Coilgun Turret"
 		"Multimodal Armor: Heavy"
 		"Kinetic Rail Rifle" 25
+		`"Veusa" Inductive Thruster`
+		`"Veusa" Inductive Steering`
+		`"Veusa" Inductive Reverser`
+		"Hyperdrive"
 
 	gun -3 -120 `"Sjeja" Kinetic Lance`
 	gun 3 -120 `"Sjeja" Kinetic Lance`
