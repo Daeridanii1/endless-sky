@@ -1199,6 +1199,8 @@ government "People's Houses"
 	"hostile hail" "people's houses hostile hail"
 	"hostile disabled hail" "high houses hostile disabled hail"
 	language "Successor"
+	raid "Large Old Houses" 2 6
+	raid "Large New Houses" 6 0
 
 government "People's Houses (Hostile)"
 	"display name" "People's Houses"
@@ -1216,6 +1218,8 @@ government "People's Houses (Hostile)"
 	"hostile hail" "people's houses hostile hail"
 	"hostile disabled hail" "high houses hostile disabled hail"
 	language "Successor"
+	raid "Large Old Houses" 2 6
+	raid "Large New Houses" 6 0
 
 color "governments: Pirate" .78 0. 0.
 
