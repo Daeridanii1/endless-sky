@@ -231,7 +231,7 @@ ship "Nnaatej" "Nnaatej (Defensive)"
 		`1-"Uurau" Betavoltaic Cell`
 		`OC-"Mavra" Betavoltaic Cell`
 		`"Ej" Shield Cortex`
-		"Successor Cooling"		
+		"Successor Cooling"
 
 		`"Chyyra" Inductive Thruster`
 		`"Chyyra" Inductive Steering`
