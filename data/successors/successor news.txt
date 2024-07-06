@@ -27,10 +27,14 @@ news "high houses scion"
 			"Scion of the High Houses"
 	message
 		word
-			`"I hope thou has't enjoyed thy time amongst our people."`
-			`"The alien! Doth thou have news from far in this endless sky?"`
-			`"Fair traveler, I've heard of thee. How must thy voyage weigh upon thy mind."`
-			`"Welcome to our space, honored alien. A pleasure 'tis to meet thee."`
+			`"`
+		word
+			"I hope thou has't enjoyed thy time amongst our people."
+			"The alien! Doth thou have news from far in this endless sky?"
+			"Fair traveler, I've heard of thee. How must thy voyage weigh upon thy mind."
+			"Welcome to our space, honored alien. A pleasure 'tis to meet thee."
+		word
+			`"`
 
 
 news "high houses official"
@@ -45,23 +49,31 @@ news "high houses official"
 			"High Houses officer"
 	message
 		word
-			`"The Houses welcome thee as 'guest' among our people; `
-			`"Please remain in concord with our people; `
-			`"Informed, I am of thy recent arrival; `
-			`"Can I provide assistance, honored traveler? `
-			`"Our noble house does greet thee full of joy; `
+			`"`
 		word
-			`I am at thy service if 'tis needed."`
-			`Today's been rather busy, please speak quickly."`
+			"The Houses welcome thee as 'guest' among our people; "
+			"Please remain in concord with our people; "
+			"Informed, I am, of thy recent arrival; "
+			"Can I provide assistance, honored traveler? "
+			"Our noble house does greet thee full of joy; "
+		word
+			"I am at thy service if 'tis needed."
+			"Today's been rather busy, please speak quickly."
+		word
+			`"`
 	message
 		word
-			`"Please submit to scans if 'tis requested`
-			`"Taxes on transactions are collected`
-			`"Transactions in this area are surveilled`
-			`"If thou see'st something suspect, report't promptly`
+			`"`
 		word
-			`; port rules and regulations should be posted."`
-			` in accordance with our standard port procedure."`
+			"Please submit to scans if 'tis requested"
+			"Taxes on transactions are collected"
+			"Transactions in this area are surveilled"
+			"If thou see'st something suspect, report't promptly"
+		word
+			"; port rules and regulations should be posted."
+			" in accordance with our standard port procedure."
+		word
+			`"`
 
 
 news "successor student"
@@ -76,22 +88,26 @@ news "successor student"
 			"Successor student"
 	message
 		word
-			`"Exams, I think, shall never know their end, `
-			`"Hath I forgot my geographic terms? `
-			`"Hath I forgot my chemical reagents? `
-			`"Hyperspace Mechanics is a bore, `
-			`"Predecessors His'try is a drag, `
-			`"Plasma Flow Dynamics is a bore, `
-			`"Particle Kinetics is a bore, `
+			`"`
 		word
-			`I know not sleep nor food nor meager rest`
-			`I wish that I could learn while I'm asleep`
-			`I don't know how I even stay awake`
-			`I wish I knew some better study tricks`
-			`but I know that I'm the best one in my class`
+			"Exams, I think, shall never know their end, "
+			"Hath I forgot my geographic terms? "
+			"Hath I forgot my chemical reagents? "
+			"Hyperspace Mechanics is a bore, "
+			"Predecessors His'try is a drag, "
+		Plasma Flow Dynamics is a bore, "
+		Particle Kinetics is a bore, "
 		word
-			`."`
-			`!"`
+			"I know not sleep nor food nor meager rest"
+			"I wish that I could learn while I'm asleep"
+			"I don't know how I even stay awake"
+			"I wish I knew some better study tricks"
+			"but I know that I'm the best one in my class"
+		word
+			"."
+			"!"
+		word
+			`"`
 
 
 news "successor merchant"
@@ -105,18 +121,24 @@ news "successor merchant"
 			"Independent merchant"
 	message
 		word
-			`"Interested in `
+			`"`
+		word
+			"Interested in "
 		phrase
 			"successor commodities (2-syllable)"
 		word
-			`, noble traveler?"`
-			`, canny buyer?"`
-			`, noble captain?"`
-			`, clever buyer?"`
-			`, newest friend?"`
-			`, thoughtful buyer?"`
-			`, thoughtful captain?"`
+			", noble traveler
+			", canny buyer?"
+			", noble captain?"
+			", clever buyer?"
+			", newest friend?"
+			", thoughtful buyer?"
+			", thoughtful captain?"
+		word
+			`"`
 	message
+		word
+			`"`
 		word
 			"I miss the days when I had been a "
 			"I miss the times when I had been a "
@@ -136,6 +158,8 @@ news "successor merchant"
 			"it's selling items that's for me."
 			"my family needed me return."
 			"possessed of talent I was not."
+		word
+			`"`
 	message
 		word
 			"A "
