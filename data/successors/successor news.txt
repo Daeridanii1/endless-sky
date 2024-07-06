@@ -90,13 +90,15 @@ news "successor student"
 		word
 			`"`
 		word
-			"Exams, I think, shall never know their end, "
-			"Hath I forgot my geographic terms? "
-			"Hath I forgot my chemical reagents? "
-			"Hyperspace Mechanics is a bore, "
-			"Predecessors His'try is a drag, "
-		Plasma Flow Dynamics is a bore, "
-		Particle Kinetics is a bore, "
+			"Exams, I think, shall never know their end,"
+			"Hath I forgot my geographic terms?"
+			"Hath I forgot my chemical reagents?"
+			"Hyperspace Mechanics is a bore,"
+			"Predecessors His'try is a drag,"
+			"Plasma Flow Dynamics is a bore,"
+			"Particle Kinetics is a bore,"
+		word
+			" "
 		word
 			"I know not sleep nor food nor meager rest"
 			"I wish that I could learn while I'm asleep"
@@ -127,7 +129,7 @@ news "successor merchant"
 		phrase
 			"successor commodities (2-syllable)"
 		word
-			", noble traveler
+			", noble traveler?"
 			", canny buyer?"
 			", noble captain?"
 			", clever buyer?"
@@ -205,7 +207,7 @@ news "high houses propaganda"
 			"An advertisement plays showing a group of Successors standing close together against a factory backdrop, their skins all tinted a happy green. It is followed by a voiceover noting that wages have been recently increased."
 			"A short video plays showing the construction of a new spaceport on the surface of a prospering Successor planet. Several warships of the High Houses painted in ceremonial livery pass across the screen, showing clearly who is to be thanked."
 			`A proud-looking Successor naval officer stands before an imposing-looking warship: "Enlist!" the caption reads. "See the stars today!"`
-			"Several short vignettes play: a group of Successors unearthing ruins, the inside of a laboratory, a calm pastoral scene. A voiceover speaks: "Uncovering our heritage; bettering our lives." Meticulously-dressed officials of the High Houses are present in each situation, presented as supportive overseers."
+			`Several short vignettes play: a group of Successors unearthing ruins, the inside of a laboratory, a calm pastoral scene. A voiceover speaks: "Uncovering our heritage; bettering our lives." Meticulously-dressed officials of the High Houses are present in each situation, presented as supportive overseers.`
 			"A advertisement plays showing the sleek lines of a Successor warship, its polished armor gleaming in the sunlight. It goes on for several minutes, showing the vessel from numerous angles while a sweeping soundtrack plays."
 
 news "successor advertisements"
@@ -250,7 +252,7 @@ news "local news quiet"
 			"A short broadcast discusses a recent thunderstorm, showing several colorful pictures of lightning and rain taken by locals during the event."
 			"A text-only broadcast discusses a recent touch-based art performance. The script shimmers as you move your head around, the translation device doing its best to transcribe it."
 			"A broadcast shows a brief interview with a local florist, who shows off a collection of their living-metal plants."
-			"A formal document is shown with a column of text to the side of it. This describes it as a new trade ordinance, and lists its effects on independent merchants.`
+			"A formal document is shown with a column of text to the side of it. This describes it as a new trade ordinance, and lists its effects on independent merchants."
 			"A brief program on erosion control and restoration plays for a duration."
 			"The program is briefly interrupted to display a general-use map for the spaceport."
 
