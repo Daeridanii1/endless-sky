@@ -163,7 +163,6 @@ fleet "People's Houses Raiders"
 fleet "Small Old Houses"
 	personality
 		heroic
-		confusion 15
 	government "Old Houses"
 	names "high houses"
 	variant 6
