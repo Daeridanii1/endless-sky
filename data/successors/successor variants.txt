@@ -274,6 +274,9 @@ ship "Stolsaqra" "Stolsaqra (Military)"
 		`"Aqra" Inductive Steering`
 		`"Aqra" Inductive Reverser`
 		"Hyperdrive"
+	gun `"Ojet" Bimodal Coilgun`
+	gun `"Ojet" Bimodal Coilgun`
+	gun `"Ojet" Bimodal Coilgun`
 
 
 ship "Stolsaqra" "Stolsaqra (Mission Escort)"
@@ -288,6 +291,9 @@ ship "Stolsaqra" "Stolsaqra (Mission Escort)"
 		`"Chyyra" Inductive Steering`
 		`"Aqra" Inductive Reverser`
 		"Hyperdrive"
+	gun "Drag Cannon"
+	gun "Drag Cannon"
+	gun "Drag Cannon"
 
 
 ship "Stolsaqra" "Stolsaqra (Short-Range)"
@@ -302,6 +308,9 @@ ship "Stolsaqra" "Stolsaqra (Short-Range)"
 		`"Aqra" Inductive Steering`
 		`"Aqra" Inductive Reverser`
 		"Hyperdrive"
+	gun "Drag Cannon"
+	gun "Drag Cannon"
+	gun "Drag Cannon"
 
 
 
@@ -319,6 +328,14 @@ ship "Veusade" "Veusade (Surveillance)"
 		`"Veusa" Inductive Thruster`
 		`"Veusa" Inductive Steering`
 		"Hyperdrive"
+	gun "Drag Cannon"
+	gun "Drag Cannon"
+	gun "Drag Cannon"
+	gun "Drag Cannon"
+	gun "Drag Cannon"
+	gun "Drag Cannon"
+	gun "Drag Cannon"
+	gun "Drag Cannon"
 
 
 
@@ -337,6 +354,10 @@ ship "Vujlet" "Vujlet (Surveillance)"
 		`"Chyyra" Inductive Steering`
 		`"Chyyra" Inductive Reverser`
 		"Hyperdrive"
+	gun `"Ojet" Bimodal Coilgun`
+	gun `"Ojet" Bimodal Coilgun`
+	gun
+	gun
 
 
 ship "Vujlet" "Vujlet (Aggressive)"
@@ -352,3 +373,7 @@ ship "Vujlet" "Vujlet (Aggressive)"
 		`"Chyyra" Inductive Thruster`
 		`"Chyyra" Inductive Steering`
 		"Hyperdrive"
+	gun `"Ojet" Bimodal Coilgun`
+	gun `"Ojet" Bimodal Coilgun`
+	gun `"Ojet" Bimodal Coilgun`
+	gun `"Ojet" Bimodal Coilgun`
