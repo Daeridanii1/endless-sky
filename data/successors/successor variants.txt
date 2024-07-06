@@ -28,6 +28,14 @@ ship "Aaulqra" "Aaulqra (Sniper)"
 		`"Chyyra" Inductive Steering`
 		`"Veusa" Inductive Reverser`
 		"Hyperdrive"
+	gun
+	gun `"Sjeja" Kinetic Lance`
+	gun `"Ojet" Bimodal Coilgun`
+	gun `"Ojet" Bimodal Coilgun`
+	gun `"Ojet" Bimodal Coilgun`
+	gun `"Ojet" Bimodal Coilgun`
+	turret
+	turret
 
 
 ship "Aaulqra" "Aaulqra (Brawler)"
@@ -45,6 +53,14 @@ ship "Aaulqra" "Aaulqra (Brawler)"
 		`"Chyyra" Inductive Steering`
 		`"Aqra" Inductive Reverser`
 		"Hyperdrive"
+	gun
+	gun "Drag Cannon"
+	gun "Drag Cannon"
+	gun "Drag Cannon"
+	gun `"Ojet" Bimodal Coilgun`
+	gun `"Ojet" Bimodal Coilgun`
+	turret "Bimodal Coilgun Turret"
+	turret "Bimodal Coilgun Turret"
 
 
 
@@ -61,6 +77,14 @@ ship "Kaskhorade" "Kaskhorade (Brawler)"
 		`"Chyyra" Inductive Steering`
 		`"Chyyra" Inductive Reverser`
 		"Hyperdrive"
+	gun
+	gun
+	gun
+	gun
+	turret "Bimodal Coilgun Turret"
+	turret "Bimodal Coilgun Turret"
+	turret "Bimodal Coilgun Turret"
+	turret "Bimodal Coilgun Turret"
 
 
 ship "Kaskhorade" "Kaskhorade (Sniper)"
@@ -77,6 +101,14 @@ ship "Kaskhorade" "Kaskhorade (Sniper)"
 		`"Veusa" Inductive Steering`
 		`"Veusa" Inductive Reverser`
 		"Hyperdrive"
+	gun `"Sjeja" Kinetic Lance`
+	gun `"Sjeja" Kinetic Lance`
+	gun
+	gun
+	turret
+	turret
+	turret
+	turret
 
 
 
@@ -92,6 +124,8 @@ ship "Kvelqde" "Kvelqde (Violent)"
 		`"Aqra" Inductive Steering`
 		`"Aqra" Inductive Reverser`
 		"Hyperdrive"
+	gun "Overcharged Pulse Laser"
+	turret "Overcharged Laser Turret"
 
 
 ship "Kvelqde" "Kvelqde (Mining)"
@@ -106,6 +140,8 @@ ship "Kvelqde" "Kvelqde (Mining)"
 
 		`"Niis" Inductive Engines`
 		"Hyperdrive"
+	gun
+	turret "Pulse Laser Turret"
 
 
 
@@ -123,6 +159,9 @@ ship "Kvelqde-Khora" "Kvelqde-Khora (Mining)"
 		`"Aqra" Inductive Steering`
 		`"Aqra" Inductive Reverser`
 		"Hyperdrive"
+	gun "Successor Pulse Laser"
+	gun "Successor Pulse Laser"
+	turret
 
 
 
@@ -139,6 +178,10 @@ ship "Myaede" "Myaede (Violent)"
 		`"Chyyra" Inductive Thruster`
 		`"Chyyra" Inductive Steering`
 		"Hyperdrive"
+	gun "Overcharged Pulse Laser"
+	gun "Overcharged Pulse Laser"
+	turret "Overcharged Laser Turret"
+	turret "Overcharged Laser Turret"
 
 
 ship "Myaede" "Myaede (Mining)"
@@ -155,6 +198,10 @@ ship "Myaede" "Myaede (Mining)"
 		`"Chyyra" Inductive Steering`
 		`"Aqra" Inductive Reverser`
 		"Hyperdrive"
+	gun
+	gun
+	turret "Pulse Laser Turret"
+	turret "Pulse Laser Turret"
 
 
 ship "Myaede" "Myaede (Mining, Defensive)"
@@ -169,6 +216,10 @@ ship "Myaede" "Myaede (Mining, Defensive)"
 		`"Chyyra" Inductive Thruster`
 		`"Chyyra" Inductive Steering`
 		"Hyperdrive"
+	gun "Successor Pulse Laser"
+	gun "Successor Pulse Laser"
+	turret "Pulse Laser Turret"
+	turret "Pulse Laser Turret"
 
 
 
@@ -185,6 +236,7 @@ ship "Nnaatej" "Nnaatej (Defensive)"
 		`"Chyyra" Inductive Thruster`
 		`"Chyyra" Inductive Steering`
 		"Hyperdrive"
+	turret "Pulse Laser Turret"
 
 
 
@@ -202,6 +254,11 @@ ship "Ojde" "Ojde (Mining)"
 		`"Veusa" Inductive Steering`
 		`"Chyyra" Inductive Reverser`
 		"Hyperdrive"
+	gun
+	gun
+	turret "Pulse Laser Turret"
+	turret "Pulse Laser Turret"
+	turret
 
 
 
