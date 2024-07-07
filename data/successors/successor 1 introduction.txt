@@ -784,22 +784,22 @@ mission "Successors: Kaatrij First Contact 1"
 				`	"Will your supporting me cause conflict with House Sioeora?"`
 					to display
 						has "language: Successor"
-						not "Successors: Kaatrij FC1 q: sioeora"
+						not "Successors: sioeora"
 					goto sioeora
 				`	"Can you tell me more about yourself?"`
 					to display
 						has "language: Successor"
-						not "Successors: Kaatrij FC1 q: saajret"
+						not "Successors: saajret"
 					goto saajret
 				`	"You mentioned earlier that the Kijran 'belong' to you?"`
 					goto kijran
 				`	"Can you tell me more about yourself?"`
 					to display
 						has "language: Successor"
-						not "Successors: Kaatrij FC1 q: kijran"
+						not "Successors: kijran"
 			label kijran
 			action
-				set "Successors: Kaatrij FC1 q: kijran"
+				set "Successors: kijran"
 			`	Saajret shivers with texture. "More than just 'belong to us,' 'tis true. The Kijran - Kiitaa and Khora alike - are our creations, genetically engineered as the hybrids of a dozen precursor species. Why was it that the life of our world endured while the life of the rest perished through radiative erosion? 'Twas the old House Kaatrij that strengthened their genomes against decay. That we were - had to leave them behind was one among many sorrows, and it is much better that thy quarry flies free than for another House to subject these children of ours to their whims.`
 				goto questions
 			label communicate
@@ -815,12 +815,12 @@ mission "Successors: Kaatrij First Contact 1"
 				goto questions
 			label sioeora
 			action
-				set "Successors: Kaatrij FC1 q: sioeora"
+				set "Successors: sioeora"
 			`	Saajret hums in a way you can't quite place. "Sioeora will no doubt be upset that one of the New Houses now patronizes the alien that they first met, but they are forced enough to swim in the water that they themselves have salted. Thou shouldn'st fear any ire from them beyond their politicking, and that is something we are accustomed to handling."`
 				goto questions
 			label saajret
 			action
-				set "Successors: Kaatrij FC1 q: saajret"
+				set "Successors: saajret"
 			`	A wave of pink cascades along Saajret's arms before they reply. "I am Saajret, honored citizen of noble House Kaatrij and member of the somber noble lineage of House Sejra, which no longer stands as naught but a banner under Kaatrij. Ah. Not all our Houses survived the fall: Jaasii, Vejret, Ijridanii, Sejra, and many more were lost forever. Kaatrij absorbed the citizens of some into itself; 'tis a patchwork that reminds us that we are all patchworks, metamorphic and composed. My roles are many, but first among them, I am an archivist, of sorts. I am to preserve the old technology that we still have and to use it, when necessary, for the best possible purposes."`
 				goto questions
 			label premature
@@ -830,6 +830,9 @@ mission "Successors: Kaatrij First Contact 1"
 			`	Saajret produces a data-sphere and hands that to you as well. "Within this," they say, "is historical data for most of the worlds in our space. Combined with thy newfound ability of our language, thou should'st find the navigation of our worlds and cities more revealing and fruitful. Officially, thou shalt be a patronized guest of House Kaatrij and shall proceed under our protection and with our blessings. Thou may'st be able to purchase a certain number of petty technologies without frustration, but most require some vetting that, as an alien, may take some time and effort to complete. Should'st the prospect interest thee, assisting with jobs and other tasks would doubtless benefit in proving thyself an ally to our people."`
 			`	Saajret pauses to adjust their clothing once again. "I bid thee now farewell, Captain <first> <last>. Kaatrij will continue to apprise ourselves of thine actions. I hope that next we speak we will be on equally positive terms." With this, Saajret and their escort return to the vehicle, which glides back into the lake. By the time that the <ship> is ready to take off, the ripples on the water have almost entirely dissapated and the first glimmers of sunlight are creeping over the distant hills.`
 			action
+				clear "Successors: kijran"
+				clear "Successors: saajret"
+				clear "Successors: sioeora"
 				log "People" "Saajret, of Somber Sejra" `Saajret, of Somber Sejra is an archivist, among other things, for the Successor High House Kaatrij. They are a member of the noble lineage of the now-defunct House Sejra, some of whose citizens were absorbed into House Kaatrij during the partial collapse of their Predecessors' society.`
 				set "known to the successors"
 				event "successors: trust 1"
