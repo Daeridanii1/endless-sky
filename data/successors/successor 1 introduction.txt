@@ -905,24 +905,24 @@ mission "Successors: Trusted"
 					goto start
 				`	"Can you explain what's going on here?"`
 					to display
-						not "Successors Trusted q: explain"
+						not "Successors: explain"
 					goto explain
 				`	"How has House Sioeora been?"`
 					to display
-						not "Successors Trusted q: sioeora"
+						not "Successors: sioeora"
 					goto sioeora
 				`	"What are you doing here?"`
 					to display
-						not "Successors Trusted q: aboutyou"
+						not "Successors: aboutyou"
 					goto aboutyou
 			label explain
 			action
-				set "Successors Trusted q: explain"
+				set "Successors: explain"
 			`	"This is a diplomatic world for representatives of the High Houses to meet in council, resolve disputes, bicker over policy, and I suspect in as it shall be in thy own case, to offer special dispensation to citizens and patronized aliens."`
 				goto questions
 			label sioeora
 			action
-				set "Successors Trusted q: sioeora"
+				set "Successors: sioeora"
 			branch sioeora-opposed
 				has "completed: Successors: Kaatrij First Contact 1"
 			`	"Our mutual patrons remain their usual selves. Would'st though believe that Riijaaora themself informed me of thy invitation here? They've made themself a leader among the others for their fruitful advocacy towards thee... ah, but I digress. Let it suffice to say that Sioeora doubtless shall support thee in council today, for thou art considered something of a successful investment on their part."`
@@ -935,22 +935,22 @@ mission "Successors: Trusted"
 					goto start
 				`	"Council?"`
 					to display
-						not "Successors Trusted q: explain"
+						not "Successors: explain"
 					goto explain
 				`	"What are you doing here?"`
 					to display
-						not "Successors Trusted q: aboutyou"
+						not "Successors: aboutyou"
 					goto aboutyou
 			label aboutyou
 			action
-				set "Successors Trusted q: aboutyou"
+				set "Successors: aboutyou"
 			`	Sieasej briefly turns a shade of green in a display you might almost characterize as blushing. "I was summoned as well. Thy arrival here has ignited much interest in our past dealings with humans, and I have been instructed to speak to several groups here as a so-called expert on the subject."`
 			choice
 				`	"Indeed. I'm ready to begin, then."`
 					goto start
 				`	"How has House Sioeora been?"`
 					to display
-						not "Successors Trusted q: sioeora"
+						not "Successors: sioeora"
 					goto sioeora
 			label start
 			`	"Good! We would be wise to be early to our respective events."`
@@ -1010,6 +1010,10 @@ mission "Successors: Trusted"
 			label yours
 			`	"I am pleased to hear of this, captain. I spoke at length about some of my human lingustic research, ah, thy tongues are fascinating items and make for truly interesting sounds... 'Twas also that I entertained a number of questions about thee thyself! Some young archivist from Kaatrij, I think? Truthfully, I sometimes confuse the New Houses with each other. Ah," they say, interrupting themself, "would that I could discuss it more, but my role here is yet to finish and I have another meeting still to entertain. Fair travels, captain, and may we meet again." They splay their arms wide in the same gesture you've seen many times before and you offer a short bow in return.`
 			label end
+			action
+				clear "Successors: aboutyou"
+				clear "Successors: explain"
+				clear "Successors: sioeora"
 			`	With your meeting resolved here, you head back to the monorail station and catch the next train back to the spaceport.`
 
 mission "Successors: People's Houses, First Contact"
