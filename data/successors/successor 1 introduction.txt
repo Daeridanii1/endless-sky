@@ -651,34 +651,37 @@ mission "Successors: First Contact 3"
 			choice
 				`	"I have no questions."`
 					to display
-						not "Successors FC3 q: others"
-						not "Successors FC3 q: animal"
+						not "Successors: others"
+						not "Successors: animal"
 					goto end
 				`	"I have no more questions."`
 					to display
 						or
-							has "Successors FC3 q: others"
-							has "Successors FC3 q: animal"
+							has "Successors: others"
+							has "Successors: animal"
 					goto end
 				`	"Will being your ally bring me into conflict with the other Houses?"`
 					to display
-						not "Successors FC3 q: others"
+						not "Successors: others"
 					goto others
 				`	"What are you going to do to the animal?"`
 					to display
-						not "Successors FC3 q: animal"
+						not "Successors: animal"
 					goto animal
 			label others
 			action
-				set "Successors FC3 q: others"
+				set "Successors: others"
 			`	Riijaaora's skin blotches with colors. "Surely not, we think. None would make so brazen an insult so as to endanger the vassal of another. Thou may'st travel 'tween our stars 'thout fear."`
 				goto questions
 			label animal
 			action
-				set "Successors FC3 q: animal"
+				set "Successors: animal"
 			`	"'Tis none of thy concern, captain. Though, if thou fear'st cruelty on our part, let it be well known to thee that it shall be well-kept and preserved. Thou may'st quell thy doubtful heart."`
 				goto questions
 			label end
+			action
+				clear "Successors: animal"
+				clear "Successors: others"
 			`	"Good. We bid thee farewell, then, and good tidings." Riijaaora and the other scions turn around to face their backs towards you and the officers who escorted you in escort you back out to your ship through the various sculptural passages of Sioeora's complex.`
 			label exit
 
