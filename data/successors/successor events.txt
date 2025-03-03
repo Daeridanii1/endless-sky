@@ -101,6 +101,8 @@ event "successors: unified defense"
 		add fleet "Large New Houses" 1200
 
 
+event "successors: ghosts initial timer"
+
 event "successors: ghosts incident"
 	set "successors: ghosts stage 0"
 	planet "Qasa-Sija-Iri"

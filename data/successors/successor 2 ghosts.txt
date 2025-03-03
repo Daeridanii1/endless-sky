@@ -11,6 +11,15 @@
 # You should have received a copy of the GNU General Public License along with
 # this program. If not, see <https://www.gnu.org/licenses/>.
 
+mission "Successors: Ghosts Prelude Timer"
+	landing
+	invisible
+	to offer
+		has "trusted by the successors"
+	on offer
+		event "successors: ghosts initial timer" 20
+		fail
+
 mission "Successors: Ghosts 0 Incident"
 	landing
 	invisible
@@ -18,8 +27,8 @@ mission "Successors: Ghosts 0 Incident"
 		attributes "successor"
 		not attributes "quiet" "uninhabited"
 	to offer
-		has "trusted by the successors"
-		date 9 25
+		has "event: successors ghosts intial timer"
+		random < 10
 	on offer
 		event "successors: ghosts incident"
 		event "successors: ghosts stage 1" 26
@@ -197,14 +206,46 @@ mission "Successors: Ghosts 0a3 Saajret"
 		conversation
 			`Shortly after you land on <origin>, the Successor data-sphere you recieved from the House Kaatrij concierge springs to life. It displays a short message, text-only:`
 			`	'Tis good of thee, captain, that thou sought me out upon learning of this recent incident. Thine instincts do thee justice. Nonetheless, I've naught to give thee. The matter underway is of Kaatrij and does not pertain to thee nor the other Houses. If thou well-regards this House, keep clear of this. Enjoy our fruitful world, assist our grateful citizens, be regaled by what gifts we yet may give. Do not pry. This I beseech you, for our sake and for thine: do not be tempted by our secrets' jaws.`
-			`	This I myself attest as V- E- Saajret, of Somber Sejra.`
+			`	This I myself attest as K- I- Saajret, of Somber Sejra.`
 				decline
 
 
 
 mission "Successors: Ghosts 0b1 Transport"
-	name ""
+	minor
+	name "Transport relief materials to <destination>"
+	source
+		government "House Aqrabe" "House Seineq"
+	destination "Raaqa-Puan-Uuoru"
+	cargo "Humidity regulators" 16
+	clearance
+	to offer
+		has "successors: ghosts stage 0"
+	on offer
+		conversation 
+			`You take on relief materials from <origin> that need to get to <destination>.`
+	on complete
+		payment 45000
+		conversation 
+			`You are given <payment> credits for delivering the materials and are directed to the spaceport to transport some citizens offworld.`
+
 mission "Successors: Ghosts 0b2 Transport"
+	minor
+	name "Transport Kaatrij citizens offworld"
+	source "Raaqa-Puan-Uuoru"
+	destination
+			distance 1 3
+			government "House Aqrabe" "House Seineq" "Successor"
+	passengers 13
+	to offer
+		has "Successors: Ghosts 0b1 Transport: done"
+	on offer
+		conversation
+			`Several citizens of House Kaatrij ask you to take them offworld to <destination>.`
+	on complete
+		payment 55000
+		conversation
+			`You are paid <payment> credits for transporting the Successors.`
 
 
 mission "Successors: Ghosts 0c Student"
@@ -273,6 +314,13 @@ mission "Successors: Ghosts 1a1a Transport"
 	to offer
 		has "successors: ghosts stage 1"
 		random < 30
+	on offer
+		conversation
+			`You pick up a scientist from House Seineq who wants to get to <destination>.`
+	on complete
+		payment 40000
+		conversation
+			`The scientist pays you <payment> credits and directs you to the spaceport.`
 
 mission "Successors: Ghosts 1a1b Cargo"
 	name "Aid supplies to <destination>"
@@ -286,6 +334,13 @@ mission "Successors: Ghosts 1a1b Cargo"
 	to offer
 		has "successors: ghosts stage 1"
 		random < 30
+	on offer
+		conversation
+			`You take on cargo from House Seineq that needs to get to <destination>.`
+	on complete
+		payment 40000
+		conversation
+			`You are paid <payment> credits and are directed to the spaceport.`
 
 mission "Successors: Ghosts 1a1c Mixed"
 	name "Engineer to <destination>"
@@ -300,8 +355,16 @@ mission "Successors: Ghosts 1a1c Mixed"
 	to offer
 		has "successors: ghosts stage 1"
 		random < 30
+	on offer
+		conversation
+			`You take on cargo from House Seineq that needs to get to <destination>.`
+	on complete
+		payment 40000
+		conversation
+			`The engineer pays you <payment> credits and directs you to the spaceport.`
 
 mission "Successors: Ghosts 1a2 Sensors"
+	name "Deploy sensor drones"
 	source "Shassa-Wyra-Orrou"
 	description "House Seineq is concerned that the incident at Qasa-Sija-Iri may be the doing of parties from the other side of the wormhole, and have asked you to deploy a net of sensors in <waypoints>."
 	cargo "Successor sensor drones" 6
@@ -358,6 +421,9 @@ mission "Successors: Ghosts 1a2 Sensors"
 				accept
 	on complete
 		set "successors: jump drive monitoring"
+
+mission "Successors: Ghosts 1a3a Sioeora"
+	destination "Staja-Kella-Oa"
 
 mission "Successors: Ghosts 1a3 Investigate"
 	source "Shassa-Wyra-Orrou"
