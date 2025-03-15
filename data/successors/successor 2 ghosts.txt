@@ -20,6 +20,18 @@ mission "Successors: Ghosts Prelude Timer"
 		event "successors: ghosts initial timer" 20
 		fail
 
+mission "Successors: Ghosts 0 Wedding"
+	landing
+	invisible
+	source
+		attributes "successor"
+		not attributes "quiet" "uninhabited"
+	to offer
+		has "event: successors ghosts intial timer"
+		random < 10
+	on offer
+		log "Learned of an upcoming wedding between some of the scions of Houses Chydiyi and Myurej."
+
 mission "Successors: Ghosts 0 Incident"
 	landing
 	invisible
@@ -54,7 +66,6 @@ mission "Successors: Ghosts 0a1 QSI"
 	invisible
 	source "Qasa-Sija-Iri"
 	to offer
-		has "successors: ghosts stage 0"
 		not "successors: ghosts restriction lifted"
 	on offer
 		conversation
@@ -120,7 +131,6 @@ mission "Successors: Ghosts 0a2 Authorization"
 		government "House Kaatrij"
 	to offer
 		has "successors kaatrij patron"
-		has "successors: ghosts stage 0"
 		not "successors: ghosts restriction lifted"
 	on offer
 		conversation
@@ -220,7 +230,7 @@ mission "Successors: Ghosts 0b1 Transport"
 	cargo "Humidity regulators" 16
 	clearance
 	to offer
-		has "successors: ghosts stage 0"
+		has "successors: ghosts incident"
 	on offer
 		conversation 
 			`You take on relief materials from <origin> that need to get to <destination>.`
@@ -257,7 +267,7 @@ mission "Successors: Ghosts 0c Student"
 	passengers 1
 	clearance
 	to offer
-		has "successors: ghosts stage 0"
+		has "successors: ghosts incident"
 	on offer
 		conversation
 			`In <origin>'s spaceport, you spot a smallish Successor staring wistfully at the list of departures - after the incident on House Kaatrij's moon, flights offworld have been consistently packed. While you're looking, the Successor catches your gaze and glides over to talk to you, taking unusual care to remain within the watery channels that web over the terminal floor.`
@@ -402,6 +412,8 @@ mission "Successors: Ghosts 1a2 Sensors"
 				`	"I'm not interested in being a part of this."`
 					goto refuse
 			label cloaks
+			action
+				"successors: ghosts suspicion" += 1
 			`	Pink spots break out over Rijatet's body. "We would not tell thee either way. But never in thirty thousand years have we or our Predecessors met a race with drives like yours that could camouflage their imprint on the weave of space. Listen well enough, and when they jump, it will always be there."`
 			choice
 				`	"Very well, then, I'll deploy your sensors."`
@@ -420,10 +432,22 @@ mission "Successors: Ghosts 1a2 Sensors"
 			`	Both of the two seem to relax a bit when you say this, their arms showing a little more slack. Sijra notes down something on a metallic pad that they take out of their outfit, before informing you that they've ordered the sensor drones to be transferred to the <ship>. "Once thy task is done, Captain, return here and we shall have thy next opportunity for usefulness."`
 				accept
 	on complete
+		log "Deployed Successor sensor drones on the far side of their wormhole to scan for ships using jump drives, cloaked or not."
 		set "successors: jump drive monitoring"
 
 mission "Successors: Ghosts 1a3a Sioeora"
 	destination "Staja-Kella-Oa"
+	to offer
+		has "Successors: Ghosts 1a2 Sensors: done"
+	description "Report back to House Sioeora about Seineq asking you to investigate."
+
+mission "Successors: Ghosts 1a3b Kaatrij"
+	destination "Raaqa-Puan-Uuoru"
+	to offer
+		has "Successors: Ghosts 1a2 Sensors: done"
+	description "Report back to House Sioeora about Seineq asking you to investigate."
+
+
 
 mission "Successors: Ghosts 1a3 Investigate"
 	source "Shassa-Wyra-Orrou"
@@ -433,36 +457,38 @@ mission "Successors: Ghosts 1a3 Investigate"
 
 # As appropriate, these should be able to offer before 1a3 Investigate
 mission "Successors: Ghosts 1b1 Aqrabe" # Mission chain
+	source "Kasii-Cavasaa-Oa"
+	to offer
+		or
+			and
+				has "successors: ghosts stage 1"
+				random < 15
+			has "Successors: Ghosts 1a3 Investigate: done"
 	on complete
 		"successors: ghosts houses dealt with" ++
 		set "successors: ghosts dealt with aqrabe"
+		log "Met with an emissary of the scions of House Aqrabe, who wants to test"
 
 mission "Successors: Ghosts 1c1 Chydiyi" # Mission chain
+	source "Khora-Vasa-Reyyaa"
 	on complete
 		"successors: ghosts houses dealt with" ++
 		set "successors: ghosts dealt with chydiyi"
-		outfit "Rubies" 5
-
-outfit "Rubies"
-	plural "Rubies"
-	category "Minerals"
-	cost 300000
-	thumbnail "outfit/unknown"
-	"flotsam sprite" "effect/flotsam yottrite"
-	"installable" -1
-	description "Brilliantly cut gem-quality rubies, blood-red and of uncommon size and vibrance. Though smaller gemstones can be grown without much hassle in the modern era, ones of this size remain both rare and stunning enough to fetch a commanding price in almost any market."
 
 mission "Successors: Ghosts 1d1 Myurej" # Mission chain
+	source "Raaqa-Kvelq-Ryuit"
 	on complete
 		"successors: ghosts houses dealt with" ++
 		set "successors: ghosts dealt with myurej"
 
 mission "Successors: Ghosts 1d1 Sioeora" # Mission chain
+	source "Staja-Kella-Oa"
 	on complete
 		"successors: ghosts houses dealt with" ++
 		set "successors: ghosts dealt with sioeora"
 
 mission "Successors: Ghosts 1e1 People's Houses" # Mission chain
+	source "Kasii-Tuur-Saqru"
 	on complete
 		"successors: ghosts houses dealt with" ++
 		set "successors: ghosts dealt with people's houses"
@@ -472,9 +498,18 @@ mission "Successors: Ghosts 1f1 Sieasej" # Mission chain
 		"successors: ghosts houses dealt with" ++
 		set "successors: ghosts dealt with sioeora"
 
-mission "Successors: Ghosts 1g1 Kaatrij" # Mission chain
+mission "Successors: Ghosts 1g1 Seineq" # Suspicion
+	source "Yoqqa-Vasa-Vasa"
+	to offer
+		has "successors: ghosts suspicion" > 5
 	on complete
-		"successors: ghosts houses dealt with" ++
+		set "successors: ghosts dealt with seineq"
+
+mission "Successors: Ghosts 1h1 Kaatrij" # Suspicion
+	source "Raaqa-Puan-Uuoru"
+	to offer
+		has "successors: ghosts suspicion" > 5
+	on complete
 		set "successors: ghosts dealt with kaatrij"
 
 
@@ -487,8 +522,11 @@ mission "Successors: Ghosts 1a4 Report"
 			has "successors: ghosts dealt with myurej"
 			has "successors: ghosts dealt with kaatrij"
 	on complete
+		event "successors: ghosts stage 2" 10
 		payment 1000000
 
 mission "Successors: Ghosts 1a5 Destroyed"
+	to offer
+		has "event: successors: ghosts stage 2"
 	on offer
 		log "The base on Shassa-Wyra-Orrou from which House Seineq organized their investigation has been destroyed, along with the jump drive monitoring equipment."
