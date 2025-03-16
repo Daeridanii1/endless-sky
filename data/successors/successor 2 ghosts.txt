@@ -376,7 +376,9 @@ mission "Successors: Ghosts 1a1c Mixed"
 mission "Successors: Ghosts 1a2 Sensors"
 	name "Deploy sensor drones"
 	source "Shassa-Wyra-Orrou"
-	description "House Seineq is concerned that the incident at Qasa-Sija-Iri may be the doing of parties from the other side of the wormhole, and have asked you to deploy a net of sensors in <waypoints>."
+	destination "Shassa-Wyra-Orrou"
+	waypoint "Kasii-Sola"
+	description "House Seineq is concerned that the incident at Qasa-Sija-Iri may be the doing of parties from the other side of the wormhole, and have asked you to deploy a net of sensors in <waypoints> before returning to <destination>."
 	cargo "Successor sensor drones" 6
 	to offer
 		or
@@ -413,7 +415,7 @@ mission "Successors: Ghosts 1a2 Sensors"
 					goto refuse
 			label cloaks
 			action
-				"successors: ghosts suspicion" += 1
+				"successors: ghosts suspicion" ++
 			`	Pink spots break out over Rijatet's body. "We would not tell thee either way. But never in thirty thousand years have we or our Predecessors met a race with drives like yours that could camouflage their imprint on the weave of space. Listen well enough, and when they jump, it will always be there."`
 			choice
 				`	"Very well, then, I'll deploy your sensors."`
@@ -431,20 +433,27 @@ mission "Successors: Ghosts 1a2 Sensors"
 			label yes
 			`	Both of the two seem to relax a bit when you say this, their arms showing a little more slack. Sijra notes down something on a metallic pad that they take out of their outfit, before informing you that they've ordered the sensor drones to be transferred to the <ship>. "Once thy task is done, Captain, return here and we shall have thy next opportunity for usefulness."`
 				accept
-	on complete
-		log "Deployed Successor sensor drones on the far side of their wormhole to scan for ships using jump drives, cloaked or not."
+	on enter "Kasii-Sola"
+		dialog `After entering the system, you deploy the Successor sensor drones. After drifting out of your ship's cargo bay, they use small thrusters to disperse themselves across the system until they eventually recede from your ship's scanners.`
 		set "successors: jump drive monitoring"
+	on complete
+		conversation
+			`Docking control at the <destination> base directs the <ship> to a protected hangar on the western side of the facility. A pair of Successor ground crew supervise the automated refueling and maintenance processes, and one of them waves you down from the cockpit, where they hand you a data-sphere. A few seconds after it touches your skin, it plays a message from Rijatet:`
+			`	"Our thanks to thee for setting our sensors, Captain. We saw their first reports only shortly after as thy own craft jumped away, and nothing since. We shall remain as watchful as we ought to be. For thine efforts, we have credited thee a small payment. If thou wish't for further, join us at the port here tonight for another task."`
+			`	I attest this, C- R- Rijatet.`
+		payment 25000
+		log "Deployed Successor sensor drones on the far side of their wormhole to scan for ships using jump drives, cloaked or not."
 
 mission "Successors: Ghosts 1a3a Sioeora"
 	destination "Staja-Kella-Oa"
 	to offer
-		has "Successors: Ghosts 1a2 Sensors: done"
+		has "Successors: Ghosts 1a2 Sensors: offered"
 	description "Report back to House Sioeora about Seineq asking you to investigate."
 
 mission "Successors: Ghosts 1a3b Kaatrij"
 	destination "Raaqa-Puan-Uuoru"
 	to offer
-		has "Successors: Ghosts 1a2 Sensors: done"
+		has "Successors: Ghosts 1a2 Sensors: offered"
 	description "Report back to House Sioeora about Seineq asking you to investigate."
 
 
@@ -452,7 +461,35 @@ mission "Successors: Ghosts 1a3b Kaatrij"
 mission "Successors: Ghosts 1a3 Investigate"
 	source "Shassa-Wyra-Orrou"
 	description "Investigators from House Seineq want you to report back your dealings with the other High Houses."
-
+	to offer
+		has "Successors: Ghosts 1a2 Sensors: done"
+	on offer
+		conversation
+			`Immediately after you enter the spaceport, a Successor there directs you to the same room in which you met with Sijra and Rijatet before, and just as before, the two of them enter a few minutes later.`
+			`	"A pleasure t'see thee again after thy fruitful voyage, Captain," says Sijra. They wriggle under one of the mist generators. "We've a second task for thee. Thou art, as we explained before, a more neutral being here. If another House were to contact thee and ask for help as we have-"`
+			`	"Perhaps they already have," notes Rijatet.`
+			`	"Then in providing it, thou may'st see things our forces might not be privy to."`
+			choice
+				`	"Are you asking me to spy for you?"`
+				goto spy
+				`	"Get to the point, please."`
+			`	Sirja moves their head a little closer to you. "If and when another House contracts thee for some purpose that thou suspects in any way, make note of it. Tell us and we shall pay thee a fair sum for thy time and effort."`
+				goto decision
+			label spy
+			`	A faint pink color forms at the tips of Sirja's arms, though what exactly this connotes you cannot tell. "No, Captain. That is not thy art, methinks. We only ask thee to be attentive in thy duties, and to tell us of anything untoward."`
+			label decision
+			choice
+				`	"Very well."`
+					goto yes
+				`	"I've had enough of this. No."`
+			`	The two Successors eye you, a shade of blue slowly creeping over their skin. "Disappointing, Captain. But it is thy own decision."`
+				decline
+			label yes
+			action
+				set "successors: investigating for seineq"
+				log "Accepted an offer by House Seineq to report back my dealings with the other Houses, and whether I observe anything incriminating."
+			`	"Excellent!" says Rijtatet. "In that case, Sijra and I have nothing further for thee. We shall call thee back when we are ready for thy report."`
+				decline
 
 
 # As appropriate, these should be able to offer before 1a3 Investigate
@@ -463,7 +500,7 @@ mission "Successors: Ghosts 1b1 Aqrabe" # Mission chain
 			and
 				has "successors: ghosts stage 1"
 				random < 15
-			has "Successors: Ghosts 1a3 Investigate: done"
+			has "Successors: Ghosts 1a3 Investigate: offered"
 	on complete
 		"successors: ghosts houses dealt with" ++
 		set "successors: ghosts dealt with aqrabe"
@@ -471,47 +508,112 @@ mission "Successors: Ghosts 1b1 Aqrabe" # Mission chain
 
 mission "Successors: Ghosts 1c1 Chydiyi" # Mission chain
 	source "Khora-Vasa-Reyyaa"
+	to offer
+		or
+			and
+				has "Successors: Ghosts 0 Wedding: offered"
+				random < 15
+			and
+				has "Successors: Ghosts 0 Wedding: offered"
+				has "Successors: Ghosts 1a3 Investigate: offered"
 	on complete
 		"successors: ghosts houses dealt with" ++
 		set "successors: ghosts dealt with chydiyi"
 
 mission "Successors: Ghosts 1d1 Myurej" # Mission chain
 	source "Raaqa-Kvelq-Ryuit"
+	to offer
+		or
+			has "Successors: Ghosts 1c1 Chydiyi: done"
+			has "Successors: Ghosts 1e1 Sioeora: done"
 	on complete
 		"successors: ghosts houses dealt with" ++
 		set "successors: ghosts dealt with myurej"
 
-mission "Successors: Ghosts 1d1 Sioeora" # Mission chain
+mission "Successors: Ghosts 1e1 Sioeora" # Mission chain
 	source "Staja-Kella-Oa"
+	to offer
+		or
+			and
+				has "successors: ghosts stage 1"
+				has "successors sioeora patron"
+				random < 15
+			and
+				has "successors sioeora patron"
+				has "Successors: Ghosts 1a3 Investigate: offered"
+			and
+				or
+					has "Successors: Ghosts 1c1 Chydiyi: done"
+					has "Successors: Ghosts 1d1 Myurej: done"
 	on complete
 		"successors: ghosts houses dealt with" ++
 		set "successors: ghosts dealt with sioeora"
 
-mission "Successors: Ghosts 1e1 People's Houses" # Mission chain
+mission "Successors: Ghosts 1f1 People's Houses" # Mission chain
 	source "Kasii-Tuur-Saqru"
+	to offer
+		or
+			and
+				has "successors: ghosts stage 1"
+				random < 15
+			has "Successors: Ghosts 1a3 Investigate: offered"
 	on complete
 		"successors: ghosts houses dealt with" ++
 		set "successors: ghosts dealt with people's houses"
 
-mission "Successors: Ghosts 1f1 Sieasej" # Mission chain
+mission "Successors: Ghosts 1h1 Sieasej" # Mission chain
 	on complete
 		"successors: ghosts houses dealt with" ++
 		set "successors: ghosts dealt with sioeora"
 
-mission "Successors: Ghosts 1g1 Seineq" # Suspicion
+mission "Successors: Ghosts 1i1 Prompt" # Suspicion
+	landing
+	source
+		attributes "successor"
+		not attributes "uninhabited"
+	to offer
+		has "successors: ghosts suspicion" >= 5
+	on offer
+		conversation
+			`...`
+			`"Dost thou know," they say, "about the hunting practices of the Kijra-Khora?"`
+			choice
+				`	"A little too well, actually."`
+				`	"That's never particularly interested me."`
+			`	The Successor laughs, a quiet ruk-ruk sound. "Yes, I've heard of thy encounter with them. Beautiful beasts, aren't they? Truly aspirational. Kijran-Khora are adept at camouflage, hiding themselves beyond all but the most scrutinizing gaze before closing in on their quarry. House Kaatrij doesn't tell this much, but I once read that in the early days of their House, well-cloaked Kijran kept slipping into their towns and bases. It took them years and years to figure out how to drive the creatures out." They laugh again.`
+			choice
+				`	"I'm not sure I understand."`
+				`	"Oh, I think I see what you mean."`
+				goto clever
+			action
+				log "Met with a strange Successor. They told me about the hunting practices of the elusive self-camouflaging Kijran-Khora, and wished me happy sightseeing at an unspecified set of rings."
+			`	"Perhaps thou shalt come to, in time. If thou truly mean to unravel this thyself, 'twill take cunning from thee. So reflect, Captain, and I wish thee pleasant sightseeing. The rings, I hear, are in a class of beauty all their own." They eye the last bit of skewered seafood before nipping it off the stick, and wish you goodbye before disappearing into the spaceport.`
+				decline
+			label clever
+			action
+				log "Met with a strange Successor. They told me about the hunting practices of the elusive self-camouflaging Kijran-Khora, and wished me happy sightseeing at an unspecified set of rings."
+			`	"I knew thou would'st, Captain." They eye the last bit of skewered seafood before nipping it off the stick. "Enjoy thy trip," they say. "I hear the rings make for a class of beauty all by themselves."`
+				decline
+
+mission "Successors: Ghosts 1i2 QSI"
+	on complete
+		log "Approached the base on Qasa-Sija-Iri while under cloak. Its design vaguely resembles Quarg construction."
+
+mission "Successors: Ghosts 1i3 Quarg"
+	source
+		government "Quarg"
+	to offer
+		has "Successors: Ghosts 1i2 QSI: offered"
+	on complete
+		log "Spoke with the Quarg, who revealed that they have kept a base on Qasa-Sija-Iri to monitor the Successors. It has remained cloaked by House Kaatrij, who has collaborated with the Quarg since the collapse of the Predecessors."
+
+
+mission "Successors: Ghosts 1j1 Seineq" # Suspicion
 	source "Yoqqa-Vasa-Vasa"
 	to offer
-		has "successors: ghosts suspicion" > 5
+		has "successors: ghosts suspicion" >= 7
 	on complete
 		set "successors: ghosts dealt with seineq"
-
-mission "Successors: Ghosts 1h1 Kaatrij" # Suspicion
-	source "Raaqa-Puan-Uuoru"
-	to offer
-		has "successors: ghosts suspicion" > 5
-	on complete
-		set "successors: ghosts dealt with kaatrij"
-
 
 
 mission "Successors: Ghosts 1a4 Report"
