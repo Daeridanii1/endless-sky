@@ -31,6 +31,19 @@ mission "Successors: Ghosts 0 Wedding"
 		random < 10
 	on offer
 		log "Learned of an upcoming wedding between some of the scions of Houses Chydiyi and Myurej."
+		conversation
+			`	The crowds of Successors in this spaceport are unusually active today, many animatedly chatting to each other while others sit splayed around displays, watching a news broadcast. It's not long after you step off your ship that one particularly excited-looking Successor approaches you, their skin aburst with splashes of pink and green. "Hast though heard the recent news, Captain?"`
+			choice
+				`	"No."`
+				`	"I try to avoid it when I can."`
+			branch incident
+				has "successors: ghosts incident"
+			`	The Successor wriggles. "A scion of Chydiyi plans to marry one of Myurej! T'was announced t'day, early in the morn! Chydiyi and Myurej have been close for so long, and this shall only make the two closer..." As they trail off, they see someone in the crowd and hastily say goodbye to you before slithering away. As you go about your business, you are interrupted a few more times to see if you've "heard the news." While many Successors appear excited about this, some take on a more suspicious tone. A shift in power like this would surely not be good for everyone.`
+				decline
+			
+			label incident
+			`	The Successor wriggles, a little uncomfortably. "A scion of Chydiyi announced their plan to marry one of Myurej's. T'was announced today, along with a message of their sympathy for Kaatrij. A little convenient, methinks. Chydiyi and Myurej t'were already each other's darlings, and now they'll be closer still..." As they trail off, they spot someone in the crowd and excuse themselves before slithering away. As you go about your business, you are interrupted a few more times to see if you've "heard the news." While quite a few of the Successors here are relatively excited about the upcoming noble wedding, many take on a more suspicious tone. A shift in power like this would put the already-wounded New Houses at a further disadvantage against their soon-to-be more closely connected rivals.`
+				decline
 
 mission "Successors: Ghosts 0 Incident"
 	landing
@@ -445,16 +458,24 @@ mission "Successors: Ghosts 1a2 Sensors"
 		log "Deployed Successor sensor drones on the far side of their wormhole to scan for ships using jump drives, cloaked or not."
 
 mission "Successors: Ghosts 1a3a Sioeora"
+	landing
+	name "Inform House Sioeora"
 	destination "Staja-Kella-Oa"
+	description "After being asked to deploy sensor drones by House Seineq, it might be prudent to speak with your patron House."
 	to offer
+		has "successors sioeora patron"
 		has "Successors: Ghosts 1a2 Sensors: offered"
 	description "Report back to House Sioeora about Seineq asking you to investigate."
 
 mission "Successors: Ghosts 1a3b Kaatrij"
+	landing
+	name "Inform House Kaatrij"
 	destination "Raaqa-Puan-Uuoru"
+	description "After being asked to deploy sensor drones by House Seineq, it might be prudent to speak with your patron House."
 	to offer
+		has "successors kaatrij patron"
 		has "Successors: Ghosts 1a2 Sensors: offered"
-	description "Report back to House Sioeora about Seineq asking you to investigate."
+	description "Report back to House Kaatrij about Seineq asking you to investigate."
 
 
 
@@ -494,17 +515,126 @@ mission "Successors: Ghosts 1a3 Investigate"
 
 # As appropriate, these should be able to offer before 1a3 Investigate
 mission "Successors: Ghosts 1b1 Aqrabe" # Mission chain
+	name "Keystone delivery"
 	source "Kasii-Cavasaa-Oa"
+	destination "Kasii-Cavasaa-Oa"
+	description "House Aqrabe wants 50 tons of quantum keystones at <destionation>."
 	to offer
 		or
 			and
 				has "successors: ghosts stage 1"
 				random < 15
 			has "Successors: Ghosts 1a3 Investigate: offered"
+	on offer
+		conversation
+			`Shortly after landing here, you are approached by a tall Successor in unusual dress; though dark, it shimmers in the light with many little golden flecks. It is unlike any other Successor outfit you've seen. "Greetings, Captain," they say, curiously sonorous. "Noble House Aqrabe kindly requests thy presence in the eastern spaceport reliquary. I've been instructed to take thee there, at thy own discretion, of course."`
+			choice
+				`	"Very well."`
+					goto reliquary
+				`	"No, thank you."`
+					decline
+			label reliquary
+			`	They lead you through several restricted areas of the spaceport to a thin tower on its periphery. The room you enter into is tremendous and circular; a shallow watery depression in the center is matched by an enormous semicircular tank that bulges down from above, almost touching the floor as it swoops towards the wet floor. What's inside it proves even more striking, however: soon, what look like the severed limbs of Successors begin to writhe downwards in the tank, each suspended by a number of glittering golden threads that snake up into the dark abyss of the overhead water. You look around to ask your guide what's happening, but they have already left. One of the arms rubs up against the glass, its undead suckers making faint popping sounds as they pass over it.`
+			choice
+				`	(Reach out to touch it.)`
+				`	(Leave it alone.)`
+					goto interrupt
+			`	As you graze the glass with your fingertips, the bodiless arms wiggle and squirm. From beneath you, a chorus of artificial voices speak.`
+			`	"four-leg? foreign?"`
+			`		"foreign."`
+			`	"curious foreigner. alien."`
+			`			"curiosity, the fortieth virtue."`
+			`		"may an alien be virtuous? discuss."`
+			`	"no, think I, for..."`
+			`	The voices are interrupted by another, this one startlingly close and real.`
+			label interrupt
+			`	"I see thou hast met our saints, Captain." Another Successor emerges from behind you. They wear a similar outfit; the only difference seems to be a slightly redder-hued glint. The "saints" now follow them around, probing and slapping at the glass.`
+			choice
+				`	"Saints?"`
+					goto saints
+				`	"Are they alive?"`
+				`	"Who are you?"`
+					goto identity
+			`	"No, nor has the cloak of death enveloped them either. They're between things. Like infants that never fear growing; like half-sleepers that never fear to wake."`
+			label saints
+			`	"They're saints, or relics," they say. "Fragments of unliving minds, free of pain and death, surviving in parts. Each one once a mind of renown, one worth t'be preserved even as a memory. They're intrigued by thee. Only one of them ever saw something of your kind, and it did not expect to ever see one of you again - not even in eternity."`
+			`	"And who are you?" you ask.`
+			label identity
+			`	They splay their arms, a little more subtly than most of the Successors you've seen. "Aqrabe Ia Sola. And you are Captain <first> <last>. How queer an introduction is to thee, for thou art the only one here for whom 't'would be needed." They make a noise you're sure is chuckling. "A scion of Aqrabe's House - by marriage, not by blood. But only just. But no, tell me, how is it that our wormhole grants thee passage 'thout a well-equipped ship of ours?"`
+			choice
+				`	"I carry a quantum keystone on my ship that lets me pass through all sorts of unstable wormholes."`
+					goto keystone
+				`	"That's not something I'm comfortable sharing."`
+			`	"Oh, don't think we haven't scanned thy craft, Captain! Amateur secrecy shall get thee nowhere." A slow ripple of pale blue cascades over their face.`
+			label keystone
+			`	"In short, we wish to better know these stones of thine. Their structure, their function, their nature. And by this understanding of one more great mystery, to one day produce our own, less intensive and demanding than the forming of our armors. Aqrabe is willing to pay thee to deliver fifty of these to us, more than enough to offset whatever it costs thee for their acquisition."`
+	to complete
+		or
+			has "outfit: Quantum Keystone" >= 50
+			has "outfit: Quantum Key Stone" >= 50
 	on complete
+		log "Delivered a shipment of quantum keystones to House Aqrabe for study and installation on their ships."
+
+dialog "successor keystone delivery"
+	`You deliver the keystones to the Successors and are paid 1.2 million credits for your efforts.`
+
+mission "Successors: Ghosts 1b2a Remnant"
+	destination "Kasii-Cavasaa-Oa"
+	to fail
+		has "Successors: Ghosts 1b2b Hai: done"
+	to offer
+		has "Successors: Ghosts 1b1 Aqrabe: offered"
+	on complete
+		dialog "successor keystone delivery"
+		outfit "Quantum Key Stone" -50
+		payment 1200000
+
+mission "Successors: Ghosts 1b2b Hai"
+	destination "Kasii-Cavasaa-Oa"
+	to fail
+		has "Successors: Ghosts 1b2a Remnant: done"
+	to offer
+		has "Successors: Ghosts 1b1 Aqrabe: offered"
+	on complete
+		dialog "successor keystone delivery"
+		outfit "Quantum Keystone" -50
+		payment 1200000
+
+mission "Successors: Ghosts 1b3 Aqrabe" # Mission chain
+	source "Kasii-Cavasaa-Oa"
+	stopover "Myiara-Aret-Iir"
+	destination "Kasii-Cavasaa-Oa"
+	to offer
+		has "Successors: Ghosts 1b1 Aqrabe: done"
+	on complete
+		log "Escorted a keystone-equipped and multimodal armor Vujlet through the Successors' wormhole."
+
+mission "Successors: Ghosts 1b4 Aqrabe" # Mission chain
+	source "Kasii-Cavasaa-Oa"
+	stopover "Exotic Metal Garden"
+	destination "Kasii-Cavasaa-Oa"
+	to offer
+		has	"Successors: Ghosts 1b3 Aqrabe: done"
+	on complete
+		event "successors ghosts aqrabe wait" 10
+		log "Attempted to retrieve stellar metal from Predecessor space for House Aqrabe, but was driven back by the intense heat."
+
+mission "Successors: Ghosts 1b5 Aqrabe" # Mission chain
+	source "Kasii-Cavasaa-Oa"
+	stopover "Exotic Metal Garden"
+	destination "Kasii-Cavasaa-Oa"
+	to offer
+		has	"event: successors ghosts aqrabe wait"
+		conversation
+			label yes
+			action
+				ship "Vujlet (Stellar)" "Nnesa ti-a-Oj"
+	on complete
+		payment 250000
 		"successors: ghosts houses dealt with" ++
 		set "successors: ghosts dealt with aqrabe"
-		log "Met with an emissary of the scions of House Aqrabe, who wants to test"
+		log "Retrieved stellar metal for House Kaatrij using a specially-equipped vessel, narrowly escaping pursuing warships."
+
 
 mission "Successors: Ghosts 1c1 Chydiyi" # Mission chain
 	source "Khora-Vasa-Reyyaa"
