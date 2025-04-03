@@ -522,8 +522,9 @@ mission "Successors: Ghosts Investigate"
 				decline
 
 
-# As appropriate, these should be able to offer before 1a3 Investigate
-mission "Successors: Ghosts Aqrabe 1" # Mission chain
+# House mission chains
+
+mission "Successors: Ghosts Aqrabe 1"
 	name "Keystone delivery"
 	source "Kasii-Cavasaa-Oa"
 	destination "Kasii-Cavasaa-Oa"
@@ -615,7 +616,7 @@ mission "Successors: Ghosts Aqrabe Hai"
 		outfit "Quantum Keystone" -50
 		payment 1200000
 
-mission "Successors: Ghosts Aqrabe 2" # Mission chain
+mission "Successors: Ghosts Aqrabe 2"
 	source "Kasii-Cavasaa-Oa"
 	stopover "Myiara-Aret-Iir"
 	destination "Kasii-Cavasaa-Oa"
@@ -624,7 +625,7 @@ mission "Successors: Ghosts Aqrabe 2" # Mission chain
 	on complete
 		log "Escorted a keystone-equipped and multimodal armor Vujlet through the Successors' wormhole."
 
-mission "Successors: Ghosts Aqrabe 3" # Mission chain
+mission "Successors: Ghosts Aqrabe 3"
 	source "Kasii-Cavasaa-Oa"
 	stopover "Exotic Metal Garden"
 	destination "Kasii-Cavasaa-Oa"
@@ -659,7 +660,7 @@ mission "Successors: Ghosts Aqrabe 3" # Mission chain
 			`	Shortly before you depart into the port yourself, you overhear some of the ground crew remarking on the <ship>'s scorched hull.`
 		log "Attempted to retrieve stellar metal from Predecessor space for House Aqrabe, but was driven back by the intense heat."
 
-mission "Successors: Ghosts Aqrabe 4" # Mission chain
+mission "Successors: Ghosts Aqrabe 4"
 	clearance
 	source "Kasii-Cavasaa-Oa"
 	stopover "Raaqa-Puan-Uuoru"
@@ -725,7 +726,7 @@ mission "Successors: Ghosts Aqrabe 4" # Mission chain
 		conversation
 			`Done.`
 
-mission "Successors: Ghosts Aqrabe 5" # Mission chain
+mission "Successors: Ghosts Aqrabe 5"
 	source "Kasii-Cavasaa-Oa"
 	stopover "Exotic Metal Garden"
 	destination "Kasii-Cavasaa-Oa"
@@ -742,7 +743,7 @@ mission "Successors: Ghosts Aqrabe 5" # Mission chain
 		log "Retrieved stellar metal for House Kaatrij using a specially-equipped vessel, narrowly escaping pursuing warships."
 
 
-mission "Successors: Ghosts Chydiyi 1" # Mission chain
+mission "Successors: Ghosts Chydiyi 1"
 	source "Khora-Vasa-Reyyaa"
 	to offer
 		or
@@ -756,7 +757,7 @@ mission "Successors: Ghosts Chydiyi 1" # Mission chain
 		"successors: ghosts houses dealt with" ++
 		set "successors: ghosts dealt with chydiyi"
 
-mission "Successors: Ghosts Myurej 1" # Mission chain
+mission "Successors: Ghosts Myurej 1"
 	source "Raaqa-Kvelq-Ryuit"
 	to offer
 		or
@@ -766,7 +767,7 @@ mission "Successors: Ghosts Myurej 1" # Mission chain
 		"successors: ghosts houses dealt with" ++
 		set "successors: ghosts dealt with myurej"
 
-mission "Successors: Ghosts Sioeora 1" # Mission chain
+mission "Successors: Ghosts Sioeora 1"
 	source "Staja-Kella-Oa"
 	to offer
 		or
@@ -785,7 +786,7 @@ mission "Successors: Ghosts Sioeora 1" # Mission chain
 		"successors: ghosts houses dealt with" ++
 		set "successors: ghosts dealt with sioeora"
 
-mission "Successors: Ghosts People's Houses 1" # Mission chain
+mission "Successors: Ghosts People's Houses 1"
 	source "Kasii-Tuur-Saqru"
 	to offer
 		or
@@ -797,12 +798,35 @@ mission "Successors: Ghosts People's Houses 1" # Mission chain
 		"successors: ghosts houses dealt with" ++
 		set "successors: ghosts dealt with people's houses"
 
-mission "Successors: Ghosts Sieasej 1" # Mission chain
+mission "Successors: Ghosts Sieasej 1"
 	on complete
 		"successors: ghosts houses dealt with" ++
 		set "successors: ghosts dealt with sioeora"
 
-mission "Successors: Ghosts Suspicion 1" # Suspicion
+
+# Report and reward
+
+mission "Successors: Ghosts Report 1"
+	to offer
+		has "successors: ghosts houses dealt with" >= 3
+		or
+			has "successors: ghosts dealt with chydiyi"
+			has "successors: ghosts dealt with myurej"
+			has "successors: ghosts dealt with kaatrij"
+	on complete
+		event "successors: ghosts stage 2" 10
+		payment 1000000
+
+mission "Successors: Ghosts Report 2"
+	to offer
+		has "event: successors: ghosts stage 2"
+	on offer
+		log "The base on Shassa-Wyra-Orrou from which House Seineq organized their investigation has been destroyed, along with the jump drive monitoring equipment."
+
+
+# Suspicion
+
+mission "Successors: Ghosts Suspicion 1" 
 	landing
 	source
 		attributes "successor"
@@ -843,27 +867,9 @@ mission "Successors: Ghosts Suspicion 3"
 	on complete
 		log "Spoke with the Quarg, who revealed that they have kept a base on Qasa-Sija-Iri to monitor the Successors. It has remained cloaked by House Kaatrij, who has collaborated with the Quarg since the collapse of the Predecessors."
 
-mission "Successors: Ghosts Suspicion 1a" # Suspicion
+mission "Successors: Ghosts Suspicion 1a"
 	source "Yoqqa-Vasa-Vasa"
 	to offer
 		has "successors: ghosts suspicion" >= 7
 	on complete
 		set "successors: ghosts dealt with seineq"
-
-
-mission "Successors: Ghosts Report 1"
-	to offer
-		has "successors: ghosts houses dealt with" >= 3
-		or
-			has "successors: ghosts dealt with chydiyi"
-			has "successors: ghosts dealt with myurej"
-			has "successors: ghosts dealt with kaatrij"
-	on complete
-		event "successors: ghosts stage 2" 10
-		payment 1000000
-
-mission "Successors: Ghosts Report 2"
-	to offer
-		has "event: successors: ghosts stage 2"
-	on offer
-		log "The base on Shassa-Wyra-Orrou from which House Seineq organized their investigation has been destroyed, along with the jump drive monitoring equipment."
