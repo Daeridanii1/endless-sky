@@ -20,7 +20,7 @@ mission "Successors: Ghosts Prelude Timer"
 		event "successors: ghosts initial timer" 20
 		fail
 
-mission "Successors: Ghosts 0 Wedding"
+mission "Successors: Ghosts Wedding 0"
 	landing
 	invisible
 	source
@@ -45,7 +45,7 @@ mission "Successors: Ghosts 0 Wedding"
 			`	The Successor wriggles, a little uncomfortably. "A scion of Chydiyi announced their plan to marry one of Myurej's. T'was announced today, along with a message of their sympathy for Kaatrij. A little convenient, methinks. Chydiyi and Myurej t'were already each other's darlings, and now they'll be closer still..." As they trail off, they spot someone in the crowd and excuse themselves before slithering away. As you go about your business, you are interrupted a few more times to see if you've "heard the news." While quite a few of the Successors here are relatively excited about the upcoming noble wedding, many take on a more suspicious tone. A shift in power like this would put the already-wounded New Houses at a further disadvantage against their soon-to-be more closely connected rivals.`
 				decline
 
-mission "Successors: Ghosts 0 Incident"
+mission "Successors: Ghosts Incident 0"
 	landing
 	invisible
 	source
@@ -73,7 +73,7 @@ mission "Successors: Ghosts 0 Incident"
 
 
 
-mission "Successors: Ghosts 0a1 QSI"
+mission "Successors: Ghosts QSI 1"
 	# Note the naming convention: "Successors: Ghosts" is the narrative arc. "0" represents the stage of the arc. "a" represents a branch occuring at that specific stage. "1" represents the mission number in that specific branch. "QSI" is a one-word abbreviation of what's going on in the mission, to make the missions more identifiable.
 	landing
 	invisible
@@ -129,16 +129,16 @@ mission "Successors: Ghosts 0a1 QSI"
 				`	(Continue anyway.)`
 					goto proceed
 
-mission "Successors: Ghosts 0a1 QSI Restrict"
+mission "Successors: Ghosts QSI Restrict"
 	landing
 	invisible
 	to offer
-		has "Successors: Ghosts 0a1 QSI: offered"
+		has "Successors: Ghosts QSI 1: offered"
 	on offer
 		event "successors: ghosts restrict"
 			decline
 
-mission "Successors: Ghosts 0a2 Authorization"
+mission "Successors: Ghosts QSI 2"
 	priority
 	source
 		government "House Kaatrij"
@@ -218,7 +218,7 @@ mission "Successors: Ghosts 0a2 Authorization"
 			`	The concierge examines another metallic cylinder projecting from their station. "Today? No." They push the cylinder back and return to their prior position atop the stone seat.`
 				decline
 
-mission "Successors: Ghosts 0a3 Saajret"
+mission "Successors: Ghosts QSI 3"
 	landing
 	invisible
 	source
@@ -234,7 +234,7 @@ mission "Successors: Ghosts 0a3 Saajret"
 
 
 
-mission "Successors: Ghosts 0b1 Transport"
+mission "Successors: Ghosts Incident 1 Transport"
 	minor
 	name "Transport relief materials to <destination>"
 	source
@@ -252,7 +252,7 @@ mission "Successors: Ghosts 0b1 Transport"
 		conversation 
 			`You are given <payment> credits for delivering the materials and are directed to the spaceport to transport some citizens offworld.`
 
-mission "Successors: Ghosts 0b2 Transport"
+mission "Successors: Ghosts Incident 2 Transport"
 	minor
 	name "Transport Kaatrij citizens offworld"
 	source "Raaqa-Puan-Uuoru"
@@ -261,7 +261,7 @@ mission "Successors: Ghosts 0b2 Transport"
 			government "House Aqrabe" "House Seineq" "Successor"
 	passengers 13
 	to offer
-		has "Successors: Ghosts 0b1 Transport: done"
+		has "Ghosts Incident 1 Transport: done"
 	on offer
 		conversation
 			`Several citizens of House Kaatrij ask you to take them offworld to <destination>.`
@@ -271,7 +271,7 @@ mission "Successors: Ghosts 0b2 Transport"
 			`You are paid <payment> credits for transporting the Successors.`
 
 
-mission "Successors: Ghosts 0c Student"
+mission "Successors: Ghosts Incident 1 Student"
 	minor
 	name "Return Successor student home"
 	description "A Successor student studying on <origin> wants to go home to <destination> after the incident on Qasa-Sija-Iri. Their family will pay you on arrival."
@@ -325,7 +325,7 @@ mission "Successors: Ghosts 0c Student"
 		conversation
 			`TODO: End Successors: Ghosts 0c Student`
 
-mission "Successors: Ghosts 1a1a Transport"
+mission "Successors: Ghosts Seineq 1 Transport"
 	name "Scientist to <destination>"
 	destination "Shassa-Wyra-Orrou"
 	description "A scientist from House Seineq needs to get to <destination> by <date> to assist their House after the incident on its ally House Kaatrij's moon."
@@ -337,6 +337,9 @@ mission "Successors: Ghosts 1a1a Transport"
 	to offer
 		has "successors: ghosts stage 1"
 		random < 30
+	to fail
+		has "Successors: Ghosts Seineq 1 Cargo: done"
+		has "Successors: Ghosts Seineq 1 Mixed: done"
 	on offer
 		conversation
 			`You pick up a scientist from House Seineq who wants to get to <destination>.`
@@ -345,7 +348,7 @@ mission "Successors: Ghosts 1a1a Transport"
 		conversation
 			`The scientist pays you <payment> credits and directs you to the spaceport.`
 
-mission "Successors: Ghosts 1a1b Cargo"
+mission "Successors: Ghosts Seineq 1 Cargo"
 	name "Aid supplies to <destination>"
 	destination "Shassa-Wyra-Orrou"
 	description "<tons> tons of living metal growth plates belonging to House Seineq need to get to <destination> by <date> to assist their ally House Kaatrij after the incident on its moon."
@@ -357,6 +360,9 @@ mission "Successors: Ghosts 1a1b Cargo"
 	to offer
 		has "successors: ghosts stage 1"
 		random < 30
+	to fail
+		has "Successors: Ghosts Seineq 1 Transport: done"
+		has "Successors: Ghosts Seineq 1 Mixed: done"
 	on offer
 		conversation
 			`You take on cargo from House Seineq that needs to get to <destination>.`
@@ -365,7 +371,7 @@ mission "Successors: Ghosts 1a1b Cargo"
 		conversation
 			`You are paid <payment> credits and are directed to the spaceport.`
 
-mission "Successors: Ghosts 1a1c Mixed"
+mission "Successors: Ghosts Seineq 1 Mixed"
 	name "Engineer to <destination>"
 	destination "Shassa-Wyra-Orrou"
 	description "An starship engineer from House Seineq and their <tons> tons of equipment need to get to <destination> by <date> to assist their House's ally, House Kaatrij, after the incident on its moon."
@@ -378,6 +384,9 @@ mission "Successors: Ghosts 1a1c Mixed"
 	to offer
 		has "successors: ghosts stage 1"
 		random < 30
+	to fail
+		has "Successors: Ghosts Seineq 1 Transport: done"
+		has "Successors: Ghosts Seineq 1 Cargo: done"
 	on offer
 		conversation
 			`You take on cargo from House Seineq that needs to get to <destination>.`
@@ -386,7 +395,7 @@ mission "Successors: Ghosts 1a1c Mixed"
 		conversation
 			`The engineer pays you <payment> credits and directs you to the spaceport.`
 
-mission "Successors: Ghosts 1a2 Sensors"
+mission "Successors: Ghosts Seineq 2"
 	name "Deploy sensor drones"
 	source "Shassa-Wyra-Orrou"
 	destination "Shassa-Wyra-Orrou"
@@ -395,9 +404,9 @@ mission "Successors: Ghosts 1a2 Sensors"
 	cargo "Successor sensor drones" 6
 	to offer
 		or
-			has "Successors: Ghosts 1a1a Transport: done"
-			has "Successors: Ghosts 1a1b Cargo: done"
-			has "Successors: Ghosts 1a1c Mixed: done"
+			has "Successors: Ghosts Seineq 1 Transport: done"
+			has "Successors: Ghosts Seineq 1 Cargo: done"
+			has "Successors: Ghosts Seineq 1 Mixed: done"
 	on offer
 		conversation
 			`It's not long after you return to the spaceport that you are approached by a distinctly stressed-looking Successor who curtly instructs you to follow them to a small side room. You wait there for a minute or two, trying your best to avoid the overhead mist generators, before a pair of Successors enter from the same door you did, and introduce themselves to you.`
@@ -457,33 +466,33 @@ mission "Successors: Ghosts 1a2 Sensors"
 		payment 25000
 		log "Deployed Successor sensor drones on the far side of their wormhole to scan for ships using jump drives, cloaked or not."
 
-mission "Successors: Ghosts 1a3a Sioeora"
+mission "Successors: Ghosts Seineq 2a Sioeora"
 	landing
 	name "Inform House Sioeora"
 	destination "Staja-Kella-Oa"
 	description "After being asked to deploy sensor drones by House Seineq, it might be prudent to speak with your patron House."
 	to offer
 		has "successors sioeora patron"
-		has "Successors: Ghosts 1a2 Sensors: offered"
+		has "Successors: Ghosts Seineq 2: offered"
 	description "Report back to House Sioeora about Seineq asking you to investigate."
 
-mission "Successors: Ghosts 1a3b Kaatrij"
+mission "Successors: Ghosts Seineq 2b Kaatrij"
 	landing
 	name "Inform House Kaatrij"
 	destination "Raaqa-Puan-Uuoru"
 	description "After being asked to deploy sensor drones by House Seineq, it might be prudent to speak with your patron House."
 	to offer
 		has "successors kaatrij patron"
-		has "Successors: Ghosts 1a2 Sensors: offered"
+		has "Successors: Ghosts Seineq 2: offered"
 	description "Report back to House Kaatrij about Seineq asking you to investigate."
 
 
 
-mission "Successors: Ghosts 1a3 Investigate"
+mission "Successors: Ghosts Investigate"
 	source "Shassa-Wyra-Orrou"
 	description "Investigators from House Seineq want you to report back your dealings with the other High Houses."
 	to offer
-		has "Successors: Ghosts 1a2 Sensors: done"
+		has "Successors: Ghosts Seineq 2: done"
 	on offer
 		conversation
 			`Immediately after you enter the spaceport, a Successor there directs you to the same room in which you met with Sijra and Rijatet before, and just as before, the two of them enter a few minutes later.`
@@ -514,7 +523,7 @@ mission "Successors: Ghosts 1a3 Investigate"
 
 
 # As appropriate, these should be able to offer before 1a3 Investigate
-mission "Successors: Ghosts 1b1 Aqrabe" # Mission chain
+mission "Successors: Ghosts Aqrabe 1" # Mission chain
 	name "Keystone delivery"
 	source "Kasii-Cavasaa-Oa"
 	destination "Kasii-Cavasaa-Oa"
@@ -524,7 +533,7 @@ mission "Successors: Ghosts 1b1 Aqrabe" # Mission chain
 			and
 				has "successors: ghosts stage 1"
 				random < 15
-			has "Successors: Ghosts 1a3 Investigate: offered"
+			has "Successors: Ghosts Investigate: offered"
 	on offer
 		conversation
 			`Shortly after landing here, you are approached by a tall Successor in unusual dress; though dark, it shimmers in the light with many little golden flecks. It is unlike any other Successor outfit you've seen. "Greetings, Captain," they say, curiously sonorous. "Noble House Aqrabe kindly requests thy presence in the eastern spaceport reliquary. I've been instructed to take thee there, at thy own discretion, of course."`
@@ -584,43 +593,43 @@ mission "Successors: Ghosts 1b1 Aqrabe" # Mission chain
 dialog "successor keystone delivery"
 	`You deliver the keystones to the Successors and are paid 1.2 million credits for your efforts.`
 
-mission "Successors: Ghosts 1b2a Remnant"
+mission "Successors: Ghosts Aqrabe Remnant"
 	destination "Kasii-Cavasaa-Oa"
 	to fail
-		has "Successors: Ghosts 1b2b Hai: done"
+		has "Successors: Ghosts Aqrabe Hai: done"
 	to offer
-		has "Successors: Ghosts 1b1 Aqrabe: offered"
+		has "Successors: Ghosts Aqrabe 1: offered"
 	on complete
 		dialog "successor keystone delivery"
 		outfit "Quantum Key Stone" -50
 		payment 1200000
 
-mission "Successors: Ghosts 1b2b Hai"
+mission "Successors: Ghosts Aqrabe Hai"
 	destination "Kasii-Cavasaa-Oa"
 	to fail
-		has "Successors: Ghosts 1b2a Remnant: done"
+		has "Successors: Ghosts Aqrabe Remnant: done"
 	to offer
-		has "Successors: Ghosts 1b1 Aqrabe: offered"
+		has "Successors: Ghosts Aqrabe 1: offered"
 	on complete
 		dialog "successor keystone delivery"
 		outfit "Quantum Keystone" -50
 		payment 1200000
 
-mission "Successors: Ghosts 1b3 Aqrabe" # Mission chain
+mission "Successors: Ghosts Aqrabe 2" # Mission chain
 	source "Kasii-Cavasaa-Oa"
 	stopover "Myiara-Aret-Iir"
 	destination "Kasii-Cavasaa-Oa"
 	to offer
-		has "Successors: Ghosts 1b1 Aqrabe: done"
+		has "Successors: Ghosts Aqrabe 1: done"
 	on complete
 		log "Escorted a keystone-equipped and multimodal armor Vujlet through the Successors' wormhole."
 
-mission "Successors: Ghosts 1b4 Aqrabe" # Mission chain
+mission "Successors: Ghosts Aqrabe 3" # Mission chain
 	source "Kasii-Cavasaa-Oa"
 	stopover "Exotic Metal Garden"
 	destination "Kasii-Cavasaa-Oa"
 	to offer
-		has	"Successors: Ghosts 1b3 Aqrabe: done"
+		has	"Successors: Ghosts Aqrabe 2: done"
 	on offer
 		conversation
 			`Tilra meets you in a tucked-away part of the spaceport, filled with strange statuary, where they stand in conversation with a small group of Successors. They brighten as they see you approach and offer a perfunctory splay of the arms. "Good news for thee, Captain, for all of us. The data from our expedition hath revealed some measure of the mystery of thy stones. They're oscillators of a sort, ones that sing in tune with the wavers of the wormhole..." Tilra stops for a moment. "But we will have time to discuss that later. For now, what thou needs know is this: with the right materials, we may be able to magnify their effect. Hast though visited Kasii-Cavaasa?"`
@@ -650,13 +659,13 @@ mission "Successors: Ghosts 1b4 Aqrabe" # Mission chain
 			`	Shortly before you depart into the port yourself, you overhear some of the ground crew remarking on the <ship>'s scorched hull.`
 		log "Attempted to retrieve stellar metal from Predecessor space for House Aqrabe, but was driven back by the intense heat."
 
-mission "Successors: Ghosts 1b5 Aqrabe" # Mission chain
+mission "Successors: Ghosts Aqrabe 4" # Mission chain
 	clearance
 	source "Kasii-Cavasaa-Oa"
 	stopover "Raaqa-Puan-Uuoru"
 	destination "Kasii-Cavasaa-Oa"
 	to offer
-		has	"Successors: Ghosts 1b4 Aqrabe: done"
+		has	"Successors: Ghosts Aqrabe 3: done"
 	on offer
 		conversation
 			`Tilra stands waiting for you in the same statue garden they met you earlier, though this time they are alone, tapping at a metallic pad under an overhanging light. They offer a curt greeting of colors when they see you. "I've news both foul and fair for thee," they say. "Thy craft shall not suit for our task. Perhaps with a year of study it could be adapted to our aims, but Aqrabe and I agree that would not do."`
@@ -716,12 +725,12 @@ mission "Successors: Ghosts 1b5 Aqrabe" # Mission chain
 		conversation
 			`Done.`
 
-mission "Successors: Ghosts 1b6 Aqrabe" # Mission chain
+mission "Successors: Ghosts Aqrabe 5" # Mission chain
 	source "Kasii-Cavasaa-Oa"
 	stopover "Exotic Metal Garden"
 	destination "Kasii-Cavasaa-Oa"
 	to offer
-		has	"event: successors ghosts aqrabe wait"
+		has	"Successors: Ghosts Aqrabe 4: done"
 		conversation
 			label yes
 			action
@@ -733,7 +742,7 @@ mission "Successors: Ghosts 1b6 Aqrabe" # Mission chain
 		log "Retrieved stellar metal for House Kaatrij using a specially-equipped vessel, narrowly escaping pursuing warships."
 
 
-mission "Successors: Ghosts 1c1 Chydiyi" # Mission chain
+mission "Successors: Ghosts Chydiyi 1" # Mission chain
 	source "Khora-Vasa-Reyyaa"
 	to offer
 		or
@@ -742,22 +751,22 @@ mission "Successors: Ghosts 1c1 Chydiyi" # Mission chain
 				random < 15
 			and
 				has "Successors: Ghosts 0 Wedding: offered"
-				has "Successors: Ghosts 1a3 Investigate: offered"
+				has "Successors: Ghosts Investigation: offered"
 	on complete
 		"successors: ghosts houses dealt with" ++
 		set "successors: ghosts dealt with chydiyi"
 
-mission "Successors: Ghosts 1d1 Myurej" # Mission chain
+mission "Successors: Ghosts Myurej 1" # Mission chain
 	source "Raaqa-Kvelq-Ryuit"
 	to offer
 		or
-			has "Successors: Ghosts 1c1 Chydiyi: done"
-			has "Successors: Ghosts 1e1 Sioeora: done"
+			has "Successors: Ghosts Chydiyi 1: done"
+			has "Successors: Ghosts Sioeora 1: done"
 	on complete
 		"successors: ghosts houses dealt with" ++
 		set "successors: ghosts dealt with myurej"
 
-mission "Successors: Ghosts 1e1 Sioeora" # Mission chain
+mission "Successors: Ghosts Sioeora 1" # Mission chain
 	source "Staja-Kella-Oa"
 	to offer
 		or
@@ -767,33 +776,33 @@ mission "Successors: Ghosts 1e1 Sioeora" # Mission chain
 				random < 15
 			and
 				has "successors sioeora patron"
-				has "Successors: Ghosts 1a3 Investigate: offered"
+				has "Successors: Ghosts Investigate: offered"
 			and
 				or
-					has "Successors: Ghosts 1c1 Chydiyi: done"
-					has "Successors: Ghosts 1d1 Myurej: done"
+					has "Successors: Ghosts Chydiyi 1: done"
+					has "Successors: Ghosts Myurej 1: done"
 	on complete
 		"successors: ghosts houses dealt with" ++
 		set "successors: ghosts dealt with sioeora"
 
-mission "Successors: Ghosts 1f1 People's Houses" # Mission chain
+mission "Successors: Ghosts People's Houses 1" # Mission chain
 	source "Kasii-Tuur-Saqru"
 	to offer
 		or
 			and
 				has "successors: ghosts stage 1"
 				random < 15
-			has "Successors: Ghosts 1a3 Investigate: offered"
+			has "Successors: Ghosts Investigate: offered"
 	on complete
 		"successors: ghosts houses dealt with" ++
 		set "successors: ghosts dealt with people's houses"
 
-mission "Successors: Ghosts 1h1 Sieasej" # Mission chain
+mission "Successors: Ghosts Sieasej 1" # Mission chain
 	on complete
 		"successors: ghosts houses dealt with" ++
 		set "successors: ghosts dealt with sioeora"
 
-mission "Successors: Ghosts 1i1 Prompt" # Suspicion
+mission "Successors: Ghosts Suspicion 1" # Suspicion
 	landing
 	source
 		attributes "successor"
@@ -822,11 +831,11 @@ mission "Successors: Ghosts 1i1 Prompt" # Suspicion
 			`	"I knew thou would'st, Captain." They eye the last bit of skewered seafood before nipping it off the stick. "Enjoy thy trip," they say. "I hear the rings make for a class of beauty all by themselves."`
 				decline
 
-mission "Successors: Ghosts 1i2 QSI"
+mission "Successors: Ghosts Suspicion 2"
 	on complete
 		log "Approached the base on Qasa-Sija-Iri while under cloak. Its design vaguely resembles Quarg construction."
 
-mission "Successors: Ghosts 1i3 Quarg"
+mission "Successors: Ghosts Suspicion 3"
 	source
 		government "Quarg"
 	to offer
@@ -834,8 +843,7 @@ mission "Successors: Ghosts 1i3 Quarg"
 	on complete
 		log "Spoke with the Quarg, who revealed that they have kept a base on Qasa-Sija-Iri to monitor the Successors. It has remained cloaked by House Kaatrij, who has collaborated with the Quarg since the collapse of the Predecessors."
 
-
-mission "Successors: Ghosts 1j1 Seineq" # Suspicion
+mission "Successors: Ghosts Suspicion 1a" # Suspicion
 	source "Yoqqa-Vasa-Vasa"
 	to offer
 		has "successors: ghosts suspicion" >= 7
@@ -843,7 +851,7 @@ mission "Successors: Ghosts 1j1 Seineq" # Suspicion
 		set "successors: ghosts dealt with seineq"
 
 
-mission "Successors: Ghosts 1a4 Report"
+mission "Successors: Ghosts Report 1"
 	to offer
 		has "successors: ghosts houses dealt with" >= 3
 		or
@@ -854,7 +862,7 @@ mission "Successors: Ghosts 1a4 Report"
 		event "successors: ghosts stage 2" 10
 		payment 1000000
 
-mission "Successors: Ghosts 1a5 Destroyed"
+mission "Successors: Ghosts Report 2"
 	to offer
 		has "event: successors: ghosts stage 2"
 	on offer
