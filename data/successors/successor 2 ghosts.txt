@@ -74,7 +74,6 @@ mission "Successors: Ghosts Incident 0"
 
 
 mission "Successors: Ghosts QSI 1"
-	# Note the naming convention: "Successors: Ghosts" is the narrative arc. "0" represents the stage of the arc. "a" represents a branch occuring at that specific stage. "1" represents the mission number in that specific branch. "QSI" is a one-word abbreviation of what's going on in the mission, to make the missions more identifiable.
 	landing
 	invisible
 	source "Qasa-Sija-Iri"
@@ -324,6 +323,9 @@ mission "Successors: Ghosts Incident 1 Student"
 		payment 47600
 		conversation
 			`TODO: End Successors: Ghosts 0c Student`
+
+
+# Seineq investigation
 
 mission "Successors: Ghosts Seineq 1 Transport"
 	name "Scientist to <destination>"
@@ -724,19 +726,61 @@ mission "Successors: Ghosts Aqrabe 4"
 		dialog "You have returned to Kasii-Cavasaa-Oa, but are not flying the Vujlet given to you by House Kaatrij."
 	on complete
 		conversation
-			`Done.`
+			`You and the <ship> are directed to an enormous outfitting bay at <destination>'s spaceport, easily large enough for a ship ten times the size of a Vujlet. As you disembark, you cross paths with several Successors entering the <ship> with large carts of equipment in tow, much of which is locked away in unmarked metallic cases. Notably, Kaatrij's representative remains onboard, keeping their distance from the Aqrabe ground crews. Tilra spots you from an overhanging balcony and waves you over.`
+			`	"A lovely craft, is it not, Captain? It must be very different from what thou'st flown before."`
+			choice
+				`	"It's definitely a lot... wetter."`
+					goto wet
+				`	"It's not my first Successor craft, you know."`
+					to display
+						or
+							has "ship model (all): Ejniisde" > 0
+							has "ship model (all): Kvelqde" > 0
+							has "ship model (all): Kvelqde-Khora" > 0
+							has "ship model (all): Myaede" > 0
+							has "ship model (all): Nnaatej" > 0
+							has "ship model (all): Nnesaarau" > 0
+							has "ship model (all): Ojde" > 0
+							has "ship model (all): Stolsaqra" > 0
+					goto experienced
+				`	"A ship is a ship, really."`
+			`	Tilra makes a short humming sound. "Perhaps," they say.`
+				goto next
+			label wet
+			`	Tilra shimmers with mirth. "Once this voyage has made its end, thou might do what thou wil'st with it."`
+				goto next
+			label experienced
+			`	[PH] Experienced`
+			label next
+			`	The re-armoring process begins soon after, massive metallic arms folding down from the top of the bay to scan over the surface of the ship. At certain points, flying drones emerge from the sides of the hangar to dispense some additional material onto the vessel or to perform scans - after a while of watching, Tilra suggests that you meet them back here in the spaceport in three hours, so that you can prepare in the meantime.`
 
 mission "Successors: Ghosts Aqrabe 5"
 	source "Kasii-Cavasaa-Oa"
-	stopover "Exotic Metal Garden"
-	destination "Kasii-Cavasaa-Oa"
+	destination "Exotic Metal Garden"
 	to offer
 		has	"Successors: Ghosts Aqrabe 4: done"
 		conversation
-			label yes
-			action
-				ship "Vujlet (Stellar)" "Nnesa ti-a-Oj"
+			`[PH] Prepares for departure.`
+
+mission "Successors: Ghosts Aqrabe 6"
+	name "Return to Kasii-Cavasaa-Oa"
+	landing
+	source "Exotic Metal Garden"
+	destination "Kasii-Cavasaa-Oa"
+	cargo "Stellar metal" 30
+	to offer
+		has	"Successors: Ghosts Aqrabe 5: done"
+		conversation
+			`[PH] Retrieves stellar metal.`
+	on enter "Kasii-Cavaasa"
+		dialog `As you take off from the stellar metal garden, your ship's proximity alarms begin to ring. Another ship is taking off too - and its weapons are aimed right at you!`
+	npc evade
+		ship "Hasur, Vowsworn" "Hasur-riita 4-1"
+		government "Solitude Enforcer" 
+		personality entering heroic nemesis unconstrained
 	on complete
+		conversation
+			`[PH] Aqrabe chain done.`
 		payment 250000
 		"successors: ghosts houses dealt with" ++
 		set "successors: ghosts dealt with aqrabe"
@@ -833,37 +877,77 @@ mission "Successors: Ghosts Suspicion 1"
 		not attributes "uninhabited"
 	to offer
 		has "successors: ghosts suspicion" >= 5
+		has "First Contact: Quarg: offered"
 	on offer
+		log "Approached by a strange Successor. They told me about the hunting practices of the elusive self-camouflaging Kijran-Khora, who eluded House Kaatrij, and wished me happy sightseeing at an unspecified set of rings."
 		conversation
-			`...`
-			`"Dost thou know," they say, "about the hunting practices of the Kijra-Khora?"`
+			`Soon after you shut down the <ship>'s systems for landing, here, you are approached by a Successor who seems to have been waiting, nipping at a skewered piece of food.`
+			`	"Captain, captain," they say, "fraught and darkling times we live in, no? They remind me - ah, dost thou know of the hunting practices of the Kijra-Khora?"`
 			choice
 				`	"A little too well, actually."`
-				`	"That's never particularly interested me."`
+				`	"Excuse me?"`
 			`	The Successor laughs, a quiet ruk-ruk sound. "Yes, I've heard of thy encounter with them. Beautiful beasts, aren't they? Truly aspirational. Kijran-Khora are adept at camouflage, hiding themselves beyond all but the most scrutinizing gaze before closing in on their quarry. House Kaatrij doesn't tell this much, but I once read that in the early days of their House, well-cloaked Kijran kept slipping into their towns and bases. It took them years and years to figure out how to drive the creatures out." They laugh again.`
 			choice
 				`	"I'm not sure I understand."`
 				`	"Oh, I think I see what you mean."`
 				goto clever
-			action
-				log "Met with a strange Successor. They told me about the hunting practices of the elusive self-camouflaging Kijran-Khora, and wished me happy sightseeing at an unspecified set of rings."
 			`	"Perhaps thou shalt come to, in time. If thou truly mean to unravel this thyself, 'twill take cunning from thee. So reflect, Captain, and I wish thee pleasant sightseeing. The rings, I hear, are in a class of beauty all their own." They eye the last bit of skewered seafood before nipping it off the stick, and wish you goodbye before disappearing into the spaceport.`
 				decline
 			label clever
-			action
-				log "Met with a strange Successor. They told me about the hunting practices of the elusive self-camouflaging Kijran-Khora, and wished me happy sightseeing at an unspecified set of rings."
 			`	"I knew thou would'st, Captain." They eye the last bit of skewered seafood before nipping it off the stick. "Enjoy thy trip," they say. "I hear the rings make for a class of beauty all by themselves."`
 				decline
 
 mission "Successors: Ghosts Suspicion 2"
+	landing
+	source "Qasa-Sija-Iri"
+	to offer
+		has "Successors: Ghosts Suspicion 1: offered"
+		has "flagship attribute: cloak" > 0
+	on offer
+		conversation
+			`As you enter orbit over <origin>, you can see that House Kaatrij continues to occupy the planet's surface, scanning and intercepting any ships that might attempt to land.`
+			choice
+				`	(Cloak.)`
+					goto cloaked
+				`	(Continue down.)`
+				`	(Leave.)`
+					depart
+			`	The <ship> is soon detected by Kaatrij's scanners, and you are forced to return to orbit lest you face destruction.`
+				depart
+			label cloaked
+			action
+				set "successors: ghosts seen quarg"
+			`	The hull of the <ship> warbles as its cloaking equipment engages, and as the seconds pass it becomes clear that Kaatrij's ships cannot detect you above the mostly-airless moon. Though you must descend slowly to avoid disturbing the atmosphere, you eventually find your way over the sandy surface to right above the now-revealed base House Kaatrij went to so much effort to hide.`
+			`	As you once saw in the news broadcast, the outline of it is an enormous circle several kilometers in radius. Though the shimmering effect is now gone and some of the damage has been repaired, much of it still remains visible and there appears to be ongoing work on the damaged sections - House Kaatrij-registered freighters land on temporary landing pads and offload massive amounts of materials, some familiar, some not.`
+			`	Most striking of all, however, is the appearance of some familiar-looking dark metal and purple lighting in the damaged section of the base; it's hard to be certain, but it bears a distinct resemblance to Quarg technology. Perhaps the Quarg might be able to provide some answers about what's been going on.`
+			`	Not long after you see this, a thin sandstorm starts to roll in, and you take the <ship> back up to orbit before the mysterious absence of airborne grit gives your ship away.`
+				decline
 	on complete
-		log "Approached the base on Qasa-Sija-Iri while under cloak. Its design vaguely resembles Quarg construction."
+		log "Approached the base on Qasa-Sija-Iri while under cloak. Its design vaguely resembles Quarg construction - perhaps they have some answers about what's been going on with the Successors."
 
 mission "Successors: Ghosts Suspicion 3"
 	source
-		government "Quarg"
+		attributes "human quarg" "hai quarg"
 	to offer
-		has "Successors: Ghosts 1i2 QSI: offered"
+		has "successors: ghosts seen quarg"
+	on offer
+		conversation
+			`Do you want to ask the Quarg here about their base on the Successor moon Qasa-Sija-Iri.`
+			choice
+				`	(Yes.)`
+				`	(Not now.)`
+					defer
+			`	Though so far individual Quarg have seemed to be fungible in their ability to answer your questions, it is several minutes before you spot one here who, for some reason, seems like it would be able to answer. When you repeat your question to it, it blinks slowly, and answers even more so.`
+			`	"So, you've found our great secret of the South," it says. "You were right to think that base was ours. We did not build a ringworld for the Myiara after what they did, nor stations, nor did we colonize the worlds that were not fit for them - not openly. They built things they did not understand, to mimic us, to prove their valor and ingenuity - they tore space itself not in war, but in peace. They were second only to the Drak themselves in the damage they brought to the galaxy, and it was our failure as guardians that allowed this."`
+			choice
+				`	"So left them alone as some sort of punishment?"`
+					goto punishment
+				`	"What do you mean, Myiara? The Successors?"`
+					goto myiara
+			label punishment
+			`	"No!" the Quarg says. "Not to punish them, but to watch over them without their knowing. One of their houses, when it knew what they had done, agreed to work with us in this task. We have never had need to hide, but they were most capable of it, sharing their cloaks with us so that we could guard their species."`
+			label myiara
+			`	The Quarg considers the term. "Before they called themselves that, they were the Myiara. Have they truly become so pinned to the past?"`
 	on complete
 		log "Spoke with the Quarg, who revealed that they have kept a base on Qasa-Sija-Iri to monitor the Successors. It has remained cloaked by House Kaatrij, who has collaborated with the Quarg since the collapse of the Predecessors."
 
