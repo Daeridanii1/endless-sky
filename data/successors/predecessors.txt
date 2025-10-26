@@ -1,10 +1,3 @@
-government "Solitude Enforcer"
-	swizzle 0
-	color .88 .77 0
-	"player reputation" -999
-	"penalty for"
-		assist 0
-
 ship "Resja, of the Nine Eyes"
 	plural "Resjan, of the Nine Eyes"
 	sprite "ship/resja of the nine eyes"
@@ -152,11 +145,6 @@ ship "Hasur, Vowsworn"
 	engine 0 38
 	description `One would think that, immured deep within those hostile, rotting abcesses of the stars, the constructs of that foolish race would prove themselves inadequate; that their artificial minds would splinter and falter and crumble like their so-false flesh, festering on the bone. And yet they remain, eternally dying but never dead, consumed by programmed rage and unknowable perception. The constructs will keep their promises, interloper:`
 	description `	They'll kill you. They'll do it quick.`
-
-ship "Queru, Luminous Gaze"
-	plural "Querun, Luminous Gazes"
-	sprite "ship/valkkyiara-khorasaqra"
-	thumbnail "thumbnail/valkkyiara-khorasaqra"
 
 outfit `"Iasa," Lethal Word`
 	category "Guns"

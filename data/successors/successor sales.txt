@@ -136,3 +136,6 @@ outfitter "People's Houses"
 	"Overcharged Pulse Laser"
 	"Overcharged Laser Turret"
 	`OC-"Mavra" Betavoltaic Cell`
+
+outfitter "Harmonic Keystone"
+	"Harmonic Keystone"
