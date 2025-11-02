@@ -1,0 +1,258 @@
+# Copyright (c) 2025 by Daeridanii
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+mission "Shroud Randomize 1"
+	invisible
+	entering
+	destination "Earth"
+	repeat
+	source
+		attributes "ts border"
+	to offer
+		"days since epoch" % 7 == 0
+	on accept
+		event "shroud randomize 1"
+		fail
+
+mission "Shroud Randomize 2"
+	invisible
+	entering
+	destination "Earth"
+	repeat
+	source
+		attributes "ts border"
+	to offer
+		( "days since epoch" + 1 ) % 7 == 0
+	on accept
+		event "shroud randomize 2"
+		fail
+
+mission "Shroud Randomize 3"
+	invisible
+	entering
+	destination "Earth"
+	repeat
+	source
+		attributes "ts border"
+	to offer
+		( "days since epoch" + 2 ) % 7 == 0
+	on accept
+		event "shroud randomize 3"
+		fail
+
+mission "Shroud Randomize 4"
+	invisible
+	entering
+	destination "Earth"
+	repeat
+	source
+		attributes "ts border"
+	to offer
+		( "days since epoch" + 3 ) % 7 == 0
+	on accept
+		event "shroud randomize 4"
+		fail
+
+mission "Shroud Randomize 5"
+	invisible
+	entering
+	destination "Earth"
+	repeat
+	source
+		attributes "ts border"
+	to offer
+		( "days since epoch" + 4 ) % 7 == 0
+	on accept
+		event "shroud randomize 5"
+		fail
+
+mission "Shroud Randomize 6"
+	invisible
+	entering
+	destination "Earth"
+	repeat
+	source
+		attributes "ts border"
+	to offer
+		( "days since epoch" + 5 ) % 7 == 0
+	on accept
+		event "shroud randomize 6"
+		fail
+
+mission "Shroud Randomize 7"
+	invisible
+	entering
+	destination "Earth"
+	repeat
+	source
+		attributes "ts border"
+	to offer
+		( "days since epoch" + 6 ) % 7 == 0
+	on accept
+		event "shroud randomize 7"
+		fail
+
+event "shroud randomize 1" # This is the "rest state" of the Shroud
+	system Avasaa-Novaa
+		pos 71 917.52
+	system Kasii-Cavaasa
+		pos -21.76 909.31
+	system Kasii-Sola
+		pos -23 1089.98
+	system Kasi-Vasa-Novaa
+		pos -149.44 989.64
+	system Khasola-Ryuit
+		pos -71.87 833.59
+	system Kiiraj-Luue
+		pos -125.52 955.66
+	system Mavra-Ijsola
+		pos -68.67 883.61
+	system Oublaa-Khora
+		pos 24 1122
+	system Uuoru-Sossa
+		pos -58 976.13
+	system Vasa-Oorua
+		pos 31.3947 1014.88
+
+event "shroud randomize 2"
+	system Avasaa-Novaa
+		pos -35.8771 826.638
+	system Kasii-Cavaasa
+		pos -122.76 940.31
+	system Kasii-Sola
+		pos 111 971.98
+	system Kasi-Vasa-Novaa
+		pos -16.6351 1012.63
+	system Khasola-Ryuit
+		pos 65.6846 1042.18
+	system Kiiraj-Luue
+		pos 19.48 902.66
+	system Mavra-Ijsola
+		pos -100.67 852.61
+	system Oublaa-Khora
+		pos -100.317 993.339
+	system Uuoru-Sossa
+		pos 43.4148 1132.13
+	system Vasa-Oorua
+		pos 106.395 879.88
+
+event "shroud randomize 3"
+	system Avasaa-Novaa
+		pos 42.6698 971.294
+	system Kasii-Cavaasa
+		pos -42.1871 823.767
+	system Kasii-Sola
+		pos -55 938.98
+	system Kasi-Vasa-Novaa
+		pos 103.727 1103.48
+	system Khasola-Ryuit
+		pos 80.3421 902.368
+	system Kiiraj-Luue
+		pos 51.6198 1159.15
+	system Mavra-Ijsola
+		pos 21.33 847.61
+	system Oublaa-Khora
+		pos 104.052 1021.65
+	system Uuoru-Sossa
+		pos -123 911.13
+	system Vasa-Oorua
+		pos -116.605 1002.88
+
+event "shroud randomize 4"
+	system Avasaa-Novaa
+		pos 18.4424 1067.65
+	system Kasii-Cavaasa
+		pos -101.76 1004.31
+	system Kasii-Sola
+		pos 64 924.98
+	system Kasi-Vasa-Novaa
+		pos -128.44 894.64
+	system Khasola-Ryuit
+		pos -14.3677 845.993
+	system Kiiraj-Luue
+		pos -62.52 921.66
+	system Mavra-Ijsola
+		pos -5.67 983.61
+	system Oublaa-Khora
+		pos 7.0876 1153.57
+	system Uuoru-Sossa
+		pos 58 830.13
+	system Vasa-Oorua
+		pos 139.395 973.88
+
+event "shroud randomize 5"
+	system Avasaa-Novaa
+		pos -40.035 1104.51
+	system Kasii-Cavaasa
+		pos 16.3363 1050.69
+	system Kasii-Sola
+		pos -123.965 960.482
+	system Kasi-Vasa-Novaa
+		pos -37.291 990.477
+	system Khasola-Ryuit
+		pos -79.7625 893.347
+	system Kiiraj-Luue
+		pos 26.225 922.554
+	system Mavra-Ijsola
+		pos 65.52 1124.72
+	system Oublaa-Khora
+		pos 163.5 1035.32
+	system Uuoru-Sossa
+		pos 99.7658 970.732
+	system Vasa-Oorua
+		pos -62.2225 829.787
+
+event "shroud randomize 6"
+	system Avasaa-Novaa
+		pos 1.82987 822.803
+	system Kasii-Cavaasa
+		pos 69.3363 1128.69
+	system Kasii-Sola
+		pos 48.0353 878.482
+	system Kasi-Vasa-Novaa
+		pos -40.291 998.477
+	system Khasola-Ryuit
+		pos -53.2449 908.602
+	system Kiiraj-Luue
+		pos -134.775 978.554
+	system Mavra-Ijsola
+		pos 20.52 1059.72
+	system Oublaa-Khora
+		pos -110.5 864.324
+	system Uuoru-Sossa
+		pos 106.766 968.732
+	system Vasa-Oorua
+		pos 43.0801 967.545
+
+event "shroud randomize 7"
+	system Avasaa-Novaa
+		pos 30.965 914.513
+	system Kasii-Cavaasa
+		pos 106.336 1028.69
+	system Kasii-Sola
+		pos -94.9647 914.482
+	system Kasi-Vasa-Novaa
+		pos -100.291 995.478
+	system Khasola-Ryuit
+		pos -99.1649 831.167
+	system Kiiraj-Luue
+		pos -10.775 1059.55
+	system Mavra-Ijsola
+		pos 55.52 1103.72
+	system Oublaa-Khora
+		pos 29.4996 845.324
+	system Uuoru-Sossa
+		pos 98.7658 968.732
+	system Vasa-Oorua
+		pos -24.9199 969.545
+

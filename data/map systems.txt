@@ -12399,7 +12399,7 @@ system "Deep Space 7F"
 system Delia
 	pos -41 757
 	government Uninhabited
-	attributes "ember waste" "graveyard"
+	attributes "ember waste" "graveyard" "ts border"
 	arrival 500
 	ramscoop
 		universal 0
@@ -15627,7 +15627,7 @@ system Esix
 system "Eta Carinae"
 	pos -212.62 928.99
 	government Uninhabited
-	attributes predecessor "tangled shroud"
+	attributes predecessor "tangled shroud" "ts border"
 	arrival 5000
 	habitable 36800
 	asteroids "small rock" 1 4.65
@@ -22701,7 +22701,6 @@ system Kasii-Cavaasa
 	attributes predecessor "tangled shroud"
 	arrival 5000
 	habitable 17025
-	link Mavra-Ijsola
 	hazard "Predecessors Base Spatial Decay" 400
 	asteroids "small rock" 1 1
 	asteroids "small metal" 3 1
@@ -22724,7 +22723,6 @@ system Kasii-Sola
 	attributes predecessor "tangled shroud"
 	arrival 500
 	habitable 320
-	link Vasa-Oorua
 	hazard "Predecessors Base Spatial Decay" 600
 	asteroids "small rock" 1 1.005
 	asteroids "small metal" 1 1.17
@@ -22776,7 +22774,6 @@ system Kasi-Vasa-Novaa
 	attributes predecessor "tangled shroud"
 	arrival 500
 	habitable 10
-	link Kiiraj-Luue
 	hazard "Predecessors Base Spatial Decay" 600
 	haze _menu/haze-tear
 	object
@@ -23087,7 +23084,6 @@ system Kiiraj-Luue
 	attributes predecessor "tangled shroud"
 	arrival 2560
 	habitable 2560
-	link Kasi-Vasa-Novaa
 	hazard "Predecessors Base Spatial Decay" 200
 	hazard "Predecessors Spatial Rift Weak" 10000
 	hazard "Predecessors Spatial Rift Intense" 20000
@@ -26263,7 +26259,6 @@ system Mavra-Ijsola
 	hazard "Predecessors Base Spatial Decay" 200
 	hazard "Predecessors Spatial Rift Weak" 10000
 	hazard "Predecessors Spatial Rift Intense" 20000
-	link Kasii-Cavaasa
 	haze _menu/haze-tear
 	object
 		sprite star/carbon-core
@@ -28626,7 +28621,7 @@ system Myiara-Nnesa
 system Myruet-Kvelq
 	pos -104 1378
 	government Successor
-	attributes successor
+	attributes successor "ts border"
 	arrival 1715
 	habitable 1715
 	link Aaura-Kaska
@@ -30297,6 +30292,7 @@ system Ossipago
 		period 1486.78
 
 system Oublaa-Khora
+	shrouded
 	pos 24 1122
 	government Uninhabited
 	attributes predecessor
@@ -41096,7 +41092,6 @@ system Vasa-Oorua
 	attributes predecessor "tangled shroud"
 	arrival 1705
 	habitable 1705
-	link Kasii-Sola
 	hazard "Predecessors Base Spatial Decay" 400
 	hazard "Predecessors Spatial Rift Weak" 10000
 	haze _menu/haze-tear
