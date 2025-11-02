@@ -7317,7 +7317,7 @@ system Auhru
 		period 1520.57
 
 system Avasaa-Novaa
-	shrouded
+	#shrouded
 	pos 71 917.52
 	government Uninhabited
 	attributes predecessor "tangled shroud"
@@ -22695,7 +22695,7 @@ system Kashikt
 			period 13.0737
 
 system Kasii-Cavaasa
-	shrouded
+	#shrouded
 	pos -21.76 909.31
 	government Uninhabited
 	attributes predecessor "tangled shroud"
@@ -22717,7 +22717,7 @@ system Kasii-Cavaasa
 		period 3000
 
 system Kasii-Sola
-	shrouded
+	#shrouded
 	pos -23 1089.98
 	government Uninhabited
 	attributes predecessor "tangled shroud"
@@ -22768,7 +22768,7 @@ system Kasii-Sola
 		period 10000
 
 system Kasi-Vasa-Novaa
-	shrouded
+	#shrouded
 	pos -149.44 989.64
 	government Uninhabited
 	attributes predecessor "tangled shroud"
@@ -23008,7 +23008,7 @@ system Kella-Uoasa
 		period 10000
 
 system Khasola-Ryuit
-	shrouded
+	#shrouded
 	pos -71.87 833.59
 	government Uninhabited
 	attributes predecessor "tangled shroud"
@@ -23078,7 +23078,7 @@ system Khosa-Kaska
 			period 71
 
 system Kiiraj-Luue
-	shrouded
+	#shrouded
 	pos -125.52 955.66
 	government Uninhabited
 	attributes predecessor "tangled shroud"
@@ -26250,7 +26250,7 @@ system Matar
 			period 23.3043
 
 system Mavra-Ijsola
-	shrouded
+	#shrouded
 	pos -68.67 883.61
 	government Uninhabited
 	attributes predecessor "tangled shroud"
@@ -30292,7 +30292,7 @@ system Ossipago
 		period 1486.78
 
 system Oublaa-Khora
-	shrouded
+	#shrouded
 	pos 24 1122
 	government Uninhabited
 	attributes predecessor
@@ -40660,7 +40660,7 @@ system Uuoru-Kella
 			offset 32
 
 system Uuoru-Sossa
-	shrouded
+	#shrouded
 	pos -58 976.13
 	government Uninhabited
 	attributes predecessor "tangled shroud"
@@ -41086,7 +41086,7 @@ system Vanguwo
 		period 3940.43
 
 system Vasa-Oorua
-	shrouded
+	#shrouded
 	pos 31.3947 1014.88
 	government Uninhabited
 	attributes predecessor "tangled shroud"

@@ -22,6 +22,7 @@ mission "Shroud Randomize 1"
 		"days since epoch" % 7 == 0
 	on accept
 		event "shroud randomize 1"
+		event "shroud forget"
 		fail
 
 mission "Shroud Randomize 2"
@@ -35,6 +36,7 @@ mission "Shroud Randomize 2"
 		( "days since epoch" + 1 ) % 7 == 0
 	on accept
 		event "shroud randomize 2"
+		event "shroud forget"
 		fail
 
 mission "Shroud Randomize 3"
@@ -48,6 +50,7 @@ mission "Shroud Randomize 3"
 		( "days since epoch" + 2 ) % 7 == 0
 	on accept
 		event "shroud randomize 3"
+		event "shroud forget"
 		fail
 
 mission "Shroud Randomize 4"
@@ -61,6 +64,7 @@ mission "Shroud Randomize 4"
 		( "days since epoch" + 3 ) % 7 == 0
 	on accept
 		event "shroud randomize 4"
+		event "shroud forget"
 		fail
 
 mission "Shroud Randomize 5"
@@ -74,6 +78,7 @@ mission "Shroud Randomize 5"
 		( "days since epoch" + 4 ) % 7 == 0
 	on accept
 		event "shroud randomize 5"
+		event "shroud forget"
 		fail
 
 mission "Shroud Randomize 6"
@@ -87,6 +92,7 @@ mission "Shroud Randomize 6"
 		( "days since epoch" + 5 ) % 7 == 0
 	on accept
 		event "shroud randomize 6"
+		event "shroud forget"
 		fail
 
 mission "Shroud Randomize 7"
@@ -100,6 +106,7 @@ mission "Shroud Randomize 7"
 		( "days since epoch" + 6 ) % 7 == 0
 	on accept
 		event "shroud randomize 7"
+		event "shroud forget"
 		fail
 
 event "shroud randomize 1" # This is the "rest state" of the Shroud
@@ -256,3 +263,14 @@ event "shroud randomize 7"
 	system Vasa-Oorua
 		pos -24.9199 969.545
 
+event "shroud forget"
+	unvisit Avasaa-Novaa
+	unvisit Kasii-Cavaasa
+	unvisit Kasii-Sola
+	unvisit Kasi-Vasa-Novaa
+	unvisit Khasola-Ryuit
+	unvisit Kiiraj-Luue
+	unvisit Mavra-Ijsola
+	unvisit Oublaa-Khora
+	unvisit Uuoru-Sossa
+	unvisit Vasa-Oorua
