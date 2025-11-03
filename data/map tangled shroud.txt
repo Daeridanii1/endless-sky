@@ -1,0 +1,815 @@
+system TS1
+	shrouded
+	pos -5.72424 1116.45
+	"display name" ???
+	government Uninhabited
+	habitable 2160
+	belt 1529
+	"jump range" 50
+	link TS2
+	asteroids "medium rock" 7 7.8624
+	asteroids "large rock" 3 8.8608
+	asteroids "medium metal" 2 6.6768
+	asteroids "large metal" 1 5.9904
+	haze _menu/haze-tear
+	object
+		sprite star/g0
+		distance 52.5
+		period 9.26012
+		offset 180
+	object
+		sprite star/g0
+		distance 52.5
+		period 9.26012
+	object
+		sprite planet/desert6
+		distance 238.66
+		period 31.7323
+	object
+		sprite planet/rock11
+		distance 430.62
+		period 76.9085
+	object
+		sprite planet/gas2
+		distance 1097.18
+		period 312.787
+		object
+			sprite planet/dust1
+			distance 217
+		object
+			sprite planet/lava0
+			distance 334
+	object
+		sprite planet/gas3
+		distance 1861.19
+		period 691.065
+		object
+			sprite planet/tethys
+			distance 280
+
+system TS2
+	shrouded
+	pos 25.2758 1035.45
+	"display name" ???
+	government Uninhabited
+	habitable 135
+	belt 1890
+	"jump range" 50
+	link TS1
+	link TS3
+	link TS4
+	asteroids "small rock" 36 4.0964
+	asteroids "medium rock" 45 1.7864
+	asteroids "large rock" 156 4.4352
+	asteroids "medium metal" 3 1.8172
+	asteroids "large metal" 1 4.5276
+	minables aluminum 13 4.03525
+	minables titanium 65 6.89774
+	haze _menu/haze-tear
+	object
+		sprite star/m8
+		period 10
+	object
+		sprite planet/ice2
+		distance 141.69
+		period 58.0633
+	object
+		sprite planet/desert8
+		distance 406.3
+		period 281.944
+	object
+		sprite planet/lava5
+		distance 833.46
+		period 828.362
+	object
+		sprite planet/rock7
+		distance 981.95
+		period 1059.31
+	object
+		sprite planet/rock2
+		distance 1150.19
+		period 1342.91
+	object
+		sprite planet/jupiter
+		distance 1796.19
+		period 2620.72
+	object
+		sprite planet/gas12
+		distance 6369.83
+		period 17501.8
+
+system TS3
+	shrouded
+	pos 99.4393 986.62
+	"display name" ???
+	government Uninhabited
+	habitable 2859.44
+	belt 1999
+	"jump range" 50
+	link TS2
+	link TS5
+	asteroids "small rock" 17 4.9
+	asteroids "medium rock" 18 2.352
+	asteroids "large rock" 20 2.7048
+	asteroids "small metal" 7 3.724
+	asteroids "medium metal" 8 2.5088
+	asteroids "large metal" 3 2.1168
+	minables lead 8 5.34108
+	minables silver 3 4.77802
+	haze _menu/haze-tear
+	object
+		sprite star/f0
+		distance 22.1262
+		period 11.0875
+		offset 180
+	object
+		sprite star/k0
+		distance 107.874
+		period 11.0875
+	object
+		sprite planet/desert0
+		distance 283.964
+		period 34.658
+	object
+		sprite planet/rock5
+		distance 551.774
+		period 93.8753
+	object
+		sprite planet/rock12
+		distance 810.774
+		period 167.209
+	object
+		sprite planet/miranda
+		distance 1014.77
+		period 234.133
+	object
+		sprite planet/gas15
+		distance 1675.01
+		period 496.521
+		object
+			sprite planet/dust5
+			distance 237
+		object
+			sprite planet/dust0
+			distance 375
+
+system TS4
+	shrouded
+	pos -52.1725 1062.21
+	"display name" ???
+	government Uninhabited
+	habitable 135
+	belt 1211
+	"jump range" 50
+	link TS2
+	link TS6
+	asteroids "small rock" 22 1.958
+	asteroids "medium rock" 39 1.166
+	asteroids "large rock" 35 2.574
+	asteroids "small metal" 11 1.43
+	asteroids "medium metal" 35 1.1
+	asteroids "large metal" 13 3.08
+	minables neodymium 7 1.76775
+	minables silver 35 2.74847
+	haze _menu/haze-tear
+	object
+		sprite star/m8
+		period 10
+	object
+		sprite planet/lava2
+		distance 154.69
+		period 66.2348
+	object
+		sprite planet/rock11
+		distance 476.1
+		period 357.635
+	object
+		sprite planet/dust5
+		distance 769.71
+		period 735.163
+	object
+		sprite planet/gas2
+		distance 1411.92
+		period 1826.45
+		object
+			sprite planet/europa
+			distance 166
+		object
+			sprite planet/dust0
+			distance 258
+	object
+		sprite planet/neptune
+		distance 1973.17
+		period 3017.44
+		object
+			sprite planet/rock0
+			distance 186
+
+system TS5
+	shrouded
+	pos 125.827 1067.21
+	"display name" ???
+	government Uninhabited
+	habitable 320
+	belt 1754
+	"jump range" 50
+	link TS3
+	asteroids "small rock" 12 3.212
+	asteroids "medium rock" 3 2.508
+	asteroids "large rock" 6 5.104
+	asteroids "small metal" 1 5.808
+	asteroids "medium metal" 1 4.84
+	asteroids "large metal" 3 3.344
+	minables iron 7 6.78233
+	haze _menu/haze-tear
+	object
+		sprite star/m0
+		period 10
+	object
+		sprite planet/dust0
+		distance 132.81
+		period 34.224
+	object
+		sprite planet/ganymede
+		distance 366.85
+		period 157.115
+	object
+		sprite planet/desert6
+		distance 999.06
+		period 706.109
+	object
+		sprite planet/gas5
+		distance 2328.22
+		period 2512
+		object
+			sprite planet/dust4
+			distance 259
+		object
+			sprite planet/rock3
+			distance 415
+		object
+			sprite planet/io
+			distance 513
+
+system TS6
+	shrouded
+	pos -94.7877 985.088
+	"display name" ???
+	government Uninhabited
+	habitable 806.68
+	belt 1362
+	"jump range" 50
+	link TS10
+	link TS4
+	asteroids "small rock" 9 6.525
+	asteroids "medium rock" 97 7.0325
+	asteroids "large rock" 8 4.64
+	asteroids "small metal" 56 6.0175
+	asteroids "medium metal" 15 9.425
+	asteroids "large metal" 8 5.2925
+	minables copper 1 12.1122
+	minables silicon 2 10.6049
+	haze _menu/haze-tear
+	object
+		sprite star/k0
+		distance 36.0986
+		period 12.2256
+	object
+		sprite star/m0
+		distance 54.9014
+		period 12.2256
+		offset 180
+	object
+		sprite planet/desert8
+		distance 295.151
+		period 71.2663
+		object
+			sprite planet/dust3
+			distance 133
+	object
+		sprite planet/gas14
+		distance 835.441
+		period 339.384
+	object
+		sprite planet/gas1
+		distance 1421.53
+		period 753.272
+	object
+		sprite planet/gas0
+		distance 2267.49
+		period 1517.52
+		object
+			sprite planet/dust0
+			distance 267
+		object
+			sprite planet/ice7
+			distance 391
+		object
+			sprite planet/ice8
+			distance 557
+
+system TS7
+	shrouded
+	pos -103.252 946.457
+	"display name" ???
+	government Uninhabited
+	habitable 2372.76
+	belt 1512
+	"jump range" 50
+	link TS8
+	asteroids "small rock" 55 3.5584
+	asteroids "medium rock" 51 2.0992
+	asteroids "large rock" 65 1.792
+	asteroids "small metal" 13 1.6896
+	asteroids "medium metal" 100 1.7664
+	asteroids "large metal" 23 3.3792
+	minables neodymium 51 3.44164
+	minables titanium 5 3.77017
+	haze _menu/haze-tear
+	object
+		sprite star/f0
+		period 10
+	object
+		sprite planet/rock6
+		distance 165.44
+		period 16.8228
+	object
+		sprite planet/cloud0
+		distance 383.25
+		period 59.3148
+	object
+		sprite planet/cloud2
+		distance 906.09
+		period 215.623
+	object
+		sprite planet/gas5
+		distance 1610.09
+		period 510.758
+		object
+			sprite planet/oberon
+			distance 269
+	object
+		sprite planet/jupiter
+		distance 2526.34
+		period 1003.87
+
+system TS8
+	shrouded
+	pos -19.2516 908.457
+	"display name" ???
+	government Uninhabited
+	habitable 486.68
+	belt 1703
+	"jump range" 50
+	link TS7
+	link TS9
+	asteroids "small rock" 26 3.51
+	asteroids "medium rock" 34 2.322
+	asteroids "large rock" 10 1.593
+	asteroids "small metal" 51 4.023
+	asteroids "medium metal" 49 3.132
+	asteroids "large metal" 13 1.998
+	minables copper 43 3.82373
+	minables tungsten 6 3.90794
+	haze _menu/haze-tear
+	object
+		sprite star/k0
+		period 10
+	object
+		sprite planet/rock6
+		distance 149.96
+		period 33.1837
+	object
+		sprite planet/cloud5
+		distance 503.32
+		period 204.046
+	object
+		sprite planet/desert2
+		distance 929.88
+		period 512.391
+	object
+		sprite planet/gas8
+		distance 1709.17
+		period 1276.84
+	object
+		sprite planet/gas9
+		distance 3628.33
+		period 3949.31
+
+system TS9
+	shrouded
+	pos -167.743 881.013
+	"display name" ???
+	government Uninhabited
+	habitable 233.28
+	belt 1094
+	"jump range" 50
+	link TS8
+	asteroids "small rock" 5 1.7061
+	asteroids "medium rock" 28 0.9438
+	asteroids "large rock" 1 1.2342
+	asteroids "medium metal" 20 0.8228
+	asteroids "large metal" 24 0.9075
+	minables lead 3 1.0687
+	minables tungsten 2 1.23663
+	haze _menu/haze-tear
+	object
+		sprite star/m4
+		period 10
+	object
+		sprite planet/desert7
+		distance 174.25
+		period 92.0066
+	object
+		sprite planet/ice3
+		distance 468.5
+		period 405.624
+	object
+		sprite planet/desert5
+		distance 1094.51
+		period 1448.40
+	object
+		sprite planet/fog0
+		distance 1565.76
+		period 2478.26
+		object
+			sprite planet/rhea
+			distance 206
+	object
+		sprite planet/gas9
+		distance 3256.72
+		period 7434.13
+		object
+			sprite planet/ice0
+			distance 235
+		object
+			sprite planet/rock14
+			distance 360
+		object
+			sprite planet/dust5
+			distance 527
+
+system TS10
+	shrouded
+	pos 19.1149 832.638
+	"display name" ???
+	government Uninhabited
+	habitable 1715
+	belt 1683
+	"jump range" 50
+	link TS6
+	asteroids "large metal" 1 2.16
+	haze _menu/haze-tear
+	object
+		sprite star/f5
+		period 10
+	object
+		sprite planet/dust7
+		distance 123.44
+		period 13.2468
+	object
+		sprite planet/rock14
+		distance 444.13
+		period 90.4051
+	object
+		sprite planet/fog0
+		distance 777.37
+		period 209.348
+		object
+			sprite planet/rhea
+			distance 191
+	object
+		sprite planet/water0
+		distance 1118.81
+		period 361.461
+	object
+		sprite planet/desert9
+		distance 1770.42
+		period 719.519
+	object
+		sprite planet/gas6
+		distance 2346.67
+		period 1098.00
+		object
+			sprite planet/callisto
+			distance 298
+		object
+			sprite planet/rock3
+			distance 393
+
+system TS11
+	shrouded
+	pos 81.6165 919.934
+	"display name" ???
+	government Uninhabited
+	habitable 1080
+	belt 1682
+	"jump range" 50
+	link TS12
+	asteroids "small rock" 12 4.872
+	asteroids "medium rock" 28 4.984
+	asteroids "large rock" 3 5.824
+	asteroids "small metal" 10 5.32
+	asteroids "medium metal" 9 4.48
+	asteroids "large metal" 37 5.096
+	minables titanium 1 7.75993
+	minables uranium 1 5.2671
+	haze _menu/haze-tear
+	object
+		sprite star/g0
+		period 10
+	object
+		sprite planet/fog0
+		distance 315
+		period 68.0477
+		object
+			sprite planet/oberon
+			distance 191
+	object
+		sprite planet/lava0
+		distance 699.24
+		period 225.054
+	object
+		sprite planet/uranus
+		distance 1544.53
+		period 738.826
+		object
+			sprite planet/rock17
+			distance 222
+	object
+		sprite planet/gas7
+		distance 3097.78
+		period 2098.57
+		object
+			sprite planet/dust0
+			distance 221
+		object
+			sprite planet/luna
+			distance 314
+		object
+			sprite planet/europa
+			distance 466
+
+system TS12
+	shrouded
+	pos -88.3835 871.934
+	"display name" ???
+	government Uninhabited
+	habitable 1566.68
+	belt 1184
+	"jump range" 50
+	link TS11
+	asteroids "small rock" 4 3.3
+	asteroids "medium rock" 15 2.1
+	asteroids "large rock" 3 2.28
+	asteroids "small metal" 1 2.91
+	asteroids "medium metal" 169 4.32
+	asteroids "large metal" 1 2.1
+	haze _menu/haze-tear
+	object
+		sprite star/g0
+		distance 35.7241
+		period 12.4628
+	object
+		sprite star/k0
+		distance 79.2759
+		period 12.4628
+		offset 180
+	object
+		sprite planet/dust0
+		distance 242.686
+		period 38.1660
+	object
+		sprite planet/cloud0
+		distance 517.246
+		period 118.756
+		object
+			sprite planet/ice7
+			distance 138
+	object
+		sprite planet/titan
+		distance 820.686
+		period 237.342
+	object
+		sprite planet/desert5
+		distance 1236.5
+		period 438.933
+		object
+			sprite planet/ice0
+			distance 156
+	object
+		sprite planet/gas0
+		distance 2629.74
+		period 1361.37
+		object
+			sprite planet/oberon
+			distance 248
+		object
+			sprite planet/lava0
+			distance 384
+
+system TS13
+	shrouded
+	pos 75.0446 881.124
+	"display name" ???
+	government Uninhabited
+	habitable 486.68
+	belt 1939
+	"jump range" 50
+	asteroids "medium rock" 1 2.704
+	asteroids "large rock" 1 1.56
+	asteroids "small metal" 28 2.028
+	asteroids "medium metal" 77 1.82
+	asteroids "large metal" 14 3.094
+	minables aluminum 23 2.87343
+	haze _menu/haze-tear
+	object
+		sprite star/k0
+		period 10
+	object
+		sprite planet/rock11
+		distance 203.69
+		period 52.5311
+	object
+		sprite planet/cloud7
+		distance 506.38
+		period 205.909
+	object
+		sprite planet/rock4
+		distance 740.54
+		period 364.153
+	object
+		sprite planet/dust2
+		distance 1153.58
+		period 708.000
+	object
+		sprite planet/lava1
+		distance 1535.59
+		period 1087.36
+	object
+		sprite planet/gas4
+		distance 2121.75
+		period 1766.05
+		object
+			sprite planet/dust3
+			distance 230
+		object
+			sprite planet/dust1
+			distance 353
+		object
+			sprite planet/rock0
+			distance 446
+
+system TS14
+	shrouded
+	pos 14.0686 958.512
+	"display name" ???
+	government Uninhabited
+	habitable 233.28
+	belt 1276
+	"jump range" 50
+	asteroids "small rock" 6 2.3749
+	asteroids "medium rock" 28 1.9448
+	asteroids "large rock" 3 2.5432
+	asteroids "small metal" 70 2.7115
+	asteroids "medium metal" 64 2.3936
+	asteroids "large metal" 1 1.4586
+	minables aluminum 1 4.29839
+	minables tungsten 1 3.49841
+	haze _menu/haze-tear
+	object
+		sprite star/m4
+		period 10
+	object
+		sprite planet/dust2
+		distance 153.81
+		period 76.3021
+	object
+		sprite planet/lava4
+		distance 357.97
+		period 270.913
+	object
+		sprite planet/desert6
+		distance 572.26
+		period 547.583
+	object
+		sprite planet/gas7
+		distance 1105.07
+		period 1469.41
+		object
+			sprite planet/rock0
+			distance 241
+		object
+			sprite planet/dust0
+			distance 369
+	object
+		sprite planet/gas13
+		distance 2901.48
+		period 6251.57
+		object
+			sprite planet/dust3
+			distance 282
+
+system TS15
+	shrouded
+	pos 91.0686 1087.51
+	"display name" ???
+	government Uninhabited
+	habitable 1505.92
+	belt 1581
+	"jump range" 50
+	link TS16
+	asteroids "small rock" 14 4.06
+	asteroids "medium rock" 64 7.83
+	asteroids "large rock" 17 4.06
+	asteroids "small metal" 70 8.178
+	asteroids "medium metal" 21 4.872
+	asteroids "large metal" 53 5.626
+	minables iron 2 12.5852
+	minables neodymium 3 12.8262
+	minables titanium 11 10.8983
+	haze _menu/haze-tear
+	object
+		sprite star/g0
+		distance 34.2225
+		period 13.7194
+	object
+		sprite star/k5
+		distance 86.7775
+		period 13.7194
+		offset 180
+	object
+		sprite planet/cloud6
+		distance 255.668
+		period 42.1507
+	object
+		sprite planet/gas17
+		distance 662.668
+		period 175.887
+		object
+			sprite planet/oberon
+			distance 227
+	object
+		sprite planet/ocean0
+		distance 1405.67
+		period 543.395
+	object
+		sprite planet/gas7
+		distance 1978.92
+		period 907.681
+		object
+			sprite planet/rock0
+			distance 221
+		object
+			sprite planet/rock14
+			distance 344
+
+system TS16
+	shrouded
+	pos 148.774 1150.83
+	"display name" ???
+	government Uninhabited
+	habitable 1715
+	belt 1761
+	"jump range" 50
+	link TS15
+	asteroids "small rock" 45 2.304
+	asteroids "medium rock" 12 2.928
+	asteroids "large rock" 11 2.304
+	asteroids "small metal" 6 2.952
+	asteroids "medium metal" 154 3.048
+	asteroids "large metal" 1 3
+	minables aluminum 43 3.23704
+	minables iron 1 3.16275
+	haze _menu/haze-tear
+	object
+		sprite star/f5
+		period 10
+	object
+		sprite planet/desert10
+		distance 279
+		period 45.0126
+		object
+			sprite planet/ice0
+			distance 148
+	object
+		sprite planet/cloud2
+		distance 754.89
+		period 200.333
+		object
+			sprite planet/rock3
+			distance 193
+	object
+		sprite planet/water0
+		distance 1244.65
+		period 424.129
+	object
+		sprite planet/gas3
+		distance 2480.81
+		period 1193.48
+		object
+			sprite planet/callisto
+			distance 323
+		object
+			sprite planet/rock14
+			distance 479

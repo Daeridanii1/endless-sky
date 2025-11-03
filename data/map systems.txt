@@ -7317,8 +7317,8 @@ system Auhru
 		period 1520.57
 
 system Avasaa-Novaa
-	#shrouded
-	pos 71 917.52
+	pos 49 927.52
+	"jump range" 50
 	government Uninhabited
 	attributes predecessor "tangled shroud"
 	arrival 500
@@ -22695,12 +22695,12 @@ system Kashikt
 			period 13.0737
 
 system Kasii-Cavaasa
-	#shrouded
-	pos -21.76 909.31
+	pos 38.24 862.31
 	government Uninhabited
 	attributes predecessor "tangled shroud"
 	arrival 5000
 	habitable 17025
+	"jump range" 50
 	hazard "Predecessors Base Spatial Decay" 400
 	asteroids "small rock" 1 1
 	asteroids "small metal" 3 1
@@ -22717,12 +22717,12 @@ system Kasii-Cavaasa
 		period 3000
 
 system Kasii-Sola
-	#shrouded
-	pos -23 1089.98
+	pos 28 1133.98
 	government Uninhabited
 	attributes predecessor "tangled shroud"
 	arrival 500
 	habitable 320
+	"jump range" 50
 	hazard "Predecessors Base Spatial Decay" 600
 	asteroids "small rock" 1 1.005
 	asteroids "small metal" 1 1.17
@@ -22768,10 +22768,10 @@ system Kasii-Sola
 		period 10000
 
 system Kasi-Vasa-Novaa
-	#shrouded
-	pos -149.44 989.64
+	pos -121.44 1013.64
 	government Uninhabited
 	attributes predecessor "tangled shroud"
+	"jump range" 50
 	arrival 500
 	habitable 10
 	hazard "Predecessors Base Spatial Decay" 600
@@ -23008,12 +23008,12 @@ system Kella-Uoasa
 		period 10000
 
 system Khasola-Ryuit
-	#shrouded
-	pos -71.87 833.59
+	pos -47.87 797.59
 	government Uninhabited
 	attributes predecessor "tangled shroud"
 	arrival 5000
 	habitable 12000
+	"jump range" 50
 	hazard "Predecessors Base Spatial Decay" 600
 	asteroids "small metal" 2 1.5
 	asteroids "large metal" 1 1.3
@@ -23078,12 +23078,12 @@ system Khosa-Kaska
 			period 71
 
 system Kiiraj-Luue
-	#shrouded
-	pos -125.52 955.66
+	pos -159.52 916.66
 	government Uninhabited
 	attributes predecessor "tangled shroud"
 	arrival 2560
 	habitable 2560
+	"jump range" 50
 	hazard "Predecessors Base Spatial Decay" 200
 	hazard "Predecessors Spatial Rift Weak" 10000
 	hazard "Predecessors Spatial Rift Intense" 20000
@@ -26250,12 +26250,12 @@ system Matar
 			period 23.3043
 
 system Mavra-Ijsola
-	#shrouded
-	pos -68.67 883.61
+	pos -103.67 848.61
 	government Uninhabited
 	attributes predecessor "tangled shroud"
 	arrival 3000
 	habitable 3000
+	"jump range" 50
 	hazard "Predecessors Base Spatial Decay" 200
 	hazard "Predecessors Spatial Rift Weak" 10000
 	hazard "Predecessors Spatial Rift Intense" 20000
@@ -30292,12 +30292,12 @@ system Ossipago
 		period 1486.78
 
 system Oublaa-Khora
-	#shrouded
-	pos 24 1122
+	pos 51 1162
 	government Uninhabited
 	attributes predecessor
 	arrival 2160
 	habitable 2160
+	"jump range" 50
 	asteroids "small rock" 1 2
 	asteroids "small metal" 2 3
 	hazard "Predecessors Base Spatial Decay" 600
@@ -40660,12 +40660,12 @@ system Uuoru-Kella
 			offset 32
 
 system Uuoru-Sossa
-	#shrouded
-	pos -58 976.13
+	pos -23 984.13
 	government Uninhabited
 	attributes predecessor "tangled shroud"
 	arrival 2700
 	habitable 2700
+	"jump range" 50
 	hazard "Predecessors Base Spatial Decay" 100
 	hazard "Predecessors Spatial Rift Intense" 8000
 	haze _menu/haze-tear
@@ -41086,12 +41086,12 @@ system Vanguwo
 		period 3940.43
 
 system Vasa-Oorua
-	#shrouded
-	pos 31.3947 1014.88
+	pos 89.3947 1046.88
 	government Uninhabited
 	attributes predecessor "tangled shroud"
 	arrival 1705
 	habitable 1705
+	"jump range" 50
 	hazard "Predecessors Base Spatial Decay" 400
 	hazard "Predecessors Spatial Rift Weak" 10000
 	haze _menu/haze-tear
