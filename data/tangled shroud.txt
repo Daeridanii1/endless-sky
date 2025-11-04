@@ -12,7 +12,6 @@
 # this program. If not, see <https://www.gnu.org/licenses/>.
 
 mission "Shroud Randomize 1"
-	invisible
 	entering
 	destination "Earth"
 	to complete
@@ -28,13 +27,12 @@ mission "Shroud Randomize 1"
 		event "shroud randomize 1"
 	on enter
 		system
-			attributes "ts border"
+			not attributes "predecessor"
 		fail
 	on fail
 		clear "shuffled shroud"
 
 mission "Shroud Randomize 2"
-	invisible
 	entering
 	destination "Earth"
 	to complete
@@ -50,13 +48,12 @@ mission "Shroud Randomize 2"
 		event "shroud randomize 2"
 	on enter
 		system
-			attributes "ts border"
+			not attributes "predecessor"
 		fail
 	on fail
 		clear "shuffled shroud"
 
 mission "Shroud Randomize 3"
-	invisible
 	entering
 	destination "Earth"
 	to complete
@@ -72,13 +69,12 @@ mission "Shroud Randomize 3"
 		event "shroud randomize 3"
 	on enter
 		system
-			attributes "ts border"
+			not attributes "predecessor"
 		fail
 	on fail
 		clear "shuffled shroud"
 
 mission "Shroud Randomize 4"
-	invisible
 	entering
 	destination "Earth"
 	to complete
@@ -94,7 +90,7 @@ mission "Shroud Randomize 4"
 		event "shroud randomize 4"
 	on enter
 		system
-			attributes "ts border"
+			not attributes "predecessor"
 		fail
 	on fail
 		clear "shuffled shroud"
