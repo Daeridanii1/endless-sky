@@ -169,7 +169,7 @@ system TS9
 
 system TS10
 	shrouded
-	pos 19.1149 832.638
+	pos -66.8851 825.638
 	"display name" ???
 	government Uninhabited
 	habitable 1715

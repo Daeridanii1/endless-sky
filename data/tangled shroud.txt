@@ -71,7 +71,7 @@ event "shroud randomize 1" # This is the "rest state" of the Shroud
 	system TS9
 		pos -167.743 881.013
 	system TS10
-		pos 19.1149 832.638
+		pos -66.8851 825.638
 	system TS11
 		pos 81.6165 919.934
 	system TS12
