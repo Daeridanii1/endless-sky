@@ -13,7 +13,9 @@ system TS1
 	hazard "Predecessors Spatial Rift Weak" 10000
 	object
 		sprite star/anomaly-a
-		period 1
+		distance 1
+		period 3
+
 
 system TS2
 	shrouded
@@ -32,7 +34,9 @@ system TS2
 	hazard "Predecessors Spatial Rift Weak" 10000
 	object
 		sprite star/anomaly-b
-		period 1
+		distance 1
+		period 3
+
 
 system TS3
 	shrouded
@@ -50,7 +54,9 @@ system TS3
 	hazard "Predecessors Spatial Rift Weak" 10000
 	object
 		sprite star/anomaly-a
-		period 1
+		distance 1
+		period 3
+
 
 system TS4
 	shrouded
@@ -68,7 +74,8 @@ system TS4
 	hazard "Predecessors Spatial Rift Weak" 10000
 	object
 		sprite star/anomaly-c
-		period 1
+		distance 1
+		period 3
 
 
 system TS5
@@ -86,7 +93,8 @@ system TS5
 	hazard "Predecessors Spatial Rift Weak" 10000
 	object
 		sprite star/anomaly-d
-		period 1
+		distance 1
+		period 3
 
 system TS6
 	shrouded
@@ -104,7 +112,8 @@ system TS6
 	hazard "Predecessors Spatial Rift Weak" 10000
 	object
 		sprite star/anomaly-c
-		period 1
+		distance 1
+		period 3
 
 system TS7
 	shrouded
@@ -121,7 +130,8 @@ system TS7
 	hazard "Predecessors Spatial Rift Weak" 10000
 	object
 		sprite star/anomaly-b
-		period 1
+		distance 1
+		period 3
 
 system TS8
 	shrouded
@@ -139,7 +149,8 @@ system TS8
 	hazard "Predecessors Spatial Rift Weak" 10000
 	object
 		sprite star/anomaly-d
-		period 1
+		distance 1
+		period 3
 
 system TS9
 	shrouded
@@ -156,7 +167,8 @@ system TS9
 	hazard "Predecessors Spatial Rift Weak" 10000
 	object
 		sprite star/anomaly-a
-		period 1
+		distance 1
+		period 3
 
 system TS10
 	shrouded
@@ -173,7 +185,8 @@ system TS10
 	hazard "Predecessors Spatial Rift Weak" 10000
 	object
 		sprite star/anomaly-b
-		period 1
+		distance 1
+		period 3
 
 system TS11
 	shrouded
@@ -190,7 +203,8 @@ system TS11
 	hazard "Predecessors Spatial Rift Weak" 10000
 	object
 		sprite star/anomaly-c
-		period 1
+		distance 1
+		period 3
 
 system TS12
 	shrouded
@@ -207,7 +221,8 @@ system TS12
 	hazard "Predecessors Spatial Rift Weak" 10000
 	object
 		sprite star/anomaly-a
-		period 1
+		distance 1
+		period 3
 
 system TS13
 	shrouded
@@ -223,7 +238,8 @@ system TS13
 	hazard "Predecessors Spatial Rift Weak" 10000
 	object
 		sprite star/anomaly-c
-		period 1
+		distance 1
+		period 3
 
 system TS14
 	shrouded
@@ -239,7 +255,8 @@ system TS14
 	hazard "Predecessors Spatial Rift Weak" 10000
 	object
 		sprite star/anomaly-d
-		period 1
+		distance 1
+		period 3
 
 system TS15
 	shrouded
@@ -256,7 +273,8 @@ system TS15
 	hazard "Predecessors Spatial Rift Weak" 10000
 	object
 		sprite star/anomaly-a
-		period 1
+		distance 1
+		period 3
 
 system TS16
 	shrouded
@@ -273,4 +291,5 @@ system TS16
 	hazard "Predecessors Spatial Rift Weak" 10000
 	object
 		sprite star/anomaly-b
-		period 1
+		distance 1
+		period 3
