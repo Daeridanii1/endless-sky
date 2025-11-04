@@ -15625,7 +15625,7 @@ system Esix
 		period 1163.59
 
 system "Eta Carinae"
-	pos -212.62 928.99
+	pos -194.62 939.99
 	government Uninhabited
 	attributes predecessor "tangled shroud" "ts border"
 	arrival 5000
