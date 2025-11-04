@@ -3,8 +3,7 @@ system TS1
 	pos -5.72424 1116.45
 	"display name" ???
 	government Uninhabited
-	habitable 2160
-	belt 1529
+	attributes "anomalous" "predecessor" "tangled shroud"
 	"jump range" 50
 	link TS2
 	haze _menu/haze-tear
@@ -21,8 +20,7 @@ system TS2
 	pos 25.2758 1035.45
 	"display name" ???
 	government Uninhabited
-	habitable 135
-	belt 1890
+	attributes "anomalous" "predecessor" "tangled shroud"
 	"jump range" 50
 	link TS1
 	link TS3
@@ -41,8 +39,7 @@ system TS3
 	pos 99.4393 986.62
 	"display name" ???
 	government Uninhabited
-	habitable 2859.44
-	belt 1999
+	attributes "anomalous" "predecessor" "tangled shroud"
 	"jump range" 50
 	link TS2
 	link TS5
@@ -60,8 +57,7 @@ system TS4
 	pos -52.1725 1062.21
 	"display name" ???
 	government Uninhabited
-	habitable 135
-	belt 1211
+	attributes "anomalous" "predecessor" "tangled shroud"
 	"jump range" 50
 	link TS2
 	link TS6
@@ -80,8 +76,7 @@ system TS5
 	pos 125.827 1067.21
 	"display name" ???
 	government Uninhabited
-	habitable 320
-	belt 1754
+	attributes "anomalous" "predecessor" "tangled shroud"
 	"jump range" 50
 	link TS3
 	haze _menu/haze-tear
@@ -98,8 +93,7 @@ system TS6
 	pos -94.7877 985.088
 	"display name" ???
 	government Uninhabited
-	habitable 806.68
-	belt 1362
+	attributes "anomalous" "predecessor" "tangled shroud"
 	"jump range" 50
 	link TS10
 	link TS4
@@ -117,8 +111,7 @@ system TS7
 	pos -103.252 946.457
 	"display name" ???
 	government Uninhabited
-	habitable 2372.76
-	belt 1512
+	attributes "anomalous" "predecessor" "tangled shroud"
 	"jump range" 50
 	link TS8
 	haze _menu/haze-tear
@@ -135,8 +128,7 @@ system TS8
 	pos -33.2516 925.457
 	"display name" ???
 	government Uninhabited
-	habitable 486.68
-	belt 1703
+	attributes "anomalous" "predecessor" "tangled shroud"
 	"jump range" 50
 	link TS7
 	link TS9
@@ -154,8 +146,7 @@ system TS9
 	pos -167.743 881.013
 	"display name" ???
 	government Uninhabited
-	habitable 233.28
-	belt 1094
+	attributes "anomalous" "predecessor" "tangled shroud"
 	"jump range" 50
 	link TS8
 	haze _menu/haze-tear
@@ -172,8 +163,7 @@ system TS10
 	pos -28.8851 863.638
 	"display name" ???
 	government Uninhabited
-	habitable 1715
-	belt 1683
+	attributes "anomalous" "predecessor" "tangled shroud"
 	"jump range" 50
 	link TS6
 	haze _menu/haze-tear
@@ -190,8 +180,7 @@ system TS11
 	pos 81.6165 919.934
 	"display name" ???
 	government Uninhabited
-	habitable 1080
-	belt 1682
+	attributes "anomalous" "predecessor" "tangled shroud"
 	"jump range" 50
 	link TS12
 	haze _menu/haze-tear
@@ -208,8 +197,7 @@ system TS12
 	pos -88.3835 871.934
 	"display name" ???
 	government Uninhabited
-	habitable 1566.68
-	belt 1184
+	attributes "anomalous" "predecessor" "tangled shroud"
 	"jump range" 50
 	link TS11
 	haze _menu/haze-tear
@@ -226,8 +214,7 @@ system TS13
 	pos 75.0446 881.124
 	"display name" ???
 	government Uninhabited
-	habitable 486.68
-	belt 1939
+	attributes "anomalous" "predecessor" "tangled shroud"
 	"jump range" 50
 	haze _menu/haze-tear
 	"starfield density" 0
@@ -243,8 +230,7 @@ system TS14
 	pos 14.0686 958.512
 	"display name" ???
 	government Uninhabited
-	habitable 233.28
-	belt 1276
+	attributes "anomalous" "predecessor" "tangled shroud"
 	"jump range" 50
 	haze _menu/haze-tear
 	"starfield density" 0
@@ -260,8 +246,7 @@ system TS15
 	pos 91.0686 1087.51
 	"display name" ???
 	government Uninhabited
-	habitable 1505.92
-	belt 1581
+	attributes "anomalous" "predecessor" "tangled shroud"
 	"jump range" 50
 	link TS16
 	haze _menu/haze-tear
@@ -278,8 +263,7 @@ system TS16
 	pos 148.774 1150.83
 	"display name" ???
 	government Uninhabited
-	habitable 1715
-	belt 1761
+	attributes "anomalous" "predecessor" "tangled shroud"
 	"jump range" 50
 	link TS15
 	haze _menu/haze-tear
