@@ -360,6 +360,20 @@ star "planet/browndwarf-y-rogue"
 	wind 0.3
 	icon "map/brown-dwarf-star"
 
+# Predecessor space anomalies
+star "star/anomaly-a"
+	power 1
+	wind 1
+star "star/anomaly-b"
+	power 1
+	wind 1
+star "star/anomaly-c"
+	power 1
+	wind 1
+star "star/anomaly-d"
+	power 1
+	wind 1
+
 # Extra stars kept for backwards compatibility.
 star "star/m4"
 	power 0.62

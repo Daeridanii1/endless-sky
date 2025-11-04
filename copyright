@@ -3894,6 +3894,15 @@ License: CC0
 Comment: Derived from works by NASA in the public domain.
 
 Files:
+ images/star/anomaly-a*
+ images/star/anomaly-b*
+ images/star/anomaly-c*
+ images/star/anomaly-d*
+Copyright: Daeridanii (https://github.com/Daeridanii1)
+License: CC-BY-SA-4.0
+Comment: Derived from works by the European Southern Observatory (ESO) under CC-BY-4.0.
+
+Files:
  images/land/fog12*
 Copyright: US National Park Service
 License: public-domain

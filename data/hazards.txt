@@ -377,3 +377,22 @@ effect "airstream 2"
 	"random angle" 15
 	"random spin" 180
 	"velocity scale" 0
+
+hazard "TS Anomaly Sparks"
+	"constant strength"
+	"range" 180
+	"period" 1
+	"duration" 1
+	"environmental effect" "anomaly sparks" 3
+	"environmental effect" "anomaly sparks large"
+
+effect "anomaly sparks"
+	sprite "effect/zapper impact"
+		"frame rate" 15
+	"random lifetime" 45
+
+effect "anomaly sparks large"
+	sprite "effect/zapper impact"
+		"frame rate" 15
+		scale 4.0
+	lifetime 15
