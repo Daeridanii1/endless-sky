@@ -85,7 +85,7 @@ event "shroud randomize 1" # This is the "rest state" of the Shroud
 	system TS16
 		pos 148.774 1150.83
 
-event "shroud randomize 2" # This is the "rest state" of the Shroud
+event "shroud randomize 2"
 	system TS1
 		pos -111.724 985.45
 	system TS2
@@ -119,7 +119,7 @@ event "shroud randomize 2" # This is the "rest state" of the Shroud
 	system TS16
 		pos 75.774 954.83
 
-event "shroud randomize 3" # This is the "rest state" of the Shroud
+event "shroud randomize 3"
 	system TS1
 		pos -14.7242 943.45
 	system TS2
