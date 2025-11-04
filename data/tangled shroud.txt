@@ -15,54 +15,89 @@ mission "Shroud Randomize 1"
 	invisible
 	entering
 	destination "Earth"
+	to complete
+		never
 	repeat
 	source
 		attributes "ts border"
 	to offer
+		not "shuffled shroud"
 		"days since epoch" % 4 == 0
 	on accept
+		set "shuffled shroud"
 		event "shroud randomize 1"
+	on enter
+		system
+			attributes "ts border"
 		fail
+	on fail
+		clear "shuffled shroud"
 
 mission "Shroud Randomize 2"
 	invisible
 	entering
 	destination "Earth"
+	to complete
+		never
 	repeat
 	source
 		attributes "ts border"
 	to offer
+		not "shuffled shroud"
 		( "days since epoch" + 1 ) % 4 == 0
 	on accept
+		set "shuffled shroud"
 		event "shroud randomize 2"
+	on enter
+		system
+			attributes "ts border"
 		fail
+	on fail
+		clear "shuffled shroud"
 
 mission "Shroud Randomize 3"
 	invisible
 	entering
 	destination "Earth"
+	to complete
+		never
 	repeat
 	source
 		attributes "ts border"
 	to offer
+		not "shuffled shroud"
 		( "days since epoch" + 2 ) % 4 == 0
 	on accept
+		set "shuffled shroud"
 		event "shroud randomize 3"
+	on enter
+		system
+			attributes "ts border"
 		fail
+	on fail
+		clear "shuffled shroud"
 
 mission "Shroud Randomize 4"
 	invisible
 	entering
 	destination "Earth"
+	to complete
+		never
 	repeat
 	source
 		attributes "ts border"
 	to offer
+		not "shuffled shroud"
 		( "days since epoch" + 3 ) % 4 == 0
 	on accept
+		set "shuffled shroud"
 		event "shroud randomize 4"
+	on enter
+		system
+			attributes "ts border"
 		fail
-
+	on fail
+		clear "shuffled shroud"
 
 event "shroud randomize 1" # This is the "rest state" of the Shroud
 	system TS1
