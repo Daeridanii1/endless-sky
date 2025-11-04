@@ -132,7 +132,7 @@ system TS7
 
 system TS8
 	shrouded
-	pos -19.2516 908.457
+	pos -33.2516 925.457
 	"display name" ???
 	government Uninhabited
 	habitable 486.68
@@ -169,7 +169,7 @@ system TS9
 
 system TS10
 	shrouded
-	pos -66.8851 825.638
+	pos -28.8851 863.638
 	"display name" ???
 	government Uninhabited
 	habitable 1715

@@ -67,11 +67,11 @@ event "shroud randomize 1" # This is the "rest state" of the Shroud
 	system TS7
 		pos -103.252 946.457
 	system TS8
-		pos -19.2516 908.457
+		pos -33.2516 925.457
 	system TS9
 		pos -167.743 881.013
 	system TS10
-		pos -66.8851 825.638
+		pos -28.8851 863.638
 	system TS11
 		pos 81.6165 919.934
 	system TS12
@@ -93,11 +93,11 @@ event "shroud randomize 2" # This is the "rest state" of the Shroud
 	system TS3
 		pos -16.5607 1062.62
 	system TS4
-		pos -75.1725 825.21
+		pos -37.1725 868.21
 	system TS5
 		pos 85.827 1145.21
 	system TS6
-		pos 60.2123 834.088
+		pos 97.2123 830.088
 	system TS7
 		pos -9.252 928.457
 	system TS8
@@ -131,7 +131,7 @@ event "shroud randomize 3" # This is the "rest state" of the Shroud
 	system TS5
 		pos 148.827 1106.21
 	system TS6
-		pos -16.7877 820.088
+		pos -21.7877 869.088
 	system TS7
 		pos 173.748 1079.46
 	system TS8
@@ -143,7 +143,7 @@ event "shroud randomize 3" # This is the "rest state" of the Shroud
 	system TS11
 		pos 111.617 984.934
 	system TS12
-		pos -75.3835 873.934
+		pos -82.3835 876.934
 	system TS13
 		pos -8.95538 1051.12
 	system TS14

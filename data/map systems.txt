@@ -23008,7 +23008,7 @@ system Kella-Uoasa
 		period 10000
 
 system Khasola-Ryuit
-	pos -47.87 797.59
+	pos -14.87 831.59
 	government Uninhabited
 	attributes predecessor "tangled shroud"
 	arrival 5000
