@@ -19,7 +19,7 @@ mission "Shroud Randomize 1"
 	source
 		attributes "ts border"
 	to offer
-		"days since epoch" % 3 == 0
+		"days since epoch" % 4 == 0
 	on accept
 		event "shroud randomize 1"
 		fail
@@ -32,7 +32,7 @@ mission "Shroud Randomize 2"
 	source
 		attributes "ts border"
 	to offer
-		( "days since epoch" + 1 ) % 3 == 0
+		( "days since epoch" + 1 ) % 4 == 0
 	on accept
 		event "shroud randomize 2"
 		fail
@@ -45,9 +45,22 @@ mission "Shroud Randomize 3"
 	source
 		attributes "ts border"
 	to offer
-		( "days since epoch" + 2 ) % 3 == 0
+		( "days since epoch" + 2 ) % 4 == 0
 	on accept
 		event "shroud randomize 3"
+		fail
+
+mission "Shroud Randomize 4"
+	invisible
+	entering
+	destination "Earth"
+	repeat
+	source
+		attributes "ts border"
+	to offer
+		( "days since epoch" + 3 ) % 4 == 0
+	on accept
+		event "shroud randomize 4"
 		fail
 
 
@@ -152,3 +165,38 @@ event "shroud randomize 3"
 		pos 154.069 1145.51
 	system TS16
 		pos 113.774 1015.83
+
+event "shroud randomize 4"
+	system TS1
+		pos 24.2758 1168.45
+	system TS2
+		pos 116.276 979.45
+	system TS3
+		pos -23.5607 1063.62
+	system TS4
+		pos 86.827 807.21
+	system TS5
+		pos -126.173 899.21
+	system TS6
+		pos -19.7877 871.088
+	system TS7
+		pos 112.748 1073.46
+	system TS8
+		pos 139.748 950.457
+	system TS9
+		pos -1.74298 960.013
+	system TS10
+		pos -92.885 877.638
+	system TS11
+		pos -85.383 915.934
+	system TS12
+		pos 79.6165 876.934
+	system TS13
+		pos -53.9554 937.12
+	system TS14
+		pos -3.9314 1088.51
+	system TS15
+		pos -90.931 1003.51
+	system TS16
+		pos 82.774 908.83
+
