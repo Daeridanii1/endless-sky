@@ -3140,7 +3140,7 @@ system Aileron
 system Aki'il
 	pos -83 722
 	government Uninhabited
-	attributes "ember waste" "graveyard"
+	attributes "ember waste" "graveyard" "ts border"
 	arrival 1505
 	ramscoop
 		universal 0
@@ -16952,6 +16952,54 @@ system Fingol
 		distance 2463.48
 		period 4209.36
 
+system Firebreak
+	pos -77.0358 782.939
+	government Uninhabited
+	attributes "predecessor" "tangled shroud"
+	habitable 659.2
+	belt 1630
+	haze _menu/haze-tear
+	"jump range" 50
+	link Khasola-Ryuit
+	asteroids "large metal" 1 0.819
+	hazard "Predecessors Base Spatial Decay" 600
+	object
+		sprite star/k5
+		distance 39.635
+		period 18.4662
+	object
+		sprite star/m4
+		distance 72.365
+		period 18.4662
+		offset 180
+	object
+		sprite planet/ice1
+		distance 323.855
+		period 101.743
+	object
+		sprite planet/gas17
+		distance 921.945
+		period 488.694
+		object
+			sprite planet/oberon
+			distance 207
+	object
+		sprite planet/gas7
+		distance 2257.04
+		period 1871.92
+		object
+			sprite planet/io
+			distance 225
+		object
+			sprite planet/dust7
+			distance 331
+		object
+			sprite planet/rock14
+			distance 456
+		object
+			sprite planet/rock3
+			distance 625
+
 system Firmament
 	pos -304 800
 	government Uninhabited
@@ -23013,6 +23061,7 @@ system Khasola-Ryuit
 	attributes predecessor "tangled shroud"
 	arrival 5000
 	habitable 12000
+	link Firebreak
 	"jump range" 50
 	hazard "Predecessors Base Spatial Decay" 600
 	asteroids "small metal" 2 1.5
