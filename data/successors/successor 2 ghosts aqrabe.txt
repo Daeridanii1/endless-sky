@@ -41,7 +41,7 @@ mission "Successors: Ghosts Aqrabe 1"
 			`	"no, think I, for..."`
 			`	The voices are interrupted by another, this one startlingly close and real.`
 			label interrupt
-			`	"I see thou hast met our saints, Captain." Another Successor emerges from behind you. They wear a similar outfit; the only difference seems to be a slightly redder-hued glint. The "saints" now follow them around, probing and slapping at the glass.`
+			`	"I see thou hast met our saints, Captain." Another Successor emerges from behind you. They wear a similar outfit as the one before, with the only difference seeming to be a slightly redder-hued glint. The "saints" now follow them around, probing and slapping at the glass.`
 			choice
 				`	"Saints?"`
 					goto saints
@@ -53,7 +53,7 @@ mission "Successors: Ghosts Aqrabe 1"
 			`	"They're saints, or relics," they say. "Fragments of unliving minds, free of pain and death, surviving in parts. Each one once a mind of renown, one worth t'be preserved even as a memory. They're intrigued by thee. Only one of them ever saw something of your kind, and it did not expect to ever see one of you again - not even in eternity."`
 			`	"And who are you?" you ask.`
 			label identity
-			`	They splay their arms, a little more subtly than most of the Successors you've seen. "Aqrabe I- Sola. And you are Captain <first> <last>. How queer an introduction is to thee, for thou art the only one here for whom 'twould be needed." They make a noise you're sure is chuckling. "A scion of Aqrabe's House - by marriage, not by blood. But only just. But no, tell me, how is it that our wormhole grants thee passage without a well-equipped ship of ours?"`
+			`	They splay their arms, a little more subtly than most of the Successors you've seen. "Aqrabe I- Sola. And you are Captain <first> <last>. How queer an introduction is to thee, for thou art the only one here for whom 'twould be needed." They make a noise you're sure is chuckling. "A scion of Aqrabe's House - by marriage, not by blood. But only just. But now, tell me, how is it that our wormhole grants thee passage without a well-equipped ship of ours?"`
 			choice
 				`	"I carry a quantum keystone on my ship that lets me pass through all sorts of unstable wormholes."`
 					goto keystone
@@ -150,7 +150,7 @@ mission "Successors: Ghosts Aqrabe 2"
 		ship "Seiitej (Armor Keystone)" "Airi-o-Ijta"
 	on stopover
 		conversation
-			`The two Seiitejen set down along with the <ship> along the edge of a dried lake, and Tiliia immediately goes to communicate with their captains over comms. After a couple of minutes, they return to you on the bridge, noting down some data on a metallic pad. "The other craft report little issue with their journeys," they say. "And a minor quiver'f differences 'tween thy stones and our armor. But 'twill require us t'return t'make sense of them - I dare not do so here."`
+			`The two Seiitejen set down along with the <ship> along the edge of a dried lake, and Tiliia immediately goes to communicate with their captains over comms. After a couple of minutes, they join you on your bridge, noting down some data on a metallic pad. "The other craft report little issue with their journeys," they say. "And a minor quiver'f differences 'tween thy stones and our armor. But 'twill require us t'return t'make sense of them - I dare not do so here."`
 	on complete
 		dialog `Tiliia offers a quick goodbye and asks you to meet them back in the spaceport later, once they've had time to process their data.`
 		log "Escorted a keystone-equipped and multimodal armor ship through the Successors' wormhole."
@@ -171,7 +171,7 @@ mission "Successors: Ghosts Aqrabe 3"
 			choice
 				`	"I have."`
 				`	"Where are you going with this?"`
-			`	Tiliia continues. "The star of that system is borne upon by a number of stellar metal gardens, vast stations to grow in the star's harsh radiation the rare metals necessary to our works. Their bounty is here the key to our success. Forty tons or so would be enough to subdivide those keystones to supply all of the New Houses. We could render our wormhole-crossing armor obsolete - improve our probes, perform more archaeology." They pause, and a wave of color bounds down their limbs. "It could even help solve this present mystery of ours. So what thinks thou?"`
+			`	Tiliia continues. "The star of that system is borne upon by a number of stellar metal gardens, vast stations to grow in the star's harsh radiation the rare metals necessary to our works. Their bounty is the key to our success. Forty tons or so would be enough to subdivide those keystones to supply all of the New Houses. We could render our wormhole-crossing armor obsolete - improve our probes, perform more archaeology." They pause, and a wave of color bounds down their limbs. "It could even help solve this present mystery of ours. So what thinks thou?"`
 			choice
 				`	"You want me to fly into a star? Are you crazy?"`
 					goto shocked
@@ -187,7 +187,7 @@ mission "Successors: Ghosts Aqrabe 3"
 		conversation
 			branch "no shields"
 				"flagship shields" <= 0
-			`Your ship protests even as you near Kasii-Cavaasa, alarms ringing incessantly and heat meters spiking. The stellar metal garden is still little more than a dot against the roiling mass of the star. As you descend to it, the cockpit grows uncomfortably hot and is thick with the scent of ozone; Tiliia looks even more miserable than you in the heat. Suddenly, something happens with the shields, and the intense heat of the star begins scouring bits of the <ship>'s hull. Tiliia finally speaks: "Enough, captain. We shall have to regroup and find a different strategy."`
+			`Your ship protests even as you near Kasii-Cavaasa, alarms ringing incessantly and heat meters spiking. The stellar metal garden is still little more than a dot against the roiling mass of the star. As you descend upon it, the cockpit grows uncomfortably hot and is thick with the scent of ozone; Tiliia looks even more miserable than you in the heat. Suddenly, something happens with the shields, and the intense heat of the star begins scouring bits of the <ship>'s hull. Tiliia finally speaks: "Enough, captain. We shall have to regroup and find a different strategy."`
 			choice
 				`	(Retreat.)`
 				`	(Press on.)`
@@ -195,7 +195,7 @@ mission "Successors: Ghosts Aqrabe 3"
 			`	You order the <ship> upward from the star, and the alarms eventually quiet. "Take us back to <origin>," says Tiliia, looking a little dejected. "We must decide what is to be done there."`
 				flee
 			label onward
-			`	The <ship> braves the heat a minute or so longer, despite Tiliia's protests. The shields don't give out completely until a solar flare suddenly engulfs the ship, instantly vaporizing the <ship>, you, and Tiliia and scattering your atoms among the cold and indifferent stars.`
+			`	The <ship> braves the heat a minute or so longer, despite Tiliia's protests. The shields don't give out completely until a solar flare suddenly engulfs the ship, instantly vaporizing it, you, and Tiliia and scattering your atoms among the cold and indifferent stars.`
 				die
 
 			label "no shields"
