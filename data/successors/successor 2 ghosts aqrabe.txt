@@ -53,7 +53,7 @@ mission "Successors: Ghosts Aqrabe 1"
 			`	"They're saints, or relics," they say. "Fragments of unliving minds, free of pain and death, surviving in parts. Each one once a mind of renown, one worth t'be preserved even as a memory. They're intrigued by thee. Only one of them ever saw something of your kind, and it did not expect to ever see one of you again - not even in eternity."`
 			`	"And who are you?" you ask.`
 			label identity
-			`	They splay their arms, a little more subtly than most of the Successors you've seen. "Aqrabe Ia Sola. And you are Captain <first> <last>. How queer an introduction is to thee, for thou art the only one here for whom 'twould be needed." They make a noise you're sure is chuckling. "A scion of Aqrabe's House - by marriage, not by blood. But only just. But no, tell me, how is it that our wormhole grants thee passage without a well-equipped ship of ours?"`
+			`	They splay their arms, a little more subtly than most of the Successors you've seen. "Aqrabe I- Sola. And you are Captain <first> <last>. How queer an introduction is to thee, for thou art the only one here for whom 'twould be needed." They make a noise you're sure is chuckling. "A scion of Aqrabe's House - by marriage, not by blood. But only just. But no, tell me, how is it that our wormhole grants thee passage without a well-equipped ship of ours?"`
 			choice
 				`	"I carry a quantum keystone on my ship that lets me pass through all sorts of unstable wormholes."`
 					goto keystone
@@ -62,7 +62,7 @@ mission "Successors: Ghosts Aqrabe 1"
 				"successors: ghosts suspicion" ++
 			`	"Oh, don't think we haven't scanned thy craft, Captain! Amateur secrecy shall get thee nowhere." A slow ripple of pale blue cascades over their face.`
 			label keystone
-			`	"In short, we wish to better know these stones of thine. Their structure, their function, their nature. And by this understanding of one more great mystery, to one day produce our own, less intensive and demanding than the forming of our armors. Aqrabe is willing to pay thee to deliver fifty of these to us, more than enough to offset whatever it costs thee for their acquisition."`
+			`	Sola nods. "In short, we wish to better know these stones of thine. Their structure, their function, their nature. And by this understanding of one more great mystery, to one day produce our own, less intensive and demanding than the forming of our armors. Aqrabe is willing to pay thee to deliver fifty of these to us, more than enough to offset whatever it costs thee for their acquisition."`
 			choice
 				`	"Very well, I accept."`
 				`	"I'd rather not work with Aqrabe."`

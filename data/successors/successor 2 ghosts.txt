@@ -138,8 +138,8 @@ mission "Successors: Ghosts QSI 2"
 	source
 		government "House Kaatrij"
 	to offer
-		has "successors kaatrij patron"
-		not "successors: ghosts restriction lifted"
+		has "event: successors: ghosts restrict"
+		not "Successors: Ghosts 10: offered"
 	on offer
 		conversation
 			`Though the Kaatrij spaceport is usually quiet, its patrons speaking in hushed whispers, today it is utterly soundless. The very few Successors who go about their business inside do so without a word and stick to only the most thinly-hydrated pathways such that they leave only the smallest of splashes in their wake.`
@@ -849,7 +849,7 @@ conversation "saajret returns"
 	choice
 		`	"I beg your pardon?"`
 		`	"A little too closely, actually."`
-	`	They continue, the color continuing to sparkle on their skin. "Beautiful beasts, aren't they? Truly aspirational; adept at camouflage, hiding themselves beyond all but the most scrutinizing gaze before closing in on their quarry. In the early days of Kaatrij, when the Kijran were still new, some particularly well-cloaked ones slipped into a weather-control tower. Perhaps," they say, "one might learn from their example, were there somewhere notable one wished to go."`
+	`	They continue, the color continuing to sparkle on their skin. "Beautiful beasts, aren't they? Truly aspirational; adept at camouflage, hiding themselves beyond all but the most scrutinizing gaze before closing in on their quarry. In the early days of Kaatrij, when the Kijran were still new, some particularly well-cloaked ones slipped into a weather-control tower. Perhaps," they say, "one might learn from their example, were there somewhere notable one wished to go." They cast their gaze upward, where the shimmering dots of planets above peek through the clouds.`
 	choice
 		`	"Why are you telling me this?"`
 		`	"Are you trying to tell me something?"`
@@ -1057,7 +1057,7 @@ mission "Successors: Ghosts 10"
 			label discreet
 			action
 				set "Successors: Ghosts: discreet"
-			`	"Most discreet, Captain," they say. "But forgive me for not taking thy word alone. To that, Kaatrij is willing to make thee an offer: a formal relation with our House, that thou mightst be brought into our circle of knoweldge and receive our boons. And in turn, thou wouldst also be subject to our directives, including those of silence. An arrangement, Kaatrij believes, of mutual benefit."`
+			`	"Most discreet, Captain," they say. "But forgive me for not taking thy word alone. To that, Kaatrij is willing to make thee an offer: a formal relation with our House, that thou mightst be brought into our circle of knowledge and receive our boons. And in turn, thou wouldst also be subject to our directives, including those of silence. An arrangement, Kaatrij believes, of mutual benefit."`
 			choice
 				`	"And what would House Sioeora think of this?"`
 					to display
@@ -1944,7 +1944,7 @@ mission "Successors: Ghosts 20"
 					goto skipped
 			`	While most Successors are waiting outside the entrance to what must be a massive room, you are instead guided to an inconspicuous and out-of-the-way door, guarded by a pair of Successor soldiers. Neither one reacts to your attempt to pass, and as you step behind the door, it becomes clear why you aren't lining up with the general public: that massive room is entirely filled with water, a gigantic sphere with lights, platforms, and countless seats all built within it. A few small rooms like the one you now stand in are built into the walls like little transparent air bubbles at the shore of a great sea.`
 			`	You are joined by three other Successors after a few minutes, each of whom takes their place in the little room. The ceremony begins shortly after. From apertures in the bottom of the sphere, legions of soldiers emerge, half wearing the colors of House Chydiyi and the other half of House Myurej. The two small armies swim around each other, interleaving their lines of bodies like the Ribbons themselves that you saw outside.`
-			`	Only after a half hour of this acrobatics does the couple finally appear, rising up from the same apertures and joined by a flanking group of what must be the scions of their respective houses. You spy Khiajsore among them. There is a further intertwining, a display of finery and a ripple of many colors over the skin of those assembled, and then a collective hum rises from the crowd.`
+			`	Only after a half hour of these acrobatics does the couple finally appear, rising up from the same apertures and joined by a flanking group of what must be the scions of their respective houses. You spy Khiajsore among them. There is a further intertwining, a display of finery and a ripple of many colors over the skin of those assembled, and then a collective hum rises from the crowd.`
 			choice
 				`	(Hum also.)`
 				`	(Remain silent.)`
@@ -1978,7 +1978,7 @@ mission "Successors: Ghosts 20"
 				`	(Leave.)`
 					goto end
 
-			`	Tiliia spots you first, their skin breaking out in colors of excitement. "Saajret tells me of thy ascent to Kaatrij's ranks," they say. "Excellent that thou might be a concerted ally to my own House as well."`
+			`	Tiliia spots you first, their skin breaking out in colors of excitement. "Saajret tells me of thine ascent to Kaatrij's ranks," they say. "Excellent that thou might be a concerted ally to mine own House as well."`
 			`	Saajret hums and nods. "The captain is a canny sort," they say. "Capable of surviving our wiles, I believe." Tiliia laughs at that, Saajret continuing. "And Tiliia tells me thou wert of help to them as well, the reason by which our craft now gain an advantage through the wormhole."`
 			label "saajret and tiliia"
 			choice

@@ -104,7 +104,7 @@ mission "Successors: Ghosts Myurej 1"
 				`	"Just get to the point."`
 					goto point
 				`	"Why are you so angry?"`
-			`	"No, not angry," they say. "Tired. They pay me to change my routes, I accept. They pay me to talk to the fools they send to me, I accept. They pay me to transport unknowables, and I lap it up. Thought the family connection would make things easier, but what dost thou do when that 'family's just after thee for thy use to them?" They let the colors of anger subside and gently rub three of their arms together.`
+			`	"No, not angry," they say. "Tired. They pay me to change my routes, I accept. They pay me to talk to the fools they send to me, I accept. They pay me to transport unknowables, and I lap it up. Thought the family connection would make things easier, but what dost thou do when that 'family's just after thee for thine use to them?" They let the colors of anger subside and gently rub three of their arms together.`
 			label point
 			`	"Fine. I hear that Riiria's hiding out among the hollow stations 'round our neighbor stars. They're good to hide if thou hast stolen something, brilliant hard to scan a sleeping ship among the broken spires. The northerly one... Vade-Osolaa-Kaska, I recall, 'tis a favorite spot for Riiria and their type. Were I thee, I'd crawl there first." The Successor pauses to look at one of the boxes being unloaded and makes an exasperated noise. "Not that being thee is aught I would prefer, mind."`
 			choice
@@ -503,7 +503,7 @@ mission "Successors: Ghosts Myurej 8"
 			`	The scion fans their arms gently. "Myurej M- Khiajsore. A cousin of the one who spoke to thee earlier, whom thou shalt recall."`
 				goto next
 			label flirty
-			`	"Quite so!" the scion says. "They say a - what is it - a 'biped fever' runs through the people since thou arriv'st, that all at once all the worlds clamor for stories of artful, noble humans in the heyday of our Predecessors. I did not see the appeal at first, but by thy actions and seeing thee now... there's a certain strange elegance to the few arms, thy incomplete symmetry." They hum briefly. "But forgive me, that's not what we're here for, thou or I." They fan their arms in a fluid motion. "Myurej M- Khiajsore. I'm a cousin of the one who spoke to thee earlier, behind the veil."`
+			`	"Quite so!" the scion says. "They say a - what is it - a 'biped fever' runs through the people since thou arriv'st, that all at once all the worlds clamor for stories of artful, noble humans in the heyday of our Predecessors. I did not see the appeal at first, but by thy actions and seeing thee now... there's a certain strange elegance to the few arms, thine incomplete symmetry." They hum briefly. "But forgive me, that's not what we're here for, thou or I." They fan their arms in a fluid motion. "Myurej M- Khiajsore. I'm a cousin of the one who spoke to thee earlier, behind the veil."`
 				goto next
 			label unamused
 			`	The scion extends a gilded arm, shaking the myriad piercings and bits of jewelry upon it as if to contemplate them. "Oh, thou think'st me materialistic, mayhaps? Yet precious things are only made precious by the pain of acquiring them. The jewels thou didst bring back from the Shroud have already earned their own stories... as the beginning of a grand project of restoration, maybe, and at least as something totally unique." They hum with satisfaction. "And yet, 'tis not what we're here for, thou or I." They fan their arms in acknowledgment. "Myurej M- Khiajsore. A cousin of the one who spoke to thee earlier, behind the veil."`
