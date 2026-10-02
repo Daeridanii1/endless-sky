@@ -1651,7 +1651,7 @@ government "People's Houses"
 	confusion "militia"
 	"attitude toward"
 		Successor 1
-		"People's Houses (Hostile)" 0.2
+		"People's Houses (Hostile)" 0.1
 	bribe 0.05
 	fine 0
 	"friendly hail" "people's houses friendly hail"
@@ -1669,7 +1669,7 @@ government "People's Houses (Hostile)"
 	"attitude toward"
 		Author -0.01
 		Successor -0.01
-		"People's Houses" 0.2
+		"People's Houses" 0.1
 	bribe 0.05
 	fine 0
 	"friendly hail" "people's houses friendly hail"

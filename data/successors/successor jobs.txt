@@ -487,6 +487,7 @@ mission "Successors: Aid Delivery Out 1"
 		payment 2400 160
 		dialog phrase "successor delivery"
 		"successor jobs" ++
+		"reputation: People's Houses" += 2
 
 
 mission "Successors: Large Delivery Out 1"
