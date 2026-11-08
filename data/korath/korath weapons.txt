@@ -365,6 +365,7 @@ outfit "Thermal Repeater"
 		"shield damage" 26
 		"hull damage" 22
 		"heat damage" 33
+		"thermal damage scaling" 1.4
 	description "This is the smallest and simplest Korath projectile weapon, designed mostly for use on fighters and drones. As with most Korath technology, it generates a large amount of heat, enough that the gun must pause briefly after every few shots to cool down."
 
 effect "repeater impact"
@@ -409,6 +410,7 @@ outfit "Thermal Repeater Turret"
 		"shield damage" 26
 		"hull damage" 22
 		"heat damage" 33
+		"thermal damage scaling" 1.4
 	description "Thermal Repeaters fire compact bolts of superheated plasma at their targets. For every one of these turrets installed on a ship, an auxiliary cooling system is typically required to cope with its heat output."
 
 
