@@ -25,7 +25,6 @@ this program. If not, see <https://www.gnu.org/licenses/>.
 #include <algorithm>
 #include <cmath>
 #include <map>
-#include <set>
 #include <sstream>
 
 using namespace std;
@@ -683,6 +682,16 @@ void OutfitInfoDisplay::UpdateAttributes(const Outfit &outfit)
 		attributeLabels.emplace_back("homing type:");
 		attributeValues.emplace_back(weapon->Leading() ? "leading" : "direct");
 		attributesHeight += 20;
+	}
+	if(weapon->HasProjectileDamageScaling())
+	{
+		if(weapon->MaxThermalDamageScaling() != 1.)
+		{
+			double thermalDamageScaling = weapon->MaxThermalDamageScaling();
+			attributeLabels.emplace_back("thermal damage scaling:");
+			attributeValues.emplace_back(Format::Percentage(thermalDamageScaling));
+			attributesHeight += 20;
+		}
 	}
 	static const vector<string> PERCENT_NAMES = {
 		"tracking:",

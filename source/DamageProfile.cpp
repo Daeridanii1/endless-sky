@@ -17,6 +17,7 @@ this program. If not, see <https://www.gnu.org/licenses/>.
 
 #include "DamageDealt.h"
 #include "Entity.h"
+#include "Projectile.h"
 #include "image/Mask.h"
 #include "Weapon.h"
 
@@ -25,12 +26,16 @@ using namespace std;
 
 
 DamageProfile::DamageProfile(const Entity &entity, const Projectile::ImpactInfo &info, bool ignoreBlast)
-	: entity(&entity), weapon(&info.weapon), position(info.position),
+	: entity(&entity), weapon(&info.weapon), position(info.position), projectile(&info.projectile),
 	isBlast(!ignoreBlast && weapon->BlastRadius() > 0.)
 {
 	// The damage dropoff of projectiles is influenced by the distance it traveled.
 	if(weapon->HasDamageDropoff())
 		scaling *= weapon->DamageDropoff(info.distanceTraveled);
+
+	if(weapon->HasProjectileDamageScaling())
+		scaling *= info.projectile.GetProjectileDamageScaling();
+
 	CalculateScaling();
 }
 
@@ -55,6 +60,13 @@ const Weapon &DamageProfile::GetWeapon() const
 const Entity &DamageProfile::GetEntity() const
 {
 	return *entity;
+}
+
+
+
+const Projectile &DamageProfile::GetProjectile() const
+{
+	return *projectile;
 }
 
 

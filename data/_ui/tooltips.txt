@@ -1064,6 +1064,9 @@ tip "dropoff modifier:"
 tip "dropoff range:"
 	`The starting and ending range between which the damage of this weapon ramps from 100% to the displayed dropoff modifier.`
 
+tip "thermal damage scaling:"
+	`The multiplier applied to the damage of this weapon as your ship approaches its maximum heat level.`
+
 tip "shield damage / second:"
 	`Shield damage dealt per second.`
 

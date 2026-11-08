@@ -223,6 +223,10 @@ public:
 	// Return the ranges at which the weapon's damage dropoff begins and ends.
 	const std::pair<double, double> &DropoffRanges() const;
 
+	bool HasProjectileDamageScaling() const;
+	double ThermalDamageScaling(double heatFraction) const;
+	double MaxThermalDamageScaling() const;
+
 	bool TriggersNukeAlert() const;
 
 
@@ -384,6 +388,9 @@ private:
 	std::pair<double, double> damageDropoffRange;
 	double damageDropoffModifier = 1.;
 
+	bool hasProjectileDamageScaling = false;
+	double thermalDamageScaling = 1.;
+
 	// Cache the calculation of these values, for faster access.
 	mutable bool calculatedDamage = true;
 	mutable bool doesDamage = false;
@@ -498,5 +505,6 @@ inline double Weapon::RelativeEnergyDamage() const { return TotalDamage(RELATIVE
 inline bool Weapon::DoesDamage() const { if(!calculatedDamage) TotalDamage(0); return doesDamage; }
 
 inline bool Weapon::HasDamageDropoff() const { return hasDamageDropoff; }
+inline bool Weapon::HasProjectileDamageScaling() const { return hasProjectileDamageScaling; }
 
 inline bool Weapon::TriggersNukeAlert() const { return triggersNukeAlert; }

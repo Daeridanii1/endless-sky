@@ -44,12 +44,13 @@ class Projectile : public Body {
 public:
 	class ImpactInfo {
 	public:
-		ImpactInfo(const Weapon &weapon, const Point &position, double distanceTraveled)
-			: weapon(weapon), position(position), distanceTraveled(distanceTraveled) {}
+		ImpactInfo(const Weapon &weapon, const Point &position, double distanceTraveled, const Projectile &projectile)
+			: weapon(weapon), position(position), distanceTraveled(distanceTraveled), projectile(projectile) {}
 
 		const Weapon &weapon;
 		Point position;
 		double distanceTraveled;
+		const Projectile &projectile;
 	};
 
 	enum DeathType {
@@ -90,6 +91,8 @@ public:
 	// Find out if this is a missile, and if so, how strong it is (i.e. what
 	// chance an anti-missile shot has of destroying it).
 	int MissileStrength() const;
+	// Get damage scaling calculated when the weapon was fired.
+	double GetProjectileDamageScaling() const;
 	// Get information on the weapon that fired this projectile.
 	const Weapon &GetWeapon() const;
 	// Get information on how this projectile impacted a ship.
@@ -153,4 +156,6 @@ private:
 	// This is safe to keep even if the ships die, because we don't actually call the ship,
 	// we just compare this pointer to other ship pointers.
 	const Ship *phasedShip = nullptr;
+
+	double projectileDamageScaling;
 };

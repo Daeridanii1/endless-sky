@@ -37,6 +37,7 @@ public:
 
 	const Weapon &GetWeapon() const;
 	const Entity &GetEntity() const;
+	const Projectile &GetProjectile() const;
 	double Scaling() const;
 
 	// Calculate the damage dealt to the entity at this exact moment.
@@ -55,6 +56,8 @@ private:
 	const Weapon *weapon;
 	// The position of the projectile or hazard.
 	Point position;
+	// The projectile that did the damage.
+	const Projectile *projectile;
 	// Whether damage is applied as a blast.
 	bool isBlast;
 	// The base scaling to apply against the weapon damage

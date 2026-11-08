@@ -397,6 +397,11 @@ void Weapon::Load(const DataNode &node)
 			}
 			else if(key == "dropoff modifier")
 				damageDropoffModifier = max(0., value);
+			else if(key == "thermal damage scaling")
+			{
+				hasProjectileDamageScaling = true;
+				thermalDamageScaling = max(0., value);
+			}
 			else
 				child.PrintTrace("Unrecognized weapon attribute: \"" + key + "\":");
 		}
@@ -614,6 +619,20 @@ double Weapon::MaxDropoff() const
 const pair<double, double> &Weapon::DropoffRanges() const
 {
 	return damageDropoffRange;
+}
+
+
+
+double Weapon::ThermalDamageScaling(double heatFraction) const
+{
+	return ((1. - thermalDamageScaling) * heatFraction) + 1.;
+}
+
+
+
+double Weapon::MaxThermalDamageScaling() const
+{
+	return thermalDamageScaling;
 }
 
 
