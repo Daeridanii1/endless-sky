@@ -17,7 +17,6 @@ this program. If not, see <https://www.gnu.org/licenses/>.
 
 #include "DamageDealt.h"
 #include "Entity.h"
-#include "Projectile.h"
 #include "image/Mask.h"
 #include "Weapon.h"
 
