@@ -26,15 +26,16 @@ using namespace std;
 
 
 DamageProfile::DamageProfile(const Entity &entity, const Projectile::ImpactInfo &info, bool ignoreBlast)
-	: entity(&entity), weapon(&info.weapon), position(info.position), projectile(&info.projectile),
+	: entity(&entity), weapon(&info.weapon), position(info.position), damageScale(info.scale),
 	isBlast(!ignoreBlast && weapon->BlastRadius() > 0.)
 {
 	// The damage dropoff of projectiles is influenced by the distance it traveled.
 	if(weapon->HasDamageDropoff())
 		scaling *= weapon->DamageDropoff(info.distanceTraveled);
-
+	
+	// For damage scaling projectiles, apply damage scaling amounts.
 	if(weapon->HasProjectileDamageScaling())
-		scaling *= info.projectile.GetProjectileDamageScaling();
+		scaling *= info.scale;
 
 	CalculateScaling();
 }
@@ -64,9 +65,9 @@ const Entity &DamageProfile::GetEntity() const
 
 
 
-const Projectile &DamageProfile::GetProjectile() const
+double DamageProfile::GetDamageScale() const
 {
-	return *projectile;
+	return damageScale;
 }
 
 

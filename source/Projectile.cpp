@@ -100,7 +100,7 @@ Projectile::Projectile(const Ship &parent, Point position, Angle angle, const We
 
 	if(weapon->HasProjectileDamageScaling())
 	{
-		projectileDamageScaling = weapon->ThermalDamageScaling(parent.HeatFraction());
+		damageScale = weapon->ThermalDamageScaling(parent.HeatFraction());
 	}
 
 }
@@ -394,19 +394,12 @@ const Weapon &Projectile::GetWeapon() const
 
 
 
-double Projectile::GetProjectileDamageScaling() const
-{
-	return projectileDamageScaling;
-}
-
-
-
 // Get information on how this projectile impacted a ship.
 Projectile::ImpactInfo Projectile::GetInfo(double intersection) const
 {
 	// Account for the distance that this projectile traveled before intersecting
 	// with the target.
-	return ImpactInfo(*weapon, position + velocity * intersection, distanceTraveled + dV.Length() * intersection, *this);
+	return ImpactInfo(*weapon, position + velocity * intersection, distanceTraveled + dV.Length() * intersection, damageScale);
 }
 
 

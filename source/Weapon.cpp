@@ -625,7 +625,7 @@ const pair<double, double> &Weapon::DropoffRanges() const
 
 double Weapon::ThermalDamageScaling(double heatFraction) const
 {
-	return ((1. - thermalDamageScaling) * heatFraction) + 1.;
+	return ((thermalDamageScaling - 1.) * heatFraction) + 1.;
 }
 
 
