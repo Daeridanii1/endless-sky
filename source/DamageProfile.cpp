@@ -25,8 +25,8 @@ using namespace std;
 
 
 DamageProfile::DamageProfile(const Entity &entity, const Projectile::ImpactInfo &info, bool ignoreBlast)
-	: entity(&entity), weapon(&info.weapon), position(info.position), damageScale(info.scale),
-	isBlast(!ignoreBlast && weapon->BlastRadius() > 0.)
+	: entity(&entity), weapon(&info.weapon), position(info.position),
+	isBlast(!ignoreBlast && weapon->BlastRadius() > 0.), scaling(info.scaling)
 {
 	// The damage dropoff of projectiles is influenced by the distance it traveled.
 	if(weapon->HasDamageDropoff())
@@ -34,7 +34,7 @@ DamageProfile::DamageProfile(const Entity &entity, const Projectile::ImpactInfo 
 	
 	// For damage scaling projectiles, apply damage scaling amounts.
 	if(weapon->HasProjectileDamageScaling())
-		scaling *= info.scale;
+		scaling *= info.scaling;
 
 	CalculateScaling();
 }
@@ -50,6 +50,13 @@ DamageProfile::DamageProfile(const Entity &entity, const Weather::ImpactInfo &in
 
 
 
+DamageProfile::DamageProfile(const Entity &entity, const Weapon &weapon, double scaling)
+	: entity(&entity), weapon(&weapon), position(Point()), isBlast(false), scaling(scaling)
+{
+}
+
+
+
 const Weapon &DamageProfile::GetWeapon() const
 {
 	return *weapon;
@@ -60,13 +67,6 @@ const Weapon &DamageProfile::GetWeapon() const
 const Entity &DamageProfile::GetEntity() const
 {
 	return *entity;
-}
-
-
-
-double DamageProfile::GetDamageScale() const
-{
-	return damageScale;
 }
 
 

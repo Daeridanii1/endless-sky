@@ -411,6 +411,8 @@ ShopPanel::TransactionResult OutfitterPanel::CanMoveOutfit(OutfitLocation fromLo
 		{
 			if(!playerShip)
 				return "No ship selected.";
+			if(selectedOutfit->GetPrecise("unremovable"))
+				return "This outfit can't be removed after it has been installed.";
 
 			vector<pair<string, vector<string>>> dependentOutfitErrors;
 			vector<string> errorDetails;
@@ -587,6 +589,9 @@ ShopPanel::TransactionResult OutfitterPanel::CanMoveOutfit(OutfitLocation fromLo
 			if(!playerShip)
 				return "No ship selected.";
 
+			if(selectedOutfit->GetPrecise("uninstallable"))
+				return "This item is not an outfit that can be installed in a ship.";
+
 			// Find if any ship can install the outfit.
 			for(const Ship *ship : playerShips)
 				if(ShipCanAdd(ship, selectedOutfit))
@@ -637,9 +642,6 @@ ShopPanel::TransactionResult OutfitterPanel::CanMoveOutfit(OutfitLocation fromLo
 				if(gunsNeeded > gunsFree)
 					errors.emplace_back("This weapon is designed to be installed in a gun port, "
 						"but your ship does not have any unused gun ports available.");
-
-				if(selectedOutfit->Get("installable") < 0.)
-					errors.emplace_back("This item is not an outfit that can be installed in a ship.");
 
 				// If the outfit category is ammo, the problem wasn't one of the above attributes, and this outfit
 				// could never have its installation limited by usual means, then assume that the issue is a lack

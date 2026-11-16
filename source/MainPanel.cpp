@@ -137,7 +137,16 @@ void MainPanel::Step()
 	StepEvents(isActive);
 
 	if(isActive)
+	{
+		// Now that all updates have been made to the player that could alter condition
+		// reads, check if any missions can spawn NPCs right now.
+		if(checkSpawns && !engine.IsPaused())
+		{
+			engine.CheckNpcSpawns();
+			checkSpawns = false;
+		}
 		engine.Go();
+	}
 	else
 		canDrag = false;
 	canClick = isActive;
@@ -352,7 +361,7 @@ void MainPanel::ShowScanDialog(const ShipEvent &event)
 				first = false;
 
 				out << "\t";
-				if(outfit->Get("installable") < 0.)
+				if(outfit->Get("uninstallable"))
 				{
 					int tons = ceil(count * outfit->Mass());
 					out << Format::CargoString(tons, Format::LowerCase(outfit->PluralName())) << "\n";
@@ -700,7 +709,10 @@ void MainPanel::StepEvents(bool &isActive)
 		// Handle jump events from the player's flagship. This means we should check
 		// for entering missions that can be offered.
 		if((event.Type() & ShipEvent::JUMP) && flagship && event.Actor().get() == flagship)
+		{
 			player.CreateEnteringMissions();
+			checkSpawns = true;
+		}
 
 		// Remove the fully-handled event.
 		eventQueue.pop_front();

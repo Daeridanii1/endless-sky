@@ -274,7 +274,9 @@ public:
 	void SortAvailable();
 
 	const Mission *ActiveInFlightMission() const;
-	void UpdateMissionNPCs();
+	// Update mission NPCs with the player's current conditions.
+	// Return the NPCs that should be spawned right now.
+	std::vector<const NPC *> UpdateMissionNPCs();
 	void AcceptJob(const Mission &mission, UI &ui);
 	// Check to see if there is any mission to offer right now.
 	Mission *MissionToOffer(Mission::Location location);
@@ -408,7 +410,7 @@ public:
 	void SetMapZoom(int level);
 	// Get the set of collapsed categories for the named panel.
 	std::set<std::string> &Collapsed(const std::string &name);
-	// Should help dialogs relating to carriers be displayed?
+	// Should help dialogs be displayed?
 	bool DisplayCarrierHelp() const;
 
 	// Advance any active mission timers that meet the right criteria.
